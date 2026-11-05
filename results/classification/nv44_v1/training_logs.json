@@ -1,0 +1,48 @@
+[
+  {
+    "model": "logistic_regression",
+    "status": "completed",
+    "fit_seconds": 1.450260900000103,
+    "training_sample_count": 70183,
+    "training_class_counts": [
+      65436,
+      4747
+    ],
+    "selection": "fixed configuration; no test-based tuning"
+  },
+  {
+    "model": "random_forest",
+    "status": "completed",
+    "fit_seconds": 9.026748600000246,
+    "training_sample_count": 70183,
+    "training_class_counts": [
+      65436,
+      4747
+    ],
+    "selection": "fixed configuration; no test-based tuning"
+  },
+  {
+    "model": "cnn_1d",
+    "status": "completed",
+    "device": "cpu",
+    "epochs_ran": 17,
+    "best_epoch": 12,
+    "best_val_macro_f1": 0.6630092908675226,
+    "fit_seconds": 69.36364709999998,
+    "early_stopping_metric": "validation macro-F1",
+    "patience": 5,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss": "weighted CrossEntropyLoss",
+    "training_class_weights": [
+      0.5362721085548401,
+      7.392353057861328
+    ],
+    "training_sample_count": 70183,
+    "training_class_counts": [
+      65436,
+      4747
+    ]
+  }
+]

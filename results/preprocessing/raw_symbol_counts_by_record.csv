@@ -1,0 +1,284 @@
+﻿record,symbol,meaning_zh,annotation_kind,aami_group,count
+100,+,节律改变（详见 aux_note）,non_beat,,1
+100,A,房性期前收缩,mapped_beat,S,33
+100,N,正常心拍,mapped_beat,N,2239
+100,V,室性期前收缩,mapped_beat,V,1
+101,+,节律改变（详见 aux_note）,non_beat,,1
+101,A,房性期前收缩,mapped_beat,S,3
+101,N,正常心拍,mapped_beat,N,1860
+101,Q,无法分类心拍,mapped_beat,Q,2
+101,|,孤立的类 QRS 伪迹,non_beat,,4
+101,~,信号质量改变（保留 subtype）,non_beat,,4
+102,+,节律改变（详见 aux_note）,non_beat,,5
+102,/,起搏心拍,mapped_beat,Q,2028
+102,N,正常心拍,mapped_beat,N,99
+102,V,室性期前收缩,mapped_beat,V,4
+102,f,起搏与正常心拍融合,mapped_beat,Q,56
+103,+,节律改变（详见 aux_note）,non_beat,,1
+103,A,房性期前收缩,mapped_beat,S,2
+103,N,正常心拍,mapped_beat,N,2082
+103,~,信号质量改变（保留 subtype）,non_beat,,6
+104,+,节律改变（详见 aux_note）,non_beat,,45
+104,/,起搏心拍,mapped_beat,Q,1380
+104,N,正常心拍,mapped_beat,N,163
+104,Q,无法分类心拍,mapped_beat,Q,18
+104,V,室性期前收缩,mapped_beat,V,2
+104,f,起搏与正常心拍融合,mapped_beat,Q,666
+104,~,信号质量改变（保留 subtype）,non_beat,,37
+105,+,节律改变（详见 aux_note）,non_beat,,1
+105,N,正常心拍,mapped_beat,N,2526
+105,Q,无法分类心拍,mapped_beat,Q,5
+105,V,室性期前收缩,mapped_beat,V,41
+105,|,孤立的类 QRS 伪迹,non_beat,,30
+105,~,信号质量改变（保留 subtype）,non_beat,,88
+106,+,节律改变（详见 aux_note）,non_beat,,41
+106,N,正常心拍,mapped_beat,N,1507
+106,V,室性期前收缩,mapped_beat,V,520
+106,~,信号质量改变（保留 subtype）,non_beat,,30
+107,+,节律改变（详见 aux_note）,non_beat,,1
+107,/,起搏心拍,mapped_beat,Q,2078
+107,V,室性期前收缩,mapped_beat,V,59
+107,~,信号质量改变（保留 subtype）,non_beat,,2
+108,+,节律改变（详见 aux_note）,non_beat,,1
+108,A,房性期前收缩,mapped_beat,S,4
+108,F,室性与正常心拍融合,mapped_beat,F,2
+108,N,正常心拍,mapped_beat,N,1739
+108,V,室性期前收缩,mapped_beat,V,17
+108,j,交界性逸搏,mapped_beat,N,1
+108,x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,11
+108,|,孤立的类 QRS 伪迹,non_beat,,8
+108,~,信号质量改变（保留 subtype）,non_beat,,41
+109,+,节律改变（详见 aux_note）,non_beat,,1
+109,F,室性与正常心拍融合,mapped_beat,F,2
+109,L,左束支传导阻滞心拍,mapped_beat,N,2492
+109,V,室性期前收缩,mapped_beat,V,38
+109,~,信号质量改变（保留 subtype）,non_beat,,2
+111,+,节律改变（详见 aux_note）,non_beat,,1
+111,L,左束支传导阻滞心拍,mapped_beat,N,2123
+111,V,室性期前收缩,mapped_beat,V,1
+111,~,信号质量改变（保留 subtype）,non_beat,,8
+112,+,节律改变（详见 aux_note）,non_beat,,1
+112,A,房性期前收缩,mapped_beat,S,2
+112,N,正常心拍,mapped_beat,N,2537
+112,~,信号质量改变（保留 subtype）,non_beat,,10
+113,+,节律改变（详见 aux_note）,non_beat,,1
+113,N,正常心拍,mapped_beat,N,1789
+113,a,伴差异传导的房性期前收缩,mapped_beat,S,6
+114,+,节律改变（详见 aux_note）,non_beat,,3
+114,A,房性期前收缩,mapped_beat,S,10
+114,F,室性与正常心拍融合,mapped_beat,F,4
+114,J,交界性期前收缩,mapped_beat,S,2
+114,N,正常心拍,mapped_beat,N,1820
+114,V,室性期前收缩,mapped_beat,V,43
+114,|,孤立的类 QRS 伪迹,non_beat,,1
+114,~,信号质量改变（保留 subtype）,non_beat,,7
+115,+,节律改变（详见 aux_note）,non_beat,,1
+115,N,正常心拍,mapped_beat,N,1953
+115,|,孤立的类 QRS 伪迹,non_beat,,6
+115,~,信号质量改变（保留 subtype）,non_beat,,2
+116,+,节律改变（详见 aux_note）,non_beat,,1
+116,A,房性期前收缩,mapped_beat,S,1
+116,N,正常心拍,mapped_beat,N,2302
+116,V,室性期前收缩,mapped_beat,V,109
+116,~,信号质量改变（保留 subtype）,non_beat,,8
+117,+,节律改变（详见 aux_note）,non_beat,,1
+117,A,房性期前收缩,mapped_beat,S,1
+117,N,正常心拍,mapped_beat,N,1534
+117,~,信号质量改变（保留 subtype）,non_beat,,3
+118,+,节律改变（详见 aux_note）,non_beat,,1
+118,A,房性期前收缩,mapped_beat,S,96
+118,R,右束支传导阻滞心拍,mapped_beat,N,2166
+118,V,室性期前收缩,mapped_beat,V,16
+118,x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,10
+118,~,信号质量改变（保留 subtype）,non_beat,,12
+119,+,节律改变（详见 aux_note）,non_beat,,103
+119,N,正常心拍,mapped_beat,N,1543
+119,V,室性期前收缩,mapped_beat,V,444
+119,~,信号质量改变（保留 subtype）,non_beat,,4
+121,+,节律改变（详见 aux_note）,non_beat,,1
+121,A,房性期前收缩,mapped_beat,S,1
+121,N,正常心拍,mapped_beat,N,1861
+121,V,室性期前收缩,mapped_beat,V,1
+121,~,信号质量改变（保留 subtype）,non_beat,,12
+122,+,节律改变（详见 aux_note）,non_beat,,1
+122,N,正常心拍,mapped_beat,N,2476
+122,|,孤立的类 QRS 伪迹,non_beat,,2
+123,+,节律改变（详见 aux_note）,non_beat,,1
+123,N,正常心拍,mapped_beat,N,1515
+123,V,室性期前收缩,mapped_beat,V,3
+124,+,节律改变（详见 aux_note）,non_beat,,13
+124,A,房性期前收缩,mapped_beat,S,2
+124,F,室性与正常心拍融合,mapped_beat,F,5
+124,J,交界性期前收缩,mapped_beat,S,29
+124,R,右束支传导阻滞心拍,mapped_beat,N,1531
+124,V,室性期前收缩,mapped_beat,V,47
+124,j,交界性逸搏,mapped_beat,N,5
+124,~,信号质量改变（保留 subtype）,non_beat,,2
+200,+,节律改变（详见 aux_note）,non_beat,,148
+200,A,房性期前收缩,mapped_beat,S,30
+200,F,室性与正常心拍融合,mapped_beat,F,2
+200,N,正常心拍,mapped_beat,N,1743
+200,V,室性期前收缩,mapped_beat,V,826
+200,~,信号质量改变（保留 subtype）,non_beat,,43
+201,+,节律改变（详见 aux_note）,non_beat,,35
+201,A,房性期前收缩,mapped_beat,S,30
+201,F,室性与正常心拍融合,mapped_beat,F,2
+201,J,交界性期前收缩,mapped_beat,S,1
+201,N,正常心拍,mapped_beat,N,1625
+201,V,室性期前收缩,mapped_beat,V,198
+201,a,伴差异传导的房性期前收缩,mapped_beat,S,97
+201,j,交界性逸搏,mapped_beat,N,10
+201,x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,37
+201,~,信号质量改变（保留 subtype）,non_beat,,4
+202,+,节律改变（详见 aux_note）,non_beat,,8
+202,A,房性期前收缩,mapped_beat,S,36
+202,F,室性与正常心拍融合,mapped_beat,F,1
+202,N,正常心拍,mapped_beat,N,2061
+202,V,室性期前收缩,mapped_beat,V,19
+202,a,伴差异传导的房性期前收缩,mapped_beat,S,19
+202,|,孤立的类 QRS 伪迹,non_beat,,2
+203,+,节律改变（详见 aux_note）,non_beat,,45
+203,F,室性与正常心拍融合,mapped_beat,F,1
+203,N,正常心拍,mapped_beat,N,2529
+203,Q,无法分类心拍,mapped_beat,Q,4
+203,V,室性期前收缩,mapped_beat,V,444
+203,a,伴差异传导的房性期前收缩,mapped_beat,S,2
+203,|,孤立的类 QRS 伪迹,non_beat,,26
+203,~,信号质量改变（保留 subtype）,non_beat,,57
+205,+,节律改变（详见 aux_note）,non_beat,,13
+205,A,房性期前收缩,mapped_beat,S,3
+205,F,室性与正常心拍融合,mapped_beat,F,11
+205,N,正常心拍,mapped_beat,N,2571
+205,V,室性期前收缩,mapped_beat,V,71
+205,|,孤立的类 QRS 伪迹,non_beat,,1
+205,~,信号质量改变（保留 subtype）,non_beat,,2
+207,!,心室扑动波（非逐心拍标注）,non_beat,,472
+207,+,节律改变（详见 aux_note）,non_beat,,24
+207,A,房性期前收缩,mapped_beat,S,107
+207,E,室性逸搏,mapped_beat,V,105
+207,L,左束支传导阻滞心拍,mapped_beat,N,1457
+207,R,右束支传导阻滞心拍,mapped_beat,N,86
+207,V,室性期前收缩,mapped_beat,V,105
+207,[,心室扑动/颤动开始,non_beat,,6
+207,],心室扑动/颤动结束,non_beat,,6
+207,|,孤立的类 QRS 伪迹,non_beat,,2
+207,~,信号质量改变（保留 subtype）,non_beat,,15
+208,+,节律改变（详见 aux_note）,non_beat,,53
+208,F,室性与正常心拍融合,mapped_beat,F,373
+208,N,正常心拍,mapped_beat,N,1586
+208,Q,无法分类心拍,mapped_beat,Q,2
+208,S,室上性期前或异位心拍,mapped_beat,S,2
+208,V,室性期前收缩,mapped_beat,V,992
+208,|,孤立的类 QRS 伪迹,non_beat,,8
+208,~,信号质量改变（保留 subtype）,non_beat,,24
+209,+,节律改变（详见 aux_note）,non_beat,,21
+209,A,房性期前收缩,mapped_beat,S,383
+209,N,正常心拍,mapped_beat,N,2621
+209,V,室性期前收缩,mapped_beat,V,1
+209,|,孤立的类 QRS 伪迹,non_beat,,7
+209,~,信号质量改变（保留 subtype）,non_beat,,19
+210,+,节律改变（详见 aux_note）,non_beat,,17
+210,E,室性逸搏,mapped_beat,V,1
+210,F,室性与正常心拍融合,mapped_beat,F,10
+210,N,正常心拍,mapped_beat,N,2423
+210,V,室性期前收缩,mapped_beat,V,194
+210,a,伴差异传导的房性期前收缩,mapped_beat,S,22
+210,|,孤立的类 QRS 伪迹,non_beat,,1
+210,~,信号质量改变（保留 subtype）,non_beat,,17
+212,+,节律改变（详见 aux_note）,non_beat,,1
+212,N,正常心拍,mapped_beat,N,923
+212,R,右束支传导阻滞心拍,mapped_beat,N,1825
+212,|,孤立的类 QRS 伪迹,non_beat,,1
+212,~,信号质量改变（保留 subtype）,non_beat,,13
+213,+,节律改变（详见 aux_note）,non_beat,,43
+213,A,房性期前收缩,mapped_beat,S,25
+213,F,室性与正常心拍融合,mapped_beat,F,362
+213,N,正常心拍,mapped_beat,N,2641
+213,V,室性期前收缩,mapped_beat,V,220
+213,a,伴差异传导的房性期前收缩,mapped_beat,S,3
+214,"""",注释文本,non_beat,,1
+214,+,节律改变（详见 aux_note）,non_beat,,25
+214,F,室性与正常心拍融合,mapped_beat,F,1
+214,L,左束支传导阻滞心拍,mapped_beat,N,2003
+214,Q,无法分类心拍,mapped_beat,Q,2
+214,V,室性期前收缩,mapped_beat,V,256
+214,|,孤立的类 QRS 伪迹,non_beat,,5
+214,~,信号质量改变（保留 subtype）,non_beat,,4
+215,"""",注释文本,non_beat,,2
+215,+,节律改变（详见 aux_note）,non_beat,,5
+215,A,房性期前收缩,mapped_beat,S,3
+215,F,室性与正常心拍融合,mapped_beat,F,1
+215,N,正常心拍,mapped_beat,N,3195
+215,V,室性期前收缩,mapped_beat,V,164
+215,~,信号质量改变（保留 subtype）,non_beat,,30
+217,+,节律改变（详见 aux_note）,non_beat,,67
+217,/,起搏心拍,mapped_beat,Q,1542
+217,N,正常心拍,mapped_beat,N,244
+217,V,室性期前收缩,mapped_beat,V,162
+217,f,起搏与正常心拍融合,mapped_beat,Q,260
+217,|,孤立的类 QRS 伪迹,non_beat,,1
+217,~,信号质量改变（保留 subtype）,non_beat,,4
+219,"""",注释文本,non_beat,,4
+219,+,节律改变（详见 aux_note）,non_beat,,21
+219,A,房性期前收缩,mapped_beat,S,7
+219,F,室性与正常心拍融合,mapped_beat,F,1
+219,N,正常心拍,mapped_beat,N,2082
+219,V,室性期前收缩,mapped_beat,V,64
+219,x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,133
+220,+,节律改变（详见 aux_note）,non_beat,,17
+220,A,房性期前收缩,mapped_beat,S,94
+220,N,正常心拍,mapped_beat,N,1954
+220,~,信号质量改变（保留 subtype）,non_beat,,4
+221,+,节律改变（详见 aux_note）,non_beat,,23
+221,N,正常心拍,mapped_beat,N,2031
+221,V,室性期前收缩,mapped_beat,V,396
+221,~,信号质量改变（保留 subtype）,non_beat,,12
+222,+,节律改变（详见 aux_note）,non_beat,,136
+222,A,房性期前收缩,mapped_beat,S,208
+222,J,交界性期前收缩,mapped_beat,S,1
+222,N,正常心拍,mapped_beat,N,2062
+222,j,交界性逸搏,mapped_beat,N,212
+222,~,信号质量改变（保留 subtype）,non_beat,,15
+223,+,节律改变（详见 aux_note）,non_beat,,28
+223,A,房性期前收缩,mapped_beat,S,72
+223,F,室性与正常心拍融合,mapped_beat,F,14
+223,N,正常心拍,mapped_beat,N,2029
+223,V,室性期前收缩,mapped_beat,V,473
+223,a,伴差异传导的房性期前收缩,mapped_beat,S,1
+223,e,房性逸搏,mapped_beat,N,16
+223,~,信号质量改变（保留 subtype）,non_beat,,10
+228,"""",注释文本,non_beat,,3
+228,+,节律改变（详见 aux_note）,non_beat,,41
+228,A,房性期前收缩,mapped_beat,S,3
+228,N,正常心拍,mapped_beat,N,1688
+228,V,室性期前收缩,mapped_beat,V,362
+228,|,孤立的类 QRS 伪迹,non_beat,,24
+228,~,信号质量改变（保留 subtype）,non_beat,,20
+230,+,节律改变（详见 aux_note）,non_beat,,207
+230,N,正常心拍,mapped_beat,N,2255
+230,V,室性期前收缩,mapped_beat,V,1
+230,|,孤立的类 QRS 伪迹,non_beat,,1
+230,~,信号质量改变（保留 subtype）,non_beat,,2
+231,"""",注释文本,non_beat,,427
+231,+,节律改变（详见 aux_note）,non_beat,,11
+231,A,房性期前收缩,mapped_beat,S,1
+231,N,正常心拍,mapped_beat,N,314
+231,R,右束支传导阻滞心拍,mapped_beat,N,1254
+231,V,室性期前收缩,mapped_beat,V,2
+231,x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,2
+232,+,节律改变（详见 aux_note）,non_beat,,1
+232,A,房性期前收缩,mapped_beat,S,1382
+232,R,右束支传导阻滞心拍,mapped_beat,N,397
+232,j,交界性逸搏,mapped_beat,N,1
+232,~,信号质量改变（保留 subtype）,non_beat,,35
+233,+,节律改变（详见 aux_note）,non_beat,,71
+233,A,房性期前收缩,mapped_beat,S,7
+233,F,室性与正常心拍融合,mapped_beat,F,11
+233,N,正常心拍,mapped_beat,N,2230
+233,V,室性期前收缩,mapped_beat,V,831
+233,|,孤立的类 QRS 伪迹,non_beat,,2
+234,+,节律改变（详见 aux_note）,non_beat,,3
+234,J,交界性期前收缩,mapped_beat,S,50
+234,N,正常心拍,mapped_beat,N,2700
+234,V,室性期前收缩,mapped_beat,V,3
+234,~,信号质量改变（保留 subtype）,non_beat,,8

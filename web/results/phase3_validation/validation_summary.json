@@ -1,0 +1,57 @@
+{
+  "validation_only": true,
+  "formal_test_data_read": false,
+  "formal_test_data_used_for_tuning": false,
+  "sample_count_by_task": {
+    "nsvf": 100,
+    "nv": 100
+  },
+  "prediction_comparisons": 600,
+  "matched_prediction_count": 600,
+  "preprocessing_max_abs_error": 0.0,
+  "probability_max_abs_error": 4.76837158203125e-07,
+  "model_hashes": [
+    {
+      "task": "nsvf",
+      "model_id": "cnn_1d",
+      "sha256": "78f4af2681d4e9e8c663302fbd0809e3a0e3ef521c2e5f127b97e27d1632d962"
+    },
+    {
+      "task": "nsvf",
+      "model_id": "logistic_regression",
+      "sha256": "d4b15f1d3886b4f4a99b282267629c677ff5d5afd833733c20669f5ad993f9f9"
+    },
+    {
+      "task": "nsvf",
+      "model_id": "random_forest",
+      "sha256": "8b0f355ebfbaa199f745f8c488686d8a30646bc85597a1ed26d0d32c3cb2f373"
+    },
+    {
+      "task": "nv",
+      "model_id": "cnn_1d",
+      "sha256": "5c4ff92e89f881d532eebf4b7f5fe6e6a240a5a88b820ca1d289e4af1fd78648"
+    },
+    {
+      "task": "nv",
+      "model_id": "logistic_regression",
+      "sha256": "90bf37a88d17976ca0266849b2a8e1d979ee5570bfe4eaa479c6d9f9a4b46413"
+    },
+    {
+      "task": "nv",
+      "model_id": "random_forest",
+      "sha256": "623e3143d671728ee256f15714f48abfc74a199ef2a2d65f3fbff6b159d40be0"
+    }
+  ],
+  "class_order_by_task": {
+    "nv": [
+      "N",
+      "V"
+    ],
+    "nsvf": [
+      "N",
+      "S",
+      "V",
+      "F"
+    ]
+  }
+}

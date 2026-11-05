@@ -1,0 +1,24 @@
+﻿symbol,meaning_zh,annotation_kind,aami_group,count
+N,正常心拍,mapped_beat,N,75052
+L,左束支传导阻滞心拍,mapped_beat,N,8075
+R,右束支传导阻滞心拍,mapped_beat,N,7259
+V,室性期前收缩,mapped_beat,V,7130
+/,起搏心拍,mapped_beat,Q,7028
+A,房性期前收缩,mapped_beat,S,2546
++,节律改变（详见 aux_note）,non_beat,,1291
+f,起搏与正常心拍融合,mapped_beat,Q,982
+F,室性与正常心拍融合,mapped_beat,F,803
+~,信号质量改变（保留 subtype）,non_beat,,616
+!,心室扑动波（非逐心拍标注）,non_beat,,472
+"""",注释文本,non_beat,,437
+j,交界性逸搏,mapped_beat,N,229
+x,未下传 P 波（阻滞型房性期前收缩）,non_beat,,193
+a,伴差异传导的房性期前收缩,mapped_beat,S,150
+|,孤立的类 QRS 伪迹,non_beat,,132
+E,室性逸搏,mapped_beat,V,106
+J,交界性期前收缩,mapped_beat,S,83
+Q,无法分类心拍,mapped_beat,Q,33
+e,房性逸搏,mapped_beat,N,16
+[,心室扑动/颤动开始,non_beat,,6
+],心室扑动/颤动结束,non_beat,,6
+S,室上性期前或异位心拍,mapped_beat,S,2

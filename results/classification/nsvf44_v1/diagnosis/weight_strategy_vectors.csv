@@ -1,0 +1,17 @@
+﻿strategy,class,weight
+unweighted,N,1.0
+unweighted,S,1.0
+unweighted,V,1.0
+unweighted,F,1.0
+sqrt_inverse,N,0.1646052896976471
+sqrt_inverse,S,1.1472772359848022
+sqrt_inverse,V,0.6111425757408142
+sqrt_inverse,F,2.076974868774414
+capped_inverse_10,N,0.04568765312433243
+capped_inverse_10,S,1.6622607707977295
+capped_inverse_10,V,0.6297909021377563
+capped_inverse_10,F,1.6622607707977295
+full_inverse,N,0.2748525142669678
+full_inverse,S,13.352078437805176
+full_inverse,V,3.7887613773345947
+full_inverse,F,43.75973129272461

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "device": "cpu",
+  "epochs_ran": 11,
+  "best_epoch": 6,
+  "best_val_macro_f1": 0.38646173153761365,
+  "fit_seconds": 38.865190199998324,
+  "early_stopping_metric": "validation macro-F1",
+  "patience": 5,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "loss": "weighted CrossEntropyLoss",
+  "training_class_weights": [
+    0.284018874168396,
+    5.855721473693848,
+    3.6255950927734375,
+    30.75296974182129
+  ]
+}

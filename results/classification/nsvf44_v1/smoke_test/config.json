@@ -1,0 +1,54 @@
+{
+  "seed": 20261027,
+  "task": "N/S/V/F four class",
+  "class_names": [
+    "N",
+    "S",
+    "V",
+    "F"
+  ],
+  "class_ids": {
+    "N": 0,
+    "S": 1,
+    "V": 2,
+    "F": 3
+  },
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 0.001,
+      "feature_scaler": "StandardScaler fit on training vectors only"
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": 18,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample",
+      "bootstrap": true,
+      "max_samples": 0.8,
+      "n_jobs": -1
+    }
+  },
+  "cnn": {
+    "architecture": "Conv1d(1,16,7)-ReLU-MaxPool2-Conv1d(16,32,5)-ReLU-MaxPool2-Conv1d(32,64,3)-ReLU-AdaptiveAvgPool1-Linear",
+    "loss": "CrossEntropyLoss",
+    "class_weight_source": "Training partition only; inverse frequency",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 256,
+    "epochs": 25,
+    "patience": 5,
+    "early_stopping_metric": "validation macro-F1"
+  },
+  "test_policy": "Uses the exact saved 44-record subject split used for N/V; no tuning, threshold selection, or model selection on test set.",
+  "smoke_test": {
+    "max_training_samples": 3000,
+    "max_validation_samples": 768,
+    "cnn_epochs": 1
+  }
+}

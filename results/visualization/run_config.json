@@ -1,0 +1,22 @@
+{
+  "records": [
+    "100",
+    "200"
+  ],
+  "database_version": "1.0.0",
+  "root": "E:\\医学人工智能",
+  "seed": 20261027,
+  "pre_s": 0.25,
+  "post_s": 0.45,
+  "embedding_per_stratum": 500,
+  "embedding_max": 3000,
+  "perplexities": [
+    15.0,
+    40.0
+  ],
+  "offline": true,
+  "dpi": 300,
+  "generated_at_Asia_Shanghai": "2026-10-27T14:52:31.219655+08:00",
+  "trained_classifier_or_deep_model": false,
+  "dataset_split": null
+}

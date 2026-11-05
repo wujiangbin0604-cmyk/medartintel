@@ -1,0 +1,30 @@
+{
+  "sample": 2072,
+  "models": [
+    {
+      "model": "logistic_regression",
+      "sample": 2072,
+      "probabilities": {
+        "N": 0.018867790699005127,
+        "V": 0.9811322093009949
+      }
+    },
+    {
+      "model": "random_forest",
+      "sample": 2072,
+      "probabilities": {
+        "N": 0.0004035437033855314,
+        "V": 0.9995964562966145
+      }
+    },
+    {
+      "model": "cnn_1d",
+      "sample": 2072,
+      "probabilities": {
+        "N": 0.004303274284550883,
+        "V": 0.9956967257154492
+      }
+    }
+  ],
+  "errors": []
+}

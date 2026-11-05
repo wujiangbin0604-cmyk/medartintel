@@ -1,0 +1,101 @@
+{
+  "environment": "Umi development server / Chrome / local CPU",
+  "api": {
+    "window": {
+      "samples_ms": [
+        59.960900000005495,
+        65.54170000000158,
+        51.829899999997,
+        72.86939999999595,
+        45.44159999999101
+      ],
+      "mean_ms": 59.128699999998204
+    },
+    "single": {
+      "samples_ms": [
+        13.881299999993644,
+        15.145699999993667,
+        13.072500000009313,
+        12.440000000002328,
+        14.084199999997509
+      ],
+      "mean_ms": 13.724739999999292
+    },
+    "compare": {
+      "samples_ms": [
+        63.663100000005215,
+        104.73129999999946,
+        133.85379999999714,
+        36.6762999999919,
+        46.83379999999306
+      ],
+      "mean_ms": 77.15165999999735
+    }
+  },
+  "pages": {
+    "dashboard": 2447.0031000000017,
+    "ai-detection": 2177.8070000000007,
+    "experiments": 1635.9605999999912,
+    "generalization": 1557.6581999999908,
+    "gallery": 1666.5654000000068
+  },
+  "playback": {
+    "requests_after_loaded": [
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=225&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=487&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=689&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=964&task=nv&lead_name=MLII"
+    ],
+    "all_requests": [
+      "http://127.0.0.1:8131/api/ecg/playback/segment?record_id=200&start_sec=0&duration_sec=10&task=nv&lead_name=MLII&model_ids=logistic_regression&model_ids=random_forest&model_ids=cnn_1d",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=225&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=487&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=689&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/beat?record_id=200&annotation_sample=964&task=nv&lead_name=MLII",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv",
+      "http://127.0.0.1:8131/api/research/summary",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/health",
+      "http://127.0.0.1:8131/api/ecg/records",
+      "http://127.0.0.1:8131/api/models",
+      "http://127.0.0.1:8131/api/ecg/window?record_id=200&start_sec=0&duration_sec=10&lead_name=MLII",
+      "http://127.0.0.1:8131/api/ecg/annotations?record_id=200&start_sec=0&duration_sec=10&task=nv"
+    ]
+  },
+  "heap_before": 37558556,
+  "heap_after": 33839900
+}

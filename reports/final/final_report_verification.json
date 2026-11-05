@@ -1,0 +1,154 @@
+{
+  "metric_reconciliation_all_scalar_fields_match": true,
+  "confusion_matrices_match": true,
+  "prediction_csv_variants_match": true,
+  "N_V_and_NSVF_subject_partition_match": true,
+  "subject_overlap_between_splits": {
+    "train": [],
+    "val": []
+  },
+  "201_202_same_subject_and_split": true,
+  "included_sample_AAMI_mapping_matches_source_code": true,
+  "derived_split_class_count_audit": [
+    {
+      "dataset_id": "nv44_v1",
+      "current_values_match_metadata": true,
+      "historical_values_match_metadata": false,
+      "corrected_from_metadata": true,
+      "post_repair_matches_metadata": true,
+      "archived_previous_values": "reports/final/nv44_v1_split_class_counts_before_repair.csv"
+    },
+    {
+      "dataset_id": "nsvf44_v1",
+      "current_values_match_metadata": true,
+      "historical_values_match_metadata": true,
+      "corrected_from_metadata": false,
+      "post_repair_matches_metadata": true,
+      "archived_previous_values": ""
+    }
+  ],
+  "formal_model_artifact_audit": {
+    "formal_model_artifacts_loaded_read_only": 6,
+    "all_artifacts_present_and_loadable": true,
+    "class_ids_and_253_sample_input_match_tasks": true,
+    "cnn_best_weights_match_final_checkpoint_and_logs": true,
+    "all_formal_artifact_checks_pass": true,
+    "no_inference_or_training_performed": true,
+    "detail_csv": "results/classification/final_formal_model_artifact_audit.csv"
+  },
+  "cv_outer_inner_group_and_training_only_weight_checks": {
+    "cv_scope": "original train+validation samples only; formal test not loaded",
+    "cv_declared_group_disjoint": true,
+    "outer_group_disjoint": true,
+    "each_subject_in_exactly_one_outer_validation_fold": true,
+    "inner_patient_group_disjointness": true,
+    "inner_groups_subset_of_outer_training_groups": true,
+    "fold_normalization_fit_values_saved_per_fold": true,
+    "outer_class_weights_recompute_from_fold_train_support": true,
+    "oof_exactly_covers_train_validation_once_per_model": true,
+    "oof_sample_count": 86286,
+    "test_subject_overlap": [],
+    "oof_coverage_by_model": {
+      "logistic_regression": {
+        "rows": 86286,
+        "unique_sample_ids": 86286,
+        "matches_train_validation_ids": true,
+        "patient_disjoint_from_test": true
+      },
+      "random_forest": {
+        "rows": 86286,
+        "unique_sample_ids": 86286,
+        "matches_train_validation_ids": true,
+        "patient_disjoint_from_test": true
+      },
+      "cnn_1d": {
+        "rows": 86286,
+        "unique_sample_ids": 86286,
+        "matches_train_validation_ids": true,
+        "patient_disjoint_from_test": true
+      }
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "train_subject_count": 29,
+        "validation_subject_count": 8,
+        "inner_train_subject_count": 21,
+        "inner_validation_subject_count": 8,
+        "validation_class_counts": [
+          16702,
+          380,
+          1370,
+          5
+        ]
+      },
+      {
+        "fold": 2,
+        "train_subject_count": 29,
+        "validation_subject_count": 8,
+        "inner_train_subject_count": 23,
+        "inner_validation_subject_count": 6,
+        "validation_class_counts": [
+          15405,
+          1452,
+          1040,
+          17
+        ]
+      },
+      {
+        "fold": 3,
+        "train_subject_count": 30,
+        "validation_subject_count": 7,
+        "inner_train_subject_count": 22,
+        "inner_validation_subject_count": 8,
+        "validation_class_counts": [
+          15207,
+          163,
+          892,
+          5
+        ]
+      },
+      {
+        "fold": 4,
+        "train_subject_count": 30,
+        "validation_subject_count": 7,
+        "inner_train_subject_count": 22,
+        "inner_validation_subject_count": 8,
+        "validation_class_counts": [
+          15043,
+          313,
+          1216,
+          37
+        ]
+      },
+      {
+        "fold": 5,
+        "train_subject_count": 30,
+        "validation_subject_count": 7,
+        "inner_train_subject_count": 22,
+        "inner_validation_subject_count": 8,
+        "validation_class_counts": [
+          14933,
+          443,
+          1298,
+          365
+        ]
+      }
+    ],
+    "weight_strategy_test_not_loaded": true,
+    "existing_weight_ablation_test_not_loaded": true,
+    "no_models_retrained_by_final_report": true
+  },
+  "chart_font_selected": "Microsoft YaHei",
+  "figure_count_new": 9,
+  "test_predictions_used_only_for_metric_reconciliation_and_descriptive_figures": true,
+  "models_retrained": false,
+  "report_sections_complete": true,
+  "local_markdown_image_links_resolve": true,
+  "new_figures_at_least_290_dpi": true,
+  "derived_split_class_count_fields_match_metadata": true,
+  "cv_outer_inner_patient_group_audit_passed": true,
+  "cv_oof_exactly_covers_train_validation_once": true,
+  "formal_model_artifacts_read_only_and_match": true,
+  "passed": true
+}

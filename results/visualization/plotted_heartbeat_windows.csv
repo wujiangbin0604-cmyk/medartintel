@@ -1,0 +1,92 @@
+﻿figure_file,selection_method,beat_id,record,lead,annotation_index,sample,time_s,symbol,aami_group,window_start_sample,window_stop_sample_exclusive
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:2,100,MLII,2,370,1.0277777777777777,N,N,280,533
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:165,100,MLII,165,47919,133.10833333333332,N,N,47829,48082
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:179,100,MLII,179,51921,144.225,N,N,51831,52084
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:291,100,MLII,291,84407,234.4638888888889,N,N,84317,84570
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:295,100,MLII,295,85580,237.72222222222223,N,N,85490,85743
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:359,100,MLII,359,104261,289.6138888888889,N,N,104171,104424
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:782,100,MLII,782,222081,616.8916666666667,N,N,221991,222244
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:879,100,MLII,879,248878,691.3277777777778,N,N,248788,249041
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:1140,100,MLII,1140,323425,898.4027777777778,N,N,323335,323588
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:1406,100,MLII,1406,400599,1112.775,N,N,400509,400762
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,100:1457,100,MLII,1457,415430,1153.9722222222222,N,N,415340,415593
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:256,200,MLII,256,60646,168.4611111111111,N,N,60556,60809
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:460,200,MLII,460,107656,299.0444444444444,N,N,107566,107819
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:481,200,MLII,481,112101,311.39166666666665,N,N,112011,112264
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:1882,200,MLII,1882,428620,1190.611111111111,N,N,428530,428783
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:2116,200,MLII,2116,486098,1350.2722222222221,N,N,486008,486261
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:2266,200,MLII,2266,521299,1448.0527777777777,N,N,521209,521462
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:2646,200,MLII,2646,614114,1705.8722222222223,N,N,614024,614277
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:2674,200,MLII,2674,621474,1726.3166666666666,N,N,621384,621637
+figures/C_morphology/MLII_N_random20_overlay.png,without replacement; seed=20261027; group=N,200:2720,200,MLII,2720,632816,1757.8222222222223,N,N,632726,632979
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:610,100,MLII,610,173629,482.3027777777778,N,N,173539,173792
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:428,200,MLII,428,100529,279.2472222222222,N,N,100439,100692
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:372,100,MLII,372,108045,300.125,N,N,107955,108208
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:1204,200,MLII,1204,274379,762.1638888888889,N,N,274289,274542
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2049,200,MLII,2049,469452,1304.0333333333333,N,N,469362,469615
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2075,200,MLII,2075,475707,1321.4083333333333,N,N,475617,475870
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:1914,100,MLII,1914,548926,1524.7944444444445,N,N,548836,549089
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:872,200,MLII,872,200624,557.2888888888889,N,N,200534,200787
+figures/C_morphology/MLII_N_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:1175,100,MLII,1175,333768,927.1333333333333,N,N,333678,333931
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:231,100,MLII,231,66792,185.53333333333333,A,S,66702,66955
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:259,100,MLII,259,74986,208.29444444444445,A,S,74896,75149
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:442,100,MLII,442,128085,355.7916666666667,A,S,127995,128248
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:1104,100,MLII,1104,312825,868.9583333333334,A,S,312735,312988
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:1220,100,MLII,1220,346804,963.3444444444444,A,S,346714,346967
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:1395,100,MLII,1395,397335,1103.7083333333333,A,S,397245,397498
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:1978,100,MLII,1978,567379,1576.0527777777777,A,S,567289,567542
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,100:2068,100,MLII,2068,593068,1647.411111111111,A,S,592978,593231
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:317,200,MLII,317,75517,209.76944444444445,A,S,75427,75680
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:705,200,MLII,705,160719,446.44166666666666,A,S,160629,160882
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:1143,200,MLII,1143,260626,723.9611111111111,A,S,260536,260789
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:1241,200,MLII,1241,283165,786.5694444444445,A,S,283075,283328
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:1553,200,MLII,1553,350459,973.4972222222223,A,S,350369,350622
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2079,200,MLII,2079,476741,1324.2805555555556,A,S,476651,476904
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2383,200,MLII,2383,548531,1523.6972222222223,A,S,548441,548694
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2452,200,MLII,2452,565517,1570.8805555555555,A,S,565427,565680
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2502,200,MLII,2502,577228,1603.411111111111,A,S,577138,577391
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2604,200,MLII,2604,602450,1673.4722222222222,A,S,602360,602613
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2628,200,MLII,2628,609168,1692.1333333333334,A,S,609078,609331
+figures/C_morphology/MLII_S_random20_overlay.png,without replacement; seed=20261027; group=S,200:2726,200,MLII,2726,634370,1762.138888888889,A,S,634280,634533
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:343,100,MLII,343,99579,276.60833333333335,A,S,99489,99742
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:1115,200,MLII,1115,254873,707.9805555555556,A,S,254783,255036
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2628,200,MLII,2628,609168,1692.1333333333334,A,S,609078,609331
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:985,200,MLII,985,225894,627.4833333333333,A,S,225804,226057
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:366,200,MLII,366,85981,238.8361111111111,A,S,85891,86144
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:2068,100,MLII,2068,593068,1647.411111111111,A,S,592978,593231
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2129,200,MLII,2129,488580,1357.1666666666667,A,S,488490,488743
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,100:2019,100,MLII,2019,579448,1609.5777777777778,A,S,579358,579611
+figures/C_morphology/MLII_S_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2332,200,MLII,2332,537060,1491.8333333333333,A,S,536970,537223
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:28,200,MLII,28,6285,17.458333333333332,V,V,6195,6448
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:186,200,MLII,186,43212,120.03333333333333,V,V,43122,43375
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:283,200,MLII,283,67155,186.54166666666666,V,V,67065,67318
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:741,200,MLII,741,169197,469.9916666666667,V,V,169107,169360
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:765,200,MLII,765,174788,485.52222222222224,V,V,174698,174951
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:919,200,MLII,919,211855,588.4861111111111,V,V,211765,212018
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1262,200,MLII,1262,287541,798.725,V,V,287451,287704
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1527,200,MLII,1527,345189,958.8583333333333,V,V,345099,345352
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1574,200,MLII,1574,354285,984.125,V,V,354195,354448
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1625,200,MLII,1625,365686,1015.7944444444445,V,V,365596,365849
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1647,200,MLII,1647,371102,1030.838888888889,V,V,371012,371265
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1722,200,MLII,1722,389941,1083.1694444444445,V,V,389851,390104
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1785,200,MLII,1785,405648,1126.8,V,V,405558,405811
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1842,200,MLII,1842,418782,1163.2833333333333,V,V,418692,418945
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:1898,200,MLII,1898,432619,1201.7194444444444,V,V,432529,432782
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:2024,200,MLII,2024,463603,1287.786111111111,V,V,463513,463766
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:2148,200,MLII,2148,493060,1369.611111111111,V,V,492970,493223
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:2279,200,MLII,2279,524487,1456.9083333333333,V,V,524397,524650
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:2393,200,MLII,2393,551298,1531.3833333333334,V,V,551208,551461
+figures/C_morphology/MLII_V_random20_overlay.png,without replacement; seed=20261027; group=V,200:2464,200,MLII,2464,568631,1579.5305555555556,V,V,568541,568794
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:679,200,MLII,679,154459,429.0527777777778,V,V,154369,154622
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:881,200,MLII,881,202649,562.9138888888889,V,V,202559,202812
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2511,200,MLII,2511,579521,1609.7805555555556,V,V,579431,579684
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:1184,200,MLII,1184,269887,749.6861111111111,V,V,269797,270050
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:335,200,MLII,335,79657,221.26944444444445,V,V,79567,79820
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:588,200,MLII,588,133618,371.1611111111111,V,V,133528,133781
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2183,200,MLII,2183,501570,1393.25,V,V,501480,501733
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:2408,200,MLII,2408,554898,1541.3833333333334,V,V,554808,555061
+figures/C_morphology/MLII_V_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:1807,200,MLII,1807,410689,1140.8027777777777,V,V,410599,410852
+figures/C_morphology/MLII_F_random20_overlay.png,without replacement; seed=20261027; group=F,200:951,200,MLII,951,218881,608.0027777777777,F,F,218791,219044
+figures/C_morphology/MLII_F_random20_overlay.png,without replacement; seed=20261027; group=F,200:1705,200,MLII,1705,385887,1071.9083333333333,F,F,385797,386050
+figures/C_morphology/MLII_F_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:951,200,MLII,951,218881,608.0027777777777,F,F,218791,219044
+figures/C_morphology/MLII_F_representative_grid.png,nearest centered mean + evenly spaced peak-to-peak ranks; unique samples,200:1705,200,MLII,1705,385887,1071.9083333333333,F,F,385797,386050

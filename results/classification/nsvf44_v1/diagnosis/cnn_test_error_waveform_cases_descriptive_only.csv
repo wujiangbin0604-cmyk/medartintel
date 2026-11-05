@@ -1,0 +1,7 @@
+﻿sample_id,record_id,subject_id,annotation_sample,time_s,original_label,true_aami_label,predicted_aami_label,lead_name
+111:62,111,subject_111,19143,53.175,L,N,S,MLII
+116:658,116,subject_116,178507,495.85277777777776,N,N,S,MLII
+208:32,208,subject_208,6776,18.822222222222223,F,F,N,MLII
+219:225,219,subject_219,63190,175.52777777777777,F,F,N,MLII
+208:19,208,subject_208,4097,11.380555555555556,F,F,V,MLII
+208:3029,208,subject_208,647513,1798.6472222222221,F,F,V,MLII

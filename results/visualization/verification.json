@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "records": [
+    "100",
+    "200"
+  ],
+  "png_count": 67,
+  "png_by_category": {
+    "A": 9,
+    "B": 14,
+    "C": 19,
+    "D": 9,
+    "E": 8,
+    "F": 8
+  },
+  "png_integrity_and_300dpi": true,
+  "all_figures_explained_in_report": true,
+  "csv_count": 22,
+  "total_annotations": 5066,
+  "mapped_beats": 4874,
+  "valid_heartbeat_windows": 4871,
+  "excluded_windows": 3,
+  "raw_symbol_counts_match_wfdb": true,
+  "window_samples_match_original_signal": true,
+  "random_samples_without_replacement": true,
+  "all_embedding_points_traceable": true,
+  "raw_file_hashes_unchanged": true,
+  "trained_classifier_or_deep_model": false,
+  "dataset_split": null,
+  "same_seed_embedding_coordinates_identical_across_runs": true
+}

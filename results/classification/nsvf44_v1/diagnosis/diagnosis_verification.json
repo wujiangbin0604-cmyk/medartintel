@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "formal_test_used_for_new_fits": false,
+  "test_predictions_used_descriptively_only": true,
+  "train_validation_cv_samples": 86286,
+  "train_validation_subject_groups": 37,
+  "test_subject_overlap_with_cv": 0,
+  "all_oof_samples_covered_once_per_model": true,
+  "per_subject_missing_class_recall_omitted": true,
+  "corrected_split_class_coverage_verified": true,
+  "figure_count": 8,
+  "figure_minimum_dpi": 300,
+  "report_figure_links_resolve": true,
+  "weight_ablation_test_free": true
+}

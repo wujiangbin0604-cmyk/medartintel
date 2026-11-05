@@ -1,0 +1,612 @@
+{
+  "status": "completed",
+  "task": "nv",
+  "class_names": [
+    "N",
+    "V"
+  ],
+  "train_samples": 70183,
+  "validation_samples": 12923,
+  "test_samples": 13448,
+  "test_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.8369274241522903,
+      "macro_precision": 0.6622445288277408,
+      "macro_recall": 0.8674726907222587,
+      "macro_f1": 0.6960729472810437,
+      "per_class": {
+        "N": {
+          "precision": 0.9892400155098876,
+          "recall": 0.8305526165866363,
+          "f1": 0.9029774808653719,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.33524904214559387,
+          "recall": 0.9043927648578811,
+          "f1": 0.4891684136967156,
+          "support": 1161
+        }
+      },
+      "confusion_matrix": [
+        [
+          10205,
+          2082
+        ],
+        [
+          111,
+          1050
+        ]
+      ],
+      "test_or_validation_sample_count": 13448,
+      "classification_report": {
+        "N": {
+          "precision": 0.9892400155098876,
+          "recall": 0.8305526165866363,
+          "f1-score": 0.9029774808653719,
+          "support": 12287.0
+        },
+        "V": {
+          "precision": 0.33524904214559387,
+          "recall": 0.9043927648578811,
+          "f1-score": 0.4891684136967156,
+          "support": 1161.0
+        },
+        "accuracy": 0.8369274241522903,
+        "macro avg": {
+          "precision": 0.6622445288277408,
+          "recall": 0.8674726907222587,
+          "f1-score": 0.6960729472810437,
+          "support": 13448.0
+        },
+        "weighted avg": {
+          "precision": 0.9327793135411231,
+          "recall": 0.8369274241522903,
+          "f1-score": 0.8672522929576674,
+          "support": 13448.0
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9834919690660321,
+      "macro_precision": 0.9352042335565313,
+      "macro_recall": 0.964838084718995,
+      "macro_f1": 0.9494087060672827,
+      "per_class": {
+        "N": {
+          "precision": 0.9945077465366013,
+          "recall": 0.98738504110035,
+          "f1": 0.9909335947071796,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.8759007205764612,
+          "recall": 0.94229112833764,
+          "f1": 0.9078838174273859,
+          "support": 1161
+        }
+      },
+      "confusion_matrix": [
+        [
+          12132,
+          155
+        ],
+        [
+          67,
+          1094
+        ]
+      ],
+      "test_or_validation_sample_count": 13448,
+      "classification_report": {
+        "N": {
+          "precision": 0.9945077465366013,
+          "recall": 0.98738504110035,
+          "f1-score": 0.9909335947071796,
+          "support": 12287.0
+        },
+        "V": {
+          "precision": 0.8759007205764612,
+          "recall": 0.94229112833764,
+          "f1-score": 0.9078838174273859,
+          "support": 1161.0
+        },
+        "accuracy": 0.9834919690660321,
+        "macro avg": {
+          "precision": 0.9352042335565313,
+          "recall": 0.964838084718995,
+          "f1-score": 0.9494087060672827,
+          "support": 13448.0
+        },
+        "weighted avg": {
+          "precision": 0.9842681007052715,
+          "recall": 0.9834919690660321,
+          "f1-score": 0.9837636964753353,
+          "support": 13448.0
+        }
+      }
+    },
+    "cnn_1d": {
+      "accuracy": 0.9956870910172516,
+      "macro_precision": 0.9799186426873103,
+      "macro_recall": 0.99335011402218,
+      "macro_f1": 0.9865196014891238,
+      "per_class": {
+        "N": {
+          "precision": 0.9991021141131337,
+          "recall": 0.9961748189142997,
+          "f1": 0.9976363191784171,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.960735171261487,
+          "recall": 0.9905254091300603,
+          "f1": 0.9754028837998303,
+          "support": 1161
+        }
+      },
+      "confusion_matrix": [
+        [
+          12240,
+          47
+        ],
+        [
+          11,
+          1150
+        ]
+      ],
+      "test_or_validation_sample_count": 13448,
+      "classification_report": {
+        "N": {
+          "precision": 0.9991021141131337,
+          "recall": 0.9961748189142997,
+          "f1-score": 0.9976363191784171,
+          "support": 12287.0
+        },
+        "V": {
+          "precision": 0.960735171261487,
+          "recall": 0.9905254091300603,
+          "f1-score": 0.9754028837998303,
+          "support": 1161.0
+        },
+        "accuracy": 0.9956870910172516,
+        "macro avg": {
+          "precision": 0.9799186426873103,
+          "recall": 0.99335011402218,
+          "f1-score": 0.9865196014891238,
+          "support": 13448.0
+        },
+        "weighted avg": {
+          "precision": 0.9957897984787819,
+          "recall": 0.9956870910172516,
+          "f1-score": 0.9957168502258191,
+          "support": 13448.0
+        }
+      }
+    }
+  },
+  "metrics_recomputed_from_saved_test_predictions": {
+    "logistic_regression": {
+      "accuracy": 0.8369274241522903,
+      "macro_f1": 0.6960729472810437,
+      "per_class": {
+        "N": {
+          "precision": 0.9892400155098876,
+          "recall": 0.8305526165866363,
+          "f1": 0.9029774808653719,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.33524904214559387,
+          "recall": 0.9043927648578811,
+          "f1": 0.4891684136967156,
+          "support": 1161
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9834919690660321,
+      "macro_f1": 0.9494087060672827,
+      "per_class": {
+        "N": {
+          "precision": 0.9945077465366013,
+          "recall": 0.98738504110035,
+          "f1": 0.9909335947071796,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.8759007205764612,
+          "recall": 0.94229112833764,
+          "f1": 0.9078838174273859,
+          "support": 1161
+        }
+      }
+    },
+    "cnn_1d": {
+      "accuracy": 0.9956870910172516,
+      "macro_f1": 0.9865196014891238,
+      "per_class": {
+        "N": {
+          "precision": 0.9991021141131337,
+          "recall": 0.9961748189142997,
+          "f1": 0.9976363191784171,
+          "support": 12287
+        },
+        "V": {
+          "precision": 0.960735171261487,
+          "recall": 0.9905254091300603,
+          "f1": 0.9754028837998303,
+          "support": 1161
+        }
+      }
+    }
+  },
+  "metrics_recomputed_match": true,
+  "fit_logs": [
+    {
+      "model": "logistic_regression",
+      "status": "completed",
+      "fit_seconds": 1.450260900000103,
+      "training_sample_count": 70183,
+      "training_class_counts": [
+        65436,
+        4747
+      ],
+      "selection": "fixed configuration; no test-based tuning"
+    },
+    {
+      "model": "random_forest",
+      "status": "completed",
+      "fit_seconds": 9.026748600000246,
+      "training_sample_count": 70183,
+      "training_class_counts": [
+        65436,
+        4747
+      ],
+      "selection": "fixed configuration; no test-based tuning"
+    },
+    {
+      "model": "cnn_1d",
+      "status": "completed",
+      "device": "cpu",
+      "epochs_ran": 17,
+      "best_epoch": 12,
+      "best_val_macro_f1": 0.6630092908675226,
+      "fit_seconds": 69.36364709999998,
+      "early_stopping_metric": "validation macro-F1",
+      "patience": 5,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "optimizer": "Adam",
+      "loss": "weighted CrossEntropyLoss",
+      "training_class_weights": [
+        0.5362721085548401,
+        7.392353057861328
+      ],
+      "training_sample_count": 70183,
+      "training_class_counts": [
+        65436,
+        4747
+      ]
+    }
+  ],
+  "checkpoint_files": [
+    "checkpoints\\nv44_v1\\formal\\logistic_regression.joblib",
+    "checkpoints\\nv44_v1\\formal\\random_forest.joblib",
+    "checkpoints\\nv44_v1\\formal\\cnn\\cnn_best.pt",
+    "checkpoints\\nv44_v1\\formal\\cnn\\cnn_final_best.pt",
+    "checkpoints\\nv44_v1\\formal\\cnn\\cnn_training_history.csv",
+    "checkpoints\\nv44_v1\\formal\\cnn\\cnn_training_summary.json"
+  ],
+  "prediction_files_saved": true,
+  "confusion_matrix_figures_saved": true,
+  "figure_count": 17,
+  "figures": [
+    {
+      "file": "figures/08_binary_classification/test_accuracy_comparison.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test accuracy comparison",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_precision_recall_f1_comparison.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test precision recall f1 comparison",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_macro_f1_comparison.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test macro f1 comparison",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_confusion_matrix_logistic_regression.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test confusion matrix logistic regression",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_confusion_matrix_random_forest.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test confusion matrix random forest",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_confusion_matrix_cnn_1d.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test confusion matrix cnn 1d",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/cnn_train_validation_loss.png",
+      "split": "train+val",
+      "record_ids": [
+        "100",
+        "101",
+        "103",
+        "105",
+        "106",
+        "108",
+        "112",
+        "115",
+        "117",
+        "118",
+        "119",
+        "121",
+        "122",
+        "124",
+        "200",
+        "201",
+        "202",
+        "203",
+        "205",
+        "207",
+        "209",
+        "210",
+        "213",
+        "214",
+        "220",
+        "221",
+        "222",
+        "223",
+        "228",
+        "230",
+        "231",
+        "234",
+        "109",
+        "113",
+        "114",
+        "215",
+        "232",
+        "233"
+      ],
+      "purpose": "cnn train validation loss",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/cnn_validation_macro_f1.png",
+      "split": "train+val",
+      "record_ids": [
+        "100",
+        "101",
+        "103",
+        "105",
+        "106",
+        "108",
+        "112",
+        "115",
+        "117",
+        "118",
+        "119",
+        "121",
+        "122",
+        "124",
+        "200",
+        "201",
+        "202",
+        "203",
+        "205",
+        "207",
+        "209",
+        "210",
+        "213",
+        "214",
+        "220",
+        "221",
+        "222",
+        "223",
+        "228",
+        "230",
+        "231",
+        "234",
+        "109",
+        "113",
+        "114",
+        "215",
+        "232",
+        "233"
+      ],
+      "purpose": "cnn validation macro f1",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_probability_distribution_logistic_regression.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test probability distribution logistic regression",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_probability_distribution_random_forest.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test probability distribution random forest",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_probability_distribution_cnn_1d.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test probability distribution cnn 1d",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_ecg_examples_logistic_regression.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test ecg examples logistic regression",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_ecg_examples_random_forest.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test ecg examples random forest",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_ecg_examples_cnn_1d.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test ecg examples cnn 1d",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_directional_errors_logistic_regression.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test directional errors logistic regression",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_directional_errors_random_forest.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test directional errors random forest",
+      "dpi": 300
+    },
+    {
+      "file": "figures/08_binary_classification/test_directional_errors_cnn_1d.png",
+      "split": "test",
+      "record_ids": [
+        "111",
+        "116",
+        "123",
+        "208",
+        "212",
+        "219"
+      ],
+      "purpose": "test directional errors cnn 1d",
+      "dpi": 300
+    }
+  ],
+  "subject_split_sha256": "a044133bd673cd90833ab2c96a412a7d3d835d90e3f4b84a51c16eb29f63b00f",
+  "test_used_for_training_or_selection": false,
+  "test_loaded_after_all_fits_and_checkpoints": true,
+  "completed_at_Asia_Shanghai": "2026-10-27T23:01:43.544600+08:00",
+  "report": "reports/classification/experiment_summary.md"
+}

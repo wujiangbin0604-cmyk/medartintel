@@ -1,0 +1,7718 @@
+{
+  "version": 1,
+  "source": "https://physionet.org/content/mitdb/1.0.0/",
+  "sources_sha256": {
+    "100": {
+      "hea": "60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e",
+      "dat": "b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639",
+      "atr": "8d8a5349fb16638ebbf649f1779d12e96d91b736b2aafe59db43719ae583d471"
+    },
+    "105": {
+      "hea": "9a024eebf8e9baf630308815e689d7e3eab471ab0069db6aded127c396418d48",
+      "dat": "fcd0153dfea69c749194bb73de7db124588857cfa2f6aecb72754894c8afde02",
+      "atr": "278d534c1ad952a6d41db963b6b2b00be070d8dd5fa66545caa5c18edcc36497"
+    },
+    "106": {
+      "hea": "ad5ed3ee5603926a07a09f0d0c9e2a7ff10a705dbafcde3d185317730a8839ab",
+      "dat": "c017bc18b95b1f970bca143a044ee5d54168648b541e47aa656f2737a59c1202",
+      "atr": "585347e6d1bd3ad89cdb52cb80945878a5e51026d81f871a376bb6e13936f7fa"
+    },
+    "108": {
+      "hea": "1c461d963db1883589a975daa80b4104eee6cabb2f5cfec3e0d63b78e7a6a405",
+      "dat": "229a4ef62679dc5c6ea781bfbaec2bd784151fc9f9517f4cdecd533a9431eb20",
+      "atr": "ea227008ac3bc4ada87807117909e77ae0643d5a8bc09f32b9096a35f140cbf3"
+    },
+    "109": {
+      "hea": "3b21402a9a096acb6a2199b25681e40b0dd201494cb023ded514cd9726bb7fad",
+      "dat": "267afd6ced7a1fd5a8bcd21fcc2b83287e37e3ef57f32e8a0fe39a6e021951cd",
+      "atr": "2eef456587bab17263a126063321c040affa29bc4ccfdf2a2bc7fe50709fa1b8"
+    },
+    "114": {
+      "hea": "830ba89cebf60945db0c78332e3cc6c64acbe218f6f16594660d4f17423ee889",
+      "dat": "2ae83463edcfec256b79ce93716dcb40f289bacbe9e5e7a66cd00d0a31099d4b",
+      "atr": "5280acb082b654d64944137987a00fbc2105b3a3fcdda75d0bf11d4644e40d9f"
+    }
+  },
+  "levels": [
+    {
+      "id": "fd63f95dec27c927bb6f5cd6",
+      "difficulty": "beginner",
+      "record_id": "100",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 545244,
+      "end_sample": 548844,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 545455,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 545741,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546022,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546306,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546599,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546792,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 547199,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 547482,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 547758,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548032,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548334,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548632,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "116527d1a9e7ded459e5ab8c",
+      "difficulty": "standard",
+      "record_id": "100",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 544625,
+      "end_sample": 549665,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 544895,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 545182,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 545455,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 545741,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546022,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546306,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546599,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 546792,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 547199,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 547482,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 547758,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548032,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548334,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548632,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 548926,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 549217,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 549502,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "37b84558f36780b852c5a09b",
+      "difficulty": "beginner",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 65319,
+      "end_sample": 68919,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 65437,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 65686,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 65933,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 66189,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 66444,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 66706,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 66867,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 67228,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 67487,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 67736,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 67978,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 68225,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 68475,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 68740,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "8dce3798a25b4ab5fe7fb567",
+      "difficulty": "beginner",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 70937,
+      "end_sample": 74537,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 71046,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 71311,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 71579,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 71831,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 72079,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 72326,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 72485,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 72846,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 73117,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 73378,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 73643,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 73903,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 74159,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 74299,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "a85fcad312b7867ca759c4b2",
+      "difficulty": "beginner",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 310034,
+      "end_sample": 313634,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 310151,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 310400,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 310667,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 310931,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 311191,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 311441,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 311582,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 311927,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 312177,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 312430,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 312680,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 312936,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 313195,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 313458,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "4fafbb123f9914e5e33247fc",
+      "difficulty": "beginner",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 567097,
+      "end_sample": 570697,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 567225,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 567473,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 567728,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 567986,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 568243,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 568490,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 568645,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 568965,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 569215,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 569462,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 569714,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 569969,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 570227,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 570478,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "fd51d561043a7ee4a4058cc8",
+      "difficulty": "standard",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 3394,
+      "end_sample": 8434,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 3563,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 3835,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4102,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4371,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4635,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4901,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5154,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5407,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5561,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 5923,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6195,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6468,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6736,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6996,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7246,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7506,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7767,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7922,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 8290,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "40f2d3b77777e37eb227f5a9",
+      "difficulty": "standard",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 10458,
+      "end_sample": 15498,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 10645,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 10908,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11168,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11424,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11676,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11931,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12187,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12449,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 12987,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 13252,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 13507,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 13755,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 14006,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 14253,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 14517,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 14786,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 15053,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 15311,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "a2e1e41c0fffa8c1d8cb010a",
+      "difficulty": "standard",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 19035,
+      "end_sample": 24075,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 19213,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 19483,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 19747,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 20008,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 20262,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 20515,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 20764,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 21031,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 21202,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 21576,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 21838,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 22100,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 22351,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 22604,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 22860,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 23114,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 23376,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 23641,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 23916,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "3c527e949c068026574aed44",
+      "difficulty": "standard",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 34626,
+      "end_sample": 39666,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 34818,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35076,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35322,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35571,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35830,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36093,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36366,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36633,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36793,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37151,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37413,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37915,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38166,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38430,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38692,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38959,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39225,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39477,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "79262ec75165d7502acefc8a",
+      "difficulty": "challenge",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 4207,
+      "end_sample": 12847,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 4371,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4635,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 4901,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5154,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5407,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 5561,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 5923,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6195,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6468,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6736,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 6996,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7246,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7506,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7767,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 7922,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 8290,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 8564,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 8829,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 9093,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 9350,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 9600,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 9845,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 10105,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 10380,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 10645,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 10908,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11168,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11424,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11676,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 11931,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12187,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12449,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 12625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "8840366ed8d5fe3aff493601",
+      "difficulty": "challenge",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 33078,
+      "end_sample": 41718,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 33234,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 33490,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 33749,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34010,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34274,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34542,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34818,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35076,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35322,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35571,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35830,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36093,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36366,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36633,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36793,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37151,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37413,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37915,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38166,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38430,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38692,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38959,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39225,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39477,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39720,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39975,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40231,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40489,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40745,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41009,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41272,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41527,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "285e0a1aa20fccb3702988e0",
+      "difficulty": "challenge",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 42048,
+      "end_sample": 50688,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 42274,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42524,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42793,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43058,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43322,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43573,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43819,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44061,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44313,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44567,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44816,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45075,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45339,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45608,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45763,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 46102,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46347,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46594,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46844,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47107,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47371,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47635,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47888,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48140,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48393,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48643,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48889,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49144,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49410,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49678,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49943,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50198,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50448,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "f6a91dfcf600cbbe93383b67",
+      "difficulty": "challenge",
+      "record_id": "105",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 53599,
+      "end_sample": 62239,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 53815,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 54078,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 54333,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 54588,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 54837,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 55091,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 55349,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 55607,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 55873,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 56140,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 56413,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 56667,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 56918,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 57165,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 57314,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 57666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 57941,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 58210,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 58473,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 58730,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 58985,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 59239,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 59493,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 59742,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 60003,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 60270,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 60543,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 60808,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 61062,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 61311,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 61559,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 61819,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 62081,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "4142664723c618082bf1cec9",
+      "difficulty": "beginner",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 33310,
+      "end_sample": 36910,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 33476,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 33653,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 33820,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 34305,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34858,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35280,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35468,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35638,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36101,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36290,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36757,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "5786912f290fa215b47ff6fa",
+      "difficulty": "beginner",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 37391,
+      "end_sample": 40991,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 37581,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37913,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38092,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38267,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38755,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38939,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39118,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39590,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39903,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40085,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40255,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40714,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "b45347714f6c9fae94c8e32b",
+      "difficulty": "beginner",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 41077,
+      "end_sample": 44677,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 41222,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41395,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41837,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42003,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42439,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42798,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 43275,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43460,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 43906,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44084,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 44507,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "23c6a2f7f6487527515a9b29",
+      "difficulty": "beginner",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 49225,
+      "end_sample": 52825,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 49374,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 49835,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50022,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 50424,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50607,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 50773,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 51212,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 51400,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 51850,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 52037,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 52211,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 52661,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "052db9a1da0258b561f51c18",
+      "difficulty": "standard",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 32691,
+      "end_sample": 37731,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 32867,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 33045,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 33476,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 33653,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 33820,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 34305,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34858,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35280,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35468,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35638,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36101,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36290,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36757,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36951,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37123,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37581,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "058c326af2ca87aadb7f0d2e",
+      "difficulty": "standard",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 37918,
+      "end_sample": 42958,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 38092,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38267,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38755,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38939,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39118,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39590,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39903,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40085,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40255,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40714,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41033,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41222,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41395,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41837,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42003,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42439,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42798,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "a2754013228a451551398000",
+      "difficulty": "standard",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 48440,
+      "end_sample": 53480,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 48568,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 49009,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49191,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 49374,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 49835,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50022,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 50424,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50607,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 50773,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 51212,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 51400,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 51850,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 52037,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 52211,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 52661,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 52836,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 53275,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "19534c32d335311d4d84859e",
+      "difficulty": "standard",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 93738,
+      "end_sample": 98778,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 94034,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 94375,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 94716,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 95041,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 95380,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 95716,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 95905,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 96335,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 96662,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97008,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97330,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97620,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97909,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 98217,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 98513,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "e7f4a7ef57f3e0901a9abe5e",
+      "difficulty": "challenge",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 34377,
+      "end_sample": 43017,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 34666,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 34858,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35280,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 35468,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 35638,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36101,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36290,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 36757,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 36951,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37123,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 37581,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 37913,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38092,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38267,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 38755,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 38939,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39118,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 39590,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 39903,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 40085,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40255,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 40714,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41033,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 41222,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41395,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 41837,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42003,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42439,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 42798,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "750013636980744d38f7774d",
+      "difficulty": "challenge",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 261808,
+      "end_sample": 270448,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 262044,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 262314,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 262577,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 262749,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 262918,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 263355,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 263646,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 263825,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 264211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 264385,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 264759,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 265041,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 265336,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 265523,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 265932,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 266211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 266387,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 266557,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 266939,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267120,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 267492,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267761,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267946,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 268130,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 268507,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 268678,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 269003,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269191,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 269526,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269719,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 270043,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270225,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "5c2f0eafac27e721363a7184",
+      "difficulty": "challenge",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 270598,
+      "end_sample": 279238,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 270721,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 271027,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 271192,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 271515,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 271687,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 272046,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 272220,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 272579,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 272749,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 273080,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 273242,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 273592,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 273767,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 274133,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 274313,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 274683,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 274849,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 275191,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 275361,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 275687,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 275876,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 276204,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 276380,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 276719,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 276897,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 277226,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 277390,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 277719,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 277883,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 278233,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 278414,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 278770,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 278942,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "e5d9c0d7d4c4dbbbffc3ffec",
+      "difficulty": "challenge",
+      "record_id": "106",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 283115,
+      "end_sample": 291755,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 283228,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 283401,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 283714,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 283872,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 284183,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 284353,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 284690,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 284862,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 285200,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 285364,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 285694,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 285848,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 286168,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 286331,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 286663,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 286830,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 287182,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 287355,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 287720,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 287882,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 288230,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 288389,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 288744,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 288916,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 289296,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 289477,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 289830,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 289996,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 290318,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 290487,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 290817,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 290993,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 291330,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 291509,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        }
+      ]
+    },
+    {
+      "id": "1611556af39a60056e9e2723",
+      "difficulty": "beginner",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 105782,
+      "end_sample": 109382,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 105983,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106382,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106797,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107176,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107330,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 107593,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107948,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 108340,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 108737,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 109143,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "b1759df06eda125af4e06d2f",
+      "difficulty": "beginner",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 325032,
+      "end_sample": 328632,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 325255,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 325603,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 326005,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 326392,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 326580,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 327161,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 327543,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 327900,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 328267,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "18fdf6fa3746454692e2f49c",
+      "difficulty": "beginner",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 489249,
+      "end_sample": 492849,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 489576,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 489912,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490263,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490593,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490797,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 491338,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 491647,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 491967,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 492302,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 492626,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "4f2561f0126c10e476ef011e",
+      "difficulty": "beginner",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 579246,
+      "end_sample": 582846,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 579592,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 579935,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 580289,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 580619,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 580794,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 581312,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 581645,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 581964,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 582337,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 582659,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "a217547a1fde8789fe4dcc7e",
+      "difficulty": "standard",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 81657,
+      "end_sample": 86697,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 81901,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 82281,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 82675,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 83134,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 83545,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 83824,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 84360,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 84809,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 85225,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 85583,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 85966,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 86317,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "33a7f02969124aa957e516e1",
+      "difficulty": "standard",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 191386,
+      "end_sample": 196426,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 191697,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 192059,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 192429,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 192881,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 193342,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 193553,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 194133,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 194553,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 194944,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 195319,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 195696,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 196072,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "f5ad0c8df1d3b2f142aa93e7",
+      "difficulty": "standard",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 266530,
+      "end_sample": 271570,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 266848,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267557,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267931,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 268510,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 268697,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 268976,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269368,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269782,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270176,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270574,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270988,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 271373,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "c2e00ef2b55706b4340cd73a",
+      "difficulty": "standard",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 455091,
+      "end_sample": 460131,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 455366,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 455716,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456062,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456422,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456760,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 457078,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 457258,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 457752,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458096,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458454,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458806,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459137,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459451,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459785,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "57fefff8c87007c3ca71a93f",
+      "difficulty": "challenge",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 202016,
+      "end_sample": 210656,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 202342,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 202704,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 203074,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 203467,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 203835,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 204214,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 204608,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 205063,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 205495,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 205731,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 206305,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 206704,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 207065,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 207434,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 207811,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 208205,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 208574,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 208929,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 209293,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 209649,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 210016,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 210460,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "32814c037048688f5b9d76b4",
+      "difficulty": "challenge",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 264982,
+      "end_sample": 273622,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 265315,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 265681,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 266082,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 266473,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 266848,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267557,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 267931,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 268510,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 268697,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 268976,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269368,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 269782,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270176,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270574,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 270988,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 271373,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 271749,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 272129,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 272520,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 272906,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 273277,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "a8bbac0e8752a40ea05c2d32",
+      "difficulty": "challenge",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 453543,
+      "end_sample": 462183,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 453665,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 454026,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 454362,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 454712,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 455049,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 455366,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 455716,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456062,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456422,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 456760,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 457078,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 457258,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 457752,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458096,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458454,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 458806,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459137,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459451,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 459785,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 460136,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 460497,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 460856,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 461216,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 461555,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 461899,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "a4f0615c780b05b297d780e1",
+      "difficulty": "challenge",
+      "record_id": "108",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 487082,
+      "end_sample": 495722,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 487193,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 487526,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 487849,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 488180,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 488539,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 488880,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 489211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 489576,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 489912,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490263,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490593,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 490797,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 491338,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 491647,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 491967,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 492302,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 492626,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 492946,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 493292,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 493611,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 493901,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 494200,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 494523,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 494853,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 495198,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 495532,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "9e38bf0183f5f00d4474d9e3",
+      "difficulty": "beginner",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 152772,
+      "end_sample": 156372,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 152885,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 153073,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 153378,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 153620,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 153876,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 154125,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 154320,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 154645,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 154916,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 155173,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 155416,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 155658,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 155897,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 156145,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "f109b1a23f826ed916fa0c37",
+      "difficulty": "beginner",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 302996,
+      "end_sample": 306596,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 303249,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 303521,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 303797,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 304062,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 304315,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 304544,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 304828,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 305081,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 305338,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 305607,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 305882,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 306154,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 306417,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "b41411bef85fdaf60ab6671f",
+      "difficulty": "beginner",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 578801,
+      "end_sample": 582401,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 579048,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 579302,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 579553,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 579826,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 580104,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 580349,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 580630,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 580883,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 581138,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 581397,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 581646,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 581896,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 582167,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "d955f5e62d1973c8ede6268e",
+      "difficulty": "beginner",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 594625,
+      "end_sample": 598225,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 594830,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 595113,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 595398,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 595672,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 595934,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 596173,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 596459,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 596712,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 596980,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 597247,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 597529,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 597807,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 598070,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "20424d1ebcd7804c69828e01",
+      "difficulty": "standard",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 31076,
+      "end_sample": 36116,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 31259,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 31532,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 31792,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 32042,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 32295,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 32551,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 32799,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 33042,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 33243,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 33561,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 33826,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 34088,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 34335,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 34580,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 34837,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 35086,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 35332,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 35591,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 35853,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "8df68a86a480daf8b41123f7",
+      "difficulty": "standard",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 181458,
+      "end_sample": 186498,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 181609,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 181857,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182114,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182370,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182630,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182903,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183174,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183431,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 183929,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184183,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184458,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184723,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184987,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185262,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185529,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185780,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186028,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186282,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "d0f5cd1461b322cfeed8bdc6",
+      "difficulty": "standard",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 188232,
+      "end_sample": 193272,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 188362,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 188618,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 188885,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 189164,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 189427,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 189684,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 189945,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 190198,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 190399,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 190692,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 190951,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 191227,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 191500,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 191760,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 192010,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 192270,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 192520,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 192767,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 193018,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "80070df240d3712c2edb2ccc",
+      "difficulty": "standard",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 214421,
+      "end_sample": 219461,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 214560,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 214832,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215102,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215364,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215628,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215898,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216148,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216394,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216588,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 216910,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217182,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217454,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217715,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217973,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218236,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218488,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218734,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218995,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 219262,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "31e405cce331aae6a3cf4cc1",
+      "difficulty": "challenge",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 42062,
+      "end_sample": 50702,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 42251,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 42504,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 42764,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 43012,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 43264,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 43512,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 43760,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 44010,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 44283,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 44547,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 44800,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 45054,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 45302,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 45549,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 45777,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 46046,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 46292,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 46556,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 46820,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 47076,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 47316,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 47558,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 47796,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 48044,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 48291,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 48546,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 48805,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 49073,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 49328,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 49567,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 49809,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 50049,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 50300,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 50558,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "792f278da7f13c819a5d4c94",
+      "difficulty": "challenge",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 100823,
+      "end_sample": 109463,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 100983,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 101234,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 101483,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 101727,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 101979,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 102236,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 102493,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 102752,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 103024,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 103284,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 103531,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 103779,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 104027,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 104282,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 104538,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 104817,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 105076,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 105346,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 105606,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 105854,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 106097,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 106349,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 106605,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 106872,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 107137,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 107396,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 107657,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 107920,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 108170,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 108413,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 108669,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 108932,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 109204,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "a21eef9f333871fdb7abff21",
+      "difficulty": "challenge",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 179910,
+      "end_sample": 188550,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 180088,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 180336,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 180600,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 180868,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 181124,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 181362,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 181609,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 181857,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182114,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182370,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182630,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 182903,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183174,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183431,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 183625,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 183929,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184183,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184458,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184723,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 184987,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185262,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185529,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 185780,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186028,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186282,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186539,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 186812,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 187078,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 187339,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 187607,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 187865,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 188115,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 188362,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "efab4844c23284288b15633f",
+      "difficulty": "challenge",
+      "record_id": "109",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 212873,
+      "end_sample": 221513,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 213029,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 213291,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 213561,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 213813,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 214056,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 214307,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 214560,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 214832,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215102,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215364,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215628,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 215898,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216148,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216394,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 216588,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 216910,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217182,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217454,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217715,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 217973,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218236,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218488,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218734,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 218995,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 219262,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 219535,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 219757,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 220055,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 220309,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 220573,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 220825,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 221078,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        },
+        {
+          "sample": 221341,
+          "symbol": "L",
+          "label": "N",
+          "meaning": "左束支传导阻滞心拍"
+        }
+      ]
+    },
+    {
+      "id": "2080fc9bfcbdfdc22d7a943d",
+      "difficulty": "beginner",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 29217,
+      "end_sample": 32817,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 29455,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 29835,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 30211,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 30569,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 30765,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 31349,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 31731,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 32123,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 32494,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "704cd937e86df19bdd82944a",
+      "difficulty": "beginner",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 44058,
+      "end_sample": 47658,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 44221,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44630,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45030,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45411,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45606,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 46201,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46615,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47010,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47404,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "60cc2f4e0db53e5eaeac4b63",
+      "difficulty": "beginner",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 68050,
+      "end_sample": 71650,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 68223,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 68607,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 68994,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 69378,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 69598,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 70156,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 70555,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 70935,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 71311,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "1ff0af02f4dd2b3cb6e129f5",
+      "difficulty": "beginner",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 78962,
+      "end_sample": 82562,
+      "duration": 10,
+      "answers": [
+        {
+          "sample": 79176,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 79576,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 79950,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 80322,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 80510,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 81113,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 81494,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 81878,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 82243,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "eb374ffb625c8928ef20295d",
+      "difficulty": "standard",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 43439,
+      "end_sample": 48479,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 43813,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44221,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44630,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45030,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45411,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45606,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 46201,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46615,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47010,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47404,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47786,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48188,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "9dafc2dec09d3b9cee9ca8a0",
+      "difficulty": "standard",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 92702,
+      "end_sample": 97742,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 92961,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 93430,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 93842,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 94260,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 94648,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 94869,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 95418,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 95825,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 96235,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 96629,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97013,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 97406,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "077da46d86c7d788f109ba08",
+      "difficulty": "standard",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 103347,
+      "end_sample": 108387,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 103668,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 104061,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 104522,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 104925,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 105321,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 105514,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 106075,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106483,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106893,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107283,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107503,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 108047,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "0b6339bdb9627f15b4e7c573",
+      "difficulty": "standard",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 119926,
+      "end_sample": 124966,
+      "duration": 14,
+      "answers": [
+        {
+          "sample": 120191,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 120569,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 120949,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 121319,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 121706,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 122093,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 122248,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 122818,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 123190,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 123540,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 123919,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 124309,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 124668,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "ef572676866613e7202ac46d",
+      "difficulty": "challenge",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 41891,
+      "end_sample": 50531,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 42228,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 42629,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43019,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43414,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 43813,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44221,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 44630,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45030,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45411,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 45606,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 46201,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 46615,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47010,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47404,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 47786,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48188,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48589,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 48985,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49379,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 49760,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 50133,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "042f914ef5527d850e7b57b3",
+      "difficulty": "challenge",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 99953,
+      "end_sample": 108593,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 100144,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 100525,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 100946,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 101335,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 101721,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 102111,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 102522,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 102926,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 103328,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 103668,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 104061,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 104522,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 104925,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 105321,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 105514,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 106075,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106483,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 106893,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107283,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 107503,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 108047,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 108417,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "b4d68529bec79a2c28285eb0",
+      "difficulty": "challenge",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 136889,
+      "end_sample": 145529,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 137175,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 137552,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 137951,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 138326,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 138701,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 139105,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 139509,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 139892,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 140282,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 140604,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 141046,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 141456,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 141848,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 142229,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 142611,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 142976,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 143376,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 143784,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 144168,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 144556,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 144946,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 145324,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    },
+    {
+      "id": "56451be99e0914ddb20efe9b",
+      "difficulty": "challenge",
+      "record_id": "114",
+      "lead_name": "MLII",
+      "sampling_rate": 360.0,
+      "start_sample": 145818,
+      "end_sample": 154458,
+      "duration": 24,
+      "answers": [
+        {
+          "sample": 146136,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 146528,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 146925,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 147292,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 147519,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 148102,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 148496,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 148878,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 149259,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 149533,
+          "symbol": "V",
+          "label": "V",
+          "meaning": "室性期前收缩"
+        },
+        {
+          "sample": 150041,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 150454,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 150830,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 151208,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 151577,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 151964,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 152357,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 152743,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 153113,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 153494,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 153866,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        },
+        {
+          "sample": 154258,
+          "symbol": "N",
+          "label": "N",
+          "meaning": "正常心拍"
+        }
+      ]
+    }
+  ]
+}

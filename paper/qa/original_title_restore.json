@@ -1,0 +1,42 @@
+{
+  "source": "C:\\Users\\20996\\Downloads\\报告title.docx",
+  "source_sha256": "ace92748f2764b26f08d1947de68812eb0ce9a87cc4041cadd70fe317cb49bbf",
+  "output": "E:\\医学人工智能\\paper\\final\\ECG_AI_课程论文.docx",
+  "copied_original_cover_elements": 20,
+  "cover_xml_equal": true,
+  "cover_graphics_and_embedded_objects_equal": true,
+  "remaining_paper_xml_equal": true,
+  "edited_package_parts": [
+    "word/document.xml"
+  ],
+  "content_policy": "Original title page copied unchanged, including original wording, blank fields and original date; no personal data filled.",
+  "pages": 24,
+  "cover_pixel_equal_to_original": true,
+  "unchanged_body_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "render_pdf": "E:\\医学人工智能\\paper\\qa\\original_title_final.pdf",
+  "output_sha256": "2fbe987fe19d2402f3549eefaea61944d52315a610cbfda3eeb7d8faddca9f33"
+}

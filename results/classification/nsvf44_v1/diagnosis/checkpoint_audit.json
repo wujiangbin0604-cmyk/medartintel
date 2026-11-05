@@ -1,0 +1,20 @@
+{
+  "logistic_regression_classes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "logistic_regression_scaler_features": 253,
+  "random_forest_classes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "random_forest_trees": 100,
+  "cnn_class_count": 4,
+  "cnn_best_epoch": 11,
+  "cnn_state_tensors": 8,
+  "checkpoints_loadable": true
+}

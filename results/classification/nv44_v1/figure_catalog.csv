@@ -1,0 +1,18 @@
+﻿file,split,record_ids,purpose,dpi
+figures/08_binary_classification/test_accuracy_comparison.png,test,"['111', '116', '123', '208', '212', '219']",test accuracy comparison,300
+figures/08_binary_classification/test_precision_recall_f1_comparison.png,test,"['111', '116', '123', '208', '212', '219']",test precision recall f1 comparison,300
+figures/08_binary_classification/test_macro_f1_comparison.png,test,"['111', '116', '123', '208', '212', '219']",test macro f1 comparison,300
+figures/08_binary_classification/test_confusion_matrix_logistic_regression.png,test,"['111', '116', '123', '208', '212', '219']",test confusion matrix logistic regression,300
+figures/08_binary_classification/test_confusion_matrix_random_forest.png,test,"['111', '116', '123', '208', '212', '219']",test confusion matrix random forest,300
+figures/08_binary_classification/test_confusion_matrix_cnn_1d.png,test,"['111', '116', '123', '208', '212', '219']",test confusion matrix cnn 1d,300
+figures/08_binary_classification/cnn_train_validation_loss.png,train+val,"['100', '101', '103', '105', '106', '108', '112', '115', '117', '118', '119', '121', '122', '124', '200', '201', '202', '203', '205', '207', '209', '210', '213', '214', '220', '221', '222', '223', '228', '230', '231', '234', '109', '113', '114', '215', '232', '233']",cnn train validation loss,300
+figures/08_binary_classification/cnn_validation_macro_f1.png,train+val,"['100', '101', '103', '105', '106', '108', '112', '115', '117', '118', '119', '121', '122', '124', '200', '201', '202', '203', '205', '207', '209', '210', '213', '214', '220', '221', '222', '223', '228', '230', '231', '234', '109', '113', '114', '215', '232', '233']",cnn validation macro f1,300
+figures/08_binary_classification/test_probability_distribution_logistic_regression.png,test,"['111', '116', '123', '208', '212', '219']",test probability distribution logistic regression,300
+figures/08_binary_classification/test_probability_distribution_random_forest.png,test,"['111', '116', '123', '208', '212', '219']",test probability distribution random forest,300
+figures/08_binary_classification/test_probability_distribution_cnn_1d.png,test,"['111', '116', '123', '208', '212', '219']",test probability distribution cnn 1d,300
+figures/08_binary_classification/test_ecg_examples_logistic_regression.png,test,"['111', '116', '123', '208', '212', '219']",test ecg examples logistic regression,300
+figures/08_binary_classification/test_ecg_examples_random_forest.png,test,"['111', '116', '123', '208', '212', '219']",test ecg examples random forest,300
+figures/08_binary_classification/test_ecg_examples_cnn_1d.png,test,"['111', '116', '123', '208', '212', '219']",test ecg examples cnn 1d,300
+figures/08_binary_classification/test_directional_errors_logistic_regression.png,test,"['111', '116', '123', '208', '212', '219']",test directional errors logistic regression,300
+figures/08_binary_classification/test_directional_errors_random_forest.png,test,"['111', '116', '123', '208', '212', '219']",test directional errors random forest,300
+figures/08_binary_classification/test_directional_errors_cnn_1d.png,test,"['111', '116', '123', '208', '212', '219']",test directional errors cnn 1d,300

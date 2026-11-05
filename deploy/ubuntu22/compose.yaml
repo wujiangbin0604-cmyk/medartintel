@@ -1,0 +1,27 @@
+name: ecg-ai
+services:
+  ecg-ai:
+    build:
+      context: ../..
+      dockerfile: deploy/ubuntu22/Dockerfile
+    image: ecg-ai:ubuntu22-cpu
+    platform: linux/amd64
+    init: true
+    restart: unless-stopped
+    ports:
+      - "${ECG_BIND_HOST:-0.0.0.0}:${ECG_HTTP_PORT:-8000}:8000"
+    environment:
+      ECG_LOG_LEVEL: "${ECG_LOG_LEVEL:-INFO}"
+      ECG_HUNTER_DATABASE: /app/web/runtime/heartbeat_hunter.sqlite3
+      OMP_NUM_THREADS: "${ECG_CPU_THREADS:-2}"
+      OPENBLAS_NUM_THREADS: "${ECG_CPU_THREADS:-2}"
+      MKL_NUM_THREADS: "${ECG_CPU_THREADS:-2}"
+    volumes:
+      - game_data:/app/web/runtime
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+volumes:
+  game_data:

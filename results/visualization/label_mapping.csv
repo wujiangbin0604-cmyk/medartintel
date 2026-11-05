@@ -1,0 +1,43 @@
+﻿symbol,annotation_kind,aami_group,meaning_zh,count,annotation_source,mapping_source
+N,mapped_beat,N,正常心拍,3982,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+L,mapped_beat,N,左束支传导阻滞心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+R,mapped_beat,N,右束支传导阻滞心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+e,mapped_beat,N,房性逸搏,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+j,mapped_beat,N,交界性逸搏,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+A,mapped_beat,S,房性期前收缩,63,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+a,mapped_beat,S,伴差异传导的房性期前收缩,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+J,mapped_beat,S,交界性期前收缩,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+S,mapped_beat,S,室上性期前或异位心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+V,mapped_beat,V,室性期前收缩,827,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+E,mapped_beat,V,室性逸搏,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+F,mapped_beat,F,室性与正常心拍融合,2,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+/,mapped_beat,Q,起搏心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+f,mapped_beat,Q,起搏与正常心拍融合,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+Q,mapped_beat,Q,无法分类心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,https://doi.org/10.1109/TBME.2004.827359
+B,unmapped_beat,,未特指的束支传导阻滞心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+r,unmapped_beat,,R-on-T 室性期前收缩,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+n,unmapped_beat,,室上性逸搏,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+?,unmapped_beat,,学习期间未分类心拍,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
++,non_beat,,节律改变（详见 aux_note）,149,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+~,non_beat,,信号质量改变（保留 subtype）,43,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+|,non_beat,,孤立的类 QRS 伪迹,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+"""",non_beat,,注释文本,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+[,non_beat,,心室扑动/颤动开始,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+],non_beat,,心室扑动/颤动结束,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+!,non_beat,,心室扑动波（非逐心拍标注）,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+x,non_beat,,未下传 P 波（阻滞型房性期前收缩）,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+(,non_beat,,波形起点,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+),non_beat,,波形终点,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+p,non_beat,,P 波峰,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+t,non_beat,,T 波峰,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+u,non_beat,,U 波峰,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+`,non_beat,,PQ 交界点（旧代码）,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+',non_beat,,J 点（旧代码）,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+^,non_beat,,未夺获的起搏器伪迹,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+s,non_beat,,ST 段改变,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+T,non_beat,,T 波改变,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+*,non_beat,,收缩期,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+D,non_beat,,舒张期,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+=,non_beat,,测量标注,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+@,non_beat,,外部链接,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped
+ ,non_beat,,非实际标注,0,https://physionet.org/static/lightwave/doc/annotations.html,not mapped

@@ -1,0 +1,309 @@
+{
+  "version": "nv_v1",
+  "created_at_Asia_Shanghai": "2026-10-27T19:29:21.634825+08:00",
+  "records": [
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "121",
+    "122",
+    "123",
+    "124",
+    "200",
+    "201",
+    "202",
+    "203",
+    "205",
+    "207",
+    "208",
+    "209",
+    "210",
+    "212",
+    "213",
+    "214",
+    "215",
+    "217",
+    "219",
+    "220",
+    "221",
+    "222",
+    "223",
+    "228",
+    "230",
+    "231",
+    "232",
+    "233",
+    "234"
+  ],
+  "seed": 20261027,
+  "classes": [
+    "N",
+    "V"
+  ],
+  "target_label_map": {
+    "N": 0,
+    "V": 1
+  },
+  "full_aami_mapping": {
+    "N": "N",
+    "L": "N",
+    "R": "N",
+    "e": "N",
+    "j": "N",
+    "A": "S",
+    "a": "S",
+    "J": "S",
+    "S": "S",
+    "V": "V",
+    "E": "V",
+    "F": "F",
+    "/": "Q",
+    "f": "Q",
+    "Q": "Q"
+  },
+  "pre_s": 0.3,
+  "post_s": 0.4,
+  "fs_hz": 360.0,
+  "window_length": 253,
+  "center_index": 108,
+  "endpoint_convention": "[annotation_sample-108, annotation_sample+145); both -0.3s/+0.4s samples included",
+  "lead_policy": "MLII by name; if absent use actual first lead; preserve lead/channel per sample",
+  "filter": {
+    "low_hz": 0.5,
+    "high_hz": 40.0,
+    "prototype_order": 4,
+    "guard_s": 5.0,
+    "fs_hz": 360.0,
+    "single_pass_bandpass_order": 8,
+    "method": "sosfiltfilt",
+    "padtype": "odd",
+    "padlen": 27,
+    "sos": [
+      [
+        0.006604875671311084,
+        0.013209751342622167,
+        0.006604875671311084,
+        1.0,
+        -0.9789490692400146,
+        0.26401065276475083
+      ],
+      [
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        -1.2374771035208822,
+        0.6124788199281044
+      ],
+      [
+        1.0,
+        -2.0,
+        1.0,
+        1.0,
+        -1.9836536734559507,
+        0.9837324068997566
+      ],
+      [
+        1.0,
+        -2.0,
+        1.0,
+        1.0,
+        -1.9933805831040043,
+        0.9934570028223977
+      ]
+    ],
+    "causal": false,
+    "effective_amplitude_response": "abs(H_single_pass)**2"
+  },
+  "candidate_filters_training_only": [
+    {
+      "low_hz": 0.5,
+      "high_hz": 40.0,
+      "prototype_order": 4,
+      "guard_s": 5.0,
+      "fs_hz": 360.0,
+      "single_pass_bandpass_order": 8,
+      "method": "sosfiltfilt",
+      "padtype": "odd",
+      "padlen": 27,
+      "sos": [
+        [
+          0.006604875671311084,
+          0.013209751342622167,
+          0.006604875671311084,
+          1.0,
+          -0.9789490692400146,
+          0.26401065276475083
+        ],
+        [
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          -1.2374771035208822,
+          0.6124788199281044
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.9836536734559507,
+          0.9837324068997566
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.9933805831040043,
+          0.9934570028223977
+        ]
+      ],
+      "causal": false,
+      "effective_amplitude_response": "abs(H_single_pass)**2"
+    },
+    {
+      "low_hz": 0.5,
+      "high_hz": 45.0,
+      "prototype_order": 4,
+      "guard_s": 5.0,
+      "fs_hz": 360.0,
+      "single_pass_bandpass_order": 8,
+      "method": "sosfiltfilt",
+      "padtype": "odd",
+      "padlen": 27,
+      "sos": [
+        [
+          0.009838040642253154,
+          0.01967608128450631,
+          0.009838040642253154,
+          1.0,
+          -0.8718007758988437,
+          0.2174496292290198
+        ],
+        [
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          -1.1201583040371597,
+          0.5808138952014701
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.9836873702005204,
+          0.9837657052401703
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.9933667121689709,
+          0.9934430708075669
+        ]
+      ],
+      "causal": false,
+      "effective_amplitude_response": "abs(H_single_pass)**2"
+    },
+    {
+      "low_hz": 1.0,
+      "high_hz": 40.0,
+      "prototype_order": 4,
+      "guard_s": 5.0,
+      "fs_hz": 360.0,
+      "single_pass_bandpass_order": 8,
+      "method": "sosfiltfilt",
+      "padtype": "odd",
+      "padlen": 27,
+      "sos": [
+        [
+          0.006327357590615657,
+          0.012654715181231313,
+          0.006327357590615657,
+          1.0,
+          -0.9971016699478286,
+          0.27367012379547656
+        ],
+        [
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          -1.2451437180035412,
+          0.6197642066051385
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.9668574585960745,
+          0.9671833389942273
+        ],
+        [
+          1.0,
+          -2.0,
+          1.0,
+          1.0,
+          -1.986881253577892,
+          0.9871878754209238
+        ]
+      ],
+      "causal": false,
+      "effective_amplitude_response": "abs(H_single_pass)**2"
+    }
+  ],
+  "filter_selection": "0.5-40 Hz fixed a priori; alternatives are training-only descriptive audits, no optimization",
+  "normalization": "global scalar mean/std fitted on accepted float32 training filtered windows only",
+  "sampling": "none; all technically eligible target beats retained in every split",
+  "technical_exclusions": [
+    "not_target_group",
+    "non_beat_annotation",
+    "unknown_or_unmapped_annotation",
+    "window_boundary",
+    "duplicate_target_beat_position",
+    "nonfinite_raw_window",
+    "invalid_filtered_window",
+    "filter_edge_or_gap_guard",
+    "flat_raw_window",
+    "flat_filtered_window"
+  ],
+  "quality_flags_are_not_exclusions": {
+    "raw_abs_amplitude_mV": 5,
+    "raw_peak_to_peak_mV": 8,
+    "correlation_below": 0.9,
+    "amplitude_ratio_outside": [
+      0.5,
+      1.5
+    ],
+    "peak_shift_abs_ms_above": 10,
+    "normalized_abs_z_above": 20
+  },
+  "split_plan_path": "E:\\医学人工智能\\data\\processed\\nv_v1\\split_plan.json",
+  "split_plan_sha256": "386985c056343705477de3ccfbb94d18dcd4dcb6aa110128854e835a71ee6948",
+  "test_policy": "No test signal used for filter setting, sampling choice, normalization fitting or model tuning",
+  "classifier_trained": false,
+  "root": "E:\\医学人工智能",
+  "output_directory": "E:\\医学人工智能\\data\\processed\\nv_v1"
+}

@@ -1,0 +1,51 @@
+{
+  "same_44_records": true,
+  "N_V_and_N_S_V_F_same_record_split": true,
+  "record_subject_overlap_between_splits": {
+    "train": [],
+    "val": []
+  },
+  "201_202_same_pseudonymous_subject_and_split": true,
+  "aami_mapping_matches_src_labels": true,
+  "derived_split_class_count_audit": [
+    {
+      "dataset_id": "nv44_v1",
+      "current_values_match_metadata": true,
+      "historical_values_match_metadata": false,
+      "corrected_from_metadata": true,
+      "post_repair_matches_metadata": true,
+      "archived_previous_values": "reports/final/nv44_v1_split_class_counts_before_repair.csv"
+    },
+    {
+      "dataset_id": "nsvf44_v1",
+      "current_values_match_metadata": true,
+      "historical_values_match_metadata": true,
+      "corrected_from_metadata": false,
+      "post_repair_matches_metadata": true,
+      "archived_previous_values": ""
+    }
+  ],
+  "included_samples_unique": true,
+  "datasets": {
+    "nv44_v1": {
+      "split_samples": {
+        "test": 13448,
+        "train": 70183,
+        "val": 12923
+      },
+      "samples": 96554,
+      "subjects": 43,
+      "records": 44
+    },
+    "nsvf44_v1": {
+      "split_samples": {
+        "test": 13829,
+        "train": 71941,
+        "val": 14345
+      },
+      "samples": 100115,
+      "subjects": 43,
+      "records": 44
+    }
+  }
+}

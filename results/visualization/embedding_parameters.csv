@@ -1,0 +1,5 @@
+﻿lead,preprocessing,perplexity,n,pre_pca_components,pre_pca_explained_variance,seed,max_iter,completed_iter,kl_divergence,init,learning_rate,constant_centered_windows
+MLII,median_centered,15.0,1566,50,0.9977551862438597,20261027,1000,999,1.152461290359497,pca,auto,0
+MLII,median_centered,40.0,1566,50,0.9977551862438597,20261027,1000,999,0.8993523120880127,pca,auto,0
+MLII,median_centered_unit_rms,15.0,1566,50,0.995822974876874,20261027,1000,999,1.1849952936172485,pca,auto,0
+MLII,median_centered_unit_rms,40.0,1566,50,0.995822974876874,20261027,1000,999,0.9240655899047852,pca,auto,0

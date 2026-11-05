@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecg_ai_detection_workspace=self.webpackChunkecg_ai_detection_workspace||[]).push([[209],{14209:(function(s,n,t){t.r(n),t.d(n,{default:function(){return c}});var E=t(96540),e=t(48056),u=t(74848);function c(){var o=(0,e.useOutletContext)();return(0,u.jsx)(e.Outlet,{context:o})}})}]);

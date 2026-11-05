@@ -1,0 +1,156 @@
+{
+  "status": "completed",
+  "seed_weight_strategy": 20261027,
+  "seed_group_cv": 20261028,
+  "cv_folds": 5,
+  "formal_test_used_for_training_or_tuning": false,
+  "formal_test_used_for_retrospective_subject_metrics_and_waveform_examples": true,
+  "weight_training_inputs": [
+    "train.npz",
+    "val.npz"
+  ],
+  "group_cv_inputs": [
+    "train.npz",
+    "val.npz"
+  ],
+  "group_cv_subject_count": 37,
+  "group_cv_sample_count": 86286,
+  "report": "reports/classification/four_class_failure_diagnosis.md",
+  "diagnosis_figure_count": 8,
+  "preprocessing_audit": {
+    "official_record_count": 44,
+    "all_included_samples_use_MLII": true,
+    "lead_selection_matches_header_policy": true,
+    "lead_selection_mismatch_records": [],
+    "sampling_rates_hz": [
+      360.0
+    ],
+    "all_labels_match_public_mapping": true,
+    "label_mapping_mismatch_count": 0,
+    "all_target_ids_match_N_S_V_F": true,
+    "target_id_mismatch_count": 0,
+    "all_original_annotations_match_WFDB_ATR": true,
+    "annotation_mismatch_records_count": 0,
+    "window_0p3s_before_0p4s_after_253_samples": true,
+    "window_boundary_mismatch_count": 0,
+    "all_NSVF_samples_have_beat_labels": true,
+    "split_npz_order_and_labels_match_metadata": true,
+    "split_array_checks": [
+      {
+        "split": "train",
+        "matches_metadata": true,
+        "samples": 71941
+      },
+      {
+        "split": "val",
+        "matches_metadata": true,
+        "samples": 14345
+      },
+      {
+        "split": "test",
+        "matches_metadata": true,
+        "samples": 13829
+      }
+    ],
+    "subject_overlap_count": 0,
+    "record_201_202_same_split": true,
+    "filter_low_high_hz": [
+      0.5,
+      40.0
+    ],
+    "normalizer_fit_split": "train",
+    "normalizer_fit_only_train": true,
+    "exclusion_counts": [
+      {
+        "split": "test",
+        "exclusion_reason": "filter_edge_or_gap_guard",
+        "count": 75
+      },
+      {
+        "split": "test",
+        "exclusion_reason": "included",
+        "count": 13829
+      },
+      {
+        "split": "test",
+        "exclusion_reason": "non_beat_annotation",
+        "count": 277
+      },
+      {
+        "split": "test",
+        "exclusion_reason": "not_target_group",
+        "count": 2
+      },
+      {
+        "split": "test",
+        "exclusion_reason": "window_boundary",
+        "count": 5
+      },
+      {
+        "split": "train",
+        "exclusion_reason": "filter_edge_or_gap_guard",
+        "count": 409
+      },
+      {
+        "split": "train",
+        "exclusion_reason": "included",
+        "count": 71941
+      },
+      {
+        "split": "train",
+        "exclusion_reason": "non_beat_annotation",
+        "count": 2553
+      },
+      {
+        "split": "train",
+        "exclusion_reason": "not_target_group",
+        "count": 13
+      },
+      {
+        "split": "train",
+        "exclusion_reason": "window_boundary",
+        "count": 31
+      },
+      {
+        "split": "val",
+        "exclusion_reason": "filter_edge_or_gap_guard",
+        "count": 78
+      },
+      {
+        "split": "val",
+        "exclusion_reason": "included",
+        "count": 14345
+      },
+      {
+        "split": "val",
+        "exclusion_reason": "non_beat_annotation",
+        "count": 161
+      },
+      {
+        "split": "val",
+        "exclusion_reason": "window_boundary",
+        "count": 5
+      }
+    ]
+  },
+  "checkpoint_audit": {
+    "logistic_regression_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "logistic_regression_scaler_features": 253,
+    "random_forest_classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "random_forest_trees": 100,
+    "cnn_class_count": 4,
+    "cnn_best_epoch": 11,
+    "cnn_state_tensors": 8,
+    "checkpoints_loadable": true
+  }
+}

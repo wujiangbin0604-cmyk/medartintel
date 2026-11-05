@@ -1,0 +1,14 @@
+{
+  "records": [
+    "100",
+    "200"
+  ],
+  "database_version": "1.0.0",
+  "offline": true,
+  "pre_s": 0.25,
+  "post_s": 0.45,
+  "root": "E:\\医学人工智能",
+  "generated_at_Asia_Shanghai": "2026-10-26T20:08:15.232769+08:00",
+  "trained_model": false,
+  "dataset_split": null
+}

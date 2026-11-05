@@ -1,0 +1,13 @@
+﻿lead,class,feature,n,median,min,max
+MLII,N,peak_to_peak,3979,1.5150000000000001,1.07,2.955
+MLII,S,peak_to_peak,63,1.53,1.21,1.87
+MLII,V,peak_to_peak,827,2.77,1.04,3.9899999999999998
+MLII,F,peak_to_peak,2,1.2575,0.455,2.06
+MLII,N,maximum,3979,0.975,0.045,2.38
+MLII,S,maximum,63,0.99,0.64,1.455
+MLII,V,maximum,827,0.745,-0.06,2.09
+MLII,F,maximum,2,0.7575000000000001,0.02,1.495
+MLII,N,minimum,3979,-0.54,-1.945,0.895
+MLII,S,minimum,63,-0.535,-0.78,-0.165
+MLII,V,minimum,827,-2.01,-2.715,-0.425
+MLII,F,minimum,2,-0.5,-0.565,-0.435

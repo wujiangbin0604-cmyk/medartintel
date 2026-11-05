@@ -1,0 +1,3 @@
+# Preserve artifact bytes so the deployment SHA256 manifest survives cloning.
+* -text
+*.sh text eol=lf

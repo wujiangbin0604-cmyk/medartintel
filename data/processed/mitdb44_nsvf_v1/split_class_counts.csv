@@ -1,0 +1,13 @@
+﻿split,aami_label,class_id,sample_count,subject_count,record_count
+train,N,0,65436,31,32
+train,S,1,1347,23,24
+train,V,2,4747,23,24
+train,F,3,411,10,11
+val,N,0,11854,6,6
+val,S,1,1404,5,5
+val,V,2,1069,4,4
+val,F,3,18,4,4
+test,N,0,12287,6,6
+test,S,1,10,3,3
+test,V,2,1161,5,5
+test,F,3,371,2,2

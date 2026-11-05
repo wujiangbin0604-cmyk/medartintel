@@ -1,0 +1,8 @@
+{
+  "source": "training labels only",
+  "inverse_frequency_balanced_weights": {
+    "N": 0.5362720826456385,
+    "V": 7.392353065093744
+  },
+  "applied_during_dataset_build": false
+}

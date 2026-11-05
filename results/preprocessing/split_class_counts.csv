@@ -1,0 +1,7 @@
+﻿split,mapped_label,sample_count,subject_count_total,record_count_total
+train,N,65913,33,34
+train,V,4318,33,34
+val,N,11612,7,7
+val,V,1477,7,7
+test,N,12558,7,7
+test,V,1409,7,7

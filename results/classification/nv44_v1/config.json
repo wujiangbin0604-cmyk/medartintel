@@ -1,0 +1,86 @@
+{
+  "seed": 20261027,
+  "task": "nv",
+  "class_names": [
+    "N",
+    "V"
+  ],
+  "class_ids": {
+    "N": 0,
+    "V": 1
+  },
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 0.001,
+      "feature_scaler": "StandardScaler fit on training vectors only"
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": 18,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": "balanced_subsample",
+      "bootstrap": true,
+      "max_samples": 0.8,
+      "n_jobs": -1
+    }
+  },
+  "cnn": {
+    "architecture": "Conv1d(1,16,7)-ReLU-MaxPool2-Conv1d(16,32,5)-ReLU-MaxPool2-Conv1d(32,64,3)-ReLU-AdaptiveAvgPool1-Linear",
+    "loss": "CrossEntropyLoss",
+    "class_weight_source": "Training partition only; inverse frequency",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "batch_size": 256,
+    "epochs": 25,
+    "patience": 5,
+    "early_stopping_metric": "validation macro-F1"
+  },
+  "test_policy": "Fixed subject-independent split; no tuning, threshold selection, or model selection on test set.",
+  "smoke_test": {
+    "max_training_samples": 3000,
+    "max_validation_samples": 768,
+    "cnn_epochs": 1
+  },
+  "dataset_path": "data/processed/mitdb44_nv_v1",
+  "checkpoint_dir": "checkpoints\\nv44_v1\\formal",
+  "started_at_Asia_Shanghai": "2026-10-27T23:00:16.621223+08:00",
+  "dataset_artifact_hashes": {
+    "dataset_verification_sha256": "9edde2f054b570d8f1210e51dc13474e46610eb147d593e819ad792aab9cd867",
+    "processing_config_sha256": "5aeb7f298130e0fe17f269b9b8afa9fa1dce7c9adfa2a09792294752363e6f12",
+    "split_plan_sha256": "a044133bd673cd90833ab2c96a412a7d3d835d90e3f4b84a51c16eb29f63b00f",
+    "split_manifest_sha256": "1b16833aae582536c62b6537faa200b2d22ceb494be6ec6174feeb39ff1b44ec",
+    "dataset_samples": {
+      "train": {
+        "N": 65436,
+        "V": 4747,
+        "n_samples": 70183,
+        "n_subjects": 31,
+        "n_records": 32
+      },
+      "val": {
+        "N": 11854,
+        "V": 1069,
+        "n_samples": 12923,
+        "n_subjects": 6,
+        "n_records": 6
+      },
+      "test": {
+        "N": 12287,
+        "V": 1161,
+        "n_samples": 13448,
+        "n_subjects": 6,
+        "n_records": 6
+      }
+    }
+  },
+  "device": "cpu",
+  "class_weights_source": "training labels only",
+  "test_loaded_before_fit_complete": false,
+  "test_usage": "Only after all model fits and checkpoints are saved; one final evaluation"
+}

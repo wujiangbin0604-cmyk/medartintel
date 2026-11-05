@@ -1,0 +1,21 @@
+﻿file,scope,record,leads,start_s,end_s
+figures/100_first_10s_raw.png,"record=100; leads=MLII,V5; fs=360 Hz; samples=[0,3600); t=[0.000,10.000) s",100,"MLII,V5",0.0,10.0
+figures/100_first_10s_annotated.png,"record=100; leads=MLII,V5; fs=360 Hz; samples=[0,3600); t=[0.000,10.000) s",100,"MLII,V5",0.0,10.0
+figures/100_MLII_class_examples.png,record=100; lead=MLII; fs=360Hz; exact original times/windows: results/plotted_beats.csv,100,MLII,,
+figures/100_MLII_N_within_class.png,record=100; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,100,MLII,,
+figures/100_MLII_S_within_class.png,record=100; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,100,MLII,,
+figures/100_MLII_V_within_class.png,record=100; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,100,MLII,,
+figures/100_quality_top_diff_MLII.png,"record=100; leads=MLII,V5; fs=360 Hz; samples=[648000,650000); t=[1800.000,1805.556) s",100,"MLII,V5",1800.0,1805.5555555555557
+figures/100_quality_top_diff_V5.png,"record=100; leads=MLII,V5; fs=360 Hz; samples=[622800,626400); t=[1730.000,1740.000) s",100,"MLII,V5",1730.0,1740.0
+figures/200_first_10s_raw.png,"record=200; leads=MLII,V1; fs=360 Hz; samples=[0,3600); t=[0.000,10.000) s",200,"MLII,V1",0.0,10.0
+figures/200_first_10s_annotated.png,"record=200; leads=MLII,V1; fs=360 Hz; samples=[0,3600); t=[0.000,10.000) s",200,"MLII,V1",0.0,10.0
+figures/200_MLII_class_examples.png,record=200; lead=MLII; fs=360Hz; exact original times/windows: results/plotted_beats.csv,200,MLII,,
+figures/200_MLII_F_within_class.png,record=200; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,200,MLII,,
+figures/200_MLII_N_within_class.png,record=200; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,200,MLII,,
+figures/200_MLII_S_within_class.png,record=200; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,200,MLII,,
+figures/200_MLII_V_within_class.png,record=200; lead=MLII; fs=360Hz; legend=original annotation times; windows: results/plotted_beats.csv,200,MLII,,
+figures/200_quality_top_diff_MLII.png,"record=200; leads=MLII,V1; fs=360 Hz; samples=[219600,223200); t=[610.000,620.000) s",200,"MLII,V1",610.0,620.0
+figures/200_quality_top_diff_V1.png,"record=200; leads=MLII,V1; fs=360 Hz; samples=[280800,284400); t=[780.000,790.000) s",200,"MLII,V1",780.0,790.0
+figures/200_quality_annotation.png,"record=200; leads=MLII,V1; fs=360 Hz; samples=[78549,82149); t=[218.192,228.192) s",200,"MLII,V1",218.19166666666666,228.19166666666666
+figures/aami_class_distribution.png,"100:MLII,V5 t=0-1805.556s fs=360Hz; 200:MLII,V1 t=0-1805.556s fs=360Hz; counts use annotations once per beat, independent of lead",,,,
+figures/aami_distribution_by_record.png,"100:MLII,V5 t=0-1805.556s fs=360Hz; 200:MLII,V1 t=0-1805.556s fs=360Hz; counts use annotations once per beat, independent of lead",,,,

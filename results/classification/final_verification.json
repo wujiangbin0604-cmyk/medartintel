@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "official_record_hashes_match": true,
+  "excluded_paced_records": [
+    "102",
+    "104",
+    "107",
+    "217"
+  ],
+  "aami_mapping_matches_requested_rule": true,
+  "nv_dataset": {
+    "dataset": "data/processed/mitdb44_nv_v1",
+    "records": 44,
+    "subjects": 43,
+    "split_plan_sha256": "a044133bd673cd90833ab2c96a412a7d3d835d90e3f4b84a51c16eb29f63b00f",
+    "verification": "True"
+  },
+  "nsvf_dataset": {
+    "dataset": "data/processed/mitdb44_nsvf_v1",
+    "records": 44,
+    "subjects": 43,
+    "split_plan_sha256": "a044133bd673cd90833ab2c96a412a7d3d835d90e3f4b84a51c16eb29f63b00f",
+    "verification": "True"
+  },
+  "binary_experiment": {
+    "task": "nv",
+    "status": "completed",
+    "models": {
+      "logistic_regression": {
+        "test_count": 13448,
+        "accuracy": 0.8369274241522903,
+        "macro_f1": 0.6960729472810437,
+        "per_class_support": {
+          "N": 12287,
+          "V": 1161
+        }
+      },
+      "random_forest": {
+        "test_count": 13448,
+        "accuracy": 0.9834919690660321,
+        "macro_f1": 0.9494087060672827,
+        "per_class_support": {
+          "N": 12287,
+          "V": 1161
+        }
+      },
+      "cnn_1d": {
+        "test_count": 13448,
+        "accuracy": 0.9956870910172516,
+        "macro_f1": 0.9865196014891238,
+        "per_class_support": {
+          "N": 12287,
+          "V": 1161
+        }
+      }
+    },
+    "all_source_metadata_preserved": true,
+    "probabilities_finite_and_normalized": true,
+    "metrics_recomputed_from_test_csv": true,
+    "test_loaded_after_fit": true,
+    "smoke_test_passed": true,
+    "checkpoints_loadable_without_test_inference": true
+  },
+  "multiclass_experiment": {
+    "task": "nsvf",
+    "status": "completed",
+    "models": {
+      "logistic_regression": {
+        "test_count": 13829,
+        "accuracy": 0.7422807144406681,
+        "macro_f1": 0.35991504361381416,
+        "per_class_support": {
+          "N": 12287,
+          "S": 10,
+          "V": 1161,
+          "F": 371
+        }
+      },
+      "random_forest": {
+        "test_count": 13829,
+        "accuracy": 0.9536481307397499,
+        "macro_f1": 0.4656157085723519,
+        "per_class_support": {
+          "N": 12287,
+          "S": 10,
+          "V": 1161,
+          "F": 371
+        }
+      },
+      "cnn_1d": {
+        "test_count": 13829,
+        "accuracy": 0.7690360835924507,
+        "macro_f1": 0.44596882915845765,
+        "per_class_support": {
+          "N": 12287,
+          "S": 10,
+          "V": 1161,
+          "F": 371
+        }
+      }
+    },
+    "all_source_metadata_preserved": true,
+    "probabilities_finite_and_normalized": true,
+    "metrics_recomputed_from_test_csv": true,
+    "test_loaded_after_fit": true,
+    "smoke_test_passed": true,
+    "checkpoints_loadable_without_test_inference": true
+  },
+  "class_weight_ablation_validation_only": true,
+  "original_67_figures_untouched_by_count": true,
+  "figure_audit": {
+    "original_visualization_png_count_unchanged": 67,
+    "new_figure_count": 38,
+    "figures": {
+      "07_preprocessing": {
+        "png_count": 6,
+        "dpi_minimum": 300,
+        "integrity": true
+      },
+      "08_binary_classification": {
+        "png_count": 17,
+        "dpi_minimum": 300,
+        "integrity": true
+      },
+      "09_multiclass_classification": {
+        "png_count": 15,
+        "dpi_minimum": 300,
+        "integrity": true
+      }
+    }
+  },
+  "report_figure_links_checked": 38,
+  "report_figure_links_resolve": true,
+  "test_predictions_reproducibly_recomputed_from_saved_csv": true,
+  "report": "reports/classification/experiment_summary.md",
+  "training_was_cpu_only": true,
+  "no_frontend_or_clinical_diagnosis": true
+}

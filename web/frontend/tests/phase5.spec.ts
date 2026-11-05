@@ -1,0 +1,24 @@
+import {test,expect} from '@playwright/test';
+import path from 'node:path';
+import fs from 'node:fs';
+const out=path.resolve(__dirname,'../../docs/visual_fidelity/interaction');fs.mkdirSync(out,{recursive:true});
+test('phase5 real chart modes, narrow navigation, selected sample and three-model state',async({page})=>{
+ test.setTimeout(150000);const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.setViewportSize({width:1672,height:941});
+ await page.goto('/dashboard');await expect(page.getByRole('heading',{name:'项目总览',exact:true})).toBeVisible();await page.waitForLoadState('networkidle');
+ const kpis=await page.locator('.metric-link').boundingBox().catch(()=>null);await expect(page.locator('.metric-link')).toHaveCount(4);
+ const boxes=await page.locator('.metric-link').evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().y));expect(new Set(boxes).size).toBe(1);
+ const chart=page.getByRole('img',{name:'各类别心拍数量联动柱状图'});await chart.scrollIntoViewIfNeeded();await page.waitForTimeout(700);const original=await chart.screenshot();
+ await page.getByText('百分比',{exact:true}).click();await expect(page.getByTestId('count-scale')).toHaveAttribute('data-mode','percent');await page.waitForTimeout(650);expect((await chart.screenshot()).equals(original)).toBe(false);
+ await page.getByText('对数',{exact:true}).click();await expect(page.getByText('已启用 log10 坐标；标签仍为真实数量。')).toBeVisible();await page.waitForTimeout(650);await page.screenshot({path:path.join(out,'dashboard_log.png'),fullPage:true});
+ await page.getByRole('button',{name:'筛选类别 F',exact:true}).click();await expect(page.getByText('F 类已联动')).toBeVisible();await expect(page.getByText('当前筛选：F。按受试者分组，分区统计同步更新。')).toBeVisible();
+ await page.setViewportSize({width:745,height:671});await page.getByRole('link',{name:'ECG 波形分析',exact:true}).hover();await expect(page.getByRole('tooltip')).toContainText('ECG 波形分析');await page.getByRole('button',{name:'展开侧边栏',exact:true}).click();await expect(page.locator('.platform-nav a').nth(1)).toContainText('ECG 波形分析');await page.locator('.platform-nav a').nth(1).click();await expect(page.locator('.platform')).toHaveClass(/sidebar-collapsed/);
+ await page.setViewportSize({width:1672,height:941});await page.locator('button[data-testid^="beat-"]').first().click();await expect(page.getByTestId('single-prediction')).toBeVisible();
+ const selected=await page.locator('button[data-testid^="beat-"]').first().getAttribute('data-testid');const sample=Number(selected!.slice(5));await expect(page.locator('.beat-facts')).toContainText(sample.toLocaleString());
+ const response=page.waitForResponse(r=>r.url().endsWith('/api/inference/compare')&&r.request().method()==='POST');await page.getByRole('button',{name:'比较三个模型',exact:true}).click();const data=await(await response).json();expect(new Set(data.models.map((m:any)=>m.model_id)).size).toBe(3);expect(data.models.every((m:any)=>m.annotation_sample===sample)).toBe(true);
+ await expect(page.locator('.model-result-card .model-prediction')).toHaveCount(3);const same=await page.locator('.beat-facts').innerText();await page.getByRole('button',{name:'选择模型卡片 Random Forest',exact:true}).click();await expect(page.locator('.beat-facts')).toHaveText(same);await expect(page.locator('.model-result-card.current-model')).toContainText('Random Forest');await page.locator('.model-result-card').first().getByRole('button',{name:/N 类概率/}).click();await expect(page.locator('.model-cards .probability-selected')).toHaveCount(3);
+ await page.getByRole('button',{name:'下一心拍',exact:true}).click();await expect(page.locator('.beat-facts')).not.toHaveText(same);await page.getByRole('button',{name:'上一心拍',exact:true}).click();await expect(page.locator('.beat-facts')).toHaveText(same);
+ await page.getByRole('button',{name:'播放历史片段',exact:true}).click();await expect(page.getByRole('button',{name:'暂停',exact:true})).toBeVisible();await expect.poll(async()=>Number(await page.locator('.playback-overlay').getAttribute('data-time'))).toBeGreaterThan(0.1);await page.getByRole('button',{name:'暂停',exact:true}).click();const stopped=await page.locator('.playback-overlay').getAttribute('data-time');await page.waitForTimeout(350);expect(await page.locator('.playback-overlay').getAttribute('data-time')).toBe(stopped);await page.screenshot({path:path.join(out,'replay_paused.png'),fullPage:true});
+ await page.emulateMedia({reducedMotion:'reduce'});await expect(page.locator('html')).toHaveAttribute('data-motion','reduced');expect(await page.locator('.waveform-chart').evaluate(e=>getComputedStyle(e).animationName)).toBe('none');
+ expect(errors).toEqual([]);expect(await page.locator('body').innerText()).not.toContain('GeneScope');
+ fs.writeFileSync(path.join(out,'verified.json'),JSON.stringify({sample,models:data.models.map((m:any)=>({model:m.model_id,sample:m.annotation_sample,probabilities:m.class_probabilities})),errors},null,2));
+});

@@ -1,0 +1,36 @@
+{
+  "reviewer": "Codex developer assistant; observations from generated images, without independent clinical review",
+  "raw_sha256": {
+    "100.dat": "b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639",
+    "100.hea": "60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e",
+    "100.atr": "8d8a5349fb16638ebbf649f1779d12e96d91b736b2aafe59db43719ae583d471",
+    "200.dat": "a9e203b3807b9fcd3647cde03444437cb8eec7f5128a8eb413edafb394272e0f",
+    "200.hea": "9e0c2ff5b790cf624deab0ccb8a9f211a9e29a748d8197da3c1ee7c5b596b40c",
+    "200.atr": "f9624a11696760427d75314a78c31f89ca3c446af855890c8f8b66cddd8b3a3f"
+  },
+  "configuration": {
+    "records": [
+      "100",
+      "200"
+    ],
+    "pre_s": 0.25,
+    "post_s": 0.45,
+    "seed": 20261027,
+    "embedding_max": 3000,
+    "embedding_per_stratum": 500,
+    "perplexities": [
+      15.0,
+      40.0
+    ]
+  },
+  "figure_notes": {
+    "figures/A_distribution/record_class_heatmap.png": "记录 100 的构成几乎都集中在 N 组；记录 200 的 V 组色块与百分比明显更大。两条记录合并后的类别比例掩盖了这种记录间差异。",
+    "figures/C_morphology/MLII_V_random20_overlay.png": "多数抽样 V 窗口在中心附近有明显向下偏转，随后有较宽的向上波形；少数样本的偏转时刻和形态不同。减去各窗中位数后差异仍存在，因此不能全部归因于常量基线偏移，也不能据外观推翻专家标签。",
+    "figures/C_morphology/MLII_amplitude_boxplots.png": "N 与 S 的三个描述量分布有明显重叠；V 组峰峰值的主体更大、最小值主体更负，但也存在与其他组重叠的窗口。仅凭一个幅值阈值难以完整描述这些类别；F 只有两例，其箱体不代表稳定的总体分布。",
+    "figures/D_rhythm/all_records_previous_next_rr.png": "不少 V 点位于 previous=next 参考线上方，表现为前一间隔相对短、后一间隔相对长；N 点也有多种前后间隔组合。这里展示的是与既有标签相对应的时间关系，不作新诊断，也不把散点区域直接作为标签规则。",
+    "figures/E_quality/200_V1_quality_event_baseline.png": "在 218.192–228.192 s 的 V1 原始信号上，可以直接看到先缓慢向下再明显向上的大幅低频漂移，心拍细节相对较小。1 s 块中位数追随了这一总体变化，适合作为报告中的漂移示意；它并未独立分离出真实基线。",
+    "figures/F_embedding/MLII_pca_median_centered.png": "多数 V 点与 N/S 主体沿 PC1 分开，但有部分 V 仍落在其他点附近；N 与 S 有明显重叠。将完全相同的坐标按记录着色后，N 主体中的不同区域与记录 100、200 对应，说明二维结构同时受到记录差异影响。",
+    "figures/F_embedding/MLII_tsne_median_centered_p40.png": "V 的主要点群与 N/S 多数点群分开，N 和 S 在若干区域混合；右图按记录着色后，不同记录形成明显区域。这提示不能把图中的分簇全部解释为心拍类别，也不能将其当作患者独立泛化表现。",
+    "figures/F_embedding/MLII_template_correlation.png": "N 与 S 的平均模板相关很高，而 V 与二者的相关为负，与平均波形的主偏转差异相符。F 只由两拍构成，相关值不稳定；Q 的整行整列以 NA 展示，明确区分缺失模板与相关系数为零。"
+  }
+}

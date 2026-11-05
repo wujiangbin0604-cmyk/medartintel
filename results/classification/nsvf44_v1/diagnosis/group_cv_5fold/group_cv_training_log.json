@@ -1,0 +1,609 @@
+{
+  "scope": "original train+validation samples only; formal test not loaded",
+  "splitter": "StratifiedGroupKFold",
+  "n_splits": 5,
+  "seed": 20261028,
+  "subjects": 37,
+  "samples": 86286,
+  "strict_group_disjointness_checked": true,
+  "folds": [
+    {
+      "fold": 1,
+      "model_seed": 20261029,
+      "train_subjects": [
+        "subject_100",
+        "subject_103",
+        "subject_105",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_114",
+        "subject_115",
+        "subject_117",
+        "subject_119",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_200",
+        "subject_203",
+        "subject_205",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_215",
+        "subject_220",
+        "subject_222",
+        "subject_223",
+        "subject_228",
+        "subject_231",
+        "subject_232",
+        "subject_233",
+        "subject_234"
+      ],
+      "validation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ],
+      "train_class_counts": [
+        60588,
+        2371,
+        4446,
+        424
+      ],
+      "validation_class_counts": [
+        16702,
+        380,
+        1370,
+        5
+      ],
+      "normalizer_fit_on_outer_train_only": {
+        "mean_mV": 0.008301558692968803,
+        "std_mV": 0.3622533669175095
+      },
+      "inner_stopping_fold": 1,
+      "inner_train_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_114",
+        "subject_115",
+        "subject_117",
+        "subject_119",
+        "subject_200",
+        "subject_203",
+        "subject_205",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_220",
+        "subject_222",
+        "subject_223",
+        "subject_228",
+        "subject_234"
+      ],
+      "inner_validation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ],
+      "inner_validation_class_coverage": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "inner_normalizer_fit_on_inner_train_only": {
+        "mean_mV": 0.010355116860899394,
+        "std_mV": 0.37181346249618213
+      },
+      "inner_best_epoch": 4,
+      "inner_best_validation_macro_f1": 0.4371829330451046,
+      "inner_train_class_weights": [
+        0.2761824131011963,
+        13.578618049621582,
+        3.663755178451538,
+        30.660320281982422
+      ],
+      "outer_train_class_weights": [
+        0.27987802028656006,
+        7.15194034576416,
+        3.8140463829040527,
+        39.99351501464844
+      ]
+    },
+    {
+      "fold": 2,
+      "model_seed": 20261030,
+      "train_subjects": [
+        "subject_101",
+        "subject_103",
+        "subject_105",
+        "subject_106",
+        "subject_108",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_114",
+        "subject_115",
+        "subject_117",
+        "subject_118",
+        "subject_119",
+        "subject_200",
+        "subject_201_202",
+        "subject_203",
+        "subject_205",
+        "subject_207",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_220",
+        "subject_221",
+        "subject_222",
+        "subject_223",
+        "subject_228",
+        "subject_230",
+        "subject_234"
+      ],
+      "validation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ],
+      "train_class_counts": [
+        61885,
+        1299,
+        4776,
+        412
+      ],
+      "validation_class_counts": [
+        15405,
+        1452,
+        1040,
+        17
+      ],
+      "normalizer_fit_on_outer_train_only": {
+        "mean_mV": 0.011049187589035584,
+        "std_mV": 0.35841623122130856
+      },
+      "inner_stopping_fold": 1,
+      "inner_train_subjects": [
+        "subject_101",
+        "subject_105",
+        "subject_106",
+        "subject_108",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_114",
+        "subject_115",
+        "subject_118",
+        "subject_119",
+        "subject_200",
+        "subject_203",
+        "subject_205",
+        "subject_207",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_220",
+        "subject_222",
+        "subject_228",
+        "subject_234"
+      ],
+      "inner_validation_subjects": [
+        "subject_103",
+        "subject_117",
+        "subject_201_202",
+        "subject_221",
+        "subject_223",
+        "subject_230"
+      ],
+      "inner_validation_class_coverage": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "inner_normalizer_fit_on_inner_train_only": {
+        "mean_mV": 0.010364452559212464,
+        "std_mV": 0.3698520482242093
+      },
+      "inner_best_epoch": 6,
+      "inner_best_validation_macro_f1": 0.4722477192160557,
+      "inner_train_class_weights": [
+        0.2765218913555145,
+        12.83741569519043,
+        3.620631217956543,
+        33.832279205322266
+      ],
+      "outer_train_class_weights": [
+        0.2762058675289154,
+        13.158583641052246,
+        3.5789363384246826,
+        41.48786544799805
+      ]
+    },
+    {
+      "fold": 3,
+      "model_seed": 20261031,
+      "train_subjects": [
+        "subject_100",
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_115",
+        "subject_117",
+        "subject_118",
+        "subject_119",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_200",
+        "subject_201_202",
+        "subject_205",
+        "subject_207",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_215",
+        "subject_221",
+        "subject_222",
+        "subject_223",
+        "subject_230",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ],
+      "validation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ],
+      "train_class_counts": [
+        62083,
+        2588,
+        4924,
+        424
+      ],
+      "validation_class_counts": [
+        15207,
+        163,
+        892,
+        5
+      ],
+      "normalizer_fit_on_outer_train_only": {
+        "mean_mV": 0.010142477219021282,
+        "std_mV": 0.35278546757416235
+      },
+      "inner_stopping_fold": 1,
+      "inner_train_subjects": [
+        "subject_100",
+        "subject_108",
+        "subject_109",
+        "subject_112",
+        "subject_113",
+        "subject_115",
+        "subject_119",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_200",
+        "subject_205",
+        "subject_209",
+        "subject_210",
+        "subject_213",
+        "subject_214",
+        "subject_215",
+        "subject_222",
+        "subject_223",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ],
+      "inner_validation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_117",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ],
+      "inner_validation_class_coverage": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "inner_normalizer_fit_on_inner_train_only": {
+        "mean_mV": 0.007890118207242662,
+        "std_mV": 0.3627065139024496
+      },
+      "inner_best_epoch": 6,
+      "inner_best_validation_macro_f1": 0.38646173153761365,
+      "inner_train_class_weights": [
+        0.284018874168396,
+        5.855721473693848,
+        3.6255950927734375,
+        30.75296974182129
+      ],
+      "outer_train_class_weights": [
+        0.28195720911026,
+        6.7638139724731445,
+        3.554985761642456,
+        41.284786224365234
+      ]
+    },
+    {
+      "fold": 4,
+      "model_seed": 20261032,
+      "train_subjects": [
+        "subject_100",
+        "subject_101",
+        "subject_103",
+        "subject_105",
+        "subject_106",
+        "subject_108",
+        "subject_112",
+        "subject_114",
+        "subject_115",
+        "subject_117",
+        "subject_118",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_200",
+        "subject_201_202",
+        "subject_203",
+        "subject_207",
+        "subject_209",
+        "subject_213",
+        "subject_214",
+        "subject_215",
+        "subject_220",
+        "subject_221",
+        "subject_228",
+        "subject_230",
+        "subject_231",
+        "subject_232",
+        "subject_233",
+        "subject_234"
+      ],
+      "validation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ],
+      "train_class_counts": [
+        62247,
+        2438,
+        4600,
+        392
+      ],
+      "validation_class_counts": [
+        15043,
+        313,
+        1216,
+        37
+      ],
+      "normalizer_fit_on_outer_train_only": {
+        "mean_mV": 0.009009614293306795,
+        "std_mV": 0.3490396923432717
+      },
+      "inner_stopping_fold": 1,
+      "inner_train_subjects": [
+        "subject_100",
+        "subject_103",
+        "subject_105",
+        "subject_112",
+        "subject_114",
+        "subject_115",
+        "subject_117",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_200",
+        "subject_203",
+        "subject_209",
+        "subject_213",
+        "subject_214",
+        "subject_215",
+        "subject_220",
+        "subject_228",
+        "subject_231",
+        "subject_232",
+        "subject_233",
+        "subject_234"
+      ],
+      "inner_validation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ],
+      "inner_validation_class_coverage": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "inner_normalizer_fit_on_inner_train_only": {
+        "mean_mV": 0.007598272147383639,
+        "std_mV": 0.35911887385149394
+      },
+      "inner_best_epoch": 4,
+      "inner_best_validation_macro_f1": 0.3649796529221393,
+      "inner_train_class_weights": [
+        0.2811505198478699,
+        6.222060203552246,
+        3.9643962383270264,
+        33.08785629272461
+      ],
+      "outer_train_class_weights": [
+        0.2798407971858978,
+        7.144893169403076,
+        3.7867934703826904,
+        44.43686294555664
+      ]
+    },
+    {
+      "fold": 5,
+      "model_seed": 20261033,
+      "train_subjects": [
+        "subject_100",
+        "subject_101",
+        "subject_103",
+        "subject_105",
+        "subject_106",
+        "subject_108",
+        "subject_109",
+        "subject_113",
+        "subject_114",
+        "subject_118",
+        "subject_119",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_201_202",
+        "subject_203",
+        "subject_205",
+        "subject_207",
+        "subject_210",
+        "subject_215",
+        "subject_220",
+        "subject_221",
+        "subject_222",
+        "subject_223",
+        "subject_228",
+        "subject_230",
+        "subject_231",
+        "subject_232",
+        "subject_233",
+        "subject_234"
+      ],
+      "validation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ],
+      "train_class_counts": [
+        62357,
+        2308,
+        4518,
+        64
+      ],
+      "validation_class_counts": [
+        14933,
+        443,
+        1298,
+        365
+      ],
+      "normalizer_fit_on_outer_train_only": {
+        "mean_mV": 0.007945366518523605,
+        "std_mV": 0.34512434311221846
+      },
+      "inner_stopping_fold": 1,
+      "inner_train_subjects": [
+        "subject_100",
+        "subject_105",
+        "subject_109",
+        "subject_113",
+        "subject_114",
+        "subject_118",
+        "subject_119",
+        "subject_122",
+        "subject_124",
+        "subject_203",
+        "subject_205",
+        "subject_215",
+        "subject_220",
+        "subject_221",
+        "subject_222",
+        "subject_223",
+        "subject_228",
+        "subject_230",
+        "subject_231",
+        "subject_232",
+        "subject_233",
+        "subject_234"
+      ],
+      "inner_validation_subjects": [
+        "subject_101",
+        "subject_103",
+        "subject_106",
+        "subject_108",
+        "subject_121",
+        "subject_201_202",
+        "subject_207",
+        "subject_210"
+      ],
+      "inner_validation_class_coverage": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "inner_normalizer_fit_on_inner_train_only": {
+        "mean_mV": 0.004801883820355543,
+        "std_mV": 0.3649005530804056
+      },
+      "inner_best_epoch": 4,
+      "inner_best_validation_macro_f1": 0.36338279216515523,
+      "inner_train_class_weights": [
+        0.2795802354812622,
+        6.4036054611206055,
+        3.799168109893799,
+        260.9795837402344
+      ],
+      "outer_train_class_weights": [
+        0.2776232063770294,
+        7.500758171081543,
+        3.83172869682312,
+        270.49609375
+      ]
+    }
+  ]
+}

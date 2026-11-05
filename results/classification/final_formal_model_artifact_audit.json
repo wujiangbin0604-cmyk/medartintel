@@ -1,0 +1,9 @@
+{
+  "formal_model_artifacts_loaded_read_only": 6,
+  "all_artifacts_present_and_loadable": true,
+  "class_ids_and_253_sample_input_match_tasks": true,
+  "cnn_best_weights_match_final_checkpoint_and_logs": true,
+  "all_formal_artifact_checks_pass": true,
+  "no_inference_or_training_performed": true,
+  "detail_csv": "results/classification/final_formal_model_artifact_audit.csv"
+}

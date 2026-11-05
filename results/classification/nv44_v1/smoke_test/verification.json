@@ -1,0 +1,241 @@
+{
+  "passed": true,
+  "task": "nv",
+  "smoke_test": true,
+  "models_completed": [
+    "logistic_regression",
+    "random_forest",
+    "cnn_1d"
+  ],
+  "train_subset_count": 3000,
+  "validation_subset_count": 768,
+  "validation_only": true,
+  "test_split_loaded": false,
+  "class_weights_from_smoke_training_subset": [
+    0.536288857460022,
+    7.389162540435791
+  ],
+  "cnn": {
+    "status": "completed",
+    "device": "cpu",
+    "epochs_ran": 1,
+    "best_epoch": 1,
+    "best_val_macro_f1": 0.10644204338241298,
+    "fit_seconds": 0.22377790000064124,
+    "early_stopping_metric": "validation macro-F1",
+    "patience": 1,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss": "weighted CrossEntropyLoss",
+    "training_class_weights": [
+      0.536288857460022,
+      7.389162540435791
+    ]
+  },
+  "validation_metrics_smoke_only_not_formal": {
+    "logistic_regression": {
+      "accuracy": 0.734375,
+      "macro_precision": 0.5930144863777771,
+      "macro_recall": 0.7627840909090908,
+      "macro_f1": 0.583739837398374,
+      "per_class": {
+        "N": {
+          "precision": 0.9752851711026616,
+          "recall": 0.7286931818181818,
+          "f1": 0.8341463414634146,
+          "support": 704
+        },
+        "V": {
+          "precision": 0.21074380165289255,
+          "recall": 0.796875,
+          "f1": 0.3333333333333333,
+          "support": 64
+        }
+      },
+      "confusion_matrix": [
+        [
+          513,
+          191
+        ],
+        [
+          13,
+          51
+        ]
+      ],
+      "test_or_validation_sample_count": 768,
+      "classification_report": {
+        "N": {
+          "precision": 0.9752851711026616,
+          "recall": 0.7286931818181818,
+          "f1-score": 0.8341463414634146,
+          "support": 704.0
+        },
+        "V": {
+          "precision": 0.21074380165289255,
+          "recall": 0.796875,
+          "f1-score": 0.3333333333333333,
+          "support": 64.0
+        },
+        "accuracy": 0.734375,
+        "macro avg": {
+          "precision": 0.5930144863777771,
+          "recall": 0.7627840909090908,
+          "f1-score": 0.583739837398374,
+          "support": 768.0
+        },
+        "weighted avg": {
+          "precision": 0.9115733903151808,
+          "recall": 0.734375,
+          "f1-score": 0.7924119241192412,
+          "support": 768.0
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9466145833333334,
+      "macro_precision": 0.8187907935417382,
+      "macro_recall": 0.8501420454545454,
+      "macro_f1": 0.8335157427234515,
+      "per_class": {
+        "N": {
+          "precision": 0.975609756097561,
+          "recall": 0.9659090909090909,
+          "f1": 0.9707351891506067,
+          "support": 704
+        },
+        "V": {
+          "precision": 0.6619718309859155,
+          "recall": 0.734375,
+          "f1": 0.6962962962962963,
+          "support": 64
+        }
+      },
+      "confusion_matrix": [
+        [
+          680,
+          24
+        ],
+        [
+          17,
+          47
+        ]
+      ],
+      "test_or_validation_sample_count": 768,
+      "classification_report": {
+        "N": {
+          "precision": 0.975609756097561,
+          "recall": 0.9659090909090909,
+          "f1-score": 0.9707351891506067,
+          "support": 704.0
+        },
+        "V": {
+          "precision": 0.6619718309859155,
+          "recall": 0.734375,
+          "f1-score": 0.6962962962962963,
+          "support": 64.0
+        },
+        "accuracy": 0.9466145833333334,
+        "macro avg": {
+          "precision": 0.8187907935417382,
+          "recall": 0.8501420454545454,
+          "f1-score": 0.8335157427234515,
+          "support": 768.0
+        },
+        "weighted avg": {
+          "precision": 0.9494732623382571,
+          "recall": 0.9466145833333334,
+          "f1-score": 0.9478652814127475,
+          "support": 768.0
+        }
+      }
+    },
+    "cnn_1d": {
+      "accuracy": 0.109375,
+      "macro_precision": 0.5427807486631016,
+      "macro_recall": 0.5142045454545454,
+      "macro_f1": 0.10644204338241298,
+      "per_class": {
+        "N": {
+          "precision": 1.0,
+          "recall": 0.028409090909090908,
+          "f1": 0.055248618784530384,
+          "support": 704
+        },
+        "V": {
+          "precision": 0.0855614973262032,
+          "recall": 1.0,
+          "f1": 0.15763546798029557,
+          "support": 64
+        }
+      },
+      "confusion_matrix": [
+        [
+          20,
+          684
+        ],
+        [
+          0,
+          64
+        ]
+      ],
+      "test_or_validation_sample_count": 768,
+      "classification_report": {
+        "N": {
+          "precision": 1.0,
+          "recall": 0.028409090909090908,
+          "f1-score": 0.055248618784530384,
+          "support": 704.0
+        },
+        "V": {
+          "precision": 0.0855614973262032,
+          "recall": 1.0,
+          "f1-score": 0.15763546798029557,
+          "support": 64.0
+        },
+        "accuracy": 0.109375,
+        "macro avg": {
+          "precision": 0.5427807486631016,
+          "recall": 0.5142045454545454,
+          "f1-score": 0.10644204338241298,
+          "support": 768.0
+        },
+        "weighted avg": {
+          "precision": 0.9237967914438503,
+          "recall": 0.109375,
+          "f1-score": 0.06378085621751083,
+          "support": 768.0
+        }
+      }
+    }
+  },
+  "seed": 20261027,
+  "device": "cpu",
+  "dataset_verification_sha256": "9edde2f054b570d8f1210e51dc13474e46610eb147d593e819ad792aab9cd867",
+  "processing_config_sha256": "5aeb7f298130e0fe17f269b9b8afa9fa1dce7c9adfa2a09792294752363e6f12",
+  "split_plan_sha256": "a044133bd673cd90833ab2c96a412a7d3d835d90e3f4b84a51c16eb29f63b00f",
+  "split_manifest_sha256": "1b16833aae582536c62b6537faa200b2d22ceb494be6ec6174feeb39ff1b44ec",
+  "dataset_samples": {
+    "train": {
+      "N": 65436,
+      "V": 4747,
+      "n_samples": 70183,
+      "n_subjects": 31,
+      "n_records": 32
+    },
+    "val": {
+      "N": 11854,
+      "V": 1069,
+      "n_samples": 12923,
+      "n_subjects": 6,
+      "n_records": 6
+    },
+    "test": {
+      "N": 12287,
+      "V": 1161,
+      "n_samples": 13448,
+      "n_subjects": 6,
+      "n_records": 6
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "source": "Existing validation examples; no fitting/training",
+  "probability_tolerance": 1e-05,
+  "examples": [
+    {
+      "record_id": "109",
+      "annotation_sample": 1994,
+      "task": "nv",
+      "expert_label": "N",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.1187172532081604,
+            "V": 0.8812827467918396
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.8415900664109137,
+            "V": 0.15840993358908634
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.10421367139871447,
+            "V": 0.8957863286012856
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "109",
+      "annotation_sample": 13924,
+      "task": "nv",
+      "expert_label": "V",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.458645761013031,
+            "V": 0.541354238986969
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.32800776361446826,
+            "V": 0.6719922363855317
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.14832769165514637,
+            "V": 0.8516723083448536
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "109",
+      "annotation_sample": 1994,
+      "task": "nsvf",
+      "expert_label": "N",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.023977672681212425,
+            "S": 0.06629543006420135,
+            "V": 0.8968409299850464,
+            "F": 0.012886015698313713
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.7052761173060196,
+            "S": 0.03967936136973305,
+            "V": 0.24529358454081668,
+            "F": 0.009750936783430586
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.31479094848423733,
+            "S": 0.26723716899895666,
+            "V": 0.33739107033311616,
+            "F": 0.08058081218368991
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "113",
+      "annotation_sample": 8644,
+      "task": "nsvf",
+      "expert_label": "S",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.5458502769470215,
+            "S": 0.4535261392593384,
+            "V": 0.0006212916341610253,
+            "F": 2.258823315059999e-06
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.6289865768979735,
+            "S": 0.11838462806802535,
+            "V": 0.25262879503400115,
+            "F": 0.0
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.8011337575173552,
+            "S": 0.12136756781070428,
+            "V": 0.0337398266870883,
+            "F": 0.043758847984852176
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "109",
+      "annotation_sample": 13924,
+      "task": "nsvf",
+      "expert_label": "V",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.22328515350818634,
+            "S": 0.14164815843105316,
+            "V": 0.6177234053611755,
+            "F": 0.017343226820230484
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.30827253158924145,
+            "S": 0.028946688134638153,
+            "V": 0.6528784335690804,
+            "F": 0.009902346707040122
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "V",
+          "class_probabilities": {
+            "N": 0.07659608747469951,
+            "S": 0.2066611543117332,
+            "V": 0.6495237120698836,
+            "F": 0.06721904614368374
+          }
+        }
+      ]
+    },
+    {
+      "record_id": "109",
+      "annotation_sample": 6259,
+      "task": "nsvf",
+      "expert_label": "F",
+      "models": [
+        {
+          "model_id": "logistic_regression",
+          "predicted_class": "S",
+          "class_probabilities": {
+            "N": 0.40682950615882874,
+            "S": 0.5623623132705688,
+            "V": 0.0158745888620615,
+            "F": 0.014933603815734386
+          }
+        },
+        {
+          "model_id": "random_forest",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.7218682494994688,
+            "S": 0.11743221789553127,
+            "V": 0.160699532605,
+            "F": 0.0
+          }
+        },
+        {
+          "model_id": "cnn_1d",
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.6457035886179048,
+            "S": 0.24998691219704414,
+            "V": 0.0038886585081810573,
+            "F": 0.10042084067687002
+          }
+        }
+      ]
+    }
+  ]
+}

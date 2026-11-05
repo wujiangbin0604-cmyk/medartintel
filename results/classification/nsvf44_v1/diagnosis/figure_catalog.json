@@ -1,0 +1,34 @@
+[
+  {
+    "file": "subject_class_counts_heatmap.png",
+    "explanation": "每位受试者各类心拍支持数。使用 log10(count+1) 显示数量级，空格代表该受试者在该类没有可训练样本。"
+  },
+  {
+    "file": "top_subject_class_concentration.png",
+    "explanation": "各类别心拍最多的受试者，展示 F、S 等类别由少数患者主导的程度。"
+  },
+  {
+    "file": "per_subject_test_metrics_descriptive_only.png",
+    "explanation": "既有锁定测试集按受试者分解的 Accuracy、present-class Macro-F1 与 Recall；无该类样本时留空。仅回顾性诊断。"
+  },
+  {
+    "file": "cnn_test_error_waveforms_descriptive_only.png",
+    "explanation": "CNN 在已查看测试集上的 N→S、F→N 与 F→V 代表波形，仅用于错误归因。"
+  },
+  {
+    "file": "cnn_weight_strategies_train_val.png",
+    "explanation": "同一 CNN 的 train/validation 指标及预测类别占比，比较无权重、平方根平滑、10 倍截断和全逆频率。"
+  },
+  {
+    "file": "group_cv_fold_metrics.png",
+    "explanation": "train+validation 的五折患者分组 CV，每折 Macro-F1 与 Accuracy，展示受试者间波动。"
+  },
+  {
+    "file": "group_cv_confusion_matrices.png",
+    "explanation": "每个分组 CV 外折的行归一化混淆矩阵，同时标出原始计数和 F 支持数。"
+  },
+  {
+    "file": "existing_model_weight_ablation_validation.png",
+    "explanation": "复用既有验证集加权/无权重消融，比较 LR、RF、CNN 对 S/F 的预测份额变化。"
+  }
+]

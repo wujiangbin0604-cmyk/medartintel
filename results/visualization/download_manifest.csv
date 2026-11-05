@@ -1,0 +1,9 @@
+﻿file,url,bytes,sha256,official_sha256,verified
+SHA256SUMS.txt,https://physionet.org/files/mitdb/1.0.0/SHA256SUMS.txt,60849,b61158a96d5f2ca80edfb354a9a66a6324836c390a84e1966dcee2b907d6be43,,False
+RECORDS,https://physionet.org/files/mitdb/1.0.0/RECORDS,192,fcdca7ead9fc93f612f7e025029241cb6429ba2fcd05327b661bdc6b26fbcb57,fcdca7ead9fc93f612f7e025029241cb6429ba2fcd05327b661bdc6b26fbcb57,True
+100.dat,https://physionet.org/files/mitdb/1.0.0/100.dat,1950000,b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639,b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639,True
+100.hea,https://physionet.org/files/mitdb/1.0.0/100.hea,143,60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e,60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e,True
+100.atr,https://physionet.org/files/mitdb/1.0.0/100.atr,4558,8d8a5349fb16638ebbf649f1779d12e96d91b736b2aafe59db43719ae583d471,8d8a5349fb16638ebbf649f1779d12e96d91b736b2aafe59db43719ae583d471,True
+200.dat,https://physionet.org/files/mitdb/1.0.0/200.dat,1950000,a9e203b3807b9fcd3647cde03444437cb8eec7f5128a8eb413edafb394272e0f,a9e203b3807b9fcd3647cde03444437cb8eec7f5128a8eb413edafb394272e0f,True
+200.hea,https://physionet.org/files/mitdb/1.0.0/200.hea,306,9e0c2ff5b790cf624deab0ccb8a9f211a9e29a748d8197da3c1ee7c5b596b40c,9e0c2ff5b790cf624deab0ccb8a9f211a9e29a748d8197da3c1ee7c5b596b40c,True
+200.atr,https://physionet.org/files/mitdb/1.0.0/200.atr,8114,f9624a11696760427d75314a78c31f89ca3c446af855890c8f8b66cddd8b3a3f,f9624a11696760427d75314a78c31f89ca3c446af855890c8f8b66cddd8b3a3f,True

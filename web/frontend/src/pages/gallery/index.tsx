@@ -1,0 +1,27 @@
+import React, { useEffect, useState } from 'react';
+import { Alert, Button, Card, Drawer, Empty, Image, Input, Modal, Pagination, Select, Space, Tag, App } from 'antd';
+import { DownloadOutlined, FileTextOutlined, SearchOutlined } from '@ant-design/icons';
+import { PageHeading, ResourceState, useResource } from '@/components/Research';
+import { request } from '@/services/api';
+import {MotionCard} from '@/components/Motion';
+import useSessionState from '@/hooks/useSessionState';
+import {Link} from '@umijs/max';
+interface Figure {id:string; title:string; category:string; path:string; description:string;url:string;report:string}
+export default function Gallery() {
+  const resource=useResource<{figures:Figure[]}>('/api/research/gallery'); const {message}=App.useApp();
+  const [search,setSearch]=useSessionState('gallery.search',''); const [category,setCategory]=useSessionState('gallery.category','all'); const [selected,setSelected]=useState<Figure>(); const [report,setReport]=useState(''); const [reportLoading,setReportLoading]=useState(false);
+  const [page,setPage]=useState(1);
+  const [zoom,setZoom]=useState(1);
+  useEffect(()=>{if(!selected)return;const key=(e:KeyboardEvent)=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();const list=(resource.data?.figures||[]).filter(f=>(category==='all'||f.category===category)&&`${f.title} ${f.path} ${f.description}`.toLowerCase().includes(search.toLowerCase()));const index=list.findIndex(f=>f.id===selected.id);setSelected(list[(index+(e.key==='ArrowRight'?1:-1)+list.length)%list.length]);setZoom(1);};window.addEventListener('keydown',key);return()=>window.removeEventListener('keydown',key);},[selected,resource.data,search,category]);
+  if(!resource.data) return <div className="research-page"><ResourceState {...resource} /></div>;
+  const figures=resource.data.figures; const filtered=figures.filter(f=>(category==='all'||f.category===category)&&`${f.title} ${f.path} ${f.description}`.toLowerCase().includes(search.toLowerCase()));
+  const openReport=async(f:Figure)=>{setReportLoading(true);try{const response=await fetch(`/api/research/reports/${f.report}`,{signal:AbortSignal.timeout(15000)});if(!response.ok)throw Error(`报告读取失败 (${response.status})`);setReport(await response.text());}catch(e){message.error((e as Error).message);}finally{setReportLoading(false);}};
+  return <div className="research-page"><PageHeading title="科研可视化图库" description="浏览本地真实实验图像，保留原始比例与完整图表内容。" extra={<Tag>{figures.length} 张已生成图像</Tag>} />
+    <div className="filter-bar"><Space wrap><Input aria-label="搜索科研图像" placeholder="搜索标题、来源或说明" prefix={<SearchOutlined />} value={search} onChange={e=>{setSearch(e.target.value);setPage(1);}} allowClear style={{width:300}} /><Select aria-label="图像类别" value={category} onChange={v=>{setCategory(v);setPage(1);}} style={{width:260}} options={[{value:'all',label:'全部类别'},...Array.from(new Set(figures.map(f=>f.category))).map(value=>({value,label:value}))]} /><span>{filtered.length} 张匹配图像</span></Space></div>
+    {filtered.length?<><div className="gallery-grid">{filtered.slice((page-1)*12,page*12).map(f=><MotionCard key={f.id} className="figure-card" cover={<button className="figure-preview" onClick={()=>{setSelected(f);setZoom(1);}} aria-label={`查看大图 ${f.title}`}><Image preview={false} src={`${f.url}?thumbnail=true`} alt={f.title} loading="lazy" fallback="" placeholder={<span>正在加载图像…</span>} /></button>}><Tag>{f.category}</Tag><h3 title={f.title}>{f.title}</h3><p>{f.description}</p><Space wrap><Button size="small" onClick={()=>{setSelected(f);setZoom(1);}}>查看大图</Button><Button size="small" icon={<FileTextOutlined />} loading={reportLoading} onClick={()=>openReport(f)}>来源报告</Button><a href={`${f.url}?download=true`} download><Button size="small" icon={<DownloadOutlined />}>下载</Button></a></Space></MotionCard>)}</div><Pagination style={{marginTop:24}} current={page} pageSize={12} total={filtered.length} onChange={setPage} showSizeChanger={false} /></>:<Empty description="未找到匹配图像，请调整搜索或类别" />}
+    <Modal title={selected?.title} open={Boolean(selected)} onCancel={()=>setSelected(undefined)} footer={null} width="92vw" destroyOnHidden><Space style={{marginBottom:16}} wrap><Button aria-label="上一张图像" onClick={()=>{const i=filtered.findIndex(f=>f.id===selected?.id);setSelected(filtered[(i-1+filtered.length)%filtered.length]);setZoom(1);}}>上一张</Button><Button aria-label="下一张图像" onClick={()=>{const i=filtered.findIndex(f=>f.id===selected?.id);setSelected(filtered[(i+1)%filtered.length]);setZoom(1);}}>下一张</Button><Button aria-label="缩小" onClick={()=>setZoom(v=>Math.max(.5,v-.25))}>缩小</Button><Button aria-label="放大" onClick={()=>setZoom(v=>Math.min(3,v+.25))}>放大</Button><span>{Math.round(zoom*100)}%</span><Link to={selected?.report==='diagnosis'?'/generalization':'/experiments'}>返回来源实验</Link></Space><div style={{height:'65vh',overflow:'auto',textAlign:'center'}}><Image src={selected?.url} alt={selected?.title} preview={false} style={{width:'100%',height:'60vh',objectFit:'contain',transform:`scale(${zoom})`,transformOrigin:'center top'}} /></div><details><summary>展开图像说明</summary><p>{selected?.description}</p></details><p className="data-source">来源：{selected?.path}</p></Modal>
+    <Drawer title="已有来源报告 · 原文" open={Boolean(report)} onClose={()=>setReport('')} size={760}><pre className="report-content">{report}</pre></Drawer>
+  </div>;
+}
+
+

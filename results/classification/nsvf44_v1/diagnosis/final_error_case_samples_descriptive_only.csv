@@ -1,0 +1,5 @@
+﻿sample_id,record_id,subject_id,annotation_sample,time_s,lead_name,original_label,true_class,predicted_class,predicted_class_probability,probabilities,selection
+212:1427,212,subject_212,329145,914.2916666666666,MLII,R,N,S,0.57123226,"P(N)=0.38, P(S)=0.57, P(V)=0.02, P(F)=0.03",median predicted-class confidence within the error direction
+208:1482,208,subject_208,313756,871.5444444444445,MLII,F,F,N,0.667998,"P(N)=0.67, P(S)=0.32, P(V)=0.00, P(F)=0.01",median predicted-class confidence within the error direction
+208:1293,208,subject_208,271553,754.3138888888889,MLII,F,F,V,0.9055055,"P(N)=0.05, P(S)=0.01, P(V)=0.91, P(F)=0.04",median predicted-class confidence within the error direction
+116:1799,116,subject_116,488586,1357.1833333333334,MLII,V,V,N,0.509367,"P(N)=0.51, P(S)=0.41, P(V)=0.06, P(F)=0.02",median predicted-class confidence within the error direction

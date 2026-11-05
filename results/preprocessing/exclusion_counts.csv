@@ -1,0 +1,16 @@
+﻿split,exclusion_reason,count
+test,filter_edge_or_gap_guard,79
+test,included,13967
+test,non_beat_annotation,374
+test,not_target_group,2555
+test,window_boundary,8
+train,filter_edge_or_gap_guard,390
+train,included,70231
+train,non_beat_annotation,2525
+train,not_target_group,5687
+train,window_boundary,27
+val,filter_edge_or_gap_guard,71
+val,included,13089
+val,non_beat_annotation,254
+val,not_target_group,3385
+val,window_boundary,5

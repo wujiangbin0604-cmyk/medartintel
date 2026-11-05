@@ -1,0 +1,810 @@
+{
+  "checks": [
+    {
+      "route": "dashboard",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "database",
+          "width": 24
+        },
+        {
+          "label": "heart",
+          "width": 24
+        },
+        {
+          "label": "experiment",
+          "width": 24
+        },
+        {
+          "label": "trophy",
+          "width": 24
+        },
+        {
+          "label": "交互心拍类别环形图",
+          "width": 270.5
+        },
+        {
+          "label": "各类别心拍数量联动柱状图",
+          "width": 541
+        },
+        {
+          "label": "类别筛选后的分区组成",
+          "width": 541
+        },
+        {
+          "label": "N/V 动态模型指标",
+          "width": 541
+        },
+        {
+          "label": "总览选中模型混淆矩阵",
+          "width": 541
+        },
+        {
+          "label": "database",
+          "width": 156.65625
+        },
+        {
+          "label": "line-chart",
+          "width": 156.671875
+        },
+        {
+          "label": "experiment",
+          "width": 156.671875
+        },
+        {
+          "label": "experiment",
+          "width": 156.65625
+        },
+        {
+          "label": "trophy",
+          "width": 156.671875
+        },
+        {
+          "label": "file-search",
+          "width": 156.671875
+        },
+        {
+          "label": "info-circle",
+          "width": 24
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "ai-detection",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "book",
+          "width": 14
+        },
+        {
+          "label": "database",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "info-circle",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "up",
+          "width": 7
+        },
+        {
+          "label": "down",
+          "width": 7
+        },
+        {
+          "label": "up",
+          "width": 7
+        },
+        {
+          "label": "down",
+          "width": 7
+        },
+        {
+          "label": "info-circle",
+          "width": 12
+        },
+        {
+          "label": "MIT-BIH ECG waveform and annotations",
+          "width": 924
+        },
+        {
+          "label": "play-circle",
+          "width": 13
+        },
+        {
+          "label": "step-backward",
+          "width": 13
+        },
+        {
+          "label": "reload",
+          "width": 13
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "heart",
+          "width": 14
+        },
+        {
+          "label": "api",
+          "width": 14
+        },
+        {
+          "label": "heart",
+          "width": 14
+        },
+        {
+          "label": "ellipsis",
+          "width": 13.328125
+        },
+        {
+          "label": "api",
+          "width": 14
+        },
+        {
+          "label": "check-circle",
+          "width": 15
+        },
+        {
+          "label": "database",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "comparison",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "book",
+          "width": 14
+        },
+        {
+          "label": "database",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "info-circle",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "up",
+          "width": 7
+        },
+        {
+          "label": "down",
+          "width": 7
+        },
+        {
+          "label": "up",
+          "width": 7
+        },
+        {
+          "label": "down",
+          "width": 7
+        },
+        {
+          "label": "info-circle",
+          "width": 12
+        },
+        {
+          "label": "MIT-BIH ECG waveform and annotations",
+          "width": 924
+        },
+        {
+          "label": "play-circle",
+          "width": 13
+        },
+        {
+          "label": "step-backward",
+          "width": 13
+        },
+        {
+          "label": "reload",
+          "width": 13
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "heart",
+          "width": 14
+        },
+        {
+          "label": "api",
+          "width": 14
+        },
+        {
+          "label": "heart",
+          "width": 14
+        },
+        {
+          "label": "ellipsis",
+          "width": 13.328125
+        },
+        {
+          "label": "单拍原始与滤波波形，单位毫伏",
+          "width": 0
+        },
+        {
+          "label": "api",
+          "width": 0
+        },
+        {
+          "label": "loading",
+          "width": 0
+        },
+        {
+          "label": "loading",
+          "width": 0
+        },
+        {
+          "label": "check-circle",
+          "width": 0
+        },
+        {
+          "label": "database",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        },
+        {
+          "label": "safety-certificate",
+          "width": 0
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "experiments",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "ellipsis",
+          "width": 13.328125
+        },
+        {
+          "label": "info-circle",
+          "width": 24
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "N/V cnn_1d 真实标签与预测标签混淆矩阵",
+          "width": 541
+        },
+        {
+          "label": "Train Loss Validation Loss Validation Macro-F1 与最佳 Epoch",
+          "width": 1142
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "generalization",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "exclamation-circle",
+          "width": 24
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "真实受试者类别热力图",
+          "width": 541
+        },
+        {
+          "label": "四分类误分类计数",
+          "width": 541
+        },
+        {
+          "label": "各分区少数类集中度",
+          "width": 541
+        },
+        {
+          "label": "真实权重消融验证指标",
+          "width": 541
+        },
+        {
+          "label": "五折患者分组交叉验证",
+          "width": 541
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "选中权重策略的类别预测分布",
+          "width": 1142
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "gallery",
+      "body": 1440,
+      "viewport": 1440,
+      "charts": [
+        {
+          "label": "heart",
+          "width": 25
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "menu-fold",
+          "width": 14
+        },
+        {
+          "label": "dashboard",
+          "width": 20
+        },
+        {
+          "label": "line-chart",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 20
+        },
+        {
+          "label": "experiment",
+          "width": 20
+        },
+        {
+          "label": "bar-chart",
+          "width": 20
+        },
+        {
+          "label": "picture",
+          "width": 20
+        },
+        {
+          "label": "fund-projection-screen",
+          "width": 20
+        },
+        {
+          "label": "heart",
+          "width": 167
+        },
+        {
+          "label": "search",
+          "width": 14
+        },
+        {
+          "label": "close-circle",
+          "width": 12
+        },
+        {
+          "label": "down",
+          "width": 12
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "file-text",
+          "width": 14
+        },
+        {
+          "label": "download",
+          "width": 14
+        },
+        {
+          "label": "left",
+          "width": 12
+        },
+        {
+          "label": "double-right",
+          "width": 12
+        },
+        {
+          "label": "ellipsis",
+          "width": 24
+        },
+        {
+          "label": "right",
+          "width": 12
+        }
+      ],
+      "overflow": []
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "warnings": [
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"topLevelAwait\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors.",
+    "The generated code contains 'async/await' because this module is using \"external script\".\nHowever, your target environment does not appear to support 'async/await'.\nAs a result, the code may not run as expected or may cause runtime errors."
+  ]
+}

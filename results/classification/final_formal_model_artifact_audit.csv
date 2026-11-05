@@ -1,0 +1,7 @@
+﻿task,model,artifact,loaded_read_only,class_names,class_ids,n_features,parameter_or_tensor_count,scaler,best_epoch,matches_config_and_log,estimator_parameters_match_config,best_and_final_weights_identical,best_val_macro_f1,training_log_best_val_macro_f1,best_score_matches_logs
+nv44_v1,logistic_regression,checkpoints/nv44_v1/formal/logistic_regression.joblib,True,"N,V","0,1",253,254,StandardScaler,,True,True,,,,
+nv44_v1,random_forest,checkpoints/nv44_v1/formal/random_forest.joblib,True,"N,V","0,1",253,56016,none,,True,True,,,,
+nv44_v1,cnn_1d,checkpoints/nv44_v1/formal/cnn/cnn_final_best.pt,True,"N,V","0,1",253,9058,训练折拟合参数（见处理配置）,12,True,,True,0.6630092908675226,0.6630092908675226,True
+nsvf44_v1,logistic_regression,checkpoints/nsvf44_v1/formal/logistic_regression.joblib,True,"N,S,V,F","0,1,2,3",253,1016,StandardScaler,,True,True,,,,
+nsvf44_v1,random_forest,checkpoints/nsvf44_v1/formal/random_forest.joblib,True,"N,S,V,F","0,1,2,3",253,134326,none,,True,True,,,,
+nsvf44_v1,cnn_1d,checkpoints/nsvf44_v1/formal/cnn/cnn_final_best.pt,True,"N,S,V,F","0,1,2,3",253,9188,训练折拟合参数（见处理配置）,11,True,,True,0.4734629767101717,0.4734629767101717,True

@@ -1,0 +1,21 @@
+{
+  "source": "training labels only",
+  "class_names": [
+    "N",
+    "S",
+    "V",
+    "F"
+  ],
+  "counts": [
+    65436,
+    1347,
+    4747,
+    411
+  ],
+  "inverse_frequency_balanced_weights": [
+    0.2748525142669678,
+    13.352078437805176,
+    3.7887613773345947,
+    43.75973129272461
+  ]
+}

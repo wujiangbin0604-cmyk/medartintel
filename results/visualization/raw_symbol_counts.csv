@@ -1,0 +1,7 @@
+﻿symbol,meaning_zh,annotation_kind,aami_group,count
+N,正常心拍,mapped_beat,N,3982
+V,室性期前收缩,mapped_beat,V,827
++,节律改变（详见 aux_note）,non_beat,,149
+A,房性期前收缩,mapped_beat,S,63
+~,信号质量改变（保留 subtype）,non_beat,,43
+F,室性与正常心拍融合,mapped_beat,F,2
