@@ -34,8 +34,23 @@ def main():
             raise RuntimeError("Update contains protected data")
         if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != entry["sha256"]:
             raise RuntimeError("Payload checksum mismatch: " + entry["path"])
+    # Check the complete resulting deployment before copying anything. An older
+    # server may not have launchers that were introduced after its initial ZIP.
+    runtime_manifest_name = "deploy/ubuntu22/bundle_manifest.json"
+    runtime_manifest_path = (payload if runtime_manifest_name in names else target) / runtime_manifest_name
+    runtime = json.loads(runtime_manifest_path.read_text(encoding="utf-8"))
+    for entry in runtime["files"]:
+        relative = Path(entry["path"])
+        if relative.is_absolute() or ".." in relative.parts:
+            raise RuntimeError("Invalid runtime artifact path")
+        source_root = payload if entry["path"] in names else target
+        source = (source_root / relative).resolve()
+        if not source.is_relative_to(source_root) or not source.is_file():
+            raise RuntimeError("Missing runtime artifact: " + entry["path"])
+        if hashlib.sha256(source.read_bytes()).hexdigest() != entry["sha256"]:
+            raise RuntimeError("Runtime checksum mismatch: " + entry["path"])
     if args.check:
-        print(json.dumps({"verified_files": len(entries), "target": str(target)}, ensure_ascii=False))
+        print(json.dumps({"verified_files": len(entries), "verified_runtime_files": len(runtime["files"]), "target": str(target)}, ensure_ascii=False))
         return
     backup = target.parent / ("." + target.name + "-update-backups") / datetime.now().strftime("%Y%m%d-%H%M%S-%f")
     backup.mkdir(parents=True, exist_ok=False)
