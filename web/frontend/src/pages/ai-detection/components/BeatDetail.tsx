@@ -17,7 +17,6 @@ export default function BeatDetail({ beat, prediction, onPin, pinnedCount,varian
       <div className="prediction-top"><span>AI 预测 · 与专家参考{prediction.prediction_matches_expert ? '一致' : '不同'}</span><Tag color={CLASS_COLORS[prediction.predicted_class]}>{prediction.predicted_class}</Tag></div>
       <div className="probability-list">{Object.entries(prediction.class_probabilities).map(([label,value])=><ProbabilityBar key={label} label={label} value={value} color={CLASS_COLORS[label]}/>)}</div>
       <div className="prediction-foot">{prediction.model_id.replaceAll('_', ' ')} · {prediction.inference_time_ms.toFixed(2)} ms · {prediction.dataset_split} split</div>
-      <Typography.Text type="secondary" className="small-note">概率未经临床校准，仅供教学演示。</Typography.Text>
     </div> : <div className="prediction-pending">{beat.inference_unavailable_reason || '切换模型可对同一标注位置重新推理'}</div>)}
   </div>;
 }

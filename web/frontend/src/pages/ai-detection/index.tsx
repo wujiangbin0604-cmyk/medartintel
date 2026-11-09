@@ -242,7 +242,7 @@ export default function AIDetectionPage({ presentationStep, demoPaused=false }: 
     </div>
     {!focusMode&&!wide&&selected&&<Card className="compact-beat-detail" title="当前节拍详情">{detail()}</Card>}
     {!focusMode&&playback}
-    <PredictionComparison currentModel={modelId} onModelChange={setModelId} loading={inferenceLoading} result={matchingPlaybackAnnotation?.predictions?.length===3?{models:matchingPlaybackAnnotation.predictions,all_models_agree:new Set(matchingPlaybackAnnotation.predictions.map(p=>p.predicted_class)).size===1,agreement_statement:'当前历史心拍的真实三模型预测；专家标签仅供参考。'}:comparison}/>
+    <PredictionComparison currentModel={modelId} onModelChange={setModelId} loading={inferenceLoading} result={matchingPlaybackAnnotation?.predictions?.length===3?{models:matchingPlaybackAnnotation.predictions,all_models_agree:new Set(matchingPlaybackAnnotation.predictions.map(p=>p.predicted_class)).size===1,agreement_statement:'当前心拍的三模型预测与专家标注对比。'}:comparison}/>
     {focusMode&&playback}
     {playbackSegment&&<div className="playback-status">历史片段 · 已缓存 {playbackSegment.predicted_beat_count} 个可推理心拍 · 当前 {(playhead??startSec).toFixed(2)} s · {playbackSegment.notice}</div>}
     <details className="morphology-details"><summary>心拍形态对比与单拍工具</summary><Button className="beat-detail-toggle" disabled={!selected} onClick={()=>setBeatFocus(v=>!v)}>{beatFocus?'返回完整波形':'查看心拍细节'}</Button>{beatFocus&&<div className="beat-focus">{beat&&<div className="enlarged-beat"><BeatDetail beat={beat} prediction={null} onPin={pinBeat} pinnedCount={pinned.length} variant="waveform"/></div>}</div>}<Button disabled={!beat?.inference_eligible} loading={inferenceLoading} onClick={()=>setRun(n=>n+1)}>运行 {MODEL_LABELS[modelId]} 推理</Button><MorphologyCompare beats={pinned} onRemove={sample=>setPinned(items=>items.filter(b=>b.annotation_sample!==sample))}/></details>
@@ -253,7 +253,7 @@ export default function AIDetectionPage({ presentationStep, demoPaused=false }: 
       <Typography.Paragraph type="secondary">专家参考标签与 AI 预测分别展示。原始符号 {selected?.original_label || '—'} / AAMI {selected?.aami_label || '—'}。</Typography.Paragraph>
     </Drawer>
     <Drawer title="演示指引" open={guideOpen} onClose={() => setGuideOpen(false)} size={420}>
-      <div className="guide-content"><Tag color="blue">课程演示路径</Tag><Typography.Title level={4}>从真实标注到模型结果</Typography.Title><ol><li><b>选择记录。</b>先选 200；右侧会显示记录、受试者分区和可用导联。</li><li><b>选择任务。</b>N/V 或 N/S/V/F 标签范围来自项目现有 AAMI 映射。</li><li><b>选取心拍。</b>读取时间窗后，点击图中的标注符号查看原始与滤波波形。</li><li><b>运行模型。</b>选一个模型做单拍推理，或比较三个模型对同一心拍的输出。</li><li><b>回放历史片段。</b>使用播放、暂停、倍速和时间滑块浏览实际记录。回放预测在加载片段时批量生成并缓存。</li></ol><Alert type="warning" showIcon title="范围说明" description="排除记录、非 MLII 导联及不属于当前任务的标注可用于数据浏览，但不会进入模型推理。这里的专家标签供回顾展示，不作为模型特征。" /><Alert className="guide-alert" type="info" showIcon title="结果解释" description="显示的是已保存课程模型对 MIT-BIH 历史样本的输出。训练/验证/测试分区仅用于追溯，不代表独立临床验证；模型概率未经校准。" /></div>
+      <div className="guide-content"><Tag color="blue">课程演示路径</Tag><Typography.Title level={4}>从真实标注到模型结果</Typography.Title><ol><li><b>选择记录。</b>先选 200；右侧会显示记录、受试者分区和可用导联。</li><li><b>选择任务。</b>N/V 或 N/S/V/F 标签范围来自项目现有 AAMI 映射。</li><li><b>选取心拍。</b>读取时间窗后，点击图中的标注符号查看原始与滤波波形。</li><li><b>运行模型。</b>选一个模型做单拍推理，或比较三个模型对同一心拍的输出。</li><li><b>回放历史片段。</b>使用播放、暂停、倍速和时间滑块浏览实际记录。回放预测在加载片段时批量生成并缓存。</li></ol></div>
     </Drawer>
   </main>;
 }

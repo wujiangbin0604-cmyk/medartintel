@@ -1057,8 +1057,8 @@
     },
     {
       "path": "deploy/ubuntu22/build_release.py",
-      "bytes": 4454,
-      "sha256": "b0fdf0aeb00cb886e62b4c11305894bf4aabd848e06a5ba005d4309f82650f3c"
+      "bytes": 4488,
+      "sha256": "c6eadf5fd3cfcaf9f067fd88ed0b15f80c5dc9c7822ba57d9389b676219d2889"
     },
     {
       "path": "deploy/ubuntu22/check_linux_dependencies.py",
@@ -3227,8 +3227,8 @@
     },
     {
       "path": "web/backend/app.py",
-      "bytes": 13146,
-      "sha256": "f0719ec2f74d2ca195865911e72c4b24bb28ad3f5bf1d5d92c36a0a0aa1a0a2c"
+      "bytes": 13052,
+      "sha256": "b8ddad9327e5fce187f077af338b8081803aeb362c0b2ad96f0089c4c9c5fe1b"
     },
     {
       "path": "web/backend/build_heartbeat_levels.py",
@@ -3237,8 +3237,8 @@
     },
     {
       "path": "web/backend/ecg_service.py",
-      "bytes": 20901,
-      "sha256": "8dda4809b679388709e3d0760fa8184067c46577dcb05d9992b9a340aad6de5a"
+      "bytes": 20838,
+      "sha256": "07ec2688f77eb66db7d4e8bdb537353e26c8f7f973d6445a112f30d751c69163"
     },
     {
       "path": "web/backend/game_data/heartbeat_levels.json",
@@ -3267,8 +3267,8 @@
     },
     {
       "path": "web/backend/research.py",
-      "bytes": 4544,
-      "sha256": "b8b5ef6beeecd93ab96db7fad5429bdbecd8ee81aa112cf7515d01a934d8febc"
+      "bytes": 4514,
+      "sha256": "3477f6f797acab8dac2e79a76747201cd70be0cb8d6058279e75e1a51319f7ef"
     },
     {
       "path": "web/backend/schemas.py",
@@ -3541,6 +3541,21 @@
       "sha256": "9e4818bd2b1dbcc85658067202a9522fda81138f3d8e32e6d80294cb5fca7171"
     },
     {
+      "path": "web/docs/site_reports/MIT_BIH_完整实验报告.md",
+      "bytes": 34242,
+      "sha256": "90dd9dad65b73d544fa949172b2163600fb304be51c7732959c0e7067823d07b"
+    },
+    {
+      "path": "web/docs/site_reports/experiment_summary.md",
+      "bytes": 25343,
+      "sha256": "6eafcea3a517602536bc2b678f7740eda6e10925db62994dc40d71a34b093825"
+    },
+    {
+      "path": "web/docs/site_reports/four_class_failure_diagnosis.md",
+      "bytes": 22429,
+      "sha256": "76136c97e82f6f44270e7adf476f21a2ff5bd1935a479e981c653441eac49710"
+    },
+    {
       "path": "web/docs/welcome_onboarding.md",
       "bytes": 11293,
       "sha256": "6fca367eb87fc5a9317524e7cfd96b774743bc9c3cf201217395452eb5293c15"
@@ -3562,8 +3577,8 @@
     },
     {
       "path": "web/frontend/dist/196.async.js",
-      "bytes": 49425,
-      "sha256": "80f182537b92a305245e07141a0693dd32ef4620c4494c90c3cf1981873f3de7"
+      "bytes": 48023,
+      "sha256": "0135f720b4fcd9c34ff2e739075a18eb449ca88920be7a5899684e0968ff52c3"
     },
     {
       "path": "web/frontend/dist/209.async.js",
@@ -3587,8 +3602,8 @@
     },
     {
       "path": "web/frontend/dist/295.async.js",
-      "bytes": 31063,
-      "sha256": "7511bcb57035321fc307fd82bcb55c35898f1aca6d805ee8238b45d8b63dec7f"
+      "bytes": 30942,
+      "sha256": "f16900c833fbf06e094adaae0a27745a0e5afa067494481b61abfbf8022a45d0"
     },
     {
       "path": "web/frontend/dist/338.chunk.css",
@@ -3642,8 +3657,8 @@
     },
     {
       "path": "web/frontend/dist/831.async.js",
-      "bytes": 14191,
-      "sha256": "4da16c3daf5706b9cfdef52a133347228bfc264aa1bc35072d4354139f12adb5"
+      "bytes": 13829,
+      "sha256": "42df8c3787a17d5f73effafdbbb6956719b9f1935d26715856b515e09a38a29d"
     },
     {
       "path": "web/frontend/dist/836.async.js",
@@ -3677,8 +3692,8 @@
     },
     {
       "path": "web/frontend/dist/layouts__index.async.js",
-      "bytes": 22915,
-      "sha256": "186b60364b59c694a9640c591d1fae80b5827264cde348c77f61beec8ab4ef0a"
+      "bytes": 22586,
+      "sha256": "8a5e574afe01220c19cffd960396b6761ca7d99cbc71ffe22553d37bb12fdc3f"
     },
     {
       "path": "web/frontend/dist/layouts__index.chunk.css",
@@ -3687,8 +3702,8 @@
     },
     {
       "path": "web/frontend/dist/p__ai-detection__index.async.js",
-      "bytes": 61771,
-      "sha256": "b6a57f9e8e3e61ac905198b1c8238b892cd566a39de87f7d50c50e01d461a347"
+      "bytes": 60371,
+      "sha256": "c094adf6b3c75eec11d579395ac66b38ca8a8feb583b3da11f862b2c5f61f925"
     },
     {
       "path": "web/frontend/dist/p__ai-detection__index.chunk.css",
@@ -3707,13 +3722,13 @@
     },
     {
       "path": "web/frontend/dist/p__experiments__index.async.js",
-      "bytes": 17539,
-      "sha256": "f3680a5af4683aefb83bd7fde4adf4707278db87e5751b301f0005dde23278f3"
+      "bytes": 17307,
+      "sha256": "7e74997a1cd2dd906da747f0f539f41bd04163cea8705d4c0f78683439525fe5"
     },
     {
       "path": "web/frontend/dist/p__gallery__index.async.js",
-      "bytes": 16213,
-      "sha256": "14dd59ac529d2b4992c31523312b66cc31db7100a7d1665dc5a2d4ee90f437c2"
+      "bytes": 16207,
+      "sha256": "c28acc621e0743cc587abb824433db546c8c893be66bf40a3ce5cc306b0bd62d"
     },
     {
       "path": "web/frontend/dist/p__generalization__index.async.js",
@@ -3722,18 +3737,18 @@
     },
     {
       "path": "web/frontend/dist/p__interactive-lab__HeartbeatHunter.async.js",
-      "bytes": 47387,
-      "sha256": "ec552628c60abfae60324b53b69dc4c1aa3a6a7fab57e8fb57efc06c308cb0f0"
+      "bytes": 46862,
+      "sha256": "524b5a1f25843a3ebeb4c3b5ba9953a5f5f38fec7e4e4a543db4c2a28e8d28bf"
     },
     {
       "path": "web/frontend/dist/p__interactive-lab__index.async.js",
-      "bytes": 23861,
-      "sha256": "d0020a3a940e57672695daf7755e9bb93d6ac232a9219d14d232a9bdffda20f6"
+      "bytes": 23723,
+      "sha256": "0220af1515860f633a9f85c90e2e57788c576a0b786fda5fabd762a4642c19a3"
     },
     {
       "path": "web/frontend/dist/p__presentation-demo__index.async.js",
-      "bytes": 11922,
-      "sha256": "453fc874fc354c8672c07bdb1b01ec365e85135fa480507e8fa9926054132ff9"
+      "bytes": 11618,
+      "sha256": "dd16837330c88d29e3a751ceffb93db25526581c51b6bba43aed78c02f5549c8"
     },
     {
       "path": "web/frontend/dist/p__presentation-demo__index.chunk.css",
@@ -3832,8 +3847,8 @@
     },
     {
       "path": "web/frontend/src/components/onboarding/ECGPreview.tsx",
-      "bytes": 2977,
-      "sha256": "46a35421c45dfdec0cefe388d2237021b4aca3a04e254c43b8980af6e59a1f91"
+      "bytes": 2940,
+      "sha256": "a44362b35b7aef03541cdcf80962d508f455af03407c17a33566e222e27f0d87"
     },
     {
       "path": "web/frontend/src/components/onboarding/GameRecommendation.tsx",
@@ -3842,8 +3857,8 @@
     },
     {
       "path": "web/frontend/src/components/onboarding/WelcomeOnboarding.tsx",
-      "bytes": 5600,
-      "sha256": "ff0bcdece2ea99fc2e423da7b879a18f046274ab96f9dc617775f2bc0ca57600"
+      "bytes": 5502,
+      "sha256": "4dda59183864b59dc1a0dae36550f2da679b8086c5a248c0d1233d2eb6b051ac"
     },
     {
       "path": "web/frontend/src/components/onboarding/state.ts",
@@ -3877,8 +3892,8 @@
     },
     {
       "path": "web/frontend/src/layouts/MedicalLayout.tsx",
-      "bytes": 5696,
-      "sha256": "d71ac1ed95e2245607aeaeba4f08ef6d66b19c21d795c1696eea39971f067e7f"
+      "bytes": 5669,
+      "sha256": "a47bc8eb8da9cb0176b8740f2ef895593f11ec9aa419d6ad44683669a7337420"
     },
     {
       "path": "web/frontend/src/layouts/index.tsx",
@@ -3887,8 +3902,8 @@
     },
     {
       "path": "web/frontend/src/pages/ai-detection/components/BeatDetail.tsx",
-      "bytes": 3716,
-      "sha256": "1967ff5fc0b455c851f4702c1519c15d5258ea3610ecad7924bce6aeac0ed036"
+      "bytes": 3585,
+      "sha256": "c8cff2846d626a2612d4b7b360231d4e5b0257f3f47cf3c78c264874ca18b55a"
     },
     {
       "path": "web/frontend/src/pages/ai-detection/components/ECGSignal.tsx",
@@ -3902,18 +3917,18 @@
     },
     {
       "path": "web/frontend/src/pages/ai-detection/components/ModelResults.tsx",
-      "bytes": 4430,
-      "sha256": "10f84514b2c9a07ff8a164a3aac56a4847f68d46e87712840839fb5144380b83"
+      "bytes": 4329,
+      "sha256": "fbabd3a2b990d0d013453a2c4ca179c65a7c044fc3866fb869080daa522c8243"
     },
     {
       "path": "web/frontend/src/pages/ai-detection/components/PlaybackControls.tsx",
-      "bytes": 2315,
-      "sha256": "0a3b4a46993b9186ac76581f452abc15ea92a3c31e0e9c73a0a30cc98574e832"
+      "bytes": 2233,
+      "sha256": "bedbaa39a05a98627a06aca3960c85a56749d1162d7679430c95a8a4567c4e98"
     },
     {
       "path": "web/frontend/src/pages/ai-detection/components/PredictionComparison.tsx",
-      "bytes": 2358,
-      "sha256": "85a522d92ac7277e7d4439bcdd337c728a9ceace4815368efefe1c96ec6d72d5"
+      "bytes": 2325,
+      "sha256": "d59b66d65492bffec449c2e30168ff2df9d154f61c0b63a551f33f3b76a44a90"
     },
     {
       "path": "web/frontend/src/pages/ai-detection/index.less",
@@ -3922,18 +3937,18 @@
     },
     {
       "path": "web/frontend/src/pages/ai-detection/index.tsx",
-      "bytes": 30485,
-      "sha256": "9ff3d56851cad350faff3bd497e9ba253a4bdd73488e6409ae384b3fb2b43c26"
+      "bytes": 29958,
+      "sha256": "cff909f64e3e3abb8dbdb7680dab44cd2a7316128b9698aa8f6aa0bcda972aa9"
     },
     {
       "path": "web/frontend/src/pages/dashboard/DashboardView.tsx",
-      "bytes": 9853,
-      "sha256": "c408e4df0f64d47e87ed2f955f48167ddaf5af1559746dbdadc61d15ea0cb7be"
+      "bytes": 9733,
+      "sha256": "eb0281dd324e2665b0660d685b6d8aa3c0d40b55febfb9115df462642e2403a1"
     },
     {
       "path": "web/frontend/src/pages/dashboard/FidelityDashboard.tsx",
-      "bytes": 10456,
-      "sha256": "8d521fb9171aea78734424649607767fe881a5463fb72de81f879c343ee8be59"
+      "bytes": 10440,
+      "sha256": "0758742156225d4f817c39cc0ec39d27db6c2f725a064e263fff5bca097cdc63"
     },
     {
       "path": "web/frontend/src/pages/dashboard/index.tsx",
@@ -3942,18 +3957,18 @@
     },
     {
       "path": "web/frontend/src/pages/experiments/index.tsx",
-      "bytes": 6290,
-      "sha256": "93837577e64f9b8bb49e3985620f2d2bb04eab06fa1e28cfa9c4080164a61373"
+      "bytes": 6176,
+      "sha256": "f78e83b956e9f4b1468a41210f7958f63146c8a49e0a2967e62e958fc06ccdb8"
     },
     {
       "path": "web/frontend/src/pages/gallery/index.tsx",
-      "bytes": 5729,
-      "sha256": "52de7ceba3abbc436b6d4b10809e184d745a19f2ddd0d17f4dfbe53429255778"
+      "bytes": 5726,
+      "sha256": "04000bb816c275870190c06cd2d2667f974269637dfac628ac8f6e3f18f8ab50"
     },
     {
       "path": "web/frontend/src/pages/generalization/index.tsx",
-      "bytes": 10151,
-      "sha256": "882edc82126c745710586f65fdb9e45c68af276a714b19abb8a2ed195e499e1a"
+      "bytes": 9951,
+      "sha256": "07c0e1d8ecf8f3dd5c31bdf3ee824f734953313b6f7cd51414b0f882e4ff53e7"
     },
     {
       "path": "web/frontend/src/pages/interactive-lab/HeartbeatGameChart.tsx",
@@ -3962,8 +3977,8 @@
     },
     {
       "path": "web/frontend/src/pages/interactive-lab/HeartbeatHunter.tsx",
-      "bytes": 28637,
-      "sha256": "4095b01e53ed736f00f806de5ced082b348eacd8469b3eb2b5fa4fd58b3df2a5"
+      "bytes": 28362,
+      "sha256": "bbc16b3af36aeaece83b3c8702b85056b1e72853538f54c3bed328371e93e71e"
     },
     {
       "path": "web/frontend/src/pages/interactive-lab/gameApi.ts",
@@ -3977,13 +3992,13 @@
     },
     {
       "path": "web/frontend/src/pages/interactive-lab/index.tsx",
-      "bytes": 3360,
-      "sha256": "2214a9834f2613747bd512a4d8f27ca163fced390f7ed253e82a87164edd8cc2"
+      "bytes": 3291,
+      "sha256": "e564bd3c3829b3070df2a17bd9b6615e2bf4af3d66f9b516041a61b8dd0886c5"
     },
     {
       "path": "web/frontend/src/pages/presentation-demo/index.tsx",
-      "bytes": 3478,
-      "sha256": "55c311e9141a22734309ea55dbb749a4831e061fa2c585a21b168f459344f50e"
+      "bytes": 3442,
+      "sha256": "f3cc3c0c81ad12f9427b6fc2d87fb53d8f2385be855b4ca3966d9d12b9161da4"
     },
     {
       "path": "web/frontend/src/services/api.ts",
@@ -4062,8 +4077,8 @@
     },
     {
       "path": "web/frontend/tests/welcome-onboarding.spec.ts",
-      "bytes": 13033,
-      "sha256": "cf1e8b846b267cc29e6cbc1aee79554bcf554b283fdb5b091b627b0633f50089"
+      "bytes": 13014,
+      "sha256": "efd9358004511644689a1a139b8a0d4bc66d0461f9114b15eab6182c94f75b40"
     },
     {
       "path": "web/frontend/tests/workspace.spec.ts",

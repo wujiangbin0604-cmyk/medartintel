@@ -8,16 +8,16 @@ import Experiments from '../experiments';
 import Generalization from '../generalization';
 import {Reveal} from '@/components/Motion';
 
-const steps=['介绍项目','真实 ECG 波形','专家参考标注','CNN 真实推理','同拍三模型比较','历史波形回放','二分类与四分类','实验局限与总结'];
+const steps=['介绍项目','真实 ECG 波形','专家参考标注','CNN 真实推理','同拍三模型比较','历史波形回放','二分类与四分类','结果分析与总结'];
 const guidance=[
   '介绍 MIT-BIH 历史数据、N/V 与 N/S/V/F 任务，以及 LR、RF、1D-CNN 三种已训练模型。',
   '已定位记录 200 的 6–16 秒片段，导联 MLII。波形和标注均由本机 WFDB 文件读取。',
   '点击波形标注，或使用下方带时间的标注按钮。重点区分专家参考标签与 AI 预测标签。',
-  '点击“开始分析”。这会调用真实后端；可重复操作，显示结果与未经校准的模型概率。',
+  '点击“开始分析”。这会调用真实后端；可重复操作，显示预测结果与类别概率。',
   '点击“比较三个模型”，固定当前真实心拍，观察类别、概率、与专家标签的匹配情况及耗时。',
   '点击“播放历史片段”，演示暂停、继续、倍速和时间定位。回放的是 MIT-BIH 历史记录。',
   '切换二分类与四分类，比较 Macro-F1、类别 Support、混淆矩阵和训练曲线。',
-  '说明 S/F 少数类与患者集中度问题。项目串联了真实信号、模型推理、评估和错误诊断；现有结果用于研究教学。',
+  '展示 S/F 类别分布与患者集中度，回顾真实信号、模型推理、评估和误分类分析的完整流程。',
 ];
 export default function PresentationDemo() {
   const [step,setStep]=useState(0);const [paused,setPaused]=useState(false); const {message}=App.useApp();

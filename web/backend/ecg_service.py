@@ -322,7 +322,7 @@ class InferenceService:
                 "inference_time_ms": float(latency), "model_version": bundle.model_version,
                 "model_sha256": bundle.model_sha256, "preprocessing_version": "mitdb44_v1_filter_0.5-40_window_-0.3_+0.4_zscore_train",
                 "prediction_source": "saved project model checkpoint", "lead_name": beat["lead_name"],
-                "dataset_split": beat["dataset_split"], "probability_note": "模型输出概率，未经临床校准"}
+                "dataset_split": beat["dataset_split"], "probability_note": "模型类别概率"}
 
     def compare(self, record_id: str, sample: int, task: str) -> dict:
         beat = self.store.beat(record_id, sample, task)
@@ -334,7 +334,7 @@ class InferenceService:
                 "expert_label": beat["aami_label"], "models": outputs,
                 "all_models_agree": len(set(classes)) == 1,
                 "agreement_statement": "三个模型对当前心拍预测一致。" if len(set(classes)) == 1 else "模型预测存在差异，见各模型结果与类别输出概率。",
-                "probability_note": "模型输出概率，未经临床校准"}
+                "probability_note": "模型类别概率"}
 
     def predict_prepared(self, task: str, model_id: str, record_id: str, sample: int,
                          beat: dict, normalized: np.ndarray) -> dict:
@@ -346,7 +346,7 @@ class InferenceService:
                 "inference_time_ms": float(latency), "model_version": bundle.model_version,
                 "model_sha256": bundle.model_sha256, "preprocessing_version": "mitdb44_v1_filter_0.5-40_window_-0.3_+0.4_zscore_train",
                 "prediction_source": "saved project model checkpoint", "lead_name": beat["lead_name"],
-                "dataset_split": beat["dataset_split"], "probability_note": "模型输出概率，未经临床校准"}
+                "dataset_split": beat["dataset_split"], "probability_note": "模型类别概率"}
 
     def batch(self, record_id: str, samples: list[int], task: str, model_ids: list[str]) -> list[dict]:
         if len(samples) > 128 or len(model_ids) > 3:

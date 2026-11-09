@@ -36,7 +36,7 @@ async def lifespan(_: FastAPI):
 
 app = FastAPI(title="ECG-AI MIT-BIH 教学工作台", version="0.2.0", lifespan=lifespan,
               description=("读取本地 MIT-BIH 历史信号与专家标注，调用项目已训练的 N/V、N/S/V/F "
-                           "Logistic Regression、Random Forest、1D-CNN。仅用于课程教学与算法研究。"))
+                           "Logistic Regression、Random Forest、1D-CNN。"))
 origins = [item.strip() for item in os.getenv("ECG_CORS_ORIGINS", "http://localhost:8001,http://127.0.0.1:8001").split(",") if item.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=False,
                    allow_methods=["GET", "POST"], allow_headers=["*"])
@@ -166,7 +166,7 @@ def beat(record_id: str = Query(pattern=r"^\d{3}$"), annotation_sample: int = Qu
 def models():
     return {"tasks": {task: {"labels": spec["labels"], "models": service.models.task_status(task)}
                        for task, spec in TASKS.items()},
-            "probability_note": "模型输出概率，未经临床校准", "input_length": 253, "lead_name": "MLII"}
+            "probability_note": "模型类别概率", "input_length": 253, "lead_name": "MLII"}
 
 
 @app.get("/api/models/{model_id}", tags=["模型"])
@@ -249,7 +249,7 @@ def playback_segment(record_id: str = Query(pattern=r"^\d{3}$"),
         return {"record_id": record_id, "task": task, "model_ids": selected_models,
                 "start_sec": start_sec, "duration_sec": duration_sec,
                 "historical_recording": True, "real_time_monitoring": False,
-                "notice": "MIT-BIH 历史 ECG 记录回放，并非实时临床监护。",
+                "notice": "MIT-BIH ECG 记录回放。",
                 "waveform": waveform, "annotations": annotations_in_range,
                 "expert_beat_count": len(annotations_in_range),
                 "predicted_beat_count": len(eligible_beats),

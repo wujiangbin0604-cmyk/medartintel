@@ -10,9 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "results/classification"
 REPORTS = {
-    "experiment": "reports/classification/experiment_summary.md",
-    "diagnosis": "reports/classification/four_class_failure_diagnosis.md",
-    "final": "reports/final/MIT_BIH_完整实验报告.md",
+    "experiment": "web/docs/site_reports/experiment_summary.md",
+    "diagnosis": "web/docs/site_reports/four_class_failure_diagnosis.md",
+    "final": "web/docs/site_reports/MIT_BIH_完整实验报告.md",
 }
 
 
@@ -88,7 +88,7 @@ def error_cases(task: str, model: str, true_label: str, predicted_label: str, su
             and (not subject or row["subject_id"] == subject)]
     return {"count": len(rows), "rows": rows[:20], "limit": 20,
             "source": f"results/classification/{task}44_v1/test_predictions_{model}.csv",
-            "scope": "既有 test 预测的描述性查看，不用于选择或调整模型"}
+            "scope": "测试集预测与误分类样本"}
 
 
 @lru_cache(maxsize=24)

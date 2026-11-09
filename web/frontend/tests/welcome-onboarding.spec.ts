@@ -10,7 +10,7 @@ async function tutorial(page:Page){await expect(page.getByRole('dialog',{name:'�
 
 test('首次欢迎、跳过无游戏请求、勾选持久化、刷新不重现、清除后重现',async({page})=>{
  const gameRequests:string[]=[];page.on('request',r=>{if(r.url().includes('/api/games/'))gameRequests.push(r.url());});await page.goto('/');
- await expect(page.getByRole('dialog',{name:'欢迎来到 ECG-AI！'})).toBeVisible();await expect(page.getByText('视觉演示 · 非真实推理结果',{exact:true})).toBeVisible();
+ await expect(page.getByRole('dialog',{name:'欢迎来到 ECG-AI！'})).toBeVisible();await expect(page.getByText('心电波形预览',{exact:true})).toBeVisible();
  await page.getByRole('checkbox',{name:'下次不再自动显示'}).check();await page.getByRole('button',{name:'先逛逛平台',exact:true}).click();await expect(page.getByTestId('welcome-onboarding')).toBeHidden();await expect(page).toHaveURL(/\/dashboard$/);expect(gameRequests).toEqual([]);
  const state=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);expect(state).toMatchObject({version:1,completed:true,choice:'browse',doNotAutoShow:true});
  await page.reload();await expect(page.getByRole('heading',{name:'项目总览',exact:true})).toBeVisible();await expect(page.getByTestId('welcome-onboarding')).toBeHidden();

@@ -61,7 +61,7 @@ export default function WelcomeOnboarding() {
         <Checkbox checked={remember} onChange={e => setRemember(e.target.checked)}>下次不再自动显示</Checkbox>
         <small className="welcome-once-note">本版本默认仅自动展示一次；勾选后保留不再自动展示的偏好。</small>
       </div>
-      <div className="welcome-footer"><span>仅供医学人工智能教学与互动学习</span><small>V 组不等同于所有异常心律；游戏积分仅用于娱乐与学习。</small></div>
+      <div className="welcome-footer"><span>医学人工智能教学与互动学习</span></div>
     </div>
   </Modal>;
 }

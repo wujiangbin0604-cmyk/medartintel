@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Select, Slider, Space, Tag, Typography } from 'antd';
+import { Button, Select, Slider, Space, Tag } from 'antd';
 import { PauseCircleOutlined, PlayCircleOutlined, ReloadOutlined, StepBackwardOutlined,StepForwardOutlined } from '@ant-design/icons';
 
 interface Props {
@@ -20,7 +20,7 @@ export default function PlaybackControls(props: Props) {
     <Button icon={<ReloadOutlined />} onClick={() => onSeek(start)} disabled={playhead === null}>回到起点</Button>
     <Select aria-label="回放速度" size="small" value={speed} onChange={onSpeed} options={[0.5, 1, 2, 4].map((value) => ({ value, label: `${value}×` }))} />
     <Tag color="blue">历史回放</Tag>
-  </Space><Typography.Text type="secondary">不是实时监护</Typography.Text></div>
+  </Space></div>
     <div className="playback-timeline"><span>{(playhead ?? start).toFixed(2)} s</span><Slider min={start} max={end} step={0.01} value={Math.min(end, Math.max(start, playhead ?? start))} onChange={onSeek} disabled={playhead === null} tooltip={{ formatter: (value) => `${Number(value).toFixed(2)} s` }} /><span>{end.toFixed(2)} s</span></div>
   </div>;
 }

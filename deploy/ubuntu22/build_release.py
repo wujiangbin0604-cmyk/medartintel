@@ -27,6 +27,7 @@ def selected_files():
         files.add(ROOT / name)
     for pattern in ("*.json", "*.ts", ".umirc.ts"):
         files.update((ROOT / "web/frontend").glob(pattern))
+    tree("web/docs/site_reports")
     excluded = {"bundle_manifest.json", "package_validation.json", ".env"}
     return sorted((p for p in files if p.name not in excluded), key=lambda p: p.relative_to(ROOT).as_posix())
 
