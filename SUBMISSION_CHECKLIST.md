@@ -14,7 +14,7 @@
 - [x] 真实演示截图及下载报告：`reports/demo_20261117/`。答辩可用`workbench_comparison.png`、`report_export_success.png`、`error_analysis.png`、`heartbeat-hunter.png`、`presentation_demo.png`；公网截图为`public_demo.png`。
 - [x] 测试报告与日志：`reports/final_test_report.md`、`reports/final_validation/`；演示报告：`reports/application_demo_check.md`；最终评分：`FINAL_REVIEW.md`。
 - [x] 公共仓库当前存在并可读取：[GitHub项目](https://github.com/wujiangbin0604-cmyk/medartintel)，默认分支main、public。
-- [ ] **本轮源码、实验工件/结果、最新README和论文对应材料的公开同步与读回。** 已按作者指令启动同步，完成证据及提交见`reports/repository_sync.md`；核对成功后更新此项。服务器仍是原版本，旧ZIP也不是本轮交付版。
+- [x] **本轮源码、实验工件/结果、最新README和论文对应材料已同步公开并读回核对。** 工件发布提交为`6f9fceff2c091e171fbab03dfe22be3ce4c1fb4b`；远程1732个Git文件对象全部匹配，含12个新检查点及V3 DOCX/PDF。完成证据见`reports/repository_sync.md`。服务器仍是原版本，旧ZIP也不是本轮交付版。
 - [ ] 若需按通常开源许可授予使用权，由作者确认合适许可证及第三方材料说明；本轮未代为作法律许可决定。
 - [ ] 作者确认本项目和论文没有作为另一门课程的相同或实质雷同作业重复提交；未用未知情况替代确认。
 - [ ] 作者阅读最终论文、核对个人信息与引用、能够解释真实实验和失败结果，并完成所需原创性核验。

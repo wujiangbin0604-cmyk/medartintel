@@ -25,7 +25,7 @@
 | 依赖一致性 | `python -m pip check` | No broken requirements found | 本轮终端实际输出；没有安装或更换训练依赖 |
 | 论文生成/Word导出/逐页检查 | bundled Python构建、`word_export.ps1 -UpdateCopy`、`render_final_v3.py`、`check_final_v3.py --confirm-visual` | **38页全部渲染与人工逐页检查；42项目录页码一致；7个原生公式、17表、20图形对象；正文13309汉字** | `paper/qa/v3/final_quality_check.json`；`paper_quality.log` |
 | 原文件保留 | `check_final_v3.py --confirm-visual`中的独立SHA256核对 | **164项历史模型/结果/论文全部未变** | `results/final_optimization_20261116/preservation_check.json` |
-| 公共仓库 | GitHub连接器`get_repo`与`fetch_file(README.md)` | 同步前public、main及原README可读取；随后按作者指令同步，更新后的提交及远程证据见`reports/repository_sync.md` | `repository_check.json`（保留同步前记录） |
+| 公共仓库同步 | GitHub连接器读回main引用、提交、完整递归树及更新后README | 工件提交`6f9fcef`：远程1732个Git文件对象全部匹配，含12个新检查点、V3 DOCX/PDF及新README；发布前1012项部署依赖与暂存字节一致 | `repository_sync_20261117.json`；`repository_check.json`保留同步前记录 |
 | 发布文件与真实API | `python -B deploy/ubuntu22/build_release.py --manifest-only`；`python -B deploy/ubuntu22/verify_bundle.py --api http://127.0.0.1:8144` | **1011项文件哈希通过，48条原始记录、62游戏关卡、6模型就绪、3600点真实信号；18项固定参考预测全部匹配**；只刷新清单，未创建/覆盖旧ZIP | `deploy/ubuntu22/package_validation.json` |
 
 日志归档在 `reports/final_validation/`；科学结果和浏览器结果按表中目录保存。测试警告主要为WFDB/Pandas和Starlette/AnyIO弃用提示，没有当作测试失败，也没有隐去它们。

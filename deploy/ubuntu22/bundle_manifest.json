@@ -22,8 +22,8 @@
     },
     {
       "path": "FINAL_REVIEW.md",
-      "bytes": 12715,
-      "sha256": "728a2ae6a00417fb15fa3043d3c5527e4b5b59eb55ec56c2a6e057a5c66e8817"
+      "bytes": 12756,
+      "sha256": "0f0bc0fa7391f93e128d7fe3a0f90d826f5fb58b7e11d46d270cf1e78ceeccee"
     },
     {
       "path": "README.md",
@@ -32,8 +32,8 @@
     },
     {
       "path": "SUBMISSION_CHECKLIST.md",
-      "bytes": 3871,
-      "sha256": "c2a7834e2d77f6c777980d87ed52472e394bb5bd5645e1e2a5c28dfc09856251"
+      "bytes": 3951,
+      "sha256": "124fde4ea4e8fc4514e970b74a7b5310937461ec4342503b5c5dcf5298fea77e"
     },
     {
       "path": "checkpoints/nsvf44_v1/formal/cnn/cnn_best.pt",
@@ -2097,8 +2097,8 @@
     },
     {
       "path": "reports/final_test_report.md",
-      "bytes": 6426,
-      "sha256": "608ed61fadba94f57d8a240ba0c3337f409a24eafef5cc6938ee40e5f9392fc7"
+      "bytes": 6510,
+      "sha256": "177c51ea960bb10a62831e061b8506c17f549c678ac6021749eb20e40146afbc"
     },
     {
       "path": "reports/final_validation/baseline_tests.log",
@@ -2181,6 +2181,11 @@
       "sha256": "fe08ccf913ac2ec4223eb38a14264328ac25da0430a9c3381ea1a5febf9e0e42"
     },
     {
+      "path": "reports/final_validation/repository_sync_20261117.json",
+      "bytes": 772,
+      "sha256": "fae5473ed66be6ef78b366f182d15c7b9102b8649b2b816238510f33887f426f"
+    },
+    {
       "path": "reports/final_validation/server.log",
       "bytes": 15642,
       "sha256": "e1b7191df5c28b83f810b692cb91a85fb06943af49d6da2dda7ab4d81c51c365"
@@ -2217,8 +2222,8 @@
     },
     {
       "path": "reports/repository_sync.md",
-      "bytes": 1489,
-      "sha256": "e34741005771eb150e507667dbd3085b4111d80c28d281d54ee8ee6cafed4b33"
+      "bytes": 3475,
+      "sha256": "f1a4aa10ea503deba8ad1e964014ab3ba08806aa7b69edf0ff1f04d80f15f26f"
     },
     {
       "path": "reports/visual_notes.md",

@@ -1,0 +1,19 @@
+{
+  "published_commit": "6f9fceff2c091e171fbab03dfe22be3ce4c1fb4b",
+  "published_tree": "eed485bd2630a71d80fe8dacc97a9801fa370804",
+  "remote_tree": "eed485bd2630a71d80fe8dacc97a9801fa370804",
+  "all_blob_count": 1732,
+  "mismatch_count": 0,
+  "controlled_checkpoints": 12,
+  "remote_tree_truncated": false,
+  "readme_has_final_section": true,
+  "paper_pdf": true,
+  "paper_docx": true,
+  "status": "PASS",
+  "checked_at_Asia_Shanghai": "2026-11-17",
+  "method": "GitHub connector read-back of main ref, commit, full recursive tree and updated README; compare every Git blob SHA with locally published tree",
+  "deployment_manifest_entries_checked_before_publish": 1012,
+  "publication_paths": 293,
+  "publication_bytes": 72025598,
+  "production_server_deployed": false
+}
