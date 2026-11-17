@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.8474032764029279,
+  "macro_precision": 0.4168423094434082,
+  "macro_recall": 0.39999126809926133,
+  "macro_f1": 0.40516858917480036,
+  "per_class": {
+    "N": {
+      "precision": 0.8657065299351531,
+      "recall": 0.9685338282436309,
+      "f1": 0.9142379359770664,
+      "support": 11854
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1404
+    },
+    "V": {
+      "precision": 0.8016627078384798,
+      "recall": 0.6314312441534145,
+      "f1": 0.706436420722135,
+      "support": 1069
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 18
+    }
+  },
+  "confusion_matrix": [
+    [
+      11481,
+      0,
+      158,
+      215
+    ],
+    [
+      1401,
+      0,
+      3,
+      0
+    ],
+    [
+      368,
+      0,
+      675,
+      26
+    ],
+    [
+      12,
+      0,
+      6,
+      0
+    ]
+  ],
+  "test_or_validation_sample_count": 14345,
+  "classification_report": {
+    "N": {
+      "precision": 0.8657065299351531,
+      "recall": 0.9685338282436309,
+      "f1-score": 0.9142379359770664,
+      "support": 11854.0
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1404.0
+    },
+    "V": {
+      "precision": 0.8016627078384798,
+      "recall": 0.6314312441534145,
+      "f1-score": 0.706436420722135,
+      "support": 1069.0
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 18.0
+    },
+    "accuracy": 0.8474032764029279,
+    "macro avg": {
+      "precision": 0.4168423094434082,
+      "recall": 0.39999126809926133,
+      "f1-score": 0.40516858917480036,
+      "support": 14345.0
+    },
+    "weighted avg": {
+      "precision": 0.7751176466037393,
+      "recall": 0.8474032764029279,
+      "f1-score": 0.8081252719988921,
+      "support": 14345.0
+    }
+  },
+  "balanced_accuracy": 0.39999126809926133,
+  "balanced_accuracy_definition": "Mean recall over the four predefined classes (all supported here)."
+}

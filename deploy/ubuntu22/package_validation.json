@@ -1,0 +1,16 @@
+{
+  "verified_files": 1011,
+  "source_records": 48,
+  "game_levels": 62,
+  "frontend_built": true,
+  "api": "http://127.0.0.1:8144",
+  "loaded_models": 6,
+  "records": 48,
+  "real_ecg_samples": 3600,
+  "real_model_comparison": 3,
+  "reference_predictions_matched": 18,
+  "research_gallery": 163,
+  "note": "Smoke test uses an isolated anonymous player; no training.",
+  "windows_only_not_linux_docker_validation": true,
+  "zip_created_or_replaced": false
+}

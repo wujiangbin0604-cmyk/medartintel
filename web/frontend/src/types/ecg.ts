@@ -57,6 +57,17 @@ export interface ModelStatus {
   probability_source?: string;
 }
 
+export interface AnalysisReport {
+  schema_version: number; filename: string; generated_at_Asia_Shanghai: string;
+  selected_model_id: ModelId; selected_prediction: Prediction;
+  expert_reference: { source: string; original_label: string; aami_label: string; used_as_model_feature: false };
+  beat: BeatDetail;
+  comparison: { task: TaskName; record_id: string; annotation_sample: number; expert_label: string; models: Prediction[] };
+  disagreements_with_expert: ModelId[];
+  provenance: { raw_files_sha256: Record<string, string>; normalization_sha256: string; processing_config_sha256: string; normalization_fit_split: 'train'; model_artifacts: string };
+  limitations: string[];
+}
+
 export interface PlaybackSegment {
   record_id: string; task: TaskName; model_ids: ModelId[]; start_sec: number; duration_sec: number;
   historical_recording: true; real_time_monitoring: false; notice: string;

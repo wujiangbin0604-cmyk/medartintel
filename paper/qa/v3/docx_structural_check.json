@@ -1,0 +1,10 @@
+{
+  "docx": "E:\\医学人工智能\\paper\\final\\ECG_AI_课程论文_最终优化版V3.docx",
+  "sha256": "a016925c9de42290776178857281c7c1ebcbded32713ef4f13567e017ae064b7",
+  "native_equations": 7,
+  "tables": 17,
+  "sections": 3,
+  "zip_integrity": "PASS",
+  "visual_qa": "PASS",
+  "evidence": "final_quality_check.json"
+}

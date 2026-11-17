@@ -1,0 +1,983 @@
+{
+  "started_at_Asia_Shanghai": "2026-11-16T18:29:12.917762+08:00",
+  "command": "python -B -m src.evaluation.stability_audit --output results\\stability_audit_20261116",
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "torch": "2.14.1+cpu",
+    "device": "cpu",
+    "torch_threads": 4
+  },
+  "historical_limit": "原验证/测试集此前已经查看。本次为当前工件的回顾性重推与完整性复核，不是新的盲测、外部验证或独立泛化性能估计。历史CSV没有checkpoint哈希和不可变代码提交标识；数值复现支持当前工件一致性，不能完全重建历史选择过程。",
+  "tasks": {
+    "nv": {
+      "task": "nv",
+      "class_names": [
+        "N",
+        "V"
+      ],
+      "class_distribution": [
+        {
+          "task": "nv",
+          "split": "train",
+          "label": "N",
+          "sample_count": 65436,
+          "sample_fraction": 0.9323625379365373,
+          "subject_count": 31,
+          "record_count": 32
+        },
+        {
+          "task": "nv",
+          "split": "train",
+          "label": "V",
+          "sample_count": 4747,
+          "sample_fraction": 0.06763746206346266,
+          "subject_count": 23,
+          "record_count": 24
+        },
+        {
+          "task": "nv",
+          "split": "val",
+          "label": "N",
+          "sample_count": 11854,
+          "sample_fraction": 0.9172792695194614,
+          "subject_count": 6,
+          "record_count": 6
+        },
+        {
+          "task": "nv",
+          "split": "val",
+          "label": "V",
+          "sample_count": 1069,
+          "sample_fraction": 0.08272073048053857,
+          "subject_count": 4,
+          "record_count": 4
+        },
+        {
+          "task": "nv",
+          "split": "test",
+          "label": "N",
+          "sample_count": 12287,
+          "sample_fraction": 0.9136674598453302,
+          "subject_count": 6,
+          "record_count": 6
+        },
+        {
+          "task": "nv",
+          "split": "test",
+          "label": "V",
+          "sample_count": 1161,
+          "sample_fraction": 0.08633254015466985,
+          "subject_count": 5,
+          "record_count": 5
+        }
+      ],
+      "split_groups": {
+        "train": {
+          "samples": 70183,
+          "records": 32,
+          "patients": 31
+        },
+        "val": {
+          "samples": 12923,
+          "records": 6,
+          "patients": 6
+        },
+        "test": {
+          "samples": 13448,
+          "records": 6,
+          "patients": 6
+        }
+      },
+      "partition_overlap": {
+        "subject_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "record_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "sample_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "same_record_cross_split_overlapping_intervals": 0,
+        "grouping_scope": "记录导出的匿名患者键；201/202为已知同一患者并被合并。未通过生物识别验证其他潜在同源身份。"
+      },
+      "exact_waveform_duplicate_checks": [
+        {
+          "field": "X_filtered",
+          "cross_split_matching_window_count": 0,
+          "pair_counts": {},
+          "examples": [],
+          "definition": "SHA256 of canonical little-endian float32 full 253-point window bytes",
+          "limit": "只检验精确数值重复；未穷举跨患者近似形态。不同患者相似形态不是同源窗口泄漏的充分证据。"
+        },
+        {
+          "field": "X",
+          "cross_split_matching_window_count": 0,
+          "pair_counts": {},
+          "examples": [],
+          "definition": "SHA256 of canonical little-endian float32 full 253-point window bytes",
+          "limit": "只检验精确数值重复；未穷举跨患者近似形态。不同患者相似形态不是同源窗口泄漏的充分证据。"
+        }
+      ],
+      "metadata_npz_and_csv_alignment": "PASS: full sample IDs, original/mapped labels, encoded y, positions, leads and row order",
+      "normalization": {
+        "saved": {
+          "method": "global scalar z-score",
+          "mean_mV": 0.010122829268587038,
+          "std_mV": 0.3422525506986414,
+          "ddof": 0,
+          "fit_split": "train",
+          "fit_beat_count": 70183,
+          "fit_value_count": 17756299,
+          "training_sample_ids_sha256": "3550f7545a2d4d508b47c866e73b62affb7a92f7149f025acfcc8d2e320e450c",
+          "formula": "X=(X_filtered-mean_mV)/std_mV",
+          "per_beat_rescaling": false,
+          "clipping": false,
+          "training_subject_ids": [
+            "subject_100",
+            "subject_101",
+            "subject_103",
+            "subject_105",
+            "subject_106",
+            "subject_108",
+            "subject_112",
+            "subject_115",
+            "subject_117",
+            "subject_118",
+            "subject_119",
+            "subject_121",
+            "subject_122",
+            "subject_124",
+            "subject_200",
+            "subject_201_202",
+            "subject_203",
+            "subject_205",
+            "subject_207",
+            "subject_209",
+            "subject_210",
+            "subject_213",
+            "subject_214",
+            "subject_220",
+            "subject_221",
+            "subject_222",
+            "subject_223",
+            "subject_228",
+            "subject_230",
+            "subject_231",
+            "subject_234"
+          ],
+          "training_record_ids": [
+            "100",
+            "101",
+            "103",
+            "105",
+            "106",
+            "108",
+            "112",
+            "115",
+            "117",
+            "118",
+            "119",
+            "121",
+            "122",
+            "124",
+            "200",
+            "201",
+            "202",
+            "203",
+            "205",
+            "207",
+            "209",
+            "210",
+            "213",
+            "214",
+            "220",
+            "221",
+            "222",
+            "223",
+            "228",
+            "230",
+            "231",
+            "234"
+          ]
+        },
+        "recomputed_train_only": {
+          "method": "global scalar z-score",
+          "mean_mV": 0.010122829268587038,
+          "std_mV": 0.3422525506986414,
+          "ddof": 0,
+          "fit_split": "train",
+          "fit_beat_count": 70183,
+          "fit_value_count": 17756299,
+          "training_sample_ids_sha256": "3550f7545a2d4d508b47c866e73b62affb7a92f7149f025acfcc8d2e320e450c",
+          "formula": "X=(X_filtered-mean_mV)/std_mV",
+          "per_beat_rescaling": false,
+          "clipping": false
+        },
+        "split_reconstruction": [
+          {
+            "split": "train",
+            "normalized_input_max_abs_difference": 0.0
+          },
+          {
+            "split": "val",
+            "normalized_input_max_abs_difference": 0.0
+          },
+          {
+            "split": "test",
+            "normalized_input_max_abs_difference": 0.0
+          }
+        ]
+      },
+      "raw_filter_replay": {
+        "records": 44,
+        "windows": 96554,
+        "max_mV_abs_difference": 0.0
+      },
+      "training_weights": [
+        0.5362721085548401,
+        7.392353057861328
+      ],
+      "checkpoint": {
+        "best_file_sha256": "14c1704b94967ab9fb054b6e8fc753f71df9d28655e1e7a9ed1991c40b2e5f99",
+        "final_file_sha256": "5c4ff92e89f881d532eebf4b7f5fe6e6a240a5a88b820ca1d289e4af1fd78648",
+        "best_epoch": 12,
+        "all_best_and_final_tensors_identical": true,
+        "dataset_hash_matches": true,
+        "seed": 20261027,
+        "history_best_validation_macro_f1": 0.6630092908675226,
+        "historical_training_device": "cpu",
+        "replay_device": "cpu"
+      },
+      "partition_metrics": {
+        "val": {
+          "original_saved_csv_recomputed": {
+            "accuracy": 0.802522634063298,
+            "macro_f1": 0.6630092908675226,
+            "balanced_accuracy_fixed_labels": 0.8749095835944749,
+            "sample_count": 12923,
+            "per_class": {
+              "N": {
+                "precision": 0.9956308610400681,
+                "recall": 0.7881727686856758,
+                "f1": 0.8798380261794896,
+                "support": 11854,
+                "predicted_count": 9384
+              },
+              "V": {
+                "precision": 0.2904775360271263,
+                "recall": 0.961646398503274,
+                "f1": 0.4461805555555556,
+                "support": 1069,
+                "predicted_count": 3539
+              }
+            },
+            "confusion_matrix": [
+              [
+                9343,
+                2511
+              ],
+              [
+                41,
+                1028
+              ]
+            ]
+          },
+          "current_checkpoint_replay": {
+            "accuracy": 0.802522634063298,
+            "macro_f1": 0.6630092908675226,
+            "balanced_accuracy_fixed_labels": 0.8749095835944749,
+            "sample_count": 12923,
+            "per_class": {
+              "N": {
+                "precision": 0.9956308610400681,
+                "recall": 0.7881727686856758,
+                "f1": 0.8798380261794896,
+                "support": 11854,
+                "predicted_count": 9384
+              },
+              "V": {
+                "precision": 0.2904775360271263,
+                "recall": 0.961646398503274,
+                "f1": 0.4461805555555556,
+                "support": 1069,
+                "predicted_count": 3539
+              }
+            },
+            "confusion_matrix": [
+              [
+                9343,
+                2511
+              ],
+              [
+                41,
+                1028
+              ]
+            ]
+          },
+          "original_prediction_file_sha256": "eec1eafbcd948784d26d50b77cfd3ba5b6870126124e20f5aaa4d57eac2aede8",
+          "class_mismatches": 0,
+          "max_probability_abs_difference": 2.980194091506405e-08,
+          "inference_eval_mode_all_modules": true
+        },
+        "test": {
+          "original_saved_csv_recomputed": {
+            "accuracy": 0.9956870910172516,
+            "macro_f1": 0.9865196014891238,
+            "balanced_accuracy_fixed_labels": 0.99335011402218,
+            "sample_count": 13448,
+            "per_class": {
+              "N": {
+                "precision": 0.9991021141131337,
+                "recall": 0.9961748189142997,
+                "f1": 0.9976363191784171,
+                "support": 12287,
+                "predicted_count": 12251
+              },
+              "V": {
+                "precision": 0.960735171261487,
+                "recall": 0.9905254091300603,
+                "f1": 0.9754028837998303,
+                "support": 1161,
+                "predicted_count": 1197
+              }
+            },
+            "confusion_matrix": [
+              [
+                12240,
+                47
+              ],
+              [
+                11,
+                1150
+              ]
+            ]
+          },
+          "current_checkpoint_replay": {
+            "accuracy": 0.9956870910172516,
+            "macro_f1": 0.9865196014891238,
+            "balanced_accuracy_fixed_labels": 0.99335011402218,
+            "sample_count": 13448,
+            "per_class": {
+              "N": {
+                "precision": 0.9991021141131337,
+                "recall": 0.9961748189142997,
+                "f1": 0.9976363191784171,
+                "support": 12287,
+                "predicted_count": 12251
+              },
+              "V": {
+                "precision": 0.960735171261487,
+                "recall": 0.9905254091300603,
+                "f1": 0.9754028837998303,
+                "support": 1161,
+                "predicted_count": 1197
+              }
+            },
+            "confusion_matrix": [
+              [
+                12240,
+                47
+              ],
+              [
+                11,
+                1150
+              ]
+            ]
+          },
+          "original_prediction_file_sha256": "a5891190479337528cd8b46aab1acce702b9a76888a4b9b4357fd7a40ef3619e",
+          "class_mismatches": 0,
+          "max_probability_abs_difference": 2.9792785682936085e-08,
+          "inference_eval_mode_all_modules": true
+        }
+      },
+      "validation_test_macro_f1_gap": 0.3235103106216012,
+      "integrity_checks_passed": true,
+      "historical_limit": "原验证/测试集此前已经查看。本次为当前工件的回顾性重推与完整性复核，不是新的盲测、外部验证或独立泛化性能估计。历史CSV没有checkpoint哈希和不可变代码提交标识；数值复现支持当前工件一致性，不能完全重建历史选择过程。"
+    },
+    "nsvf": {
+      "task": "nsvf",
+      "class_names": [
+        "N",
+        "S",
+        "V",
+        "F"
+      ],
+      "class_distribution": [
+        {
+          "task": "nsvf",
+          "split": "train",
+          "label": "N",
+          "sample_count": 65436,
+          "sample_fraction": 0.9095786825315189,
+          "subject_count": 31,
+          "record_count": 32
+        },
+        {
+          "task": "nsvf",
+          "split": "train",
+          "label": "S",
+          "sample_count": 1347,
+          "sample_fraction": 0.018723676345894554,
+          "subject_count": 23,
+          "record_count": 24
+        },
+        {
+          "task": "nsvf",
+          "split": "train",
+          "label": "V",
+          "sample_count": 4747,
+          "sample_fraction": 0.06598462629098845,
+          "subject_count": 23,
+          "record_count": 24
+        },
+        {
+          "task": "nsvf",
+          "split": "train",
+          "label": "F",
+          "sample_count": 411,
+          "sample_fraction": 0.005713014831598115,
+          "subject_count": 10,
+          "record_count": 11
+        },
+        {
+          "task": "nsvf",
+          "split": "val",
+          "label": "N",
+          "sample_count": 11854,
+          "sample_fraction": 0.8263506448239805,
+          "subject_count": 6,
+          "record_count": 6
+        },
+        {
+          "task": "nsvf",
+          "split": "val",
+          "label": "S",
+          "sample_count": 1404,
+          "sample_fraction": 0.0978738236319275,
+          "subject_count": 5,
+          "record_count": 5
+        },
+        {
+          "task": "nsvf",
+          "split": "val",
+          "label": "V",
+          "sample_count": 1069,
+          "sample_fraction": 0.07452073893342628,
+          "subject_count": 4,
+          "record_count": 4
+        },
+        {
+          "task": "nsvf",
+          "split": "val",
+          "label": "F",
+          "sample_count": 18,
+          "sample_fraction": 0.0012547926106657372,
+          "subject_count": 4,
+          "record_count": 4
+        },
+        {
+          "task": "nsvf",
+          "split": "test",
+          "label": "N",
+          "sample_count": 12287,
+          "sample_fraction": 0.8884951912647335,
+          "subject_count": 6,
+          "record_count": 6
+        },
+        {
+          "task": "nsvf",
+          "split": "test",
+          "label": "S",
+          "sample_count": 10,
+          "sample_fraction": 0.0007231180851833104,
+          "subject_count": 3,
+          "record_count": 3
+        },
+        {
+          "task": "nsvf",
+          "split": "test",
+          "label": "V",
+          "sample_count": 1161,
+          "sample_fraction": 0.08395400968978234,
+          "subject_count": 5,
+          "record_count": 5
+        },
+        {
+          "task": "nsvf",
+          "split": "test",
+          "label": "F",
+          "sample_count": 371,
+          "sample_fraction": 0.026827680960300818,
+          "subject_count": 2,
+          "record_count": 2
+        }
+      ],
+      "split_groups": {
+        "train": {
+          "samples": 71941,
+          "records": 32,
+          "patients": 31
+        },
+        "val": {
+          "samples": 14345,
+          "records": 6,
+          "patients": 6
+        },
+        "test": {
+          "samples": 13829,
+          "records": 6,
+          "patients": 6
+        }
+      },
+      "partition_overlap": {
+        "subject_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "record_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "sample_id": {
+          "train:val": [],
+          "train:test": [],
+          "val:test": []
+        },
+        "same_record_cross_split_overlapping_intervals": 0,
+        "grouping_scope": "记录导出的匿名患者键；201/202为已知同一患者并被合并。未通过生物识别验证其他潜在同源身份。"
+      },
+      "exact_waveform_duplicate_checks": [
+        {
+          "field": "X_filtered",
+          "cross_split_matching_window_count": 0,
+          "pair_counts": {},
+          "examples": [],
+          "definition": "SHA256 of canonical little-endian float32 full 253-point window bytes",
+          "limit": "只检验精确数值重复；未穷举跨患者近似形态。不同患者相似形态不是同源窗口泄漏的充分证据。"
+        },
+        {
+          "field": "X",
+          "cross_split_matching_window_count": 0,
+          "pair_counts": {},
+          "examples": [],
+          "definition": "SHA256 of canonical little-endian float32 full 253-point window bytes",
+          "limit": "只检验精确数值重复；未穷举跨患者近似形态。不同患者相似形态不是同源窗口泄漏的充分证据。"
+        }
+      ],
+      "metadata_npz_and_csv_alignment": "PASS: full sample IDs, original/mapped labels, encoded y, positions, leads and row order",
+      "normalization": {
+        "saved": {
+          "method": "global scalar z-score",
+          "mean_mV": 0.010091383342974724,
+          "std_mV": 0.34394229523517705,
+          "ddof": 0,
+          "fit_split": "train",
+          "fit_beat_count": 71941,
+          "fit_value_count": 18201073,
+          "training_sample_ids_sha256": "f00c014bbfaf3024dbcbcbde20b0635771486084d21c19e07b68d5c1d66f1ec3",
+          "formula": "X=(X_filtered-mean_mV)/std_mV",
+          "per_beat_rescaling": false,
+          "clipping": false,
+          "training_subject_ids": [
+            "subject_100",
+            "subject_101",
+            "subject_103",
+            "subject_105",
+            "subject_106",
+            "subject_108",
+            "subject_112",
+            "subject_115",
+            "subject_117",
+            "subject_118",
+            "subject_119",
+            "subject_121",
+            "subject_122",
+            "subject_124",
+            "subject_200",
+            "subject_201_202",
+            "subject_203",
+            "subject_205",
+            "subject_207",
+            "subject_209",
+            "subject_210",
+            "subject_213",
+            "subject_214",
+            "subject_220",
+            "subject_221",
+            "subject_222",
+            "subject_223",
+            "subject_228",
+            "subject_230",
+            "subject_231",
+            "subject_234"
+          ],
+          "training_record_ids": [
+            "100",
+            "101",
+            "103",
+            "105",
+            "106",
+            "108",
+            "112",
+            "115",
+            "117",
+            "118",
+            "119",
+            "121",
+            "122",
+            "124",
+            "200",
+            "201",
+            "202",
+            "203",
+            "205",
+            "207",
+            "209",
+            "210",
+            "213",
+            "214",
+            "220",
+            "221",
+            "222",
+            "223",
+            "228",
+            "230",
+            "231",
+            "234"
+          ]
+        },
+        "recomputed_train_only": {
+          "method": "global scalar z-score",
+          "mean_mV": 0.010091383342974724,
+          "std_mV": 0.34394229523517705,
+          "ddof": 0,
+          "fit_split": "train",
+          "fit_beat_count": 71941,
+          "fit_value_count": 18201073,
+          "training_sample_ids_sha256": "f00c014bbfaf3024dbcbcbde20b0635771486084d21c19e07b68d5c1d66f1ec3",
+          "formula": "X=(X_filtered-mean_mV)/std_mV",
+          "per_beat_rescaling": false,
+          "clipping": false
+        },
+        "split_reconstruction": [
+          {
+            "split": "train",
+            "normalized_input_max_abs_difference": 0.0
+          },
+          {
+            "split": "val",
+            "normalized_input_max_abs_difference": 0.0
+          },
+          {
+            "split": "test",
+            "normalized_input_max_abs_difference": 0.0
+          }
+        ]
+      },
+      "raw_filter_replay": {
+        "records": 44,
+        "windows": 100115,
+        "max_mV_abs_difference": 0.0
+      },
+      "training_weights": [
+        0.2748525142669678,
+        13.352078437805176,
+        3.7887613773345947,
+        43.75973129272461
+      ],
+      "checkpoint": {
+        "best_file_sha256": "2428195885fb9d0efa89aafc0b30eef16f73f0d3305db397af81041700f7308d",
+        "final_file_sha256": "78f4af2681d4e9e8c663302fbd0809e3a0e3ef521c2e5f127b97e27d1632d962",
+        "best_epoch": 11,
+        "all_best_and_final_tensors_identical": true,
+        "dataset_hash_matches": true,
+        "seed": 20261027,
+        "history_best_validation_macro_f1": 0.4734629767101717,
+        "historical_training_device": "cpu",
+        "replay_device": "cpu"
+      },
+      "partition_metrics": {
+        "val": {
+          "original_saved_csv_recomputed": {
+            "accuracy": 0.7185081910073197,
+            "macro_f1": 0.4734629767101717,
+            "balanced_accuracy_fixed_labels": 0.6251726791733595,
+            "sample_count": 14345,
+            "per_class": {
+              "N": {
+                "precision": 0.9631287548592296,
+                "recall": 0.6897249873460435,
+                "f1": 0.8038145799537925,
+                "support": 11854,
+                "predicted_count": 8489
+              },
+              "S": {
+                "precision": 0.46929982046678637,
+                "recall": 0.9309116809116809,
+                "f1": 0.624015278109334,
+                "support": 1404,
+                "predicted_count": 2785
+              },
+              "V": {
+                "precision": 0.32722929936305734,
+                "recall": 0.7689429373246024,
+                "f1": 0.45908963976542866,
+                "support": 1069,
+                "predicted_count": 2512
+              },
+              "F": {
+                "precision": 0.0035778175313059034,
+                "recall": 0.1111111111111111,
+                "f1": 0.006932409012131715,
+                "support": 18,
+                "predicted_count": 559
+              }
+            },
+            "confusion_matrix": [
+              [
+                8176,
+                1464,
+                1683,
+                531
+              ],
+              [
+                95,
+                1307,
+                2,
+                0
+              ],
+              [
+                209,
+                12,
+                822,
+                26
+              ],
+              [
+                9,
+                2,
+                5,
+                2
+              ]
+            ]
+          },
+          "current_checkpoint_replay": {
+            "accuracy": 0.7185081910073197,
+            "macro_f1": 0.4734629767101717,
+            "balanced_accuracy_fixed_labels": 0.6251726791733595,
+            "sample_count": 14345,
+            "per_class": {
+              "N": {
+                "precision": 0.9631287548592296,
+                "recall": 0.6897249873460435,
+                "f1": 0.8038145799537925,
+                "support": 11854,
+                "predicted_count": 8489
+              },
+              "S": {
+                "precision": 0.46929982046678637,
+                "recall": 0.9309116809116809,
+                "f1": 0.624015278109334,
+                "support": 1404,
+                "predicted_count": 2785
+              },
+              "V": {
+                "precision": 0.32722929936305734,
+                "recall": 0.7689429373246024,
+                "f1": 0.45908963976542866,
+                "support": 1069,
+                "predicted_count": 2512
+              },
+              "F": {
+                "precision": 0.0035778175313059034,
+                "recall": 0.1111111111111111,
+                "f1": 0.006932409012131715,
+                "support": 18,
+                "predicted_count": 559
+              }
+            },
+            "confusion_matrix": [
+              [
+                8176,
+                1464,
+                1683,
+                531
+              ],
+              [
+                95,
+                1307,
+                2,
+                0
+              ],
+              [
+                209,
+                12,
+                822,
+                26
+              ],
+              [
+                9,
+                2,
+                5,
+                2
+              ]
+            ]
+          },
+          "original_prediction_file_sha256": "68000afcff6088655ae2f6d1baaa5c0f6092641254d5e9a198570dc59224f81c",
+          "class_mismatches": 0,
+          "max_probability_abs_difference": 2.979507440770135e-08,
+          "inference_eval_mode_all_modules": true
+        },
+        "test": {
+          "original_saved_csv_recomputed": {
+            "accuracy": 0.7690360835924507,
+            "macro_f1": 0.44596882915845765,
+            "balanced_accuracy_fixed_labels": 0.44146836938157247,
+            "sample_count": 13829,
+            "per_class": {
+              "N": {
+                "precision": 0.9763203953464429,
+                "recall": 0.7717913241637503,
+                "f1": 0.8620909090909091,
+                "support": 12287,
+                "predicted_count": 9713
+              },
+              "S": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 10,
+                "predicted_count": 2630
+              },
+              "V": {
+                "precision": 0.8544914625092799,
+                "recall": 0.9913867355727821,
+                "f1": 0.9178628389154705,
+                "support": 1161,
+                "predicted_count": 1347
+              },
+              "F": {
+                "precision": 0.007194244604316547,
+                "recall": 0.0026954177897574125,
+                "f1": 0.00392156862745098,
+                "support": 371,
+                "predicted_count": 139
+              }
+            },
+            "confusion_matrix": [
+              [
+                9483,
+                2626,
+                42,
+                136
+              ],
+              [
+                10,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                1151,
+                2
+              ],
+              [
+                216,
+                0,
+                154,
+                1
+              ]
+            ]
+          },
+          "current_checkpoint_replay": {
+            "accuracy": 0.7690360835924507,
+            "macro_f1": 0.44596882915845765,
+            "balanced_accuracy_fixed_labels": 0.44146836938157247,
+            "sample_count": 13829,
+            "per_class": {
+              "N": {
+                "precision": 0.9763203953464429,
+                "recall": 0.7717913241637503,
+                "f1": 0.8620909090909091,
+                "support": 12287,
+                "predicted_count": 9713
+              },
+              "S": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 10,
+                "predicted_count": 2630
+              },
+              "V": {
+                "precision": 0.8544914625092799,
+                "recall": 0.9913867355727821,
+                "f1": 0.9178628389154705,
+                "support": 1161,
+                "predicted_count": 1347
+              },
+              "F": {
+                "precision": 0.007194244604316547,
+                "recall": 0.0026954177897574125,
+                "f1": 0.00392156862745098,
+                "support": 371,
+                "predicted_count": 139
+              }
+            },
+            "confusion_matrix": [
+              [
+                9483,
+                2626,
+                42,
+                136
+              ],
+              [
+                10,
+                0,
+                0,
+                0
+              ],
+              [
+                4,
+                4,
+                1151,
+                2
+              ],
+              [
+                216,
+                0,
+                154,
+                1
+              ]
+            ]
+          },
+          "original_prediction_file_sha256": "7c28585181db09167ece1e0d8ef2892b5ae97a99836682b93ed1621248746428",
+          "class_mismatches": 0,
+          "max_probability_abs_difference": 2.9798889134013962e-08,
+          "inference_eval_mode_all_modules": true
+        }
+      },
+      "validation_test_macro_f1_gap": -0.027494147551714032,
+      "integrity_checks_passed": true,
+      "historical_limit": "原验证/测试集此前已经查看。本次为当前工件的回顾性重推与完整性复核，不是新的盲测、外部验证或独立泛化性能估计。历史CSV没有checkpoint哈希和不可变代码提交标识；数值复现支持当前工件一致性，不能完全重建历史选择过程。"
+    }
+  },
+  "all_integrity_checks_passed": true,
+  "blocks_controlled_new_training": false,
+  "all_input_hashes_unchanged_after_audit": true,
+  "source_count": 177,
+  "elapsed_seconds": 12.9545647999621,
+  "passed_integrity_checks": true,
+  "blocking_issues": []
+}

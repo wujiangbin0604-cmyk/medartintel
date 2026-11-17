@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import argparse
 import json
 import stat
 import zipfile
@@ -15,7 +16,7 @@ def selected_files():
     files = set()
     def tree(folder):
         for path in (ROOT / folder).rglob("*"):
-            if path.is_file() and not set(path.parts) & {"__pycache__", "node_modules", ".umi", ".umi-production"} and path.suffix != ".pyc":
+            if path.is_file() and not set(path.parts) & {"__pycache__", "node_modules", ".umi", ".umi-production"} and path.suffix not in {".pyc", ".npz"}:
                 files.add(path)
     for folder in ("src", "configs", "checkpoints", "results", "reports", "figures", "data/mitdb", "tests", "web/backend", "web/frontend/src", "web/frontend/public", "web/frontend/dist", "web/frontend/scripts", "web/frontend/tests", "web/docs/games", "web/docs/screenshots/heartbeat_hunter", "web/docs/screenshots/welcome_onboarding", "deploy/ubuntu22"):
         tree(folder)
@@ -28,6 +29,9 @@ def selected_files():
     for pattern in ("*.json", "*.ts", ".umirc.ts"):
         files.update((ROOT / "web/frontend").glob(pattern))
     tree("web/docs/site_reports")
+    for name in ("FINAL_REVIEW.md", "SUBMISSION_CHECKLIST.md", "deploy/diagnose_public_demo.py"):
+        if (ROOT / name).is_file():
+            files.add(ROOT / name)
     excluded = {"bundle_manifest.json", "package_validation.json", ".env"}
     return sorted((p for p in files if p.name not in excluded), key=lambda p: p.relative_to(ROOT).as_posix())
 
@@ -40,6 +44,13 @@ def payload(path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest-only", action="store_true", help="Refresh artifact hashes without creating or replacing a ZIP")
+    parser.add_argument("--output", type=Path, default=OUTPUT, help="Local ZIP destination under releases/")
+    args = parser.parse_args()
+    output = args.output.resolve() if args.output.is_absolute() else (ROOT / args.output).resolve()
+    if not output.is_relative_to((ROOT / "releases").resolve()):
+        parser.error("ZIP output must remain inside this project's releases directory")
     files = selected_files()
     assert all(p.is_file() and p.resolve().is_relative_to(ROOT) for p in files)
     paths = [p.relative_to(ROOT).as_posix() for p in files]
@@ -54,8 +65,11 @@ def main():
                 "excluded": ["Windows virtualenv", "node_modules", "training NPZ arrays", "large training metadata.csv", "existing SQLite sessions", "old screenshots and caches"]}
     manifest_path = ROOT / "deploy/ubuntu22/bundle_manifest.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(OUTPUT, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6, allowZip64=True) as archive:
+    if args.manifest_only:
+        print(json.dumps({"manifest": str(manifest_path), "files": len(entries), "zip_created": False}, ensure_ascii=False))
+        return
+    output.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6, allowZip64=True) as archive:
         for path in files + [manifest_path]:
             relative = path.relative_to(ROOT).as_posix()
             info = zipfile.ZipInfo("ecg-ai/" + relative, (2026, 11, 4, 0, 0, 0))
@@ -63,12 +77,12 @@ def main():
             info.external_attr = (stat.S_IFREG | (0o755 if path.suffix == ".sh" else 0o644)) << 16
             info.compress_type = zipfile.ZIP_DEFLATED
             archive.writestr(info, payload(path))
-    with zipfile.ZipFile(OUTPUT) as archive:
+    with zipfile.ZipFile(output) as archive:
         bad = archive.testzip()
         assert bad is None, bad
-    digest = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
-    OUTPUT.with_suffix(".zip.sha256").write_text(f"{digest}  {OUTPUT.name}\n", encoding="ascii")
-    print(json.dumps({"zip": str(OUTPUT), "zip_bytes": OUTPUT.stat().st_size, "files": len(files)+1,
+    digest = hashlib.sha256(output.read_bytes()).hexdigest()
+    output.with_suffix(".zip.sha256").write_text(f"{digest}  {output.name}\n", encoding="ascii")
+    print(json.dumps({"zip": str(output), "zip_bytes": output.stat().st_size, "files": len(files)+1,
                       "uncompressed_bytes": sum(e["bytes"] for e in entries), "sha256": digest}, ensure_ascii=False, indent=2))
 
 

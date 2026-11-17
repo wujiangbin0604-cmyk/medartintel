@@ -1,136 +1,207 @@
-﻿论文位置,结论文本,指标或数据,来源文件,表格或图像路径,是否核验,备注
-5.1,nv logistic_regression 测试accuracy,0.836927424152,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv logistic_regression 测试macro_f1,0.696072947281,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv logistic_regression N类 precision,0.9892400155098876,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression N类 recall,0.8305526165866363,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression N类 f1,0.9029774808653718,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression N类 support,12287,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression V类 precision,0.33524904214559387,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression V类 recall,0.9043927648578811,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression V类 f1,0.4891684136967156,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression V类 support,1161,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv logistic_regression 混淆矩阵,"[[10205, 2082], [111, 1050]]",results/classification/nv44_v1/test_predictions_logistic_regression.csv,表4 表5 图7,是,行真实，列预测；类序见任务配置
-5.1,nv random_forest 测试accuracy,0.983491969066,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv random_forest 测试macro_f1,0.949408706067,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv random_forest N类 precision,0.9945077465366013,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest N类 recall,0.98738504110035,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest N类 f1,0.9909335947071795,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest N类 support,12287,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest V类 precision,0.8759007205764612,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest V类 recall,0.94229112833764,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest V类 f1,0.9078838174273859,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest V类 support,1161,results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv random_forest 混淆矩阵,"[[12132, 155], [67, 1094]]",results/classification/nv44_v1/test_predictions_random_forest.csv,表4 表5 图7,是,行真实，列预测；类序见任务配置
-5.1,nv cnn_1d 测试accuracy,0.995687091017,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv cnn_1d 测试macro_f1,0.986519601489,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.1,nv cnn_1d N类 precision,0.9991021141131337,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d N类 recall,0.9961748189142997,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d N类 f1,0.9976363191784171,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d N类 support,12287,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d V类 precision,0.960735171261487,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d V类 recall,0.9905254091300603,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d V类 f1,0.9754028837998303,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d V类 support,1161,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,固定测试集，按心拍统计
-5.1,nv cnn_1d 混淆矩阵,"[[12240, 47], [11, 1150]]",results/classification/nv44_v1/test_predictions_cnn_1d.csv,表4 表5 图7,是,行真实，列预测；类序见任务配置
-5.2,nsvf logistic_regression 测试accuracy,0.742280714441,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf logistic_regression 测试macro_f1,0.359915043614,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf logistic_regression N类 precision,0.9804357021996616,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression N类 recall,0.7545373158622934,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression N类 f1,0.852780205123488,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression N类 support,12287,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression S类 precision,0.004178272980501393,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression S类 recall,0.6,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression S类 f1,0.008298755186721992,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression S类 support,10,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression V类 precision,0.3528550512445095,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression V类 recall,0.830318690783807,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression V类 f1,0.4952478808117133,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression V类 support,1161,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression F类 precision,0.11707317073170732,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression F类 recall,0.0646900269541779,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression F类 f1,0.08333333333333334,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression F类 support,371,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf logistic_regression 混淆矩阵,"[[9271, 1405, 1577, 34], [4, 6, 0, 0], [41, 9, 964, 147], [140, 16, 191, 24]]",results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表6 图6,是,行真实，列预测；类序见任务配置
-5.2,nsvf random_forest 测试accuracy,0.953648130740,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf random_forest 测试macro_f1,0.465615708572,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf random_forest N类 precision,0.97288842544317,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest N类 recall,0.9871408806055181,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest N类 f1,0.9799628342894078,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest N类 support,12287,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest S类 precision,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest S类 recall,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest S类 f1,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest S类 support,10,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest V类 precision,0.8547215496368039,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest V类 recall,0.9121447028423773,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest V类 f1,0.8825000000000001,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest V类 support,1161,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest F类 precision,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest F类 recall,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest F类 f1,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest F类 support,371,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf random_forest 混淆矩阵,"[[12129, 122, 36, 0], [10, 0, 0, 0], [102, 0, 1059, 0], [226, 1, 144, 0]]",results/classification/nsvf44_v1/test_predictions_random_forest.csv,表6 图6,是,行真实，列预测；类序见任务配置
-5.2,nsvf cnn_1d 测试accuracy,0.769036083592,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf cnn_1d 测试macro_f1,0.445968829158,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露
-5.2,nsvf cnn_1d N类 precision,0.9763203953464429,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d N类 recall,0.7717913241637503,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d N类 f1,0.8620909090909091,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d N类 support,12287,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d S类 precision,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d S类 recall,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d S类 f1,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d S类 support,10,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d V类 precision,0.8544914625092799,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d V类 recall,0.9913867355727821,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d V类 f1,0.9178628389154705,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d V类 support,1161,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d F类 precision,0.007194244604316547,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d F类 recall,0.0026954177897574125,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d F类 f1,0.00392156862745098,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d F类 support,371,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,固定测试集，按心拍统计
-5.2,nsvf cnn_1d 混淆矩阵,"[[9483, 2626, 42, 136], [10, 0, 0, 0], [4, 4, 1151, 2], [216, 0, 154, 1]]",results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表6 图6,是,行真实，列预测；类序见任务配置
-2.4,nv train有效拍数与患者记录数,"{""split"": ""train"", ""sample_count"": 70183, ""subject_count"": 31, ""record_count"": 32, ""N"": 65436, ""V"": 4747}",data/processed/mitdb44_nv_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.4,nv val有效拍数与患者记录数,"{""split"": ""val"", ""sample_count"": 12923, ""subject_count"": 6, ""record_count"": 6, ""N"": 11854, ""V"": 1069}",data/processed/mitdb44_nv_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.4,nv test有效拍数与患者记录数,"{""split"": ""test"", ""sample_count"": 13448, ""subject_count"": 6, ""record_count"": 6, ""N"": 12287, ""V"": 1161}",data/processed/mitdb44_nv_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.5 5.3,nv N总体数量与患者覆盖,"{""class"": ""N"", ""samples"": 89577, ""share_pct"": 92.77399175590861, ""subjects"": 43, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 4.101499268785514}",data/processed/mitdb44_nv_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-2.5 5.3,nv V总体数量与患者覆盖,"{""class"": ""V"", ""samples"": 6977, ""share_pct"": 7.226008244091389, ""subjects"": 32, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 14.11781568009173}",data/processed/mitdb44_nv_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-5.3,nv train N来源患者与集中度,"{""split"": ""train"", ""class"": ""N"", ""sample_count"": 65436, ""subjects_with_class"": 31, ""records_with_class"": 32, ""subjects_total"": 31, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 5.61464637202763}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nv train V来源患者与集中度,"{""split"": ""train"", ""class"": ""V"", ""sample_count"": 4747, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_200"", ""top_subject_samples"": 822, ""top_subject_share_pct"": 17.31619970507689}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nv val N来源患者与集中度,"{""split"": ""val"", ""class"": ""N"", ""sample_count"": 11854, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_215"", ""top_subject_samples"": 3176, ""top_subject_share_pct"": 26.792643833305213}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nv val V来源患者与集中度,"{""split"": ""val"", ""class"": ""V"", ""sample_count"": 1069, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 825, ""top_subject_share_pct"": 77.17492984097288}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nv test N来源患者与集中度,"{""split"": ""test"", ""class"": ""N"", ""sample_count"": 12287, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_212"", ""top_subject_samples"": 2733, ""top_subject_share_pct"": 22.243021079189386}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nv test V来源患者与集中度,"{""split"": ""test"", ""class"": ""V"", ""sample_count"": 1161, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 84.84065460809647}",data/processed/mitdb44_nv_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-2.4,nsvf train有效拍数与患者记录数,"{""split"": ""train"", ""sample_count"": 71941, ""subject_count"": 31, ""record_count"": 32, ""N"": 65436, ""S"": 1347, ""V"": 4747, ""F"": 411}",data/processed/mitdb44_nsvf_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.4,nsvf val有效拍数与患者记录数,"{""split"": ""val"", ""sample_count"": 14345, ""subject_count"": 6, ""record_count"": 6, ""N"": 11854, ""S"": 1404, ""V"": 1069, ""F"": 18}",data/processed/mitdb44_nsvf_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.4,nsvf test有效拍数与患者记录数,"{""split"": ""test"", ""sample_count"": 13829, ""subject_count"": 6, ""record_count"": 6, ""N"": 12287, ""S"": 10, ""V"": 1161, ""F"": 371}",data/processed/mitdb44_nsvf_v1/metadata.csv,表2,是,included=True后独立聚合；201/202合并
-2.5 5.3,nsvf N总体数量与患者覆盖,"{""class"": ""N"", ""samples"": 89577, ""share_pct"": 89.47410477950358, ""subjects"": 43, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 4.101499268785514}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-2.5 5.3,nsvf S总体数量与患者覆盖,"{""class"": ""S"", ""samples"": 2761, ""share_pct"": 2.7578284972281875, ""subjects"": 31, ""top_subject"": ""subject_232"", ""top_subject_samples"": 1376, ""top_subject_share_pct"": 49.837015574067365}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-2.5 5.3,nsvf V总体数量与患者覆盖,"{""class"": ""V"", ""samples"": 6977, ""share_pct"": 6.968985666483545, ""subjects"": 32, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 14.11781568009173}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-2.5 5.3,nsvf F总体数量与患者覆盖,"{""class"": ""F"", ""samples"": 800, ""share_pct"": 0.7990810567846975, ""subjects"": 16, ""top_subject"": ""subject_208"", ""top_subject_samples"": 370, ""top_subject_share_pct"": 46.25}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图8,是,患者集中度从逐拍元数据重算
-5.3,nsvf train N来源患者与集中度,"{""split"": ""train"", ""class"": ""N"", ""sample_count"": 65436, ""subjects_with_class"": 31, ""records_with_class"": 32, ""subjects_total"": 31, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 5.61464637202763}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf train S来源患者与集中度,"{""split"": ""train"", ""class"": ""S"", ""sample_count"": 1347, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_209"", ""top_subject_samples"": 383, ""top_subject_share_pct"": 28.433556050482554}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf train V来源患者与集中度,"{""split"": ""train"", ""class"": ""V"", ""sample_count"": 4747, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_200"", ""top_subject_samples"": 822, ""top_subject_share_pct"": 17.31619970507689}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf train F来源患者与集中度,"{""split"": ""train"", ""class"": ""F"", ""sample_count"": 411, ""subjects_with_class"": 10, ""records_with_class"": 11, ""subjects_total"": 31, ""top_subject"": ""subject_213"", ""top_subject_samples"": 362, ""top_subject_share_pct"": 88.07785888077859}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf val N来源患者与集中度,"{""split"": ""val"", ""class"": ""N"", ""sample_count"": 11854, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_215"", ""top_subject_samples"": 3176, ""top_subject_share_pct"": 26.792643833305213}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf val S来源患者与集中度,"{""split"": ""val"", ""class"": ""S"", ""sample_count"": 1404, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_232"", ""top_subject_samples"": 1376, ""top_subject_share_pct"": 98.00569800569801}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf val V来源患者与集中度,"{""split"": ""val"", ""class"": ""V"", ""sample_count"": 1069, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 825, ""top_subject_share_pct"": 77.17492984097288}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf val F来源患者与集中度,"{""split"": ""val"", ""class"": ""F"", ""sample_count"": 18, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 11, ""top_subject_share_pct"": 61.111111111111114}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf test N来源患者与集中度,"{""split"": ""test"", ""class"": ""N"", ""sample_count"": 12287, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_212"", ""top_subject_samples"": 2733, ""top_subject_share_pct"": 22.243021079189386}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf test S来源患者与集中度,"{""split"": ""test"", ""class"": ""S"", ""sample_count"": 10, ""subjects_with_class"": 3, ""records_with_class"": 3, ""subjects_total"": 6, ""top_subject"": ""subject_219"", ""top_subject_samples"": 7, ""top_subject_share_pct"": 70.0}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf test V来源患者与集中度,"{""split"": ""test"", ""class"": ""V"", ""sample_count"": 1161, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 84.84065460809647}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-5.3,nsvf test F来源患者与集中度,"{""split"": ""test"", ""class"": ""F"", ""sample_count"": 371, ""subjects_with_class"": 2, ""records_with_class"": 2, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 370, ""top_subject_share_pct"": 99.73045822102425}",data/processed/mitdb44_nsvf_v1/metadata.csv,图8,是,修正后的类别级覆盖数
-2.1,44记录43患者 201/202合并,44/43,data/processed/mitdb44_nv_v1/split_manifest.csv,表2,是,另由PhysioNet官方数据页核验重复患者
-2.3,滤波与253点截窗,0.5—40Hz 原型4阶 单程带通8阶 sosfiltfilt 5秒保护区,data/processed/mitdb44_nv_v1/processing_config.json;src/datasets/build.py;src/preprocessing/filters.py,图2 图3,是,非因果离线处理
-2.3,N/V标量归一化参数,μ=0.010122829268587038 σ=0.3422525506986414,data/processed/mitdb44_nv_v1/normalization.json,公式2,是,仅训练侧拟合
-3.3,实际CNN结构与参数,253→126→63→1；9058/9188参数,src/models/classifiers.py,表3 图5,是,按实际定义推导与审计
-3.4,训练设置和最佳epoch,Adam lr0.001 batch256 max25 patience5；最佳12/11,results/classification/nv44_v1/config.json;results/classification/nv44_v1/training_logs.json;results/classification/nsvf44_v1/training_logs.json,,是,保存设置，不重训
-5.1,N/V验证与测试Macro-F1差异,0.663009 / 0.986520,results/classification/nv44_v1/training_logs.json;results/classification/nv44_v1/test_predictions_cnn_1d.csv,,是,划分依赖，不能高估稳定性
-5.4,CNN四权重验证对照,验证Accuracy Macro-F1和每类P/R/F1,results/classification/nsvf44_v1/diagnosis/weight_strategy_validation_predictions.csv;results/classification/nsvf44_v1/diagnosis/weight_strategy_class_metrics.csv,表7 图9,是,验证用于早停，属探索性；本次从验证预测重算
-5.4,LR RF既有权重对照,LR 0.2637/0.3371 RF 0.4019/0.4090,results/classification/nsvf44_v1/diagnosis/existing_weighted_unweighted_validation_reference.csv,,是,已有保存表核对；未重新训练
-5.5,五折范围与分组流程,train+val 86286拍37组；F折支持5/17/5/37/365,results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_training_log.json;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_fold_metrics.csv,表8 图10,是,外层互斥；内层选择一个分组早停划分
-5.5,五折Macro-F1均值与样本标准差,LR0.304687±0.037711 RF0.417258±0.042395 CNN0.356418±0.062353,results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_logistic_regression.csv;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_random_forest.csv;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_cnn_1d.csv,表8 图10,是,本次按外折重算；ddof=1；不是标准误
-5.6,实际错误案例及采样时间,111:62 53.175s；208:32 18.822s；208:19 11.381s,results/classification/nsvf44_v1/diagnosis/cnn_test_error_waveform_cases_descriptive_only.csv;results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,图11,是,sample_id后缀是完整标注流索引
-6.1 6.2,系统架构和真实模型路径,React Umi AntDesign ECharts / FastAPI / ECGStore ModelRegistry,web/frontend/package.json;web/frontend/.umirc.ts;web/backend/ecg_service.py;web/backend/model_registry.py;web/backend/app.py,图12—15,是,静态源码与历史运行证据交叉核验
-6.3,动画互动游戏与欢迎引导已实现,路由组件 API 历史测试记录,web/docs/games/heartbeat_hunter_testing.md;web/docs/welcome_onboarding.md;web/backend/heartbeat_hunter.py;web/frontend/.umirc.ts,,是,未验证教学效果
-6.4,部署类别一致与概率误差,600/600；max|Δp|=4.76837158203125e-07；输入差0,web/results/phase2_validation/validation_prediction_comparison.csv;web/results/phase2_validation/validation_sample_manifest.csv;web/results/phase2_validation/validation_summary.json,,是,本次直接复算与当前6工件哈希比对；不是分类正确率
-6.4,历史后端与浏览器测试记录,18 passed / 16 passed,web/docs/phase4_backend.log;web/docs/visual_fidelity/e2e_final.log,,是,历史记录本次未重新执行；不同阶段不可相加
+﻿论文位置,结论文本,指标或数据,来源文件,表格或图像路径,是否核验,备注,修改说明
+5.1,nv logistic_regression 测试accuracy,0.836927424152,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression 测试macro_f1,0.696072947281,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression N类 precision,0.9892400155098876,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression N类 recall,0.8305526165866363,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression N类 f1,0.9029774808653718,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression N类 support,12287,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression V类 precision,0.33524904214559387,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression V类 recall,0.9043927648578811,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression V类 f1,0.4891684136967156,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression V类 support,1161,results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv logistic_regression 混淆矩阵,"[[10205, 2082], [111, 1050]]",results/classification/nv44_v1/test_predictions_logistic_regression.csv,表8 表9 图7,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest 测试accuracy,0.983491969066,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest 测试macro_f1,0.949408706067,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest N类 precision,0.9945077465366013,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest N类 recall,0.98738504110035,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest N类 f1,0.9909335947071795,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest N类 support,12287,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest V类 precision,0.8759007205764612,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest V类 recall,0.94229112833764,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest V类 f1,0.9078838174273859,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest V类 support,1161,results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv random_forest 混淆矩阵,"[[12132, 155], [67, 1094]]",results/classification/nv44_v1/test_predictions_random_forest.csv,表8 表9 图7,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d 测试accuracy,0.995687091017,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d 测试macro_f1,0.986519601489,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d N类 precision,0.9991021141131337,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d N类 recall,0.9961748189142997,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d N类 f1,0.9976363191784171,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d N类 support,12287,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d V类 precision,0.960735171261487,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d V类 recall,0.9905254091300603,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d V类 f1,0.9754028837998303,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d V类 support,1161,results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.1,nv cnn_1d 混淆矩阵,"[[12240, 47], [11, 1150]]",results/classification/nv44_v1/test_predictions_cnn_1d.csv,表8 表9 图7,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression 测试accuracy,0.742280714441,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression 测试macro_f1,0.359915043614,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression N类 precision,0.9804357021996616,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression N类 recall,0.7545373158622934,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression N类 f1,0.852780205123488,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression N类 support,12287,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression S类 precision,0.004178272980501393,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression S类 recall,0.6,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression S类 f1,0.008298755186721992,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression S类 support,10,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression V类 precision,0.3528550512445095,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression V类 recall,0.830318690783807,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression V类 f1,0.4952478808117133,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression V类 support,1161,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression F类 precision,0.11707317073170732,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression F类 recall,0.0646900269541779,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression F类 f1,0.08333333333333334,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression F类 support,371,results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf logistic_regression 混淆矩阵,"[[9271, 1405, 1577, 34], [4, 6, 0, 0], [41, 9, 964, 147], [140, 16, 191, 24]]",results/classification/nsvf44_v1/test_predictions_logistic_regression.csv,表11 图6,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest 测试accuracy,0.953648130740,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest 测试macro_f1,0.465615708572,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest N类 precision,0.97288842544317,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest N类 recall,0.9871408806055181,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest N类 f1,0.9799628342894078,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest N类 support,12287,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest S类 precision,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest S类 recall,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest S类 f1,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest S类 support,10,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest V类 precision,0.8547215496368039,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest V类 recall,0.9121447028423773,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest V类 f1,0.8825000000000001,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest V类 support,1161,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest F类 precision,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest F类 recall,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest F类 f1,0.0,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest F类 support,371,results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf random_forest 混淆矩阵,"[[12129, 122, 36, 0], [10, 0, 0, 0], [102, 0, 1059, 0], [226, 1, 144, 0]]",results/classification/nsvf44_v1/test_predictions_random_forest.csv,表11 图6,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d 测试accuracy,0.769036083592,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d 测试macro_f1,0.445968829158,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,本次从逐拍预测重算并匹配保存JSON；历史测试已暴露,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d N类 precision,0.9763203953464429,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d N类 recall,0.7717913241637503,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d N类 f1,0.8620909090909091,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d N类 support,12287,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d S类 precision,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d S类 recall,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d S类 f1,0.0,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d S类 support,10,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d V类 precision,0.8544914625092799,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d V类 recall,0.9913867355727821,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d V类 f1,0.9178628389154705,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d V类 support,1161,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d F类 precision,0.007194244604316547,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d F类 recall,0.0026954177897574125,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d F类 f1,0.00392156862745098,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d F类 support,371,results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,固定测试集，按心拍统计,V2保留原实验结论；图表编号依正文更新
+5.2,nsvf cnn_1d 混淆矩阵,"[[9483, 2626, 42, 136], [10, 0, 0, 0], [4, 4, 1151, 2], [216, 0, 154, 1]]",results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,表11 图6,是,行真实，列预测；类序见任务配置,V2保留原实验结论；图表编号依正文更新
+2.4,nv train有效拍数与患者记录数,"{""split"": ""train"", ""sample_count"": 70183, ""subject_count"": 31, ""record_count"": 32, ""N"": 65436, ""V"": 4747}",data/processed/mitdb44_nv_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.4,nv val有效拍数与患者记录数,"{""split"": ""val"", ""sample_count"": 12923, ""subject_count"": 6, ""record_count"": 6, ""N"": 11854, ""V"": 1069}",data/processed/mitdb44_nv_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.4,nv test有效拍数与患者记录数,"{""split"": ""test"", ""sample_count"": 13448, ""subject_count"": 6, ""record_count"": 6, ""N"": 12287, ""V"": 1161}",data/processed/mitdb44_nv_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nv N总体数量与患者覆盖,"{""class"": ""N"", ""samples"": 89577, ""share_pct"": 92.77399175590861, ""subjects"": 43, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 4.101499268785514}",data/processed/mitdb44_nv_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nv V总体数量与患者覆盖,"{""class"": ""V"", ""samples"": 6977, ""share_pct"": 7.226008244091389, ""subjects"": 32, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 14.11781568009173}",data/processed/mitdb44_nv_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+5.3,nv train N来源患者与集中度,"{""split"": ""train"", ""class"": ""N"", ""sample_count"": 65436, ""subjects_with_class"": 31, ""records_with_class"": 32, ""subjects_total"": 31, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 5.61464637202763}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nv train V来源患者与集中度,"{""split"": ""train"", ""class"": ""V"", ""sample_count"": 4747, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_200"", ""top_subject_samples"": 822, ""top_subject_share_pct"": 17.31619970507689}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nv val N来源患者与集中度,"{""split"": ""val"", ""class"": ""N"", ""sample_count"": 11854, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_215"", ""top_subject_samples"": 3176, ""top_subject_share_pct"": 26.792643833305213}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nv val V来源患者与集中度,"{""split"": ""val"", ""class"": ""V"", ""sample_count"": 1069, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 825, ""top_subject_share_pct"": 77.17492984097288}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nv test N来源患者与集中度,"{""split"": ""test"", ""class"": ""N"", ""sample_count"": 12287, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_212"", ""top_subject_samples"": 2733, ""top_subject_share_pct"": 22.243021079189386}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nv test V来源患者与集中度,"{""split"": ""test"", ""class"": ""V"", ""sample_count"": 1161, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 84.84065460809647}",data/processed/mitdb44_nv_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+2.4,nsvf train有效拍数与患者记录数,"{""split"": ""train"", ""sample_count"": 71941, ""subject_count"": 31, ""record_count"": 32, ""N"": 65436, ""S"": 1347, ""V"": 4747, ""F"": 411}",data/processed/mitdb44_nsvf_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.4,nsvf val有效拍数与患者记录数,"{""split"": ""val"", ""sample_count"": 14345, ""subject_count"": 6, ""record_count"": 6, ""N"": 11854, ""S"": 1404, ""V"": 1069, ""F"": 18}",data/processed/mitdb44_nsvf_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.4,nsvf test有效拍数与患者记录数,"{""split"": ""test"", ""sample_count"": 13829, ""subject_count"": 6, ""record_count"": 6, ""N"": 12287, ""S"": 10, ""V"": 1161, ""F"": 371}",data/processed/mitdb44_nsvf_v1/metadata.csv,表4,是,included=True后独立聚合；201/202合并,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nsvf N总体数量与患者覆盖,"{""class"": ""N"", ""samples"": 89577, ""share_pct"": 89.47410477950358, ""subjects"": 43, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 4.101499268785514}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nsvf S总体数量与患者覆盖,"{""class"": ""S"", ""samples"": 2761, ""share_pct"": 2.7578284972281875, ""subjects"": 31, ""top_subject"": ""subject_232"", ""top_subject_samples"": 1376, ""top_subject_share_pct"": 49.837015574067365}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nsvf V总体数量与患者覆盖,"{""class"": ""V"", ""samples"": 6977, ""share_pct"": 6.968985666483545, ""subjects"": 32, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 14.11781568009173}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+2.5 5.3,nsvf F总体数量与患者覆盖,"{""class"": ""F"", ""samples"": 800, ""share_pct"": 0.7990810567846975, ""subjects"": 16, ""top_subject"": ""subject_208"", ""top_subject_samples"": 370, ""top_subject_share_pct"": 46.25}",data/processed/mitdb44_nsvf_v1/metadata.csv,图4 图9,是,患者集中度从逐拍元数据重算,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf train N来源患者与集中度,"{""split"": ""train"", ""class"": ""N"", ""sample_count"": 65436, ""subjects_with_class"": 31, ""records_with_class"": 32, ""subjects_total"": 31, ""top_subject"": ""subject_201_202"", ""top_subject_samples"": 3674, ""top_subject_share_pct"": 5.61464637202763}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf train S来源患者与集中度,"{""split"": ""train"", ""class"": ""S"", ""sample_count"": 1347, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_209"", ""top_subject_samples"": 383, ""top_subject_share_pct"": 28.433556050482554}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf train V来源患者与集中度,"{""split"": ""train"", ""class"": ""V"", ""sample_count"": 4747, ""subjects_with_class"": 23, ""records_with_class"": 24, ""subjects_total"": 31, ""top_subject"": ""subject_200"", ""top_subject_samples"": 822, ""top_subject_share_pct"": 17.31619970507689}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf train F来源患者与集中度,"{""split"": ""train"", ""class"": ""F"", ""sample_count"": 411, ""subjects_with_class"": 10, ""records_with_class"": 11, ""subjects_total"": 31, ""top_subject"": ""subject_213"", ""top_subject_samples"": 362, ""top_subject_share_pct"": 88.07785888077859}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf val N来源患者与集中度,"{""split"": ""val"", ""class"": ""N"", ""sample_count"": 11854, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_215"", ""top_subject_samples"": 3176, ""top_subject_share_pct"": 26.792643833305213}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf val S来源患者与集中度,"{""split"": ""val"", ""class"": ""S"", ""sample_count"": 1404, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_232"", ""top_subject_samples"": 1376, ""top_subject_share_pct"": 98.00569800569801}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf val V来源患者与集中度,"{""split"": ""val"", ""class"": ""V"", ""sample_count"": 1069, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 825, ""top_subject_share_pct"": 77.17492984097288}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf val F来源患者与集中度,"{""split"": ""val"", ""class"": ""F"", ""sample_count"": 18, ""subjects_with_class"": 4, ""records_with_class"": 4, ""subjects_total"": 6, ""top_subject"": ""subject_233"", ""top_subject_samples"": 11, ""top_subject_share_pct"": 61.111111111111114}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf test N来源患者与集中度,"{""split"": ""test"", ""class"": ""N"", ""sample_count"": 12287, ""subjects_with_class"": 6, ""records_with_class"": 6, ""subjects_total"": 6, ""top_subject"": ""subject_212"", ""top_subject_samples"": 2733, ""top_subject_share_pct"": 22.243021079189386}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf test S来源患者与集中度,"{""split"": ""test"", ""class"": ""S"", ""sample_count"": 10, ""subjects_with_class"": 3, ""records_with_class"": 3, ""subjects_total"": 6, ""top_subject"": ""subject_219"", ""top_subject_samples"": 7, ""top_subject_share_pct"": 70.0}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf test V来源患者与集中度,"{""split"": ""test"", ""class"": ""V"", ""sample_count"": 1161, ""subjects_with_class"": 5, ""records_with_class"": 5, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 985, ""top_subject_share_pct"": 84.84065460809647}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+5.3,nsvf test F来源患者与集中度,"{""split"": ""test"", ""class"": ""F"", ""sample_count"": 371, ""subjects_with_class"": 2, ""records_with_class"": 2, ""subjects_total"": 6, ""top_subject"": ""subject_208"", ""top_subject_samples"": 370, ""top_subject_share_pct"": 99.73045822102425}",data/processed/mitdb44_nsvf_v1/metadata.csv,图9,是,修正后的类别级覆盖数,V2保留原实验结论；图表编号依正文更新
+2.1,44记录43患者 201/202合并,44/43,data/processed/mitdb44_nv_v1/split_manifest.csv,表4,是,另由PhysioNet官方数据页核验重复患者,V2保留原实验结论；图表编号依正文更新
+2.3,滤波与253点截窗,0.5—40Hz 原型4阶 单程带通8阶 sosfiltfilt 5秒保护区,data/processed/mitdb44_nv_v1/processing_config.json;src/datasets/build.py;src/preprocessing/filters.py,图2 图3,是,非因果离线处理,V2保留原实验结论；图表编号依正文更新
+2.3,N/V标量归一化参数,μ=0.010122829268587038 σ=0.3422525506986414,data/processed/mitdb44_nv_v1/normalization.json,公式2,是,仅训练侧拟合,V2保留原实验结论；图表编号依正文更新
+3.3,实际CNN结构与参数,253→126→63→1；9058/9188参数,src/models/classifiers.py,表5 图5,是,按实际定义推导与审计,V2保留原实验结论；图表编号依正文更新
+3.4,训练设置和最佳epoch,Adam lr0.001 batch256 max25 patience5；最佳12/11,results/classification/nv44_v1/config.json;results/classification/nv44_v1/training_logs.json;results/classification/nsvf44_v1/training_logs.json,,是,保存设置，不重训,V2保留原实验结论；图表编号依正文更新
+5.1,N/V验证与测试Macro-F1差异,0.663009 / 0.986520,results/classification/nv44_v1/training_logs.json;results/classification/nv44_v1/test_predictions_cnn_1d.csv,,是,划分依赖，不能高估稳定性,V2保留原实验结论；图表编号依正文更新
+5.4,CNN四权重验证对照,验证Accuracy Macro-F1和每类P/R/F1,results/classification/nsvf44_v1/diagnosis/weight_strategy_validation_predictions.csv;results/classification/nsvf44_v1/diagnosis/weight_strategy_class_metrics.csv,表12 图10,是,验证用于早停，属探索性；本次从验证预测重算,V2保留原实验结论；图表编号依正文更新
+5.4,LR RF既有权重对照,LR 0.2637/0.3371 RF 0.4019/0.4090,results/classification/nsvf44_v1/diagnosis/existing_weighted_unweighted_validation_reference.csv,,是,已有保存表核对；未重新训练,V2保留原实验结论；图表编号依正文更新
+5.5,五折范围与分组流程,train+val 86286拍37组；F折支持5/17/5/37/365,results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_training_log.json;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_fold_metrics.csv,表13 图11,是,外层互斥；内层选择一个分组早停划分,V2保留原实验结论；图表编号依正文更新
+5.5,五折Macro-F1均值与样本标准差,LR0.304687±0.037711 RF0.417258±0.042395 CNN0.356418±0.062353,results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_logistic_regression.csv;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_random_forest.csv;results/classification/nsvf44_v1/diagnosis/group_cv_5fold/group_cv_oof_predictions_cnn_1d.csv,表13 图11,是,本次按外折重算；ddof=1；不是标准误,V2保留原实验结论；图表编号依正文更新
+5.6,实际错误案例及采样时间,111:62 53.175s；208:32 18.822s；208:19 11.381s,results/classification/nsvf44_v1/diagnosis/cnn_test_error_waveform_cases_descriptive_only.csv;results/classification/nsvf44_v1/test_predictions_cnn_1d.csv,图12,是,sample_id后缀是完整标注流索引,V2保留原实验结论；图表编号依正文更新
+6.1 6.2,系统架构和真实模型路径,React Umi AntDesign ECharts / FastAPI / ECGStore ModelRegistry,web/frontend/package.json;web/frontend/.umirc.ts;web/backend/ecg_service.py;web/backend/model_registry.py;web/backend/app.py,图13—15,是,静态源码与历史运行证据交叉核验,V2保留原实验结论；图表编号依正文更新
+6.3,动画互动游戏与欢迎引导已实现,路由组件 API 历史测试记录,web/docs/games/heartbeat_hunter_testing.md;web/docs/welcome_onboarding.md;web/backend/heartbeat_hunter.py;web/frontend/.umirc.ts,,是,未验证教学效果,V2保留原实验结论；图表编号依正文更新
+6.4,部署类别一致与概率误差,600/600；max|Δp|=4.76837158203125e-07；输入差0,web/results/phase2_validation/validation_prediction_comparison.csv;web/results/phase2_validation/validation_sample_manifest.csv;web/results/phase2_validation/validation_summary.json,,是,本次直接复算与当前6工件哈希比对；不是分类正确率,V2保留原实验结论；图表编号依正文更新
+6.4,历史后端与浏览器测试记录,18 passed / 16 passed,web/docs/phase4_backend.log;web/docs/visual_fidelity/e2e_final.log,,是,历史记录本次未重新执行；不同阶段不可相加,V2保留原实验结论；图表编号依正文更新
+5.1 验证与测试差异,N/V CNN val accuracy,0.802522634063298,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val macro_f1,0.6630092908675227,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val N_to_V,2511,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val V_to_N,41,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val subjects_with_V,4,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val top_V_subject_share_pct,77.17492984097288,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val N support,11854,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val N precision,0.9956308610400681,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val N recall,0.7881727686856758,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val N f1,0.8798380261794897,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val V support,1069,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val V precision,0.2904775360271263,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val V recall,0.961646398503274,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN val V f1,0.4461805555555556,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test accuracy,0.9956870910172516,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test macro_f1,0.9865196014891238,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test N_to_V,47,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test V_to_N,11,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test subjects_with_V,5,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test top_V_subject_share_pct,84.84065460809647,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test N support,12287,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test N precision,0.9991021141131337,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test N recall,0.9961748189142997,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test N f1,0.9976363191784171,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test V support,1161,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test V precision,0.960735171261487,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test V recall,0.9905254091300603,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,N/V CNN test V f1,0.9754028837998303,results/classification/nv44_v1/test_predictions_cnn_1d.csv,验证测试逐类指标表,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,验证N→V错误集中于subject_109,2477/2511=98.645958%,results/classification/nv44_v1/val_predictions_cnn_1d.csv,验证与测试分区对比图,是,V2回顾性复算；未训练、未改分区、未选择新模型,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,当前最佳与最终最佳检查点张量一致,"epoch12, state_dict all equal",paper/evidence/v2_nv_checkpoint_proof.json,,是,只读模型；CSV无模型SHA，历史绑定限制见审计,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,原始记录 MIT-BIH全库,48条,results/classification/dataset/raw_symbol_counts_by_record_all48.csv,数据构建统计表,是,逐record_id去重,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,排除含起搏心拍记录 正式实验,4条,data/processed/mitdb44_nv_v1/processing_config.json,数据构建统计表,是,102、104、107、217,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,保留记录 正式实验,44条,data/processed/mitdb44_nv_v1/verification.json,数据构建统计表,是,记录选择后；201/202合并为一个受试者组,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,保留受试者组 正式实验,43组,data/processed/mitdb44_nv_v1/split_manifest.csv,数据构建统计表,是,患者组计数，不是心拍计数,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,全部原始注释事件 48记录,112647条,results/classification/dataset/raw_symbol_counts_all48.csv,数据构建统计表,是,包括心拍、节律、质量、注释等，不可命名为心拍数,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,AAMI映射心拍 48记录,109494拍,results/classification/dataset/raw_symbol_counts_all48.csv,数据构建统计表,是,显式N/S/V/F/Q映射所覆盖的逐拍符号；不是全部注释事件,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,全部原始注释事件 44记录,103724条,results/classification/dataset/raw_symbol_counts_44.csv,数据构建统计表,是,与metadata行数和record_checks.annotation_count合计一致,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,AAMI映射心拍 44记录,100733拍,results/classification/dataset/aami_counts_44.csv,数据构建统计表,是,N/S/V/F/Q五组计数合计,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,标签筛选后目标心拍 NV,97134拍,data/processed/mitdb44_nv_v1/metadata.csv,数据构建统计表,是,is_target=True；在技术窗口排除之前,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,目标心拍技术排除 filter_edge_or_gap_guard NV,540拍,data/processed/mitdb44_nv_v1/metadata.csv,数据构建统计表,是,仅在is_target=True中统计，各排除原因互斥,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,目标心拍技术排除 window_boundary NV,40拍,data/processed/mitdb44_nv_v1/metadata.csv,数据构建统计表,是,仅在is_target=True中统计，各排除原因互斥,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,最终有效窗口 NV,96554拍,data/processed/mitdb44_nv_v1/metadata.csv,数据构建统计表,是,included=True；并与record_checks和verification验证,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,标签筛选后目标心拍 N/S/V/F,100718拍,data/processed/mitdb44_nsvf_v1/metadata.csv,数据构建统计表,是,is_target=True；在技术窗口排除之前,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,目标心拍技术排除 filter_edge_or_gap_guard N/S/V/F,562拍,data/processed/mitdb44_nsvf_v1/metadata.csv,数据构建统计表,是,仅在is_target=True中统计，各排除原因互斥,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,目标心拍技术排除 window_boundary N/S/V/F,41拍,data/processed/mitdb44_nsvf_v1/metadata.csv,数据构建统计表,是,仅在is_target=True中统计，各排除原因互斥,V2新增回顾性统计或系统证据；不改变正式实验工件
+2.1 数据构建统计,最终有效窗口 N/S/V/F,100115拍,data/processed/mitdb44_nsvf_v1/metadata.csv,数据构建统计表,是,included=True；并与record_checks和verification验证,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_109 患者级分类表现,n=2515;N=2478;V=37;acc=0.013518886679920477;N_to_V=2477;V_to_N=4,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_113 患者级分类表现,n=1778;N=1778;V=0;acc=0.999437570303712;N_to_V=1;V_to_N=0,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_114 患者级分类表现,n=1852;N=1809;V=43;acc=1.0;N_to_V=0;V_to_N=0,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_215 患者级分类表现,n=3340;N=3176;V=164;acc=0.9892215568862276;N_to_V=0;V_to_N=36,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_232 患者级分类表现,n=395;N=395;V=0;acc=1.0;N_to_V=0;V_to_N=0,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,val subject_233 患者级分类表现,n=3043;N=2218;V=825;acc=0.9888268156424581;N_to_V=33;V_to_N=1,results/classification/nv44_v1/val_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_111 患者级分类表现,n=2112;N=2111;V=1;acc=0.9839015151515151;N_to_V=34;V_to_N=0,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_116 患者级分类表现,n=2397;N=2288;V=109;acc=0.9962453066332916;N_to_V=8;V_to_N=1,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_123 患者级分类表现,n=1509;N=1506;V=3;acc=1.0;N_to_V=0;V_to_N=0,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_208 患者级分类表现,n=2564;N=1579;V=985;acc=0.9980499219968799;N_to_V=4;V_to_N=1,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_212 患者级分类表现,n=2733;N=2733;V=0;acc=1.0;N_to_V=0;V_to_N=0,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+5.1 验证与测试差异,test subject_219 患者级分类表现,n=2133;N=2070;V=63;acc=0.9953117674636662;N_to_V=1;V_to_N=9,results/classification/nv44_v1/test_predictions_cnn_1d.csv,paper/evidence/v2_nv_patient_metrics.csv,是,患者级Accuracy按该患者心拍；无真实V时V Recall留空,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/V LR部署类别一致及概率误差,100/100；max|Δp|=2.980232238769531e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/V RF部署类别一致及概率误差,100/100；max|Δp|=2.220446049250313e-16,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/V CNN部署类别一致及概率误差,100/100；max|Δp|=1.6295221005879768e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/S/V/F LR部署类别一致及概率误差,100/100；max|Δp|=4.76837158203125e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/S/V/F RF部署类别一致及概率误差,100/100；max|Δp|=2.220446049250313e-16,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,N/S/V/F CNN部署类别一致及概率误差,100/100；max|Δp|=3.284582973384076e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,部署输出对照总次数与类别一致数,600次；600/600,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,200个任务—心拍条目×三模型；不是600个独立心拍,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,验证manifest条目数,每任务100；合计200个任务—心拍条目,web/results/phase3_validation/validation_sample_manifest.csv,,是,两个任务可包含同一真实位置；修正先前独立心拍200条表述,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,跨任务不同真实心拍位置数,143,web/results/phase3_validation/validation_sample_manifest.csv,,是,按record_id与annotation_sample组成位置集合取并集；非独立患者数,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,两个任务共享真实心拍位置数,57；其中N=32且V=25,web/results/phase3_validation/validation_sample_manifest.csv,,是,按record_id与annotation_sample组成位置集合取交集；100+100-57=143,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.4,部署对照覆盖受试者组,6,web/results/phase3_validation/validation_sample_manifest.csv,,是,全manifest的subject_id去重；心拍位置数不等于受试者数,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.1 6.2,实际推理编排路径,FastAPI→InferenceService→ECGStore及ModelRegistry,web/backend/app.py;web/backend/ecg_service.py;web/backend/model_registry.py,图13,是,ECGStore提供输入；InferenceService组织调用；Registry加载模型；归一化JSON由ECGStore读取,V2新增回顾性统计或系统证据；不改变正式实验工件
+6.2 6.3,三张系统局部图来自真实历史截图,2026-11-04；无损裁剪及结果卡片纵向重排,web/docs/visual_fidelity/iteration2/ecg_1672x941.png;web/docs/visual_fidelity/iteration2/comparison_1672x941_full.png;web/docs/visual_fidelity/iteration2/experiments_1672x941_full.png,图14—16,是,来源与精确裁剪框见paper/review/system_verification_v2.md；未获取本轮新截图,V2新增回顾性统计或系统证据；不改变正式实验工件

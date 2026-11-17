@@ -2,6 +2,32 @@
 
 包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。仅用于课程教学与算法研究。
 
+## 最终优化与验收（2026年11月17日）
+
+本仓库本轮更新包含稳定性审计、12组受控实验、真实归因、报告导出、验收证据及V3论文。发布核对记录见[仓库同步记录](reports/repository_sync.md)。公开演示仍运行原有六模型版本，服务器尚未部署本轮界面与接口更新。
+
+- [最终验收与提交状态](FINAL_REVIEW.md)、[提交检查清单](SUBMISSION_CHECKLIST.md)。论文使用 `paper/final/ECG_AI_课程论文_最终优化版V3.docx` 及同名PDF。
+- [模型与数据划分审计](reports/cnn_generalization_audit.md)：全量原始信号重建、患者独立划分、索引、归一化与旧检查点重推通过。N/V验证/测试Macro-F1仍为0.6630/0.9865；患者109误报集中，不能把差异写成已消除。
+- [受控实验](reports/imbalance_experiments.md)：四方案、三随机种子，保留所有结果。验证预选RR方案的旧测试Macro-F1为 **0.5002±0.0036**，Balanced Accuracy为 **0.6056±0.0169**。S召回改善伴随大量误报；F召回仅约0.0108，相比新加权CE基线退步。旧测试已查看，这些是探索性复用结果，不是新盲测或临床验证。
+- 新增真实模型Integrated Gradients及完整性误差记录；教学界面仍使用原六模型，新研究候选与生产工件分开。
+- 分析工作台可导出真实心拍、专家标注、三模型分数及工件/输入来源哈希。健康检查在六模型未全部就绪时返回503。
+- 当前原58项及新增测试合计 **73项通过**，类型检查和生产构建通过；Chrome完成本机11项流程检查。公网通过直连验证波形、真实推理和三模型比较；配置网络出口返回502的差异见[演示验收报告](reports/application_demo_check.md)。
+
+科学复验与复跑命令（先按下文构建训练NPZ；复跑始终使用新目录）：
+
+```powershell
+# 审计默认交付目录已存在，复跑时另设输出目录
+.\.venv\Scripts\python.exe -m src.evaluation.stability_audit --output results/stability_audit_reproduction
+# 原始审计门控证据随项目保存；新训练不覆盖12组交付实验
+.\.venv\Scripts\python.exe -m src.evaluation.reproduce_controlled --output results/controlled_reproduction --stage train
+# train完成并锁定后，才运行一次final；已执行过的目录会拒绝重复评估
+.\.venv\Scripts\python.exe -m src.evaluation.reproduce_controlled --output results/controlled_reproduction --stage final
+# 阅读/重建已交付实验的汇总，不进行新的训练或测试推理
+.\.venv\Scripts\python.exe -m src.evaluation.controlled_report
+```
+
+训练协议与代码、数据哈希保存于 `results/controlled_imbalance_20261116/protocol.json`；逐seed检查点、历史和逐拍预测均在独立的 `runs/` 子目录。三seed的标准差描述训练随机性，不是患者层面的置信区间。
+
 - **线上体验**：[打开 ECG-AI 工作台](http://47.83.150.55:8000/dashboard)
 - **GitHub 仓库**：[wujiangbin0604-cmyk/medartintel](https://github.com/wujiangbin0604-cmyk/medartintel)
 - **本地部署**：[Windows / Linux / Docker 完整说明](DEPLOY_LOCAL.md)

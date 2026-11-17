@@ -1,0 +1,34 @@
+F.                                                                       [100%]
+================================== FAILURES ===================================
+________ test_health_is_unavailable_when_not_all_six_models_are_loaded ________
+
+service = <web.backend.ecg_service.InferenceService object at 0x0000023E6E7743B0>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000023E6E6A3290>
+
+    def test_health_is_unavailable_when_not_all_six_models_are_loaded(service, monkeypatch):
+        monkeypatch.setattr(service.models, "status", lambda: {"models": [{"loaded": True}, {"loaded": False}]})
+        response = TestClient(app).get("/api/health")
+>       assert response.status_code == 503
+E       assert 200 == 503
+E        +  where 200 = <Response [200 OK]>.status_code
+
+web\backend\tests\test_health_readiness.py:8: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\wfdb\io\annotation.py:3062
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3062: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_class_table.set_index(
+
+.venv\Lib\site-packages\wfdb\io\annotation.py:3232
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3232: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_label_table.set_index(ann_label_table["label_store"].values, inplace=True)
+
+.venv\Lib\site-packages\starlette\testclient.py:51
+  E:\医学人工智能\.venv\Lib\site-packages\starlette\testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED web/backend/tests/test_health_readiness.py::test_health_is_unavailable_when_not_all_six_models_are_loaded
+1 failed, 1 passed, 3 warnings in 0.87s

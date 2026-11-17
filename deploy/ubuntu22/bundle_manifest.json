@@ -21,9 +21,19 @@
       "sha256": "fc14bd7f519bbe07dadee4a5dabdd51270e080ede8ea4a70a8f6660d42b49031"
     },
     {
+      "path": "FINAL_REVIEW.md",
+      "bytes": 12715,
+      "sha256": "728a2ae6a00417fb15fa3043d3c5527e4b5b59eb55ec56c2a6e057a5c66e8817"
+    },
+    {
       "path": "README.md",
-      "bytes": 24011,
-      "sha256": "a2b6065f3170be2447c1c89a433a0b3ecfb5db41b1748ad253fe80d189a131f5"
+      "bytes": 26893,
+      "sha256": "5b7e8e71117b3d7eafbaa3768f9893124d3f219c5b59f5f0240dedee1e752ef1"
+    },
+    {
+      "path": "SUBMISSION_CHECKLIST.md",
+      "bytes": 3871,
+      "sha256": "c2a7834e2d77f6c777980d87ed52472e394bb5bd5645e1e2a5c28dfc09856251"
     },
     {
       "path": "checkpoints/nsvf44_v1/formal/cnn/cnn_best.pt",
@@ -169,6 +179,11 @@
       "path": "configs/binary_nv.json",
       "bytes": 1275,
       "sha256": "f0f89ed32824c99970c681cc6bf1d9fd0b012da1b5aefa6d7d2cf8c332257b1c"
+    },
+    {
+      "path": "configs/controlled_imbalance_20261116.json",
+      "bytes": 1780,
+      "sha256": "4b6e022fb6103a4eb7a13d9466e5ef19584ec6adde5ccbc3d73c66bdbbc46504"
     },
     {
       "path": "configs/multiclass_nsvf.json",
@@ -1036,6 +1051,11 @@
       "sha256": "9edde2f054b570d8f1210e51dc13474e46610eb147d593e819ad792aab9cd867"
     },
     {
+      "path": "deploy/diagnose_public_demo.py",
+      "bytes": 3398,
+      "sha256": "cd8970c73829f1cd2dc4837a2bce4d16fcb60c2254e10e9cc97ee66d7dda8455"
+    },
+    {
       "path": "deploy/local.py",
       "bytes": 3129,
       "sha256": "a1d8e44eeb33a9b0e02b3211d1721e36d53bcceb279da3c651c0aa1b45166fba"
@@ -1057,8 +1077,8 @@
     },
     {
       "path": "deploy/ubuntu22/build_release.py",
-      "bytes": 4488,
-      "sha256": "c6eadf5fd3cfcaf9f067fd88ed0b15f80c5dc9c7822ba57d9389b676219d2889"
+      "bytes": 5437,
+      "sha256": "25935f015359d9ef5541eb2248684005f528156f51bc692344702a87fac3eb90"
     },
     {
       "path": "deploy/ubuntu22/check_linux_dependencies.py",
@@ -1831,6 +1851,36 @@
       "sha256": "35f50794afc95baa24e6d899e180da162fa9e98cdd96fa697d3dbeb9061540cc"
     },
     {
+      "path": "figures/final_optimization/controlled_confusion.png",
+      "bytes": 428673,
+      "sha256": "327dd8e921e9d2231f43ae440412bc5c46fb5c6c63d20fea238eb55b685e2c17"
+    },
+    {
+      "path": "figures/final_optimization/controlled_distribution.png",
+      "bytes": 153837,
+      "sha256": "fdb9109df84e09d0ef829d37f146122bbbb202fbbe06cd60c5b481efac81f44b"
+    },
+    {
+      "path": "figures/final_optimization/controlled_minority_tradeoffs.png",
+      "bytes": 192099,
+      "sha256": "85ecedeb91a6c8d8b80a48f362e5b975c044d8ae96e76e28728f089212a86cb6"
+    },
+    {
+      "path": "figures/final_optimization/controlled_overall.png",
+      "bytes": 181722,
+      "sha256": "a775da4b08c459a4c538269b98bb45e759bbb7a167b8c93b51dc81506850affa"
+    },
+    {
+      "path": "figures/final_optimization/controlled_paired_ablation.png",
+      "bytes": 184301,
+      "sha256": "bf0b98bda7fb7a361c32c2ad0520361607ef751663d3a22d323a9020427ef635"
+    },
+    {
+      "path": "figures/final_optimization/integrated_gradients.png",
+      "bytes": 542995,
+      "sha256": "d2dec7f5b16a7351936a1b9d371c6bc8105e13de78ab9a2220a8e1e0ac6e9c73"
+    },
+    {
       "path": "figures/preprocessing/100_N_filter_settings.png",
       "bytes": 212128,
       "sha256": "622521a24669c92fec8c320636248924622735b037b5934b2e9f9353f0a5e2ae"
@@ -1906,6 +1956,11 @@
       "sha256": "5d5d8e3828d1719cb295cd8f0c916ab73fcb872b30a749e48ed40eee876f1d7a"
     },
     {
+      "path": "reports/application_demo_check.md",
+      "bytes": 4195,
+      "sha256": "1a672a7c6faaf00875dff94c7d7b9c8507ce56b2622a6f124f7730f645e88e7a"
+    },
+    {
       "path": "reports/classification/experiment_summary.md",
       "bytes": 26275,
       "sha256": "3f09385467a922a20a675def7e40c9892e2347eae4847da3bd5e8930d3bcf605"
@@ -1921,9 +1976,84 @@
       "sha256": "ec05ed2fa7b2aed1ec6b30b983990ed89c2cc7ae76aa0a645fd51eb8b399e055"
     },
     {
+      "path": "reports/cnn_generalization_audit.md",
+      "bytes": 5965,
+      "sha256": "ae069e313e97ea4226877b5f3b3e8327a48175c5838c130fbaf3a97f66624689"
+    },
+    {
       "path": "reports/data_exploration.md",
       "bytes": 19309,
       "sha256": "a4aeea0bad6aade806d915ffd2a49f3653c5c412f639558112fbbe32eb25233b"
+    },
+    {
+      "path": "reports/demo_20261117/ECG-AI_200_2072_nv_analysis.json",
+      "bytes": 22255,
+      "sha256": "d690aebf87572126b9fc5b5a59df59fcd3d532698904220b70186d5e2d8f5036"
+    },
+    {
+      "path": "reports/demo_20261117/acceptance.json",
+      "bytes": 4562,
+      "sha256": "3a77195e73a6159bed5d8c071dee2e3099158bc6e9bd1c34c46c4142b8c8eddd"
+    },
+    {
+      "path": "reports/demo_20261117/discovery.json",
+      "bytes": 2502,
+      "sha256": "4842819b3dee3937a4ec8d5b0f5a5b0949bea48736b46690f6d85a7fad9c6392"
+    },
+    {
+      "path": "reports/demo_20261117/error_analysis.png",
+      "bytes": 676569,
+      "sha256": "0d98fa78c6e909891e11a3261796433544dfe2402438532bb699474caefd7c76"
+    },
+    {
+      "path": "reports/demo_20261117/experiments.png",
+      "bytes": 415615,
+      "sha256": "df5164c36ee163fb1e0b94f87314fb74881cb0f6b8de916f1802a6bb9bec47f4"
+    },
+    {
+      "path": "reports/demo_20261117/gallery.png",
+      "bytes": 697872,
+      "sha256": "4864f329313a066ee59383e9d505282581433fbdd14c620f0d54f63231d5cd50"
+    },
+    {
+      "path": "reports/demo_20261117/heartbeat-hunter.png",
+      "bytes": 548815,
+      "sha256": "f6f911069c94002b95eca0990c13d4d49f38958f4749b1862ed9ad13233e31c7"
+    },
+    {
+      "path": "reports/demo_20261117/historical_playback.png",
+      "bytes": 435228,
+      "sha256": "bcc2a75cc6494e69cfe96b983858e677b2857150a075bfce38bf8bf1f08e98ab"
+    },
+    {
+      "path": "reports/demo_20261117/initial.png",
+      "bytes": 411228,
+      "sha256": "c4771f158997ac2e92cd9835a2373056de0426a19601738531555d755f07f1c9"
+    },
+    {
+      "path": "reports/demo_20261117/presentation_demo.png",
+      "bytes": 601247,
+      "sha256": "a67cad70548e06b6da349429735f3de567b9b83fa49b0105bf15021ee839b79c"
+    },
+    {
+      "path": "reports/demo_20261117/public_browser.json",
+      "bytes": 3652,
+      "sha256": "20cf94fb0b5865a0436eef0fffb6c8873cef27408ff04e6e03220541a8c29a54"
+    },
+    {
+      "path": "reports/demo_20261117/public_demo.png",
+      "bytes": 437601,
+      "sha256": "bffd3bc4693d165257abb2bb055cdb109db43c1695221058d28aba416e85c982"
+    },
+    {
+      "path": "reports/demo_20261117/report_export_success.png",
+      "bytes": 435718,
+      "sha256": "1ec2ff086225ca71a92f15ad564d67184923ed3c2d5991fb8556b6b32ae58338"
+    },
+    {
+      "path": "reports/demo_20261117/workbench_comparison.png",
+      "bytes": 434181,
+      "sha256": "843a155df5ea58ba65ed3beffe7ef098bdc2f37ba9a7c26f155324cf4405ebca"
     },
     {
       "path": "reports/final/MIT_BIH_完整实验报告.md",
@@ -1956,14 +2086,139 @@
       "sha256": "51d65c2b988033c92987df42045107b42026096d402c0a3be1475f237f6f3310"
     },
     {
+      "path": "reports/final/课程作业符合性与评分_2026-11-16.md",
+      "bytes": 9355,
+      "sha256": "0b8e1e62f35a993e16bb73a63af6bc87b4574a07d9d4cb45ce69f7c18621a98e"
+    },
+    {
       "path": "reports/final/项目完成情况总结.md",
       "bytes": 2354,
       "sha256": "a556b3ae90672323a50432ac18caa10e75ab2ad5eb14957f8b11d5b846df5448"
     },
     {
+      "path": "reports/final_test_report.md",
+      "bytes": 6426,
+      "sha256": "608ed61fadba94f57d8a240ba0c3337f409a24eafef5cc6938ee40e5f9392fc7"
+    },
+    {
+      "path": "reports/final_validation/baseline_tests.log",
+      "bytes": 1917,
+      "sha256": "e81730f9664437f191aa348fcc789927a0177de783ed063c34c01df588516ed5"
+    },
+    {
+      "path": "reports/final_validation/browser_acceptance.log",
+      "bytes": 70,
+      "sha256": "4dd86adb2ff921e89ce047f2415573a1d7983c60f6fb58c0bb9795c4de3ebd96"
+    },
+    {
+      "path": "reports/final_validation/browser_acceptance_final.log",
+      "bytes": 89,
+      "sha256": "295cad075badab2b820a5d66f14a291faba66b2eb3bb9462ce8ba1f6ac032ecb"
+    },
+    {
+      "path": "reports/final_validation/explanations.log",
+      "bytes": 2678,
+      "sha256": "d0619bc90c9d601ecba433f707ec1466ef19194b77ef83c54ff758c79f74e2e1"
+    },
+    {
+      "path": "reports/final_validation/final_tests.log",
+      "bytes": 2008,
+      "sha256": "20c977591d34840abbc4b6d6e2916dbdc442a8b83f5adbd6f52d217c4a48cb39"
+    },
+    {
+      "path": "reports/final_validation/frontend_build.log",
+      "bytes": 1819,
+      "sha256": "59d45991b2ec5ddc35cba6e2f50da1631a7e8ab04480b63eeff4d1b24b55f12d"
+    },
+    {
+      "path": "reports/final_validation/health_before.log",
+      "bytes": 2415,
+      "sha256": "5387df1ac30369a2ff60525201c681c3f6a7f1881b496f7f3d7a641b9843f9fc"
+    },
+    {
+      "path": "reports/final_validation/imbalance_final.log",
+      "bytes": 2483,
+      "sha256": "95b47739295eea249229a5d0ef76f180cc155c04b9ada68cc2426e4047c7d9bc"
+    },
+    {
+      "path": "reports/final_validation/imbalance_train.log",
+      "bytes": 7577,
+      "sha256": "164abd767361f1c5039eb494956f6c37d536bca93814a0a502e3e9e4b7e78f9c"
+    },
+    {
+      "path": "reports/final_validation/paper_build.log",
+      "bytes": 163,
+      "sha256": "1b6cfbb9c1c2a5d8b5a428764932378343a6bd82dd4cde52d327bc7bf0d53d5c"
+    },
+    {
+      "path": "reports/final_validation/paper_quality.log",
+      "bytes": 1312,
+      "sha256": "f96de4624c60969836b25ab322a3ad9b444fd545846f911b8dceee39e2f44a52"
+    },
+    {
+      "path": "reports/final_validation/paper_render.log",
+      "bytes": 41,
+      "sha256": "f1e5b3e67c954035b3c76fa5439d806836de0a7e7af6e46dd79299b48c76784f"
+    },
+    {
+      "path": "reports/final_validation/public_browser.log",
+      "bytes": 83,
+      "sha256": "28aab004b66a41097586b87b49f886daa147ea2676df34e18f7ee8e2976d9235"
+    },
+    {
+      "path": "reports/final_validation/public_probe.json",
+      "bytes": 2103,
+      "sha256": "eef4490ef913a5747b36602560b333c46da63ebc074318caf7e5ce13cc1dbae8"
+    },
+    {
+      "path": "reports/final_validation/report_api_tests.log",
+      "bytes": 1530,
+      "sha256": "39d8bf4945f52afc1c5bcb29eace76504e9879fa76ffeb6ae2fc0d43a9c56b26"
+    },
+    {
+      "path": "reports/final_validation/repository_check.json",
+      "bytes": 500,
+      "sha256": "fe08ccf913ac2ec4223eb38a14264328ac25da0430a9c3381ea1a5febf9e0e42"
+    },
+    {
+      "path": "reports/final_validation/server.log",
+      "bytes": 15642,
+      "sha256": "e1b7191df5c28b83f810b692cb91a85fb06943af49d6da2dda7ab4d81c51c365"
+    },
+    {
+      "path": "reports/final_validation/server_final.log",
+      "bytes": 11801,
+      "sha256": "60a25e987d6c63698a2a4ec45c8a087668c9b8d7c6ce71e0242d91cd89a84182"
+    },
+    {
+      "path": "reports/final_validation/typecheck.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/final_validation/word_export.log",
+      "bytes": 10,
+      "sha256": "70103703cbf1827e15b6aa2077b9a21ccaa2c2b265775e0c0223a73c1ff764d3"
+    },
+    {
+      "path": "reports/imbalance_experiments.md",
+      "bytes": 13358,
+      "sha256": "395aa721dd509b227cf195045bb110f9803ed4e32aba484021888a2cd50eee04"
+    },
+    {
+      "path": "reports/model_stability_audit.md",
+      "bytes": 1560,
+      "sha256": "896f18758c170da57ed806b9cf203db92c65dada4d1656cca41df2cadf6e2cd3"
+    },
+    {
       "path": "reports/preprocessing_report.md",
       "bytes": 21323,
       "sha256": "86ea6300dbf2a015a730c7df3084b0cfba52e3a116f0d71eb4a84bd9671e9453"
+    },
+    {
+      "path": "reports/repository_sync.md",
+      "bytes": 1489,
+      "sha256": "e34741005771eb150e507667dbd3085b4111d80c28d281d54ee8ee6cafed4b33"
     },
     {
       "path": "reports/visual_notes.md",
@@ -2686,6 +2941,561 @@
       "sha256": "e4cd7d133aae8a9dd9e6e75f47c073ced8da92850d9c5731fd9f1b098558f33b"
     },
     {
+      "path": "results/controlled_imbalance_20261116/controlled_ablation_summary.csv",
+      "bytes": 13528,
+      "sha256": "60cc1faa48421182a692a82c0b92ddc9e32e47f036289c44d2d0526572bd6004"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_aggregate_summary.csv",
+      "bytes": 5357,
+      "sha256": "fd12790e54651739c4f8675add6d5cab2cd82664f81fccebd51f67e1bed28fcf"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_class_run_summary.csv",
+      "bytes": 8001,
+      "sha256": "f6a765455c22a05709d3ccbf6bc4fdbfd56ce233fcc77c15b6d89b9e7c8a059d"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_class_summary.csv",
+      "bytes": 5438,
+      "sha256": "2e16a18586561f6479dbe13b4ad8e2a05dd847671c2842ad778c9d74cfe19bcf"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_confusion_summary.csv",
+      "bytes": 20073,
+      "sha256": "026ffd81a9adfb95f291515e05b8d3a5fe4591519bbec03f126667c7e72371ed"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_error_summary.csv",
+      "bytes": 93353,
+      "sha256": "66321655b3df07a56aa3a4af04985af36e6bdbeb41fc9f48290c9fed314cffe5"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_explanation_summary.csv",
+      "bytes": 1300,
+      "sha256": "f2c72f9aaeb3746ebbadb3b09a7b8be36f527151bc8b6a369e68db2d4d4f80db"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_historical_summary.csv",
+      "bytes": 2549,
+      "sha256": "76e9c30ffcd40f54314abb6bd8e297f248c18e626b09afc25618e52caf00a160"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/controlled_run_summary.csv",
+      "bytes": 7658,
+      "sha256": "163abb988aeb97420e3f25b960b7926acf2aa1434c790d1736ec7941c2e5ed81"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/explanations/manifest.json",
+      "bytes": 3549,
+      "sha256": "6d30e0a49b469cee7e47dde8d78b8240320b3bdafa455d8da048b841a2b71860"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/protocol.json",
+      "bytes": 3558,
+      "sha256": "8816423a7d256476050b8188b774eefe52dee269a9ad57d894a525e2fdaed525"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/rr_normalization.json",
+      "bytes": 7689,
+      "sha256": "43c8cccdbdbab46fba9065fbf22c238c143516f8625009a71d6a5cf409e0d84b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/best.pt",
+      "bytes": 40397,
+      "sha256": "8361d588a431184ecb72802d224f323a9582f53ba02fb2ef93481f0c78938470"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/config.json",
+      "bytes": 2477,
+      "sha256": "af1691c2a0b5420f81516785b3b583c7b7f28f2c5e340b59c27904c092fd5661"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/summary.json",
+      "bytes": 330,
+      "sha256": "5064af8ff7602c27b5d47df44908469d6f877f1a745e86256798c44a18999a8d"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/test_metrics.json",
+      "bytes": 2226,
+      "sha256": "0644c508774b44a3f176843200fbb74c3154e680a1e886db832f3f3cd364024b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/test_predictions.csv",
+      "bytes": 1765645,
+      "sha256": "94d1ba8b875d88659c898d3ebc127c0f1f8bdc6ae0d55371407c0f25dc913213"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/training_history.csv",
+      "bytes": 1055,
+      "sha256": "153b97adb45acea87756484310acd1baed61782fccb1e20e2e55515002f31d65"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/val_metrics.json",
+      "bytes": 2320,
+      "sha256": "c5d3b0f08901fc0b10f71a78349935e6fc50a7e3c4eeb5c6c52b08431d08f1cd"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261027/val_predictions.csv",
+      "bytes": 1804644,
+      "sha256": "95b70a8ddbc6f381b5ee7d3f67cc0bda5c384b4c0ad30ad0578d2f9dde67fc95"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/best.pt",
+      "bytes": 40397,
+      "sha256": "082d98b9e6f4e3d6c54a9cc6a7a3202e98d4d6a75e8de99ac500779982cc65ea"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/config.json",
+      "bytes": 2477,
+      "sha256": "86256fb17e0d4135d3fec72a2aa3ff20f5e2db601f3174ba6ba144e64d6a0606"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/summary.json",
+      "bytes": 328,
+      "sha256": "a2f7c3095bd6b484046b60c3d730376746051206067cc54ed80500ca0d29a1d5"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/test_metrics.json",
+      "bytes": 2218,
+      "sha256": "2b035f42d02332785ac7f980e528365690c922b43b2bbd3fde45118660c4f88a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/test_predictions.csv",
+      "bytes": 1741604,
+      "sha256": "0987cbde2deb526bc9b5c67ddc213abd024b14561952912c4884f11758d120e9"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/training_history.csv",
+      "bytes": 441,
+      "sha256": "1bd80215da8c7457362efad4cda0c57a0c3b744e29ce8a49f61d3fe449c8ef04"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/val_metrics.json",
+      "bytes": 2313,
+      "sha256": "8dfe043dc726bdc5ffc02d3de3316ee36f338c8ee26fb842bb39f85d42d8b7f3"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261116/val_predictions.csv",
+      "bytes": 1795615,
+      "sha256": "a3f52b54fe378130f373ba918fa6025225ce56ef75bd2dd8d5ce19db4a4fbb70"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/best.pt",
+      "bytes": 40397,
+      "sha256": "116f2b01a836f4f3848e12e813b9080a4ced23c23c699874170fef9ec1736aed"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/config.json",
+      "bytes": 2477,
+      "sha256": "33b68e2199986f86209103b2e9b6cd3864ec14925ad7a7e3ab83afdad5525e98"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/summary.json",
+      "bytes": 329,
+      "sha256": "a1b699e6a55f0877b1e5708ad10608d56e3bca274409ef740b9951d5b21dd0d7"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/test_metrics.json",
+      "bytes": 2289,
+      "sha256": "64e7b1e645d6012b4c51e7582c10aced6508d6c1c2e8063e929e2a7caff7404b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/test_predictions.csv",
+      "bytes": 1750265,
+      "sha256": "d615354da425087b3d43f08ac7fe5fd28228611e153d0d8d69ea151b76a994f4"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/training_history.csv",
+      "bytes": 442,
+      "sha256": "dec2a90938ce49ef7c76656bbf14296d6f69afb5bab48425dfcdb8e586d323f0"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/val_metrics.json",
+      "bytes": 2320,
+      "sha256": "da391122eeab8ead2dbe54d8c2e5d3287b41516a417f79ff977a25e5672964b0"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_inverse/20261117/val_predictions.csv",
+      "bytes": 1797845,
+      "sha256": "47e31146b23ecb2a115da197659654e4f70a1b24e45fc569580f73c229970253"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/best.pt",
+      "bytes": 40397,
+      "sha256": "edfdd56979eeac1fb2b01b8d01f16e1e81b95842252a656247df76356a4058b3"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/config.json",
+      "bytes": 2474,
+      "sha256": "c8a125eff422846e26b121154515e20af5af74695c2b1cb92a5049969423119e"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/summary.json",
+      "bytes": 324,
+      "sha256": "f3f1185655e49e1067992f324eb73a926080aed8c28aea31221784b6fab70e2d"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/test_metrics.json",
+      "bytes": 2181,
+      "sha256": "fda796b3d027fcd034343d3ded9c46ec6ec1ab2ae951697b487f8d0358465801"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/test_predictions.csv",
+      "bytes": 1717871,
+      "sha256": "d52c185d89da9da39d83ade09740256266a1b1199c8c20396027cb42c548b949"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/training_history.csv",
+      "bytes": 444,
+      "sha256": "6686863bc6bebb734d27f97d1ade6a5a24c6ce67a7137e9d7aa9d241b200192f"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/val_metrics.json",
+      "bytes": 2224,
+      "sha256": "f3cce451707b64119ccd6496e39bb21994352aa865144995df9e3ea13af1a473"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261027/val_predictions.csv",
+      "bytes": 1759836,
+      "sha256": "f0af4877bbf9fafadb00c9155c969985bf96f7ef26802ff8587ff2ab841c8c5f"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/best.pt",
+      "bytes": 40397,
+      "sha256": "151126ce483055602e69137d14e319f80e72b6b321bb43bc909f6e96cf7a2502"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/config.json",
+      "bytes": 2474,
+      "sha256": "bb18188ed768e365dbd0cffc949cb0ba4a49d3e565d7d1b9896001672771ef3a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/summary.json",
+      "bytes": 325,
+      "sha256": "095ab607404b7d1fb7c477936d21190d1863e7e0d8ac22484bf732dc61099084"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/test_metrics.json",
+      "bytes": 2115,
+      "sha256": "4b6357c5dc05ba1d1fbba3f1acece562cc76e6e6340a23259d19c01300fc851b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/test_predictions.csv",
+      "bytes": 1721424,
+      "sha256": "b6ac28ed525c52a808a3e3dcb9e7806d8baefcef4864fa61c4c29cb1ab1f3045"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/training_history.csv",
+      "bytes": 445,
+      "sha256": "a847dcfcd54629c130ecad3929ea7cf0252b51488c410455122e3fd936ab38e6"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/val_metrics.json",
+      "bytes": 2123,
+      "sha256": "0af905b7d3330c7bd8a02e1c61dd60e387564cc91d9b451a899003c9aef95cfc"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261116/val_predictions.csv",
+      "bytes": 1765346,
+      "sha256": "df6035703c1ec90d9128739ba4034d8831d7ddda55a0e912221bcbf66bbb30e4"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/best.pt",
+      "bytes": 40397,
+      "sha256": "7a43c633020d1e40705de278c8ddce372904edcc9605e2eaa51368126b7bd4f7"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/config.json",
+      "bytes": 2474,
+      "sha256": "00374a245f1e6dbc7ddd3aa2144d11f96762e6b4aaf5e6bb0279995f1e31afd8"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/summary.json",
+      "bytes": 325,
+      "sha256": "2f3897c158212d84741da4c13fb56808e2c8782ad2ed1b9d91064df7a8200000"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/test_metrics.json",
+      "bytes": 2111,
+      "sha256": "5ddb5826f52d22e37d7c70a8b47c49a0fd9e69c68221742edfe5dd2d54a5bad3"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/test_predictions.csv",
+      "bytes": 1719104,
+      "sha256": "14ed000c2a21fe33108ae1751cd4f297311383f39bb194b9a52f53aad3fb93ce"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/training_history.csv",
+      "bytes": 448,
+      "sha256": "ec340c7b6e8766b64c170c73ea591e61e61ba22e979254e2d2b9fe0733a2b223"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/val_metrics.json",
+      "bytes": 2119,
+      "sha256": "c04dff400343ff6f35be290c97ee0f85063d6d3b528f5ee7b85b2833ac34432f"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/ce_sqrt/20261117/val_predictions.csv",
+      "bytes": 1762518,
+      "sha256": "df908cbe23853236491adc52ab481c742a464b88890a32daba71fda8596973cc"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/best.pt",
+      "bytes": 40397,
+      "sha256": "72cd3930651aec1f8ab7f37f7171395447af81183c084f18188a60d78900aacd"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/config.json",
+      "bytes": 2464,
+      "sha256": "06095059d6ea7375d3fe61beffc0367efe6f2ab47f441040755ca287092d1cbe"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/summary.json",
+      "bytes": 328,
+      "sha256": "c8a80091b8b823d8833b7275e5283edd2f3dcd9b3f8f44b0d322a92ddfa2ef78"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/test_metrics.json",
+      "bytes": 2215,
+      "sha256": "94b4bbf38f80d3625005f55f080f7856c114508f28a2ddb5cf06a0c7acd7942a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/test_predictions.csv",
+      "bytes": 1741810,
+      "sha256": "b72bf0c606898e5e892d04d8203eaca3845a4728c5a6780bbfb48222ebc42052"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/training_history.csv",
+      "bytes": 448,
+      "sha256": "bf9db17df7fd264f9610b7de334a09e4ceb37cd77dc7806c3f79476b314725f3"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/val_metrics.json",
+      "bytes": 2222,
+      "sha256": "3497871151ed8621356c6f377fe74c5353fc06ec1b74cc5014be9db85c74be6c"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261027/val_predictions.csv",
+      "bytes": 1790600,
+      "sha256": "d8d319b847586c853651f92a961fd5cb01fd9e800d8ab30716b1c404dd3f9b4a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/best.pt",
+      "bytes": 40397,
+      "sha256": "29dc6440fc38dcc5e53aedc9fd461b11155c65fdd9d0e3455590d0211d1fe6ca"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/config.json",
+      "bytes": 2464,
+      "sha256": "547b72f35fbaf96ac0b6eb88b60d7d1d8af53b36099a7efe7b7d92b9ca31058b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/summary.json",
+      "bytes": 329,
+      "sha256": "da894524bb505449c3b99cd1c12876ef7175a2da6b1a77857664f9e18e2eb646"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/test_metrics.json",
+      "bytes": 2114,
+      "sha256": "9c6d231c7104b25b2fa5867bf91c20950f0dbbff6848dbb57de5ee058afb8e76"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/test_predictions.csv",
+      "bytes": 1754328,
+      "sha256": "7697e075fd5711d4e3653a0bde7de8c13023e8e0459ce3748dd340e9c247404e"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/training_history.csv",
+      "bytes": 635,
+      "sha256": "7faacceadd1cac19690ce6367bfc56a8f6a06b9b364afb727babe194281f8b0a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/val_metrics.json",
+      "bytes": 2126,
+      "sha256": "e00041eee1dafde3e69693cd20796ceacc28764a9b621559a1b8f6ddec9b5ca4"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261116/val_predictions.csv",
+      "bytes": 1797528,
+      "sha256": "e68309345784610868094fbc7f1432cb2bb60f21116aa887b3b00de179ce71b3"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/best.pt",
+      "bytes": 40397,
+      "sha256": "9154b9600cf7aaa316a8786242afbdd8e3512e85ec450020eab23589cce83f54"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/config.json",
+      "bytes": 2464,
+      "sha256": "707e9e725820ced81a4ed077d13be86f4edd10862f8cd43fba04cdb1c78e7afb"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/summary.json",
+      "bytes": 329,
+      "sha256": "f84a42d850bf83561f3dba7e87e11d942ab765972640c84a8a30b4d9f7bc4a65"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/test_metrics.json",
+      "bytes": 2122,
+      "sha256": "045e990a2581fa092cda93347f59ca02ee467334f71885cdfcbfd0e1c4e8c08c"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/test_predictions.csv",
+      "bytes": 1742754,
+      "sha256": "bba51b3e65f39265141c0fb68203c2a47480a0902e8e454da853d6e61ccd42ff"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/training_history.csv",
+      "bytes": 447,
+      "sha256": "e20c4f313a16f64740c2c2107f38fd87dc05ca58b67478eecac39d41ac4e650b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/val_metrics.json",
+      "bytes": 2126,
+      "sha256": "8170cf3f4955dbee5f33dfa99bdafd78a549950c9ba31cf32f0b08ef5e171b97"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt/20261117/val_predictions.csv",
+      "bytes": 1791417,
+      "sha256": "7152223c441d079340ef92332a77771298662776dc2ca13222d9c9ef9c4d32c2"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/best.pt",
+      "bytes": 41413,
+      "sha256": "0c168e30edaccdc03e1b136a085ff8c92416657758156f428dc0d6e7f1c829f0"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/config.json",
+      "bytes": 2466,
+      "sha256": "abdea97d09c7acc0bc90d112425fe2a7c770cb0bd80766146a6f346fc8a53fee"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/summary.json",
+      "bytes": 332,
+      "sha256": "b9449e6c9a57af0dfbd1aa3c54931b90fe34fd018d6a2dd5813087c571ba944e"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/test_metrics.json",
+      "bytes": 2243,
+      "sha256": "1a4284439d132260b36a03c1513e4933c5364d47b89a935ca67f80c41a42861b"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/test_predictions.csv",
+      "bytes": 1803399,
+      "sha256": "5c367ba27d3a51276a2f5d903db1cb6e7cf5f52cdccbbc4d5a604b7b02846b6a"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/training_history.csv",
+      "bytes": 873,
+      "sha256": "82a9d91d1a8fc3eb7974e21d135cd5417864f50e18866828b7cf1ef20cc734d4"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/val_metrics.json",
+      "bytes": 2311,
+      "sha256": "9bbb577c7d3d7133d32e56877b48c5a06a021d4d4859ef86f82d1dd0b2e68476"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261027/val_predictions.csv",
+      "bytes": 1847111,
+      "sha256": "ff7397ce9a17c1a3744e5c2b4367ffe6ff0af8be8efbe771e016c289f39c9342"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/best.pt",
+      "bytes": 41413,
+      "sha256": "7e9ee85f337430cdd73090f926277923f720e6bb7d38a858330b8019e45d4c29"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/config.json",
+      "bytes": 2466,
+      "sha256": "6638a1a1d28a3b6c566a80de4038596d32ea51bc096c95f91409fd78233f7679"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/summary.json",
+      "bytes": 332,
+      "sha256": "20ad203f402cba48485b334a4ec7b0f4fd7b113c647345c4ddb74000eac1d473"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/test_metrics.json",
+      "bytes": 2250,
+      "sha256": "6d77dbd4d4153137f69c37f310c21b23b0e537b991943f1409f76097b8a09867"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/test_predictions.csv",
+      "bytes": 1802265,
+      "sha256": "0dde194742b79883fa0aa5f04ce93b47f8422fd6f3416ba7c3ded83cb5972c0e"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/training_history.csv",
+      "bytes": 991,
+      "sha256": "3b14c8590e7aea9d829313e7ee7f02a0b8c737df5051d0c7e58066ab986804a7"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/val_metrics.json",
+      "bytes": 2274,
+      "sha256": "a6f2cd673627c2b85d21ae50b1c3de81104d27665a951921daadfb44ac6ce48c"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261116/val_predictions.csv",
+      "bytes": 1846613,
+      "sha256": "9cb2e4e44a72dc76b1aa6de9c1a812a0c7f85d82ffe10b6a89053092f457cd89"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/best.pt",
+      "bytes": 41413,
+      "sha256": "a8849b831d04f59bad500095b108492c758680841107ddae5bfec4bd25de685f"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/config.json",
+      "bytes": 2466,
+      "sha256": "cc6daead7631506a02d0ee0cf1281879ee5d119f3751bd9b7dba766d5d82b7c6"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/summary.json",
+      "bytes": 333,
+      "sha256": "9163576dffae4b70208e3fdc6ed49dcbe90ac5f0c89d65c6a04edae80545957c"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/test_metrics.json",
+      "bytes": 2278,
+      "sha256": "353b7c426cf79350d105c46026af3a6844836c024b53724eadb632300ee51a31"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/test_predictions.csv",
+      "bytes": 1799738,
+      "sha256": "fe600b61551a4ada561a800d6aff75e9a20fa7dd4e55bb0d51dde6e2d73fe0fd"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/training_history.csv",
+      "bytes": 1117,
+      "sha256": "d3d9020ebff1aa9a06cd1310c83900c608430964b14d71237c41a2507270bae6"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/val_metrics.json",
+      "bytes": 2307,
+      "sha256": "9b3deeaab7a3da8df3937443c86c7dea4cb20c86ebc3553507b89c2436c83d33"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/runs/focal_sqrt_rr/20261117/val_predictions.csv",
+      "bytes": 1845293,
+      "sha256": "f5b6e00cce0ca159de6bd9b19eab1739dc0b4af19c7db4e4eb90701b6d7d6447"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/selection_locked.json",
+      "bytes": 2421,
+      "sha256": "ceb783710b192bbc53b47fa6bf716bd35ec541acdb29d5ad1e9241703eb38e24"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/test_comparison.csv",
+      "bytes": 3215,
+      "sha256": "891f5376997014f36c24fe9133e3d4b1e3de08d77daf0cf12cc85c4557d3551f"
+    },
+    {
+      "path": "results/controlled_imbalance_20261116/test_evaluation.json",
+      "bytes": 1646,
+      "sha256": "b61f9e524f6100140b78940ae7b13a06c7dcc021c33ad85d191c88c12d2c78f5"
+    },
+    {
       "path": "results/download_manifest.csv",
       "bytes": 1582,
       "sha256": "2e8b2728d3ea35ef2d374bf0e6a4fc8a2fa51761e621d27af32af36c1371176b"
@@ -2699,6 +3509,16 @@
       "path": "results/figure_manifest.csv",
       "bytes": 3049,
       "sha256": "f48f25bf167b11add3eb3337dedb217167a84e13ebfb3798fe1a5817745bf759"
+    },
+    {
+      "path": "results/final_optimization_20261116/preservation_baseline.json",
+      "bytes": 23800,
+      "sha256": "13f53cd5c467b2deab8eca708d18aea46748c9f55a67ad99a03e4c4f66434e3e"
+    },
+    {
+      "path": "results/final_optimization_20261116/preservation_check.json",
+      "bytes": 100,
+      "sha256": "5b9bd07ed6927c6216c1198d1288001556a640b055a973a99fb9c8c4285b8543"
     },
     {
       "path": "results/label_mapping.csv",
@@ -2814,6 +3634,91 @@
       "path": "results/signal_quality.csv",
       "bytes": 771,
       "sha256": "ba109c6a4cd0fb8f6df43d6402b74db01e93232c3cd6fd68ca8e30d0bcf591ad"
+    },
+    {
+      "path": "results/stability_audit_20261116/audit.json",
+      "bytes": 30898,
+      "sha256": "db44de67ed4670b91824f32bd80b6f0a463fa947885a1c6b3dfd6da713f56f0c"
+    },
+    {
+      "path": "results/stability_audit_20261116/audit_summary.json",
+      "bytes": 30836,
+      "sha256": "dd0c3abf8e9be4610d491f62cb8878c085bc5ede2357b0a182dfd6c2c00b9f03"
+    },
+    {
+      "path": "results/stability_audit_20261116/input_manifest.json",
+      "bytes": 25181,
+      "sha256": "0427c6aef19599cdf88bc0abba5538dde1f11ad0a249e34c60b5cf2b7fd0dc26"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_audit.json",
+      "bytes": 15110,
+      "sha256": "bc3cb387599487e48db77b40734a6b71a4ad545fdae8ffa697f5c262f5e8d6df"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_class_distribution.csv",
+      "bytes": 589,
+      "sha256": "ff86b90db28591f3b46857640ca64fbdeeab7f0efcc4d331305293354465a403"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_patient_class_metrics.csv",
+      "bytes": 3751,
+      "sha256": "33e8c6b8df2012fc8ac055504480aa9bcc3dd0d6f9cde2dc386ed9e8a50ccbaa"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_patient_error_directions.csv",
+      "bytes": 4199,
+      "sha256": "10a6476946558cede074bc6a9aeaba70701886fe8950bcf99e7d990809f360cc"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_raw_filter_replay.csv",
+      "bytes": 1604,
+      "sha256": "fb3e8f06ab52bcceb6cd6cdf55db573f737839d0b66e679c761034a991adcf73"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_test_cnn_replay_predictions.csv",
+      "bytes": 1710061,
+      "sha256": "7c28585181db09167ece1e0d8ef2892b5ae97a99836682b93ed1621248746428"
+    },
+    {
+      "path": "results/stability_audit_20261116/nsvf_val_cnn_replay_predictions.csv",
+      "bytes": 1746959,
+      "sha256": "68000afcff6088655ae2f6d1baaa5c0f6092641254d5e9a198570dc59224f81c"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_audit.json",
+      "bytes": 10986,
+      "sha256": "97cb2afda1141279430a26a6a3d231b1f55de4f121a9e0b416fcdb97b5000e73"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_class_distribution.csv",
+      "bytes": 321,
+      "sha256": "c8ade3366a3954740df995b0278bd9bedbb6560b229637d759cb445e3ec4070f"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_patient_class_metrics.csv",
+      "bytes": 1983,
+      "sha256": "c19c3dc78103a6bf825f1ba112a6d8ee4e216e5fb45c1b7591e310917160557b"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_patient_error_directions.csv",
+      "bytes": 701,
+      "sha256": "2f7f6443b15cd2aacb4b042eb177c1904267a894538233f25b5eead662291d0b"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_raw_filter_replay.csv",
+      "bytes": 1603,
+      "sha256": "d17c083f6b68fa05881fb3236befce9cd97548f0021ce5daa68a9f9c9eb64af2"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_test_cnn_replay_predictions.csv",
+      "bytes": 1356647,
+      "sha256": "a5891190479337528cd8b46aab1acce702b9a76888a4b9b4357fd7a40ef3619e"
+    },
+    {
+      "path": "results/stability_audit_20261116/nv_val_cnn_replay_predictions.csv",
+      "bytes": 1286161,
+      "sha256": "eec1eafbcd948784d26d50b77cfd3ba5b6870126124e20f5aaa4d57eac2aede8"
     },
     {
       "path": "results/unmapped_or_unknown_annotations.csv",
@@ -3001,6 +3906,21 @@
       "sha256": "0f61e57a43207036ad2efc6d89afdba8d6f53a980278234a36cc73c2198404e8"
     },
     {
+      "path": "src/evaluation/controlled_imbalance.py",
+      "bytes": 15444,
+      "sha256": "c1c6d5f734e5a13190abbe69df206eaec9135196ce8bcaa274f33f0d7e5abd50"
+    },
+    {
+      "path": "src/evaluation/controlled_report.py",
+      "bytes": 39539,
+      "sha256": "c5a10471bbd76e7de295a8b1684cb9407ef98ce736d200ece3eb2c74e169508a"
+    },
+    {
+      "path": "src/evaluation/final_explanations.py",
+      "bytes": 6617,
+      "sha256": "8a6625da31294209dfbd8340786565e5fcd5e95f932e6974de42b6ac61eb967f"
+    },
+    {
       "path": "src/evaluation/final_report.py",
       "bytes": 109345,
       "sha256": "75a34c76703c22775f94bac4cec4375d7baf76d9c6b9f2e132b42b7d7af9a91c"
@@ -3029,6 +3949,16 @@
       "path": "src/evaluation/report.py",
       "bytes": 16480,
       "sha256": "42e5c730a98af2d0d1d818e148c51360ad5898ed2c070c9f04c305d07f1ecc52"
+    },
+    {
+      "path": "src/evaluation/reproduce_controlled.py",
+      "bytes": 1163,
+      "sha256": "65c6220d1fe45d65a7425b4062c62383fd8af0c4b7fddfa67bd26c836ad86d33"
+    },
+    {
+      "path": "src/evaluation/stability_audit.py",
+      "bytes": 35027,
+      "sha256": "963ee7b838af5ddc984be2c66c84013c0c0b5061955df35447c4df88210db8ce"
     },
     {
       "path": "src/evaluation/verify.py",
@@ -3201,6 +4131,16 @@
       "sha256": "adb3c82d4b374d72c21ec6c4debd1262774a035473f68fdce5b6f755c6da6583"
     },
     {
+      "path": "tests/test_controlled_imbalance.py",
+      "bytes": 2280,
+      "sha256": "e0adfe19cbe98f2d961d3e9ee608a3ee8dbc3374f5ae7b3dec5690b69d9c726d"
+    },
+    {
+      "path": "tests/test_final_explanations.py",
+      "bytes": 650,
+      "sha256": "e9114681d27c0454becc87d6b91c2cd453772ec3b009ec2cddf4ba5b6e72ee5f"
+    },
+    {
       "path": "tests/test_preprocessing.py",
       "bytes": 4712,
       "sha256": "ef929b496b0d8ff61d54242cbee180904aad195323d5659d08ffbe1282f44768"
@@ -3209,6 +4149,11 @@
       "path": "tests/test_rules.py",
       "bytes": 1395,
       "sha256": "044bba3f480c6b22606e5d6ab3705e6a667e6db0d348120e8d9bbe8f29826c1c"
+    },
+    {
+      "path": "tests/test_stability_audit.py",
+      "bytes": 2904,
+      "sha256": "30b7989718bb30935190e3931b246a13eaa01bf81d8bd81953dabbe02c112936"
     },
     {
       "path": "tests/test_visualization.py",
@@ -3227,8 +4172,8 @@
     },
     {
       "path": "web/backend/app.py",
-      "bytes": 13052,
-      "sha256": "b8ddad9327e5fce187f077af338b8081803aeb362c0b2ad96f0089c4c9c5fe1b"
+      "bytes": 13748,
+      "sha256": "6aa19d0e2e6d256569c11b33918b0a86331d3163902339680d65796aaaef01b5"
     },
     {
       "path": "web/backend/build_heartbeat_levels.py",
@@ -3249,6 +4194,11 @@
       "path": "web/backend/heartbeat_hunter.py",
       "bytes": 15192,
       "sha256": "0d2a321bd8cb964d76c545c9fc69d9c86eec1cb4dd5d25942f95bab9a7c19231"
+    },
+    {
+      "path": "web/backend/inference_report.py",
+      "bytes": 2251,
+      "sha256": "91304eb80776fd62c2df4e4168d5dfaa9e89dd1b5fa1d17b78d8c1cd3e2ce616"
     },
     {
       "path": "web/backend/model_registry.py",
@@ -3286,9 +4236,19 @@
       "sha256": "34671745eaa803ab223512b8e333058b1248e141f0b11c176d4418fa4765a840"
     },
     {
+      "path": "web/backend/tests/test_health_readiness.py",
+      "bytes": 749,
+      "sha256": "18cace145bc09dd1abaa2d4ff4acbb53a79776589b1dc6e78fc65de1c398d00f"
+    },
+    {
       "path": "web/backend/tests/test_heartbeat_hunter.py",
       "bytes": 9325,
       "sha256": "19a9cc54e0f522795a9fc7b9dd27ee847d6da57b722f4372d2badd48fa1066e5"
+    },
+    {
+      "path": "web/backend/tests/test_inference_report.py",
+      "bytes": 2000,
+      "sha256": "af6f64f5c247da87c527d36bec5fa161ae492fe64d1bf94d192b5f4e0cf6e49b"
     },
     {
       "path": "web/backend/tests/test_phase3.py",
@@ -3566,6 +4526,11 @@
       "sha256": "bc9f3b8c78e630561cee84133ca86c10b2e477e774329b56567bf7bbdf671407"
     },
     {
+      "path": "web/frontend/dist/105.async.js",
+      "bytes": 33460,
+      "sha256": "7a778fae81cb46dc59c16e5bffe09a13dfc4e4217af1058195c37d32d435f67e"
+    },
+    {
       "path": "web/frontend/dist/128.async.js",
       "bytes": 17804,
       "sha256": "080c6f53f30300f4868e51513bb576d04a6e717d08b17d7bcd1c992c2c893c3d"
@@ -3577,8 +4542,13 @@
     },
     {
       "path": "web/frontend/dist/196.async.js",
-      "bytes": 48023,
-      "sha256": "0135f720b4fcd9c34ff2e739075a18eb449ca88920be7a5899684e0968ff52c3"
+      "bytes": 55955,
+      "sha256": "d1a9d99382ae0b085c372b8919b41d313419f5d3fcf3197b7353f301b00d0c1a"
+    },
+    {
+      "path": "web/frontend/dist/196.chunk.css",
+      "bytes": 18882,
+      "sha256": "caa787b1dbfcd0d0dcceb7845ba7ba2827788673f3e1736b3daa6404033a0689"
     },
     {
       "path": "web/frontend/dist/209.async.js",
@@ -3602,8 +4572,8 @@
     },
     {
       "path": "web/frontend/dist/295.async.js",
-      "bytes": 30942,
-      "sha256": "f16900c833fbf06e094adaae0a27745a0e5afa067494481b61abfbf8022a45d0"
+      "bytes": 14304,
+      "sha256": "c58e2809af2527c8c5721eff997783fb4b31389923ef80272f22b0a7f753908f"
     },
     {
       "path": "web/frontend/dist/338.chunk.css",
@@ -3651,24 +4621,24 @@
       "sha256": "4467b6012390e875357416fa36410db8e8bd6c4b250dcf423459a36a5a4c5996"
     },
     {
+      "path": "web/frontend/dist/737.async.js",
+      "bytes": 11257,
+      "sha256": "e27b080edddee4f51fe2020f83fa0580f207c5af09ca9285057c721bf1396f36"
+    },
+    {
       "path": "web/frontend/dist/809.async.js",
       "bytes": 9348,
       "sha256": "8c6fde78ebf3284ff7b32252aa7f96aea6ddcc896365807b4e504c0a469df2d8"
     },
     {
       "path": "web/frontend/dist/831.async.js",
-      "bytes": 13829,
-      "sha256": "42df8c3787a17d5f73effafdbbb6956719b9f1935d26715856b515e09a38a29d"
+      "bytes": 13676,
+      "sha256": "659789564411e8698b72d3a4ea58b4628cf87f19e88427ecdc0d8c728933aef2"
     },
     {
       "path": "web/frontend/dist/836.async.js",
       "bytes": 17386,
       "sha256": "09fe4f5efe182143bf5cbf8aa71bafab1b45672db22137c376f07d7d53c94da9"
-    },
-    {
-      "path": "web/frontend/dist/859.async.js",
-      "bytes": 32609,
-      "sha256": "932bb02d757f4cf4c87d08c57bcbe296e5221bfd1cce55d47330fe56a7615425"
     },
     {
       "path": "web/frontend/dist/978.async.js",
@@ -3692,8 +4662,8 @@
     },
     {
       "path": "web/frontend/dist/layouts__index.async.js",
-      "bytes": 22586,
-      "sha256": "8a5e574afe01220c19cffd960396b6761ca7d99cbc71ffe22553d37bb12fdc3f"
+      "bytes": 11603,
+      "sha256": "90f5df1660e553ebdb056a617f0cb78c5ea1d3338e98299ef8fa789138c6bd6b"
     },
     {
       "path": "web/frontend/dist/layouts__index.chunk.css",
@@ -3702,18 +4672,13 @@
     },
     {
       "path": "web/frontend/dist/p__ai-detection__index.async.js",
-      "bytes": 60371,
-      "sha256": "c094adf6b3c75eec11d579395ac66b38ca8a8feb583b3da11f862b2c5f61f925"
-    },
-    {
-      "path": "web/frontend/dist/p__ai-detection__index.chunk.css",
-      "bytes": 18882,
-      "sha256": "caa787b1dbfcd0d0dcceb7845ba7ba2827788673f3e1736b3daa6404033a0689"
+      "bytes": 6414,
+      "sha256": "3b47ecf90c7d590ff96120a6ee7ab0ad6f0ad88965e42d9259620353c4526f24"
     },
     {
       "path": "web/frontend/dist/p__dashboard__index.async.js",
-      "bytes": 9885,
-      "sha256": "0a52e9a4a31b817bd54e239f6d13d3c070470dc8b96b5b698401e4d6616c2093"
+      "bytes": 15541,
+      "sha256": "1510a7ebb6ee53e9518a86afd5adf5508ec4f668d9537498bb054e1131ac6c07"
     },
     {
       "path": "web/frontend/dist/p__dashboard__index.chunk.css",
@@ -3722,43 +4687,43 @@
     },
     {
       "path": "web/frontend/dist/p__experiments__index.async.js",
-      "bytes": 17307,
-      "sha256": "7e74997a1cd2dd906da747f0f539f41bd04163cea8705d4c0f78683439525fe5"
+      "bytes": 17475,
+      "sha256": "0d15cc117e70fda96bb3b6f18a27cebb8b2d14a718eb91638730dcea8e1723e9"
     },
     {
       "path": "web/frontend/dist/p__gallery__index.async.js",
-      "bytes": 16207,
-      "sha256": "c28acc621e0743cc587abb824433db546c8c893be66bf40a3ce5cc306b0bd62d"
+      "bytes": 16375,
+      "sha256": "17cc55c8ed699b5fc01e3577a39c1d75036327f7a4699d4539477072c5df8fa5"
     },
     {
       "path": "web/frontend/dist/p__generalization__index.async.js",
-      "bytes": 7930,
-      "sha256": "7de42ae93c2b40f95217c7c427fe9afb52dff0a1a8c9e9fd1c0d60e4e76bc416"
+      "bytes": 8251,
+      "sha256": "f4b71cdd4234bf30d9dfd334451e51902c7444abb338b8bd099cfc8667416db7"
     },
     {
       "path": "web/frontend/dist/p__interactive-lab__HeartbeatHunter.async.js",
-      "bytes": 46862,
-      "sha256": "524b5a1f25843a3ebeb4c3b5ba9953a5f5f38fec7e4e4a543db4c2a28e8d28bf"
+      "bytes": 47030,
+      "sha256": "7d8f3cb54fda12cf1493bfc5c55a88696fb66207d15eac5ad43681081eabdb8d"
     },
     {
       "path": "web/frontend/dist/p__interactive-lab__index.async.js",
-      "bytes": 23723,
-      "sha256": "0220af1515860f633a9f85c90e2e57788c576a0b786fda5fabd762a4642c19a3"
+      "bytes": 23891,
+      "sha256": "2ecb190206c487e82a621be286f7f669959cbf3f5d74221a7fdc0b699acbfac0"
     },
     {
       "path": "web/frontend/dist/p__presentation-demo__index.async.js",
-      "bytes": 11618,
-      "sha256": "dd16837330c88d29e3a751ceffb93db25526581c51b6bba43aed78c02f5549c8"
+      "bytes": 11786,
+      "sha256": "f13467b6786772f56a3cc1ec68c65b9953257ff8bff8fe534a2159d14c0a4633"
     },
     {
       "path": "web/frontend/dist/p__presentation-demo__index.chunk.css",
-      "bytes": 29531,
-      "sha256": "3d644c1af0f8d26ce49236bfbf4314661430ac90f95dc0cc5ff74da78f1de303"
+      "bytes": 10650,
+      "sha256": "cd63342d1fb65229db2fc6beffad049d5a1d43a0a4f4049cb37e7d39be7ede52"
     },
     {
       "path": "web/frontend/dist/preload_helper.js",
-      "bytes": 2560,
-      "sha256": "9ea055deb4396865f7b843b423f1e5f74476ba84587a8b894e3d86bc649b80de"
+      "bytes": 2606,
+      "sha256": "6f2ce4d2541703dd75d4a72c46df7b80e66d75153685a5bd04b772e5660f98b2"
     },
     {
       "path": "web/frontend/dist/umi.css",
@@ -3767,8 +4732,8 @@
     },
     {
       "path": "web/frontend/dist/umi.js",
-      "bytes": 735766,
-      "sha256": "151bc24bf1b8bffb7e5a95e84a60cccd53722b11d3b67ce74168c232aeac2b75"
+      "bytes": 735784,
+      "sha256": "e4d1362d72a7cc510085fcba72fafb1c1edd92ca11141ffdec01395e35f1de0c"
     },
     {
       "path": "web/frontend/package-lock.json",
@@ -3814,6 +4779,16 @@
       "path": "web/frontend/scripts/dev.cjs",
       "bytes": 160,
       "sha256": "1c2842ea2507e57bc85c1f91a9c9b296729f40da49cf2f8c90a33f01e6900882"
+    },
+    {
+      "path": "web/frontend/scripts/final-acceptance.cjs",
+      "bytes": 6851,
+      "sha256": "67cdbdb7b388a3e39f037bce485f0ae004a01d86b1d24eef70bbe8bbdf1fcf4a"
+    },
+    {
+      "path": "web/frontend/scripts/public-acceptance.cjs",
+      "bytes": 2021,
+      "sha256": "51849c0a467fc0a453ac7095af1bac0ca47d487f06de695b9a8bf76f9e7c6a2b"
     },
     {
       "path": "web/frontend/src/app.tsx",
@@ -3937,8 +4912,8 @@
     },
     {
       "path": "web/frontend/src/pages/ai-detection/index.tsx",
-      "bytes": 29958,
-      "sha256": "cff909f64e3e3abb8dbdb7680dab44cd2a7316128b9698aa8f6aa0bcda972aa9"
+      "bytes": 31756,
+      "sha256": "6781f36c3615007d1e0de613e3e1f56f1c0025dbc93f483ab8b5feeda307ec1a"
     },
     {
       "path": "web/frontend/src/pages/dashboard/DashboardView.tsx",
@@ -3997,13 +4972,13 @@
     },
     {
       "path": "web/frontend/src/pages/presentation-demo/index.tsx",
-      "bytes": 3442,
-      "sha256": "f3cc3c0c81ad12f9427b6fc2d87fb53d8f2385be855b4ca3966d9d12b9161da4"
+      "bytes": 3526,
+      "sha256": "f0cff3e34c635ae52d31e4d8cb99fdd8cfec3d66b8211f302926c81692b769e8"
     },
     {
       "path": "web/frontend/src/services/api.ts",
-      "bytes": 3979,
-      "sha256": "3843df8c987b9b5ddbfafdddcf9f2a04390e823f51a724c79e30c9cff3f117e1"
+      "bytes": 4288,
+      "sha256": "7494326711adf438562a6a98345fc89b2c1213a4af8348fa179571fc44436824"
     },
     {
       "path": "web/frontend/src/styles/fidelity.less",
@@ -4022,8 +4997,8 @@
     },
     {
       "path": "web/frontend/src/types/ecg.ts",
-      "bytes": 3100,
-      "sha256": "afe42382fc205b688a1ac2ee454b5dad91c30e5fb523f260819e79b5c5b227da"
+      "bytes": 3786,
+      "sha256": "20abf35c23665e48ed9e1397f7d25ce46cadbca44f0ab6d55853354689fccaca"
     },
     {
       "path": "web/frontend/src/typings.d.ts",

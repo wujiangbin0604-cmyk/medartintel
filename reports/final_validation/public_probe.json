@@ -1,0 +1,68 @@
+{
+  "checked_at_Asia_Shanghai": "2026-11-17T00:11:24.824951+08:00",
+  "url": "http://47.83.150.55:8000",
+  "checks": {
+    "configured_network": {
+      "health": {
+        "status": 502,
+        "error_type": "HTTPError",
+        "server": null,
+        "body_excerpt": ""
+      },
+      "dashboard": {
+        "status": 502,
+        "error_type": "HTTPError",
+        "server": null,
+        "body_excerpt": ""
+      }
+    },
+    "direct_connection": {
+      "health": {
+        "status": 200,
+        "content_type": "application/json",
+        "json": {
+          "status": "ok",
+          "dataset": "MIT-BIH Arrhythmia Database",
+          "mode": "historical_teaching",
+          "models_loaded": 6,
+          "models_total": 6,
+          "clinical_use": false
+        }
+      },
+      "dashboard": {
+        "status": 200,
+        "content_type": "text/html; charset=utf-8",
+        "html_present": true
+      },
+      "inference": {
+        "status": 200,
+        "content_type": "application/json",
+        "json": {
+          "task": "nv",
+          "model_id": "cnn_1d",
+          "record_id": "200",
+          "annotation_sample": 2331,
+          "predicted_class": "N",
+          "class_probabilities": {
+            "N": 0.9980097695067676,
+            "V": 0.0019902304932323677
+          },
+          "expert_label": "N",
+          "prediction_matches_expert": true,
+          "inference_time_ms": 539.8006699979305,
+          "model_version": "epoch-12",
+          "model_sha256": "5c4ff92e89f881d532eebf4b7f5fe6e6a240a5a88b820ca1d289e4af1fd78648",
+          "preprocessing_version": "mitdb44_v1_filter_0.5-40_window_-0.3_+0.4_zscore_train",
+          "prediction_source": "saved project model checkpoint",
+          "lead_name": "MLII",
+          "dataset_split": "train",
+          "probability_note": "模型类别概率"
+        }
+      },
+      "deployed_checkpoint_matches_local": true
+    }
+  },
+  "public_http_inference_verified": true,
+  "public_browser_flow_verified": false,
+  "server_changes_made": false
+}

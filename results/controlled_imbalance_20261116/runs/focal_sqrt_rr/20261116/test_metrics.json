@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.9611685588256562,
+  "macro_precision": 0.603264125278896,
+  "macro_recall": 0.596423109961222,
+  "macro_f1": 0.4971749905690786,
+  "per_class": {
+    "N": {
+      "precision": 0.9777544934311276,
+      "recall": 0.9873036542687393,
+      "f1": 0.9825058718717097,
+      "support": 12287
+    },
+    "S": {
+      "precision": 0.027210884353741496,
+      "recall": 0.4,
+      "f1": 0.050955414012738856,
+      "support": 10
+    },
+    "V": {
+      "precision": 0.9080911233307148,
+      "recall": 0.9956933677863911,
+      "f1": 0.9498767460969597,
+      "support": 1161
+    },
+    "F": {
+      "precision": 0.5,
+      "recall": 0.0026954177897574125,
+      "f1": 0.005361930294906166,
+      "support": 371
+    }
+  },
+  "confusion_matrix": [
+    [
+      12131,
+      138,
+      17,
+      1
+    ],
+    [
+      6,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      1156,
+      0
+    ],
+    [
+      270,
+      0,
+      100,
+      1
+    ]
+  ],
+  "test_or_validation_sample_count": 13829,
+  "classification_report": {
+    "N": {
+      "precision": 0.9777544934311276,
+      "recall": 0.9873036542687393,
+      "f1-score": 0.9825058718717097,
+      "support": 12287.0
+    },
+    "S": {
+      "precision": 0.027210884353741496,
+      "recall": 0.4,
+      "f1-score": 0.050955414012738856,
+      "support": 10.0
+    },
+    "V": {
+      "precision": 0.9080911233307148,
+      "recall": 0.9956933677863911,
+      "f1-score": 0.9498767460969597,
+      "support": 1161.0
+    },
+    "F": {
+      "precision": 0.5,
+      "recall": 0.0026954177897574125,
+      "f1-score": 0.005361930294906166,
+      "support": 371.0
+    },
+    "accuracy": 0.9611685588256562,
+    "macro avg": {
+      "precision": 0.603264125278896,
+      "recall": 0.596423109961222,
+      "f1-score": 0.4971749905690786,
+      "support": 13829.0
+    },
+    "weighted avg": {
+      "precision": 0.958401573781095,
+      "recall": 0.9611685588256562,
+      "f1-score": 0.9528783990299952,
+      "support": 13829.0
+    }
+  },
+  "balanced_accuracy": 0.596423109961222,
+  "balanced_accuracy_definition": "Mean recall over the four predefined classes (all supported here)."
+}

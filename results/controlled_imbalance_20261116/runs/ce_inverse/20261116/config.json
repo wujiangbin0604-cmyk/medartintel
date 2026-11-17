@@ -1,0 +1,81 @@
+{
+  "experiment_id": "controlled_imbalance_20261116",
+  "dataset": "data/processed/mitdb44_nsvf_v1",
+  "class_names": [
+    "N",
+    "S",
+    "V",
+    "F"
+  ],
+  "seeds": [
+    20261027,
+    20261116,
+    20261117
+  ],
+  "epochs": 25,
+  "patience": 5,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "cpu_threads": 4,
+  "variants": [
+    {
+      "id": "ce_inverse",
+      "loss": "weighted_ce",
+      "weight_power": 1.0,
+      "context": false
+    },
+    {
+      "id": "ce_sqrt",
+      "loss": "weighted_ce",
+      "weight_power": 0.5,
+      "context": false
+    },
+    {
+      "id": "focal_sqrt",
+      "loss": "focal",
+      "gamma": 2.0,
+      "context": false
+    },
+    {
+      "id": "focal_sqrt_rr",
+      "loss": "focal",
+      "gamma": 2.0,
+      "context": true
+    }
+  ],
+  "selection": "Highest mean validation four-class macro-F1 over all three seeds; ties use configuration order; no seed selection.",
+  "context": "Four past-only expert-annotation timing features: previous RR seconds, past-ten mean RR seconds, previous RR / past-ten mean, previous RR / preceding RR. StandardScaler fitted to training samples only. No class labels, next RR, subject ID or record ID are model inputs.",
+  "test_policy": "The old fixed test set has already been viewed. All twelve runs and validation selection are frozen before one final test-evaluation phase. No subsequent tuning or model selection using test results. This is exploratory reuse, not a fresh blinded or external test.",
+  "research_questions": [
+    "Does square-root weighting change minority recall and false positives relative to the original inverse-frequency CE CNN?",
+    "Does focal modulation gamma=2 change the square-root-weighted CE model when weighted reduction, architecture and seeds are held constant?",
+    "Does adding past RR context improve the same focal-loss model without changing patient splits or ECG windows?"
+  ],
+  "variant": {
+    "id": "ce_inverse",
+    "loss": "weighted_ce",
+    "weight_power": 1.0,
+    "context": false
+  },
+  "seed": 20261116,
+  "training_counts": [
+    65436,
+    1347,
+    4747,
+    411
+  ],
+  "ce_weights": [
+    0.2748525142669678,
+    13.352078437805176,
+    3.7887613773345947,
+    43.75973129272461
+  ],
+  "focal_alpha": [
+    0.16460529105240576,
+    1.1472772056521645,
+    0.6111425852650183,
+    2.076974918030411
+  ],
+  "test_loaded": false
+}

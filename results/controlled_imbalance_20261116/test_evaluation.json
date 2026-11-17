@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "selection_sha256": "ceb783710b192bbc53b47fa6bf716bd35ec541acdb29d5ad1e9241703eb38e24",
+  "runs": 12,
+  "selected_before_test": "focal_sqrt_rr",
+  "test_annotation_sources": {
+    "111": {
+      "hea": "9e635a715d6cc44a716a7a73c6dd365bd94099f94e63accb2a65c5b25b4b69b5",
+      "atr": "372ed78bb0bbe7d5d9dc7e676c03d72530729775b5cfa94501485329fc47b8cb"
+    },
+    "116": {
+      "hea": "5553273cafa68c106468ddfaa3bd1d6a30daec53cff1642d3592a20110b2edad",
+      "atr": "abd31e2c878073e67319d5a6fa34923fe117cca02e5c80318378405c853ccbef"
+    },
+    "123": {
+      "hea": "aab5351e9da6f4beb22392f1a469df4a9e4b8017fea820432cf7d1846244d094",
+      "atr": "061bfd2590fd9d6040d32741a19697491dedb65cbbc5b3865a5c50d49f52d709"
+    },
+    "208": {
+      "hea": "5a27efda1bea972440a0b5f40a1c322898693e9602d5ce4722fe750b7dea46e9",
+      "atr": "33878519ee34d00cb233fdb15b11c2b8da0b0aea2e643d31b07105cc3392edf4"
+    },
+    "212": {
+      "hea": "f67d7c99a8ba055941e8aa98fd1f31dfd7dd1d957c85f40b488237eecba61aad",
+      "atr": "dc4d0bec7e3ced82f67ef9d5264bcdb3d167c2214125eb04891040fbbb340816"
+    },
+    "219": {
+      "hea": "d14f0ffbf19f9842dbaa15f82bcedbc7b9b96f00f422b7e4da31112a1d1b2b67",
+      "atr": "271928544ce78772669c50b26cf4de163a53f5b90187b5d8080928def79f0e6a"
+    }
+  },
+  "old_test_previously_viewed": true,
+  "policy": "The old fixed test set has already been viewed. All twelve runs and validation selection are frozen before one final test-evaluation phase. No subsequent tuning or model selection using test results. This is exploratory reuse, not a fresh blinded or external test."
+}

@@ -1,0 +1,17 @@
+﻿阶段,范围,数量,单位,来源文件,统计定义,是否核验,备注
+原始记录,MIT-BIH全库,48,条,results/classification/dataset/raw_symbol_counts_by_record_all48.csv,逐record_id去重,是,
+排除含起搏心拍记录,正式实验,4,条,data/processed/mitdb44_nv_v1/processing_config.json,102、104、107、217,是,
+保留记录,正式实验,44,条,data/processed/mitdb44_nv_v1/verification.json,记录选择后；201/202合并为一个受试者组,是,
+保留受试者组,正式实验,43,组,data/processed/mitdb44_nv_v1/split_manifest.csv,患者组计数，不是心拍计数,是,
+全部原始注释事件,48记录,112647,条,results/classification/dataset/raw_symbol_counts_all48.csv,包括心拍、节律、质量、注释等，不可命名为心拍数,是,
+AAMI映射心拍,48记录,109494,拍,results/classification/dataset/raw_symbol_counts_all48.csv,显式N/S/V/F/Q映射所覆盖的逐拍符号；不是全部注释事件,是,
+全部原始注释事件,44记录,103724,条,results/classification/dataset/raw_symbol_counts_44.csv,与metadata行数和record_checks.annotation_count合计一致,是,
+AAMI映射心拍,44记录,100733,拍,results/classification/dataset/aami_counts_44.csv,N/S/V/F/Q五组计数合计,是,
+标签筛选后目标心拍,NV,97134,拍,data/processed/mitdb44_nv_v1/metadata.csv,is_target=True；在技术窗口排除之前,是,
+目标心拍技术排除 filter_edge_or_gap_guard,NV,540,拍,data/processed/mitdb44_nv_v1/metadata.csv,仅在is_target=True中统计，各排除原因互斥,是,
+目标心拍技术排除 window_boundary,NV,40,拍,data/processed/mitdb44_nv_v1/metadata.csv,仅在is_target=True中统计，各排除原因互斥,是,
+最终有效窗口,NV,96554,拍,data/processed/mitdb44_nv_v1/metadata.csv,included=True；并与record_checks和verification验证,是,每拍253点，非253个独立样本
+标签筛选后目标心拍,N/S/V/F,100718,拍,data/processed/mitdb44_nsvf_v1/metadata.csv,is_target=True；在技术窗口排除之前,是,
+目标心拍技术排除 filter_edge_or_gap_guard,N/S/V/F,562,拍,data/processed/mitdb44_nsvf_v1/metadata.csv,仅在is_target=True中统计，各排除原因互斥,是,
+目标心拍技术排除 window_boundary,N/S/V/F,41,拍,data/processed/mitdb44_nsvf_v1/metadata.csv,仅在is_target=True中统计，各排除原因互斥,是,
+最终有效窗口,N/S/V/F,100115,拍,data/processed/mitdb44_nsvf_v1/metadata.csv,included=True；并与record_checks和verification验证,是,每拍253点，非253个独立样本

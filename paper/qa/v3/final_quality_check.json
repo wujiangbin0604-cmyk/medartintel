@@ -1,0 +1,21 @@
+{
+  "docx": "E:\\医学人工智能\\paper\\final\\ECG_AI_课程论文_最终优化版V3.docx",
+  "pdf": "E:\\医学人工智能\\paper\\final\\ECG_AI_课程论文_最终优化版V3.pdf",
+  "docx_sha256": "a016925c9de42290776178857281c7c1ebcbded32713ef4f13567e017ae064b7",
+  "pdf_sha256": "29bd2002151cbeb8d3783e3639938da6c2b7d0f63f44f1f7c4bc162f15e8e5d1",
+  "source_sha256": "b62a17f9535f322d4eff402716d88b5e55253ff3858f921a574f34b8c053fe08",
+  "pages": 38,
+  "native_equations": 7,
+  "tables": 17,
+  "images": 20,
+  "sections": 3,
+  "body_han_characters": 13309,
+  "toc_entries_checked": 42,
+  "empty_pages": 0,
+  "native_word_field_refresh_and_pdf_export": "PASS",
+  "all_pages_visually_inspected": true,
+  "render_directory": "C:\\Users\\20996\\.codex\\visualizations\\2026\\11\\16\\01a1e341-4607-78c3-9f35-783e42fd49ab\\ecg_final_v3_render",
+  "render_dpi": 120,
+  "visual_notes": "All 38 final pages inspected; no clipped text, broken numbers, duplicate page fields or blank verso pages. Chapter-ending whitespace retained.",
+  "status": "PASS"
+}

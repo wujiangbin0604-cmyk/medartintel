@@ -1,0 +1,63 @@
+{
+  "selected_variant": "focal_sqrt_rr",
+  "ranking": [
+    {
+      "variant": "ce_inverse",
+      "mean_val_macro_f1": 0.48058639541192133,
+      "sample_sd": 0.06509687292169086,
+      "seeds": [
+        20261027,
+        20261116,
+        20261117
+      ]
+    },
+    {
+      "variant": "ce_sqrt",
+      "mean_val_macro_f1": 0.39106627746163786,
+      "sample_sd": 0.004229838302517865,
+      "seeds": [
+        20261027,
+        20261116,
+        20261117
+      ]
+    },
+    {
+      "variant": "focal_sqrt",
+      "mean_val_macro_f1": 0.3936593325752155,
+      "sample_sd": 0.010238958338282082,
+      "seeds": [
+        20261027,
+        20261116,
+        20261117
+      ]
+    },
+    {
+      "variant": "focal_sqrt_rr",
+      "mean_val_macro_f1": 0.6047260453220772,
+      "sample_sd": 0.006025820204007008,
+      "seeds": [
+        20261027,
+        20261116,
+        20261117
+      ]
+    }
+  ],
+  "checkpoint_hashes": {
+    "ce_inverse/20261027": "8361d588a431184ecb72802d224f323a9582f53ba02fb2ef93481f0c78938470",
+    "ce_inverse/20261116": "082d98b9e6f4e3d6c54a9cc6a7a3202e98d4d6a75e8de99ac500779982cc65ea",
+    "ce_inverse/20261117": "116f2b01a836f4f3848e12e813b9080a4ced23c23c699874170fef9ec1736aed",
+    "ce_sqrt/20261027": "edfdd56979eeac1fb2b01b8d01f16e1e81b95842252a656247df76356a4058b3",
+    "ce_sqrt/20261116": "151126ce483055602e69137d14e319f80e72b6b321bb43bc909f6e96cf7a2502",
+    "ce_sqrt/20261117": "7a43c633020d1e40705de278c8ddce372904edcc9605e2eaa51368126b7bd4f7",
+    "focal_sqrt/20261027": "72cd3930651aec1f8ab7f37f7171395447af81183c084f18188a60d78900aacd",
+    "focal_sqrt/20261116": "29dc6440fc38dcc5e53aedc9fd461b11155c65fdd9d0e3455590d0211d1fe6ca",
+    "focal_sqrt/20261117": "9154b9600cf7aaa316a8786242afbdd8e3512e85ec450020eab23589cce83f54",
+    "focal_sqrt_rr/20261027": "0c168e30edaccdc03e1b136a085ff8c92416657758156f428dc0d6e7f1c829f0",
+    "focal_sqrt_rr/20261116": "7e9ee85f337430cdd73090f926277923f720e6bb7d38a858330b8019e45d4c29",
+    "focal_sqrt_rr/20261117": "a8849b831d04f59bad500095b108492c758680841107ddae5bfec4bd25de685f"
+  },
+  "protocol_sha256": "8816423a7d256476050b8188b774eefe52dee269a9ad57d894a525e2fdaed525",
+  "test_loaded": false,
+  "selection_rule": "Highest mean validation four-class macro-F1 over all three seeds; ties use configuration order; no seed selection.",
+  "old_test_previously_viewed": true
+}

@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.9694844168052643,
+  "macro_precision": 0.4750375132775331,
+  "macro_recall": 0.495461071823213,
+  "macro_f1": 0.4849960680103259,
+  "per_class": {
+    "N": {
+      "precision": 0.9739537838481697,
+      "recall": 0.9982094897045658,
+      "f1": 0.9859324758842444,
+      "support": 12287
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "V": {
+      "precision": 0.9261962692619627,
+      "recall": 0.983634797588286,
+      "f1": 0.9540517961570593,
+      "support": 1161
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 371
+    }
+  },
+  "confusion_matrix": [
+    [
+      12265,
+      0,
+      22,
+      0
+    ],
+    [
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      16,
+      0,
+      1142,
+      3
+    ],
+    [
+      302,
+      0,
+      69,
+      0
+    ]
+  ],
+  "test_or_validation_sample_count": 13829,
+  "classification_report": {
+    "N": {
+      "precision": 0.9739537838481697,
+      "recall": 0.9982094897045658,
+      "f1-score": 0.9859324758842444,
+      "support": 12287.0
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 10.0
+    },
+    "V": {
+      "precision": 0.9261962692619627,
+      "recall": 0.983634797588286,
+      "f1-score": 0.9540517961570593,
+      "support": 1161.0
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 371.0
+    },
+    "accuracy": 0.9694844168052643,
+    "macro avg": {
+      "precision": 0.4750375132775331,
+      "recall": 0.495461071823213,
+      "f1-score": 0.4849960680103259,
+      "support": 13829.0
+    },
+    "weighted avg": {
+      "precision": 0.9431111440274496,
+      "recall": 0.9694844168052643,
+      "f1-score": 0.956092737474008,
+      "support": 13829.0
+    }
+  },
+  "balanced_accuracy": 0.495461071823213,
+  "balanced_accuracy_definition": "Mean recall over the four predefined classes (all supported here)."
+}

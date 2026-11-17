@@ -1,0 +1,309 @@
+{
+  "source": "E:\\医学人工智能\\paper\\draft\\ECG_AI_课程论文_修订版V2.md",
+  "source_sha256": "136d7048b9cb090e22648e30c403ad9fdf5e482d2ece7150108b7ceac1bfeac0",
+  "output": "E:\\医学人工智能\\paper\\draft\\ECG_AI_课程论文_最终优化版V3.md",
+  "output_sha256": "b62a17f9535f322d4eff402716d88b5e55253ff3858f921a574f34b8c053fe08",
+  "authorization": "User's final-optimization attachment and caller's scoped revision task",
+  "operations": [
+    {
+      "reason": "缩短主标题并保留研究范围",
+      "before": "# 基于一维卷积神经网络的心电图异常心拍识别与可视化系统设计",
+      "after": "# 心拍分类与可视化系统设计\n\n副标题：基于一维卷积网络的患者独立评估",
+      "before_sha256": "606bd583ddb0c6c10f4e3ffa2e312ab6d2e1ff0db2f61627b1ac8c1b31f5fecd",
+      "after_sha256": "ef8dcac1aa82c92e69b8b40670ae90eb2df9f083b10c898e27520be95666067c"
+    },
+    {
+      "reason": "依据真实新增实验同步中英文摘要",
+      "before": "## 摘要\n\n针对心电图心拍识别与课程实验展示需求，本文基于MIT-BIH心律失常数据库，对逻辑回归、随机森林与一维卷积神经网络开展模型比较，并实现ECG-AI可视化系统。实验排除4条含起搏心拍记录，采用44条记录、43个受试者的有效心拍，以受试者为单位划分训练、验证和测试集。信号经固定带通滤波后，围绕专家标注位置截取253点窗口，归一化参数仅由训练集估计。在N/V二分类固定测试集上，一维卷积神经网络的Accuracy和Macro-F1分别为0.9957和0.9865，V类Recall为0.9905。扩展为N/S/V/F四分类后，随机森林的Accuracy最高，为0.9536，但Macro-F1仅为0.4656；卷积网络Macro-F1为0.4460，S/F类识别仍存在明显不足。受试者分布、验证集权重消融和探索性分组交叉验证表明，少数类的患者覆盖与集中度是解释性能时必须考虑的因素。系统支持真实心拍查看、三模型推理、历史回放和实验分析；600次部署预测对照类别一致。本文完成模型实验与交互展示的贯通，同时明确其结论限于既有数据库和标注心拍，不构成临床诊断能力验证。\n\n关键词：心电图；心拍分类；一维卷积神经网络；受试者独立评估；可视化系统\n\n",
+      "after": "## 摘要\n\n针对心电图标注心拍分类与课程实验展示需求，本文基于MIT-BIH心律失常数据库，比较逻辑回归、随机森林和一维卷积神经网络，并实现ECG-AI可视化系统。实验排除四条含起搏心拍记录，将保留的44条记录归为43个患者组，以31、6、6个患者组划分训练、验证和测试分区。信号经固定带通滤波后，围绕专家位置截取253点窗口，归一化参数仅以训练数据拟合。原N/V二分类CNN测试Accuracy为0.9957、Macro-F1为0.9865，但验证Macro-F1为0.6630；重新推理、标签及数据对应检查支持原结果可复现，验证误报高度集中于患者109。原四分类随机森林和CNN的Macro-F1分别为0.4656和0.4460，较高总体准确率没有转化为可靠的S/F识别。\n\n进一步保留固定患者分区，预声明逆频率交叉熵、平方根交叉熵、Focal Loss及增加过去RR分支的四个方案，各训练三个随机种子，按平均验证Macro-F1锁定平方根Focal＋RR分支，其验证与旧测试Macro-F1分别为0.6047±0.0060和0.5002±0.0036。验证与测试的患者组成不同，大量相关心拍不能代替独立患者证据；新增策略没有使S、F同时改善，指标上升与漏检退步均完整保留。旧测试集此前已查看，新增结果属于冻结协议后的探索性复用，不能视为独立盲测。真实模型的梯度归因用于补充错误分析，不证明医学因果机制。系统贯通真实波形、专家标注、三模型推理、历史回放、错误展示与教学互动，六个原生产模型保持独立保留。结果表明，训练策略应结合逐类误报、患者覆盖和随机性共同评价；本项目贡献主要是可复现实验、受控对照和教学系统整合，适用范围限于既有数据库中的专家标注心拍，不构成临床诊断有效性证据。\n\n关键词：心电图，心拍分类，类别不平衡，患者独立评估，可视化系统\n\n## Abstract\n\nThis study addresses the classification of annotated electrocardiographic heartbeats and the presentation of reproducible course experiments. Logistic regression, random forests and a one-dimensional convolutional neural network were compared using the MIT-BIH Arrhythmia Database, and their trained artifacts were integrated into the ECG-AI visualization system. Four recordings containing paced beats were excluded. The remaining 44 recordings represented 43 patient groups, which were assigned to training, validation and test partitions containing 31, six and six groups. Fixed band-pass filtering preceded extraction of 253-sample windows around expert annotations. Normalization statistics were fitted using training data only.\n\nThe original N/V convolutional model achieved a test accuracy of 0.9957 and a macro-F1 of 0.9865, whereas its validation macro-F1 was 0.6630. Replay and correspondence checks supported reproducibility of these outputs; most validation false positives originated from patient 109. For the original four-class task, random forests and the convolutional model obtained macro-F1 values of 0.4656 and 0.4460, respectively. High overall accuracy therefore coexisted with poor recognition of the S and F classes. A controlled extension retained the same patient split and compared inverse-frequency cross-entropy, square-root-weighted cross-entropy, focal loss and a focal model with past RR context. Three predeclared random seeds were retained for every configuration. The configuration focal_sqrt_rr was locked using mean validation macro-F1 before the final evaluation stage. Its validation and previously viewed test macro-F1 values were 0.6047±0.0060 and 0.5002±0.0036, respectively, reported as mean and sample standard deviation across seeds. Patient composition differed between partitions, and correlated beats did not provide independent patient evidence. The selected extension did not improve both minority classes: improved S recognition coexisted with poorer F recall and F1 than the retrained inverse-frequency baseline. Reuse of an already inspected test set was treated as exploratory, rather than as a new blinded or external evaluation.\n\nIntegrated Gradients from actual model computations supplemented the error analysis without establishing clinical mechanisms. The application connects real waveforms, expert annotations, three-model inference, historical playback, error inspection and interactive teaching. The six original production artifacts were retained separately from the new experimental models. The findings emphasize that weighting, minority-class false positives, patient coverage and training randomness must be assessed together. The contribution is a reproducible comparison, a controlled training investigation and an integrated teaching system. The evidence applies to expert-centered beats in this database and does not establish clinical diagnostic effectiveness or reliable performance on arbitrary unannotated recordings.\n\nKey words: electrocardiogram, heartbeat classification, class imbalance, patient-independent evaluation, visualization system\n\n",
+      "before_sha256": "c4e637f7eb1a3a0e0a07280794166133bcb780a50bbf59a783a2b096ef36fe13",
+      "after_sha256": "b40fcda2f97d920b7d043f4c01b8da63b2b53b32a06ef34c34432795d96537e3"
+    },
+    {
+      "reason": "将主要工作改为成果表达，减少审计过程叙事",
+      "before": "本文核对数据构建、标签映射、患者分组和预处理配置，从保存的逐拍预测重新计算六组测试指标；复核既有四分类诊断与五折结果，并整理真实错误波形；依据当前代码审计Web功能和部署一致性。图1给出了项目技术流程。模型比较、结果分析与系统集成构成主要课程成果，普通工程实现不作为算法创新主张。",
+      "after": "本项目完成患者分组数据集、三类模型比较和ECG-AI系统整合。实验以逐类指标和患者来源解释N/V与四分类的差异，增加三随机种子的损失与RR上下文受控对照，并用真实梯度归因补充错误复核。系统把波形、专家标签、保存模型与课堂互动贯通。图1概括数据与模型流程。这些工作属于实验设计、结果分析和教学工程贡献，不提出全新的网络算法。",
+      "before_sha256": "5972438398bd3fa9e0773295f0ce44c4a587cc0c9e3bdfddc3be9841a87406d9",
+      "after_sha256": "e6ac53ff624b5932f7c2cd95f7fe8da2bc3199d6dacc4c06574abb148b276dda"
+    },
+    {
+      "reason": "补充已核实近期一手研究并限定可比性",
+      "before": "## 1.3 研究目标",
+      "after": "近年来，心拍分类研究继续探索更丰富的表示与跨患者评价。Oliveira等的图表示与图卷积工作仍指出类别不平衡及室上性心拍识别的困难[11]；该来源为公开预印本，不能据此建立跨论文性能名次。Chen等将注意力增强卷积用于跨患者室性早搏识别，并结合形态与间期信息[12]。这些研究提示节律上下文具有比较价值，但其标签、训练和评估条件与本文不同。本文仅据此设置过去RR输入对照，不声称复现其模型或性能。\n\n## 1.3 研究目标",
+      "before_sha256": "5a592aea56d33dbfa490daa7832090e9f42c413b6dd13622fd5c5dee2850d829",
+      "after_sha256": "45356af06990ddf64e395188a4169d60be87f168a162501a3c8d6db8190bfc7b"
+    },
+    {
+      "reason": "区分原波形基线与新增RR研究模型",
+      "before": "本文CNN输入为253点单心拍窗口，没有显式RR特征。",
+      "after": "原始比较中的CNN输入为253点单心拍窗口，没有显式RR特征；新增RR分支另作受控对照。",
+      "before_sha256": "6786fb2e47fc53cedaddae34e6d2803d078cd911487961d059dd4549276296ab",
+      "after_sha256": "c05cdaad7a5e5806badcf21ef3ef5a6bf8e68469f0f54642314801634b37434c"
+    },
+    {
+      "reason": "更新流程图以同时表示原工件复验与新增训练",
+      "before": "../figures/v2/fig01_workflow.png",
+      "after": "../figures/final_v3/fig01_workflow.png",
+      "before_sha256": "a8a471e8849c2cbff1ef221576d6085c7205cf07dd8531034cee03f774ae9dc1",
+      "after_sha256": "0607db789f2ef6ffd716eb52271ccdaf8d6863ccac4b9af03df39203a0d0a612"
+    },
+    {
+      "reason": "增加预声明受控方法与测试隔离政策",
+      "before": "# 第四章 实验设计与评价指标",
+      "after": "## 3.5 类别不平衡与RR上下文方案\n\n在保留原始CNN及六个生产工件的基础上，增加四分类受控实验。四个预声明方案依次为逆频率加权交叉熵（ce_inverse）、平方根平滑加权交叉熵（ce_sqrt）、平方根加权Focal Loss（focal_sqrt）和增加过去RR上下文分支的Focal方案（focal_sqrt_rr）。Focal Loss通过对易分类样本施加较小调制权重，改变损失贡献[13]；本实验取γ=2，先对每拍的负对数概率乘以类别权重α和调制项(1−p)的γ次幂，再以批内α之和归一化。γ=0时退化为同α的加权交叉熵，因此对照中的损失均值口径一致。α为训练侧逆频率权重的平方根，全局乘常数不改变该加权均值。方法的价值由完整逐类结果检验，不因名称而预设优于基线。\n\nRR方案保留原三层波形编码器，将四维时间特征经4→16的ReLU分支，与64维波形表示拼接，再由80→4线性层分类。该方案比原结构增加144个参数。特征包括上一RR间期、过去最多十个RR间期均值、上一RR与该均值之比、上一RR与再前一RR之比；均由过去专家心拍位置计算，不使用类别标签、下一RR、患者编号或记录编号作为输入。附加StandardScaler仅以训练样本拟合。记录开始缺少历史间隔时按协议使用0.8 s默认值。RR方案同时增加时间信息和可训练分支，因此比较评价的是这一组合，不能把差异完全归因于单个特征。\n\n四个方案均使用原患者分区、253点波形、标签与训练侧标量归一化。三个随机种子为20261027、20261116和20261117，训练上限25轮，早停耐心值5，学习率0.001，批大小256。每次训练依据验证集四类Macro-F1选择检查点；之后按三个种子的平均验证Macro-F1选定方案，完全同分按预声明配置顺序处理，不挑选最好种子。所有检查点及选型结果冻结后，才进入一次最终测试评估阶段。原测试集此前已经查看，故这一阶段属于旧测试集的探索性复用，不是新的盲测或外部患者验证。\n\n# 第四章 实验设计与评价指标",
+      "before_sha256": "efed11e1d775f598fb98be756a5c56ce6720f4bf5238d5d57b32992f53374cf9",
+      "after_sha256": "d2b70ad8abe1b6f5be8f9e855465958efbff8690bc8345e868dc8a38c846112f"
+    },
+    {
+      "reason": "用实际重推和全样本审计强化性能差异诊断",
+      "before": "## 5.2 N/S/V/F四分类结果",
+      "after": "数据完整性复验核对全部样本编号、原符号、映射标签、采样位置、导联及数组行次；训练、验证和测试的患者、记录及样本编号集合互斥，同记录跨分区重叠窗口计数为0。滤波后mV窗口及归一化窗口的规范字节哈希均未发现跨分区精确重复。该检查不能穷举不同患者之间的近似形态，也不把形态相似直接当作同源泄漏。当前生产工件在eval模式下重新推理，支持原N/V验证与测试指标复现；没有通过修改分区、标签或剔除患者109来消除差异。历史CSV缺少检查点哈希，故仍不能完整重建最初的全部选择历史。\n\n## 5.2 N/S/V/F四分类结果",
+      "before_sha256": "3b745582bb210da3e8f533d3adb41798d05368c4fbfb3e52c7c38e41c317441b",
+      "after_sha256": "65aac2404f62985d2193dd06a231b9a83a907bf1bb8eabb7cb973c1b0b8a86c4"
+    },
+    {
+      "reason": "加入12组受控实验、全指标取舍和真实IG分析",
+      "before": "# 第六章 ECG-AI系统设计与实现",
+      "after": "## 5.8 多种子受控改进实验\n\n新增12组训练均按3.5节预声明方案完成。Balanced Accuracy定义为四个固定类别Recall的等权均值；表中均值及样本标准差由三个随机种子计算，既不是患者间标准差，也不是置信区间。原表8—表13保留历史实验口径，新增ce_inverse是同方法多种子重训，不能与历史单次训练混写为同一结果。\n\n表16 新训练四方案的三种子总体结果\n\n| 方案 | 分区 | Accuracy | Macro-F1 | Balanced Accuracy |\n|---|---|---|---|---|\n| 逆频率CE | 验证 | 0.6441±0.0609 | 0.4806±0.0651 | 0.5947±0.0227 |\n| 逆频率CE | 旧测试 | 0.7946±0.0607 | 0.4670±0.0210 | 0.4940±0.0455 |\n| 平方根CE | 验证 | 0.8427±0.0085 | 0.3911±0.0042 | 0.4121±0.0154 |\n| 平方根CE | 旧测试 | 0.9691±0.0008 | 0.4841±0.0011 | 0.4954±0.0010 |\n| 平方根Focal | 验证 | 0.8399±0.0151 | 0.3937±0.0102 | 0.4084±0.0158 |\n| 平方根Focal | 旧测试 | 0.9648±0.0043 | 0.4769±0.0048 | 0.4833±0.0108 |\n| 平方根Focal＋RR分支 | 验证 | 0.9014±0.0101 | 0.6047±0.0060 | 0.5849±0.0146 |\n| 平方根Focal＋RR分支 | 旧测试 | 0.9584±0.0046 | 0.5002±0.0036 | 0.6056±0.0169 |\n\n![图17 四方案在验证与旧测试分区的总体表现](../../figures/final_optimization/controlled_overall.png)\n\n验证均值预先选定的方案为平方根Focal＋RR分支（focal_sqrt_rr），其验证Macro-F1为0.6047±0.0060，旧测试Macro-F1为0.5002±0.0036。相对本轮逆频率CE基线，旧测试Macro-F1均值变化为+0.0332，Accuracy变化为+0.1639。此处报告验证选型后的观察，不依据测试表重排优胜方案，也不将新方案直接替换到生产模型注册表。\n\n表17 新训练方案的测试侧逐类结果\n\n| 方案 | S Recall / F1 | F Recall / F1 | V Recall / F1 |\n|---|---|---|---|\n| 逆频率CE | 0.0667±0.1155 / 0.0006±0.0010 | 0.1276±0.1159 / 0.0637±0.0518 | 0.9842±0.0090 / 0.9253±0.0061 |\n| 平方根CE | 0.0000±0.0000 / 0.0000±0.0000 | 0.0027±0.0047 / 0.0050±0.0086 | 0.9808±0.0081 / 0.9445±0.0140 |\n| 平方根Focal | 0.0000±0.0000 / 0.0000±0.0000 | 0.0036±0.0062 / 0.0055±0.0095 | 0.9320±0.0450 / 0.9149±0.0233 |\n| 平方根Focal＋RR分支 | 0.4333±0.0577 / 0.0457±0.0083 | 0.0108±0.0140 / 0.0207±0.0266 | 0.9940±0.0030 / 0.9538±0.0054 |\n\n![图18 少数类召回与F1的实际取舍](../../figures/final_optimization/controlled_minority_tradeoffs.png)\n\n所选方案在旧测试侧S类Precision、Recall、F1均值分别为0.0242、0.4333、0.0457，F类分别为0.4630、0.0108、0.0207，V类Recall与F1为0.9940和0.9538。召回上升与误报增加可以同时发生，因此这些结果须与总体Accuracy和逐类Precision共同解释。三个种子仍共享相同心拍和六个测试患者，不等于三批独立患者证据。\n\n与新训练逆频率CE相比，所选方案的S类F1从0.0006升至0.0457，但F类Recall从0.1276降至0.0108，F1从0.0637降至0.0207。因此本轮没有实现S与F同时改善；F类Precision较高仍伴随大部分真实F被漏分。新增策略的实际收益主要体现在S、V和总体指标的组合变化，不能宣称已解决融合心拍识别。相对于仅改变Focal调制的方案，RR分支组合在本分区的整体表现较好，仍需与其额外参数和患者来源一同解释。\n\n相邻方案分别比较权重平滑、Focal调制及RR分支组合，图19以相同种子的成对差值展示变化；负值同样保留。前两组在波形结构不变时更接近损失因素对照，RR组则同时改变输入信息和参数量。研究问题是这些改动如何影响少数类识别与误报，而非通过大量方案搜索最高测试分数。\n\n![图19 相邻受控方案的成对种子变化](../../figures/final_optimization/controlled_paired_ablation.png)\n\n本轮没有删除困难患者或修改S/F标签。验证S高度集中于患者232，旧测试S仅10拍、来自3个患者，F的371拍中370拍来自患者208；损失函数与RR上下文均不能增加独立形态来源。即使某项均值上升，患者组成的限制仍然存在。新增对照支持比较当前固定条件下的训练策略，不能据此认定已经解决少数类的临床泛化问题。\n\n## 5.9 真实模型的梯度归因分析\n\n采用Integrated Gradients对真实CNN的预测类别logit进行输入归因[14]。该方法沿参考输入到实际输入的路径累计梯度；本项目以归一化波形零输入和标准化RR零输入作为参考，分别对应训练均值，并非生理正常心拍模板。使用验证选定方案focal_sqrt_rr，从三个种子中取验证排序居中的20261117，再取验证集每个真实类别的中间位置样本，共4例，不按测试表现筛选。图20的波形及波形/RR归因均来自实际前向与梯度计算，样本来源、目标类别与检查点哈希由清单记录。\n\n![图20 真实心拍及模型的Integrated Gradients归因](../../figures/final_optimization/integrated_gradients.png)\n\n数值积分采用128步，并保存64步到128步的波形归因变化。四例的完整性最大绝对误差为0.003493、最大相对误差为0.001663，用于检查近似积分的一致性，不是分类性能指标。归因值描述给定模型、参考输入和目标输出的局部数值关系，可能随参考基线和目标类别变化。某个时间区间贡献较大，不足以证明模型具有医学知识，也不等于该区间具备因果诊断意义。RR分支方案还包含波形以外的输入，单看波形归因不能解释全部决策。归因用于定位值得复核的区域，并补充定量错误分析；本研究没有以归因图片代替分类指标，也没有宣称模型经专家验证地识别了P波或QRS机制。\n\n# 第六章 ECG-AI系统设计与实现",
+      "before_sha256": "cf84f79be96937439ddf53bd82b1e66aea23fc832ea26acd183f4b0f4bedc728",
+      "after_sha256": "f23ae8acc796e81ae6921e47e808e47deba5e35c5584dfe3c8ad669111d4696f"
+    },
+    {
+      "reason": "同步本轮真实验收结果与截图，不沿用历史通过数",
+      "before": "## 6.3 功能实现与验证\n\n表14将模块、验证方式和已有结果对应。软件测试日期为2026年11月3—4日，本轮复核源码及保存记录而未重新运行。18项后端和16项全站浏览器回归是各自阶段套件总数，不是每个模块的独立项数，也不相加为新的当前通过数。\n\n表14 系统功能与历史验证证据\n\n| 功能模块| 实现内容 | 验证方式 | 实际记录结果 | 截图或日志证据 |\n|---|---|---|---|---|\n| ECG记录读取 | WFDB真实信号与单位 | 后端窗口与浏览器画图 | 历史后端套件18项通过 | 后端与全站日志 |\n| 单心拍定位 | 标注采样点定位、局部原始/滤波波形 | 真实标注点击并检查推理响应 | 历史全站回归16项包含选拍场景；欢迎后同拍推理有真实响应断言 | 选拍E2E及图14 |\n| 模型切换 | LR、RF、CNN及两任务选择 | 等待真实API响应核对model_id | 欢迎交付记录的追加回归通过；当前passed标记无独立项数 | 欢迎回归记录 |\n| 三模型比较 | 同一窗口执行三模型并展示概率 | 浏览器交互；保存验证预测比对 | 历史工作台场景通过；600条部署对照类别均一致 | 部署CSV及图15 |\n| 历史ECG回放 | 片段预载、暂停、倍速、定位 | 真实回放状态与浏览器场景 | 全站回归中回放场景通过；另有短时性能观测 | 回放E2E与性能记录 |\n| 模型实验结果 | 读取保存指标、混淆矩阵与训练日志 | 只读科研API与页面交互 | 历史后端18项及全站16项套件通过 | 科研API及图16 |\n| 可视化图库 | 研究图片索引、缩略图与原图 | 真实图库及键盘操作场景 | 历史全站日志包含图库场景通过 | 图库E2E |\n| 互动实验室 | 三难度选拍、专家结算、复盘与模型入口 | 关卡校验、后端规则、浏览器流程 | 2026-11-04报告为37项后端、10项游戏E2E；当前历史marker为passed | 游戏测试报告 |\n| 首次欢迎与教程 | 可跳过引导、主动开局、同拍模型跳转 | 真实交互及存储降级场景 | 交付文档记载分别运行22个场景；当前spec后增场景，不能沿用22作为最新套件数 | 欢迎教程记录 |\n\n模型实验中心读取已保存的指标与类别支持，局部界面如图16。已有静态类型检查、生产构建和离线网络场景记录支持软件运行验证，但不能推出医学模型对新患者有效。\n\n![图16 模型实验中心的类别指标展示](../figures/v2/system_experiments_class_crop.png)\n\n",
+      "after": "## 6.3 功能实现与验证\n\n软件验证覆盖真实数据读取、模型预处理、推理、错误定位、报告导出及异常反馈。原58项Python测试全部保留，新增完整性、损失、RR时序、归因、报告及健康检查回归后共73项通过，前端类型检查与生产构建通过。生产构建在Chrome完成11项流程检查，包括真实游戏开局，未出现页面异常。新增导出接口重新运行原三模型，并保存当前心拍、专家标注、逐类分数、模型与输入来源哈希；模型未全部就绪时健康接口返回503。公网直连的波形、实际推理及三模型比较也已验证，当前公网仍运行既有版本，新增导出与健康修复尚未远程发布。上述软件验证不等于医学泛化或教学效果验证。\n\n表14 系统功能与最终实际验证\n\n| 检查项目 | 实际结果 | 证据 |\n|---|---|---|\n| Python回归 | 73项通过，含原58项 | final_tests.log；数据、训练机制、接口、游戏和部署更新规则 |\n| 前端检查 | 类型检查及生产构建通过 | typecheck.log；frontend_build.log |\n| 真实浏览器流程 | 11项流程检查通过，页面异常0 | demo_20261117/acceptance.json；生产构建、隔离游戏数据库 |\n| 报告导出 | 真实JSON下载及模型/专家/输入来源核对通过 | report_export_success.png与实际下载文件 |\n| 异常与健康状态 | 导出失败可反馈重试；六模型未齐时503 | 受控故障注入；health_before.log与修复后73项回归 |\n| 公网直连 | 网页、健康、真实推理及三模型比较通过 | public_probe.json；public_browser.json；配置网络出口502，直连200 |\n\n软件测试验证文件读取、接口行为与预期交互；模型对新患者的有效性仍需单独的统计与医学评价。前端构建成功和接口返回正常，不等于已经验证临床适用性。\n\n![图21 最终课堂演示流程的真实页面](../../reports/demo_20261117/workbench_comparison.png)\n\n图中显示实际运行页面，模型输出与对应工件一致。\n\n",
+      "before_sha256": "b90b9a7d97fec0d777c9dae81cbeefdd5fc3a7fa3b6289143af28bc13d7a6ec6",
+      "after_sha256": "62b2d7c63e93d6014aac710cf5c6f7390883d1f79ee22441c4ad530b0c09b525"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "正式数据处理环境记录Python 3.12.10、NumPy 2.5.4、SciPy 1.18.1、WFDB 4.3.1和scikit-learn 1.9.1，项目依赖锁记录PyTorch 2.14.1。上述版本来源于保存的环境与依赖文件，不表示论文生成时重新完成了该环境的全部复现。项目在Windows环境组织和运行，正式训练配置明确使用CPU；现存证据不足以填写具体CPU或显卡型号。Web前端和后端依赖分别由各自配置维护，不与训练环境混写。",
+      "after": "原数据处理环境记录Python 3.12.10、NumPy 2.5.4、SciPy 1.18.1、WFDB 4.3.1、scikit-learn 1.9.1，依赖锁记录PyTorch 2.14.1。新增受控训练实际使用Python 3.12.10、NumPy 2.5.4与PyTorch 2.14.1+cpu，固定CPU线程数4。项目在Windows环境组织和运行；具体硬件型号未纳入已有实验记录，因此不补写。前后端依赖由各自配置维护，与训练环境分开记录。",
+      "before_sha256": "006d6fe483dfda03ae6dff407f70610769e1e66eb74819c4a1d4a2979c06cdf9",
+      "after_sha256": "936f8d5532f6e5e64a9533a8db6002248077c93cab1463627af9840d47544d9f"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "本文读取既有工件与预测，未重新训练，也没有根据本次错误分析重新选择正式模型。",
+      "after": "原始实验的检查点及预测独立保留；新增训练另按3.5节方案执行，不用错误案例重新选择原模型。",
+      "before_sha256": "651341e2676407661b334114d332a7eb510133791e25e9dfa813431719517180",
+      "after_sha256": "8f37c89ca12b66f3bd4559279602e7e5b038f5bee13db5f0a14159a3160bb36b"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "固定测试虽在原训练后执行，本轮读取的是已有预测；回顾性查看不能恢复测试集未被触碰的状态。",
+      "after": "原始固定测试在训练后执行；新增重推和受控训练均记录其回顾性复用边界，不能恢复测试集未被触碰的状态。",
+      "before_sha256": "6475afce5fe40f2534be7a9c5e86cb7cd27a241f0e0f0fa9ee3f78084b899f53",
+      "after_sha256": "053bf87c3d5de98467b1b73cb8498616ad78e7d5a258480310359d179d5814b5"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "本轮没有用案例调整阈值、损失权重或检查点。",
+      "after": "错误案例仅用于描述性复核，没有用它们调整阈值或重新选择原检查点。",
+      "before_sha256": "0e9d34a0320735e7480bf4401cc3cf9abd75f274fdfd5fe99edd9e456501e341",
+      "after_sha256": "8f58937c11d66e0cd7aec4b4ffffd95a6eea1f6c966bebfc44bade119a22f71e"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "图注：图14—图16均来自2026年11月4日保留的真实浏览器截图。本轮裁剪核心区域以放大文字，其中图15将三张结果卡片纵向重排；未重绘波形或改变预测值。它们是对应阶段已实现功能的证据，不称为本轮新运行截图。",
+      "after": "图14和图15来自2026年11月4日的真实浏览器页面，其中图15仅重排结果卡片便于阅读，未重绘波形或修改预测值；最终验收页面另在6.3节展示。",
+      "before_sha256": "e0b3ea0735117b7b6566d085d5d1eede031f5b0a6dbd8323f9af1b000cece0cd",
+      "after_sha256": "896867822e984b56f85d4fc2981f260420e448935989269a9154812eab6d003f"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "本轮直接汇总已有部署对照CSV（phase3_validation），结果见表15。",
+      "after": "部署一致性对照来自phase3_validation保存记录，结果见表15。",
+      "before_sha256": "e0486766f694d379b42e8abf167f25f1492315c7ca46da1944f320477282a5bd",
+      "after_sha256": "6ef05ee92a9cda3b9c9744e7147aa29bd1bdd6ee92b2826a23800ef8ed3921b8"
+    },
+    {
+      "reason": "定点改进最终论文的贡献与科学表达",
+      "before": "当前固定划分下，CNN在N/V任务中获得较好的按拍汇总结果，但扩展为四分类后，优势没有继续保持。",
+      "after": "线性模型、树集成与卷积网络对输入关系采用不同假设：逻辑回归在波形向量上建立线性边界，随机森林表达分段非线性关系，CNN共享局部时序卷积参数。当前固定划分下，CNN在N/V任务中获得较好的按拍汇总结果，但扩展为四分类后，优势没有继续保持。",
+      "before_sha256": "7b1ac1e5bb9d74e133fb2ca0a8cfbfb341065910d0a456bf0b99ee4ee4a98c49",
+      "after_sha256": "0e655af83defdca1c3763d53a9ac18f1082d189aa063b6ab61d52ca0a087d9e1"
+    },
+    {
+      "reason": "结论不加章号，并同步新增实验及残余限制",
+      "before": "# 第七章 总结与展望\n\n## 7.1 工作总结\n\n本文围绕已有ECG-AI项目完成单导联数据处理、三模型比较和交互系统整合。在固定受试者独立N/V测试中，一维CNN取得0.9957的Accuracy与0.9865的Macro-F1，显示其在当前数据条件下对两组心拍具有较好的区分能力。扩展到四分类后，随机森林总体指标更高，但三模型均存在少数类识别不足，深度模型优势不再普遍成立。患者分布核验、权重对照、交叉验证和真实错误案例使上述结论具有可追溯证据。\n\n系统把原始波形、专家标注、真实工件推理和实验图表连接起来，并通过已有一致性与功能测试记录支持工程实现。课程成果主要体现为规范的比较实验、对不利结果的分析，以及可交互展示流程，不构成新的分类算法。\n\n## 7.2 局限性\n\nMIT-BIH规模有限，属于特定历史采集条件下的数据，不能代表现代设备与全部人群。患者独立划分虽降低同人泄漏，稀有类别患者数量和来源集中仍限制四分类估计。正式测试结果已有查看历史，当前回顾性诊断及探索性CV不能替代新的外部验证；单随机种子和较少测试患者也限制了不确定性判断。\n\n模型依赖专家标注位置截窗，尚不能直接分析任意未标注ECG；离线前后向滤波不具备流式因果特性。输入缺少显式RR和更长节律上下文，模型分数未做临床校准，也没有临床终点、前瞻性研究或教学效果试验。因此系统适合本项目范围内的实验分析与教学展示，不能输出临床诊断结论。\n\n## 7.3 未来工作\n\n后续可引入并单独评价自动R峰检测，例如以经典QRS检测方法为起点[10]，将定位误差传播纳入分类评估；结合RR间期与长时上下文，检验其对S/F识别是否有帮助[4,8]。增加少数类患者来源、设置新的患者独立外部验证，并比较多导联与单导联方案，是扩大证据范围的方向。还应在独立数据上评价概率校准，并通过预先设计的用户研究检验互动教学效果。交互系统可继续完善教学任务和解释展示，但新增功能与模型改进均需经过独立验证后再写为已完成成果。\n\n",
+      "after": "# 结论\n\n本项目围绕MIT-BIH单导联专家标注心拍，完成数据处理、模型对照、患者来源分析和ECG-AI教学系统整合。原患者独立N/V测试中，CNN的Accuracy为0.9957、Macro-F1为0.9865；验证Macro-F1仅0.6630的差异在重新推理后仍存在，且验证误报集中于患者109。数据与工件复核支持结果一致性，没有发现已检查范围内的跨分区同源窗口或精确波形重复；这不等于证明所有潜在泄漏与历史选择偏倚均不存在。四分类中随机森林总体指标较高，但S/F识别不足，说明总体准确率不能替代逐类能力判断。\n\n新增四方案、三种子的受控实验保留全部分区和标签，并在最终测试阶段前锁定验证选型。选定平方根Focal＋RR分支的验证及旧测试Macro-F1分别为0.6047±0.0060和0.5002±0.0036。其逐类变化、整体误报和种子波动均完整报告，不以单个最好种子或召回率替代总体证据。过去RR分支和损失对照扩大了研究问题，真实梯度归因补充了错误观察；二者都不构成新医学机制的证明。系统贡献是将真实信号、专家标签、模型推理、错误反馈与教学互动贯通，生产六模型与探索性新模型分开保存。\n\n研究仍受限于单一历史数据库、六个固定测试患者及S/F患者来源集中。三个随机种子反映训练随机性，不能增加独立患者证据；旧测试复用不是新的外部盲测。模型依赖专家位置、离线双向滤波，尚未完成自动定位误差、临床校准、前瞻性验证或教学效果用户研究。后续应在新增患者来源上预先冻结评估方案，单独评价自动R峰定位及节律上下文的贡献，再考虑模型部署与概率校准。现有成果适合课程实验和教学展示，不能输出临床诊断结论。\n\n",
+      "before_sha256": "7b93e85127b14f41c133a7f78812ec43fc30c65a98aa07ab60d37c25d0507b32",
+      "after_sha256": "c41ac2ca4df5e24dac4323e9b6d4ba2896c30500b6309c98a619a93e6365feb7"
+    }
+  ],
+  "bibliography_mapping_old_to_new": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "11": 10,
+    "12": 11,
+    "13": 12,
+    "14": 13
+  },
+  "number_mapping": {
+    "图": {
+      "1": "1-1",
+      "2": "2-1",
+      "3": "2-2",
+      "4": "2-3",
+      "5": "3-1",
+      "6": "5-1",
+      "7": "5-2",
+      "8": "5-3",
+      "9": "5-4",
+      "10": "5-5",
+      "11": "5-6",
+      "12": "5-7",
+      "17": "5-8",
+      "18": "5-9",
+      "19": "5-10",
+      "20": "5-11",
+      "13": "6-1",
+      "14": "6-2",
+      "15": "6-3",
+      "21": "6-4"
+    },
+    "表": {
+      "1": "1-1",
+      "2": "2-1",
+      "3": "2-2",
+      "4": "2-3",
+      "5": "3-1",
+      "6": "3-2",
+      "7": "4-1",
+      "8": "5-1",
+      "9": "5-2",
+      "10": "5-3",
+      "11": "5-4",
+      "12": "5-5",
+      "13": "5-6",
+      "16": "5-7",
+      "17": "5-8",
+      "14": "6-1",
+      "15": "6-2"
+    },
+    "公式": {
+      "1": "2-1",
+      "2": "2-2",
+      "3": "3-1",
+      "4": "4-1",
+      "5": "4-2",
+      "6": "4-3",
+      "7": "4-4"
+    }
+  },
+  "chinese_characters_all": 14204,
+  "main_text_chinese_characters": 13309,
+  "images": [
+    {
+      "caption": "图1-1 项目数据处理与模型实验技术流程",
+      "path": "E:\\医学人工智能\\paper\\figures\\final_v3\\fig01_workflow.png",
+      "sha256": "6b84a73c694acf424c5a492b16355964efa2464eaa54cc7b6ec8e6989b07d379"
+    },
+    {
+      "caption": "图2-1 记录200的原始与滤波心电波形",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig02_filter.png",
+      "sha256": "15887507df1d50d5cca06167deed4ce6e5379e7c9ffb29e87f163c6c769e5eab"
+    },
+    {
+      "caption": "图2-2 围绕专家标注位置的固定心拍窗口",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig03_window.png",
+      "sha256": "99ab281aee80a24d13e2d90623e1e9084d31450f3d5cf79d66194d8ce88d9397"
+    },
+    {
+      "caption": "图2-3 四分类样本支持与受试者覆盖",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig04_support.png",
+      "sha256": "2b9cbc32fafc73d3a56886cbe2c660e83d97705f6f5ab59244951b6014e3354e"
+    },
+    {
+      "caption": "图3-1 项目一维卷积网络结构",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig05_cnn.png",
+      "sha256": "ca93cd5aa181c069d0cfc289028f8d63f6c6afbe0d897930acc3b9ff158a72fb"
+    },
+    {
+      "caption": "图5-1 两项任务的三模型固定测试性能",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig06_results.png",
+      "sha256": "d4bf954bfc11caad236c0581b2c2ede0fd23cc5b7d1f7dd3b8f9ad1fa20e58c9"
+    },
+    {
+      "caption": "图5-2 N/V一维CNN测试混淆矩阵",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig07_nv_confusion.png",
+      "sha256": "680b6aa138da81a407689ff64d94804632d575620190027447ded4637b6d9037"
+    },
+    {
+      "caption": "图5-3 N/V验证与测试分区的患者组成和误分表现",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig16_nv_partitions.png",
+      "sha256": "53fff37339c86b2bca7972b1be21b2b5ed01f942e6de6ebdaf400213cbed0f53"
+    },
+    {
+      "caption": "图5-4 少数类在关键分区的患者集中度",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig08_concentration.png",
+      "sha256": "ba7c7d5d15f5052017ba3f158be9cde6ee5aa47bc5da5165d2ef634b61d00771"
+    },
+    {
+      "caption": "图5-5 CNN权重策略的验证侧Precision与Recall",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig09_weights.png",
+      "sha256": "537e3697f09e59eabf4296f104e2be23aa41fb33c55555f1c5ef48cf92c54f27"
+    },
+    {
+      "caption": "图5-6 四分类受试者分组交叉验证各折结果",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig10_cv.png",
+      "sha256": "11fb972daf3cb4f505de9de853b9b4f91bbc1f4aab0285f280e5a05720841d6a"
+    },
+    {
+      "caption": "图5-7 四分类CNN的四个真实错误心拍",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig11_errors.png",
+      "sha256": "5da5d0e2463e3d20bb15cc128e3267a3c3932b53c415871b06946f3fb3131867"
+    },
+    {
+      "caption": "图5-8 四方案在验证与旧测试分区的总体表现",
+      "path": "E:\\医学人工智能\\figures\\final_optimization\\controlled_overall.png",
+      "sha256": "a775da4b08c459a4c538269b98bb45e759bbb7a167b8c93b51dc81506850affa"
+    },
+    {
+      "caption": "图5-9 少数类召回与F1的实际取舍",
+      "path": "E:\\医学人工智能\\figures\\final_optimization\\controlled_minority_tradeoffs.png",
+      "sha256": "85ecedeb91a6c8d8b80a48f362e5b975c044d8ae96e76e28728f089212a86cb6"
+    },
+    {
+      "caption": "图5-10 相邻受控方案的成对种子变化",
+      "path": "E:\\医学人工智能\\figures\\final_optimization\\controlled_paired_ablation.png",
+      "sha256": "bf0b98bda7fb7a361c32c2ad0520361607ef751663d3a22d323a9020427ef635"
+    },
+    {
+      "caption": "图5-11 真实心拍及模型的Integrated Gradients归因",
+      "path": "E:\\医学人工智能\\figures\\final_optimization\\integrated_gradients.png",
+      "sha256": "d2dec7f5b16a7351936a1b9d371c6bc8105e13de78ab9a2220a8e1e0ac6e9c73"
+    },
+    {
+      "caption": "图6-1 ECG-AI服务与数据调用架构",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\fig12_architecture.png",
+      "sha256": "418a923124e37891354f02b361692fd37fd2f23ec58bb0cc29b0898de446ccaa"
+    },
+    {
+      "caption": "图6-2 ECG工作台的波形与心拍定位",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\system_workbench_crop.png",
+      "sha256": "e6be1e2a84e7bbcd7bd20d4cb7de22367a0d6fa8fbfecb05ee2c95b0aadbd80c"
+    },
+    {
+      "caption": "图6-3 同一心拍的三模型推理结果",
+      "path": "E:\\医学人工智能\\paper\\figures\\v2\\system_comparison_cards.png",
+      "sha256": "b2a62d9c2c0a30515281426ecb917014769e0980a3b92533b311d2ea825addc3"
+    },
+    {
+      "caption": "图6-4 最终课堂演示流程的真实页面",
+      "path": "E:\\医学人工智能\\reports\\demo_20261117\\workbench_comparison.png",
+      "sha256": "843a155df5ea58ba65ed3beffe7ef098bdc2f37ba9a7c26f155324cf4405ebca"
+    }
+  ],
+  "protocol_sha256": "8816423a7d256476050b8188b774eefe52dee269a9ad57d894a525e2fdaed525",
+  "selection_sha256": "ceb783710b192bbc53b47fa6bf716bd35ec541acdb29d5ad1e9241703eb38e24",
+  "release_input_sha256": "6ac12d388aa5d72b5a624a40e664cb8cac697e9af0fb083a1b724bc767d96ec1"
+}

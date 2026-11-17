@@ -1,5 +1,5 @@
 import type {
-  BeatAnnotation, BeatDetail, ModelId, ModelStatus, PlaybackSegment,
+  AnalysisReport, BeatAnnotation, BeatDetail, ModelId, ModelStatus, PlaybackSegment,
   Prediction, RecordSummary, TaskName, WaveWindow,
 } from '@/types/ecg';
 
@@ -41,6 +41,8 @@ const params = (values: Record<string, string | number | undefined>) => {
 };
 
 export const api = {
+  analysisReport: (recordId: string, sample: number, task: TaskName, modelId: ModelId, signal?: AbortSignal) =>
+    request<AnalysisReport>('/api/inference/report', { method: 'POST', signal, body: JSON.stringify({ record_id: recordId, annotation_sample: sample, task, model_id: modelId }) }),
   records: async () => (await request<{ records: RecordSummary[] }>('/api/ecg/records')).records,
   models: async () => request<{ tasks: Record<TaskName, { labels: string[]; models: ModelStatus[] }> }>('/api/models'),
   window: (recordId: string, startSec: number, durationSec: number, leadName?: string, signal?: AbortSignal) =>

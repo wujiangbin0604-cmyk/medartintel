@@ -10,12 +10,13 @@ from typing import Literal
 
 from fastapi import FastAPI, HTTPException, Path as ApiPath, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, PlainTextResponse, Response
+from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, Response
 from .research import research_data, gallery, figure_path, figure_thumbnail, error_cases, REPORTS
 
 from .ecg_service import InferenceService, MAX_POINTS, MAX_WINDOW_SECONDS
 from .model_registry import MODEL_IDS, TASKS
 from .schemas import BatchRequest, BeatRequest, CompareRequest
+from .inference_report import build_analysis_report
 from .heartbeat_hunter import HunterService, create_router
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -109,9 +110,11 @@ def _http_error(exc: Exception) -> HTTPException:
 @app.get("/api/health", tags=["平台"])
 def health():
     model_status = service.models.status()
-    return {"status": "ok", "dataset": "MIT-BIH Arrhythmia Database", "mode": "historical_teaching",
-            "models_loaded": sum(bool(row.get("loaded")) for row in model_status["models"]),
-            "models_total": len(model_status["models"]), "clinical_use": False}
+    loaded = sum(bool(row.get("loaded")) for row in model_status["models"])
+    ready = len(model_status["models"]) == len(TASKS) * len(MODEL_IDS) == loaded
+    result = {"status": "ok" if ready else "degraded", "dataset": "MIT-BIH Arrhythmia Database", "mode": "historical_teaching",
+              "models_loaded": loaded, "models_total": len(model_status["models"]), "clinical_use": False}
+    return result if ready else JSONResponse(result, status_code=503)
 
 
 @app.get("/api/ecg/records", tags=["ECG 数据"])
@@ -205,6 +208,16 @@ def batch_predict(payload: BatchRequest):
         return {"task": payload.task, "record_id": payload.record_id,
                 "annotation_count": len(payload.annotation_samples), "model_ids": list(dict.fromkeys(payload.model_ids)),
                 "predictions": predictions}
+    except Exception as exc:
+        raise _http_error(exc) from exc
+
+
+@app.post("/api/inference/report", tags=["真实模型推理"],
+          summary="导出当前真实心拍、专家标注、三模型结果与来源")
+def analysis_report(payload: BeatRequest):
+    try:
+        return build_analysis_report(service, ROOT, payload.record_id, payload.annotation_sample,
+                                     payload.task, payload.model_id)
     except Exception as exc:
         raise _http_error(exc) from exc
 

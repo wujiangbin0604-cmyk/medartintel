@@ -118,8 +118,13 @@ def selected_files(figures: list[dict[str, str]]) -> dict[Path, str]:
             add(ROOT / entry["source_file"], kind)
     for value in ("paper/figures/figure_index.md", "paper/draft/ECG_AI_课程论文初稿.md",
                   "paper/evidence/claim_evidence_map.csv", "paper/references/verified_references.md",
-                  "paper/references/references_to_verify.md"):
+                  "paper/references/references_to_verify.md", "paper/draft/ECG_AI_课程论文_修订版V2.md",
+                  "paper/figures/v2/figure_index.md", "paper/review/second_round_review.md"):
         add(ROOT / value, "paper_source")
+    tree("paper/figures/v2", "paper_figure", {".png"})
+    for value in ("web/docs/visual_fidelity/iteration2/comparison_1672x941_full.png",
+                  "web/docs/visual_fidelity/iteration2/experiments_1672x941_full.png"):
+        add(ROOT / value, "used_screenshot")
     return selected
 
 

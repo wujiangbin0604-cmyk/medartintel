@@ -1,0 +1,37 @@
+{
+  "verification_complete": true,
+  "verification_intro": "软件验证覆盖真实数据读取、模型预处理、推理、错误定位、报告导出及异常反馈。原58项Python测试全部保留，新增完整性、损失、RR时序、归因、报告及健康检查回归后共73项通过，前端类型检查与生产构建通过。生产构建在Chrome完成11项流程检查，包括真实游戏开局，未出现页面异常。新增导出接口重新运行原三模型，并保存当前心拍、专家标注、逐类分数、模型与输入来源哈希；模型未全部就绪时健康接口返回503。公网直连的波形、实际推理及三模型比较也已验证，当前公网仍运行既有版本，新增导出与健康修复尚未远程发布。上述软件验证不等于医学泛化或教学效果验证。",
+  "verification_rows": [
+    {
+      "item": "Python回归",
+      "result": "73项通过，含原58项",
+      "evidence": "final_tests.log；数据、训练机制、接口、游戏和部署更新规则"
+    },
+    {
+      "item": "前端检查",
+      "result": "类型检查及生产构建通过",
+      "evidence": "typecheck.log；frontend_build.log"
+    },
+    {
+      "item": "真实浏览器流程",
+      "result": "11项流程检查通过，页面异常0",
+      "evidence": "demo_20261117/acceptance.json；生产构建、隔离游戏数据库"
+    },
+    {
+      "item": "报告导出",
+      "result": "真实JSON下载及模型/专家/输入来源核对通过",
+      "evidence": "report_export_success.png与实际下载文件"
+    },
+    {
+      "item": "异常与健康状态",
+      "result": "导出失败可反馈重试；六模型未齐时503",
+      "evidence": "受控故障注入；health_before.log与修复后73项回归"
+    },
+    {
+      "item": "公网直连",
+      "result": "网页、健康、真实推理及三模型比较通过",
+      "evidence": "public_probe.json；public_browser.json；配置网络出口502，直连200"
+    }
+  ],
+  "demo_screenshot": "reports/demo_20261117/workbench_comparison.png"
+}

@@ -1,0 +1,19 @@
+...                                                                      [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\wfdb\io\annotation.py:3062
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3062: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_class_table.set_index(
+
+.venv\Lib\site-packages\wfdb\io\annotation.py:3232
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3232: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_label_table.set_index(ann_label_table["label_store"].values, inplace=True)
+
+web/backend/tests/test_inference_report.py::test_report_contains_real_current_predictions_and_source_hashes
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:1472: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    label_map.set_index(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+3 passed, 3 warnings in 1.12s

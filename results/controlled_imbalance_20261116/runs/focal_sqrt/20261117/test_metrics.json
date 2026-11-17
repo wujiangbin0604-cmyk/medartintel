@@ -1,0 +1,100 @@
+{
+  "accuracy": 0.9623978595704679,
+  "macro_precision": 0.4712658511470659,
+  "macro_recall": 0.47494352868486245,
+  "macro_f1": 0.4730682560681696,
+  "per_class": {
+    "N": {
+      "precision": 0.9754196165778379,
+      "recall": 0.9979653292097339,
+      "f1": 0.9865636817121248,
+      "support": 12287
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "V": {
+      "precision": 0.9096437880104257,
+      "recall": 0.9018087855297158,
+      "f1": 0.9057093425605537,
+      "support": 1161
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 371
+    }
+  },
+  "confusion_matrix": [
+    [
+      12262,
+      0,
+      19,
+      6
+    ],
+    [
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      0,
+      1047,
+      101
+    ],
+    [
+      286,
+      0,
+      85,
+      0
+    ]
+  ],
+  "test_or_validation_sample_count": 13829,
+  "classification_report": {
+    "N": {
+      "precision": 0.9754196165778379,
+      "recall": 0.9979653292097339,
+      "f1-score": 0.9865636817121248,
+      "support": 12287.0
+    },
+    "S": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 10.0
+    },
+    "V": {
+      "precision": 0.9096437880104257,
+      "recall": 0.9018087855297158,
+      "f1-score": 0.9057093425605537,
+      "support": 1161.0
+    },
+    "F": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 371.0
+    },
+    "accuracy": 0.9623978595704679,
+    "macro avg": {
+      "precision": 0.4712658511470659,
+      "recall": 0.47494352868486245,
+      "f1-score": 0.4730682560681696,
+      "support": 13829.0
+    },
+    "weighted avg": {
+      "precision": 0.9430238821875766,
+      "recall": 0.9623978595704679,
+      "f1-score": 0.9525950179991092,
+      "support": 13829.0
+    }
+  },
+  "balanced_accuracy": 0.47494352868486245,
+  "balanced_accuracy_definition": "Mean recall over the four predefined classes (all supported here)."
+}

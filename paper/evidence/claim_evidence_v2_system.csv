@@ -1,0 +1,14 @@
+论文位置,结论文本,指标或数据,来源文件,表格或图像路径,是否核验,备注
+6.4,N/V LR部署类别一致及概率误差,100/100；max|Δp|=2.980232238769531e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,N/V RF部署类别一致及概率误差,100/100；max|Δp|=2.220446049250313e-16,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,N/V CNN部署类别一致及概率误差,100/100；max|Δp|=1.6295221005879768e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,N/S/V/F LR部署类别一致及概率误差,100/100；max|Δp|=4.76837158203125e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,N/S/V/F RF部署类别一致及概率误差,100/100；max|Δp|=2.220446049250313e-16,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,N/S/V/F CNN部署类别一致及概率误差,100/100；max|Δp|=3.284582973384076e-07,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,本轮按任务模型分组复算保存CSV；输入差0；非分类正确率
+6.4,部署输出对照总次数与类别一致数,600次；600/600,web/results/phase3_validation/validation_prediction_comparison.csv,表15,是,200个任务—心拍条目×三模型；不是600个独立心拍
+6.4,验证manifest条目数,每任务100；合计200个任务—心拍条目,web/results/phase3_validation/validation_sample_manifest.csv,,是,两个任务可包含同一真实位置；修正先前独立心拍200条表述
+6.4,跨任务不同真实心拍位置数,143,web/results/phase3_validation/validation_sample_manifest.csv,,是,按record_id与annotation_sample组成位置集合取并集；非独立患者数
+6.4,两个任务共享真实心拍位置数,57；其中N=32且V=25,web/results/phase3_validation/validation_sample_manifest.csv,,是,按record_id与annotation_sample组成位置集合取交集；100+100-57=143
+6.4,部署对照覆盖受试者组,6,web/results/phase3_validation/validation_sample_manifest.csv,,是,全manifest的subject_id去重；心拍位置数不等于受试者数
+6.1 6.2,实际推理编排路径,FastAPI→InferenceService→ECGStore及ModelRegistry,web/backend/app.py;web/backend/ecg_service.py;web/backend/model_registry.py,图13,是,ECGStore提供输入；InferenceService组织调用；Registry加载模型；归一化JSON由ECGStore读取
+6.2 6.3,三张系统局部图来自真实历史截图,2026-11-04；无损裁剪及结果卡片纵向重排,web/docs/visual_fidelity/iteration2/ecg_1672x941.png;web/docs/visual_fidelity/iteration2/comparison_1672x941_full.png;web/docs/visual_fidelity/iteration2/experiments_1672x941_full.png,图14—16,是,来源与精确裁剪框见paper/review/system_verification_v2.md；未获取本轮新截图

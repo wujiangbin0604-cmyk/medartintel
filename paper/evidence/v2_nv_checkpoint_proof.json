@@ -1,0 +1,63 @@
+{
+  "operation": "read checkpoint tensors and metadata only, no inference/training",
+  "torch_audit_runtime": "2.14.1+cpu",
+  "best_metadata": {
+    "epoch": 12,
+    "val_macro_f1": 0.6630092908675226,
+    "class_count": 2,
+    "seed": 20261027
+  },
+  "final_metadata": {
+    "class_names": [
+      "N",
+      "V"
+    ],
+    "seed": 20261027,
+    "best_epoch": 12,
+    "dataset_config_hash": "5aeb7f298130e0fe17f269b9b8afa9fa1dce7c9adfa2a09792294752363e6f12"
+  },
+  "same_state_dict_all_tensors": true,
+  "tensor_shapes": {
+    "features.0.weight": [
+      16,
+      1,
+      7
+    ],
+    "features.0.bias": [
+      16
+    ],
+    "features.3.weight": [
+      32,
+      16,
+      5
+    ],
+    "features.3.bias": [
+      32
+    ],
+    "features.6.weight": [
+      64,
+      32,
+      3
+    ],
+    "features.6.bias": [
+      64
+    ],
+    "classifier.weight": [
+      2,
+      64
+    ],
+    "classifier.bias": [
+      2
+    ]
+  },
+  "source_inventory": {
+    "checkpoints/nv44_v1/formal/cnn/cnn_best.pt": {
+      "sha256": "14c1704b94967ab9fb054b6e8fc753f71df9d28655e1e7a9ed1991c40b2e5f99",
+      "bytes": 39693
+    },
+    "checkpoints/nv44_v1/formal/cnn/cnn_final_best.pt": {
+      "sha256": "5c4ff92e89f881d532eebf4b7f5fe6e6a240a5a88b820ca1d289e4af1fd78648",
+      "bytes": 39757
+    }
+  }
+}

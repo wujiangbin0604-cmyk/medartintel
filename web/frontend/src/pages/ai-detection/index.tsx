@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Alert, App, Badge, Button, Card, Divider, Drawer, Empty, InputNumber, Select, Segmented, Skeleton, Space, Statistic, Tabs, Tag, Tooltip, Typography } from 'antd';
-import { ApiOutlined, BookOutlined, CheckCircleOutlined, ClockCircleOutlined, DatabaseOutlined, HeartOutlined, InfoCircleOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
+import { ApiOutlined, BookOutlined, CheckCircleOutlined, ClockCircleOutlined, DatabaseOutlined, DownloadOutlined, HeartOutlined, InfoCircleOutlined, SafetyCertificateOutlined } from '@ant-design/icons';
 import ECGWaveformChart from './components/ECGWaveformChart';
 import BeatDetail from './components/BeatDetail';
 import PredictionComparison from './components/ModelResults';
@@ -65,6 +65,10 @@ export default function AIDetectionPage({ presentationStep, demoPaused=false }: 
   const lastTick = useRef<number | null>(null);
   const actionController = useRef<AbortController | null>(null);
   const actionBusy = useRef(false);
+  const reportController = useRef<AbortController | null>(null);
+  const [exporting, setExporting] = useState(false);
+
+  useEffect(() => () => reportController.current?.abort(), [recordId, selected?.annotation_sample, task, modelId, leadName]);
 
   const currentRecord = records.find((item) => item.record_id === recordId) || null;
   const usableModels = modelStatus[task].filter((item) => item.loaded);
@@ -175,6 +179,27 @@ export default function AIDetectionPage({ presentationStep, demoPaused=false }: 
     finally { if (!controller.signal.aborted) { setInferenceLoading(false); actionBusy.current = false; } }
   };
 
+  const exportReport = async () => {
+    if (!selected || !beat?.inference_eligible || !currentPrediction || playing || exporting) return;
+    const controller = new AbortController();
+    reportController.current?.abort(); reportController.current = controller;
+    const version = requestVersion.current;
+    setExporting(true);
+    try {
+      const report = await api.analysisReport(recordId, selected.annotation_sample, task, modelId, controller.signal);
+      if (controller.signal.aborted || requestVersion.current !== version) return;
+      const url = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], { type: 'application/json;charset=utf-8' }));
+      const link = document.createElement('a'); link.href = url; link.download = report.filename;
+      document.body.appendChild(link); link.click(); link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      message.success('分析报告已导出，包含当前心拍、专家标注和三模型结果。');
+    } catch (error) {
+      if (!controller.signal.aborted) message.error(`报告导出失败：${(error as Error).message}`);
+    } finally {
+      if (reportController.current === controller) { setExporting(false); reportController.current = null; }
+    }
+  };
+
   const startPlayback = async () => {
     if (!currentRecord || actionBusy.current || windowLoading) return;
     actionController.current?.abort(); const controller = new AbortController(); actionController.current = controller; actionBusy.current = true;
@@ -228,6 +253,7 @@ export default function AIDetectionPage({ presentationStep, demoPaused=false }: 
       {focusMode?<details className="ai-window-settings"><summary>片段时间设置</summary><div className="time-fields"><div><label className="field-label">起始时间 (s)</label><InputNumber aria-label="起始时间秒" min={0} max={Math.max(0,(currentRecord?.duration_seconds||0)-durationSec)} value={startSec} onChange={v=>setStartSec(Number(v||0))}/></div><div><label className="field-label">时长 (s)</label><InputNumber aria-label="窗口时长秒" min={1} max={30} value={durationSec} onChange={v=>setDurationSec(Math.min(30,Math.max(1,Number(v||10))))}/></div></div></details>:<div className="time-fields"><div><label className="field-label">起始时间 (s)</label><InputNumber aria-label="起始时间秒" min={0} max={Math.max(0,(currentRecord?.duration_seconds||0)-durationSec)} value={startSec} onChange={v=>setStartSec(Number(v||0))}/></div><div><label className="field-label">时长 (s)</label><InputNumber aria-label="窗口时长秒" min={1} max={30} value={durationSec} onChange={v=>setDurationSec(Math.min(30,Math.max(1,Number(v||10))))}/></div></div>}
       <Button className="analyze-button" aria-label={focusMode?'执行检测':'开始分析'} type="primary" block icon={<PlayCircleOutlined/>} loading={inferenceLoading||windowLoading} onClick={()=>{if(selected)setRun(n=>n+1);else{const candidate=annotations.find(a=>a.within_task&&a.time_seconds>=BEAT_SAFE_GUARD_SECONDS);if(candidate)selectAnnotation(candidate);else setRetry(n=>n+1);}}}>{focusMode?'执行检测':'开始分析'}</Button>
       <Button className="compare-action" aria-label="比较三个模型" icon={<ApiOutlined/>} block disabled={!beat?.inference_eligible||!recordCanInfer||leadName!=='MLII'} loading={inferenceLoading} onClick={runCompare}>比较三个模型</Button>
+      <Button aria-label="导出分析报告" icon={<DownloadOutlined/>} block disabled={!currentPrediction || !beat?.inference_eligible || playing || inferenceLoading} loading={exporting} onClick={exportReport}>导出分析报告</Button>
       {!recordCanInfer&&<Alert type="info" title="此记录不属于当前 44 条模型数据集，仅可浏览波形"/>}<div className="console-foot"><Badge status={usableModels.length===3?'success':'error'}/>{usableModels.length}/3 模型就绪 · {currentRecord?.sampling_frequency} Hz <Tooltip title="重新读取当前记录与时间窗口"><Button type="link" size="small" onClick={()=>setRetry(n=>n+1)}>读取真实波形窗口</Button></Tooltip></div>
     </Card></aside>
     <section className="main-stage"><Card className="signal-card" title={<PanelTitle icon={<LineChartOutlined/>} zh={focusMode?'选中心拍波形':'ECG 波形分析'} en={focusMode?'Selected Beat Waveform':'ECG Waveform Analysis'}/>}>

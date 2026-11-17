@@ -1,0 +1,12 @@
+{
+  "checked_at_Asia_Shanghai": "2026-11-17",
+  "method": "GitHub connector get_repo + fetch_file README.md (read-only)",
+  "repository_full_name": "wujiangbin0604-cmyk/medartintel",
+  "visibility": "public",
+  "archived": false,
+  "default_branch": "main",
+  "readme_blob_sha": "e1ad59c4db33df25c4936c98d23f5177f6d5bff8",
+  "readme_url": "https://github.com/wujiangbin0604-cmyk/medartintel/blob/main/README.md",
+  "remote_has_final_optimization_section": false,
+  "local_changes_published": false
+}

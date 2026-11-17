@@ -1,0 +1,12 @@
+{
+  "variant": "ce_sqrt",
+  "seed": 20261117,
+  "best_epoch": 1,
+  "val_macro_f1": 0.3884105194707048,
+  "epochs_ran": 6,
+  "fit_seconds": 38.72390520002227,
+  "checkpoint_sha256": "7a43c633020d1e40705de278c8ddce372904edcc9605e2eaa51368126b7bd4f7",
+  "test_loaded": false,
+  "parameters": 9188,
+  "device": "cpu"
+}

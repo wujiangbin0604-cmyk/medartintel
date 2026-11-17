@@ -1,0 +1,296 @@
+[
+  {
+    "heading": "第1章 绪论",
+    "pdf_page": 5,
+    "body_page": 1,
+    "toc_page": 1,
+    "match": true
+  },
+  {
+    "heading": "1.1 研究背景",
+    "pdf_page": 5,
+    "body_page": 1,
+    "toc_page": 1,
+    "match": true
+  },
+  {
+    "heading": "1.2 相关研究与研究定位",
+    "pdf_page": 5,
+    "body_page": 1,
+    "toc_page": 1,
+    "match": true
+  },
+  {
+    "heading": "1.3 研究目标",
+    "pdf_page": 6,
+    "body_page": 2,
+    "toc_page": 2,
+    "match": true
+  },
+  {
+    "heading": "1.4 主要工作",
+    "pdf_page": 7,
+    "body_page": 3,
+    "toc_page": 3,
+    "match": true
+  },
+  {
+    "heading": "第2章 数据集与预处理",
+    "pdf_page": 8,
+    "body_page": 4,
+    "toc_page": 4,
+    "match": true
+  },
+  {
+    "heading": "2.1 数据来源与记录选择",
+    "pdf_page": 8,
+    "body_page": 4,
+    "toc_page": 4,
+    "match": true
+  },
+  {
+    "heading": "2.2 心拍标签及任务边界",
+    "pdf_page": 8,
+    "body_page": 4,
+    "toc_page": 4,
+    "match": true
+  },
+  {
+    "heading": "2.3 信号预处理",
+    "pdf_page": 9,
+    "body_page": 5,
+    "toc_page": 5,
+    "match": true
+  },
+  {
+    "heading": "2.4 数据集划分",
+    "pdf_page": 11,
+    "body_page": 7,
+    "toc_page": 7,
+    "match": true
+  },
+  {
+    "heading": "2.5 数据探索",
+    "pdf_page": 11,
+    "body_page": 7,
+    "toc_page": 7,
+    "match": true
+  },
+  {
+    "heading": "第3章 模型设计",
+    "pdf_page": 13,
+    "body_page": 9,
+    "toc_page": 9,
+    "match": true
+  },
+  {
+    "heading": "3.1 逻辑回归",
+    "pdf_page": 13,
+    "body_page": 9,
+    "toc_page": 9,
+    "match": true
+  },
+  {
+    "heading": "3.2 随机森林",
+    "pdf_page": 13,
+    "body_page": 9,
+    "toc_page": 9,
+    "match": true
+  },
+  {
+    "heading": "3.3 一维卷积神经网络",
+    "pdf_page": 13,
+    "body_page": 9,
+    "toc_page": 9,
+    "match": true
+  },
+  {
+    "heading": "3.4 训练与模型选择",
+    "pdf_page": 14,
+    "body_page": 10,
+    "toc_page": 10,
+    "match": true
+  },
+  {
+    "heading": "3.5 类别不平衡与RR上下文方案",
+    "pdf_page": 15,
+    "body_page": 11,
+    "toc_page": 11,
+    "match": true
+  },
+  {
+    "heading": "第4章 实验设计与评价指标",
+    "pdf_page": 16,
+    "body_page": 12,
+    "toc_page": 12,
+    "match": true
+  },
+  {
+    "heading": "4.1 实验环境",
+    "pdf_page": 16,
+    "body_page": 12,
+    "toc_page": 12,
+    "match": true
+  },
+  {
+    "heading": "4.2 评价指标",
+    "pdf_page": 16,
+    "body_page": 12,
+    "toc_page": 12,
+    "match": true
+  },
+  {
+    "heading": "4.3 对照实验与证据范围",
+    "pdf_page": 16,
+    "body_page": 12,
+    "toc_page": 12,
+    "match": true
+  },
+  {
+    "heading": "第5章 实验结果与分析",
+    "pdf_page": 18,
+    "body_page": 14,
+    "toc_page": 14,
+    "match": true
+  },
+  {
+    "heading": "5.1 N/V二分类结果",
+    "pdf_page": 18,
+    "body_page": 14,
+    "toc_page": 14,
+    "match": true
+  },
+  {
+    "heading": "5.1.1 验证集与测试集结果差异讨论",
+    "pdf_page": 20,
+    "body_page": 16,
+    "toc_page": 16,
+    "match": true
+  },
+  {
+    "heading": "5.2 N/S/V/F四分类结果",
+    "pdf_page": 21,
+    "body_page": 17,
+    "toc_page": 17,
+    "match": true
+  },
+  {
+    "heading": "5.3 类别不平衡与患者集中度",
+    "pdf_page": 22,
+    "body_page": 18,
+    "toc_page": 18,
+    "match": true
+  },
+  {
+    "heading": "5.4 类别权重消融",
+    "pdf_page": 23,
+    "body_page": 19,
+    "toc_page": 19,
+    "match": true
+  },
+  {
+    "heading": "5.5 患者级泛化与折间波动",
+    "pdf_page": 24,
+    "body_page": 20,
+    "toc_page": 20,
+    "match": true
+  },
+  {
+    "heading": "5.6 错误样本分析",
+    "pdf_page": 25,
+    "body_page": 21,
+    "toc_page": 21,
+    "match": true
+  },
+  {
+    "heading": "5.7 实验结果综合讨论",
+    "pdf_page": 26,
+    "body_page": 22,
+    "toc_page": 22,
+    "match": true
+  },
+  {
+    "heading": "5.8 多种子受控改进实验",
+    "pdf_page": 26,
+    "body_page": 22,
+    "toc_page": 22,
+    "match": true
+  },
+  {
+    "heading": "5.9 真实模型的梯度归因分析",
+    "pdf_page": 28,
+    "body_page": 24,
+    "toc_page": 24,
+    "match": true
+  },
+  {
+    "heading": "第6章 ECG-AI系统设计与实现",
+    "pdf_page": 30,
+    "body_page": 26,
+    "toc_page": 26,
+    "match": true
+  },
+  {
+    "heading": "6.1 系统总体架构",
+    "pdf_page": 30,
+    "body_page": 26,
+    "toc_page": 26,
+    "match": true
+  },
+  {
+    "heading": "6.2 真实心拍推理流程与界面",
+    "pdf_page": 31,
+    "body_page": 27,
+    "toc_page": 27,
+    "match": true
+  },
+  {
+    "heading": "6.3 功能实现与验证",
+    "pdf_page": 32,
+    "body_page": 28,
+    "toc_page": 28,
+    "match": true
+  },
+  {
+    "heading": "6.4 模型部署一致性",
+    "pdf_page": 33,
+    "body_page": 29,
+    "toc_page": 29,
+    "match": true
+  },
+  {
+    "heading": "6.5 互动教学模块",
+    "pdf_page": 34,
+    "body_page": 30,
+    "toc_page": 30,
+    "match": true
+  },
+  {
+    "heading": "结论",
+    "pdf_page": 35,
+    "body_page": 31,
+    "toc_page": 31,
+    "match": true
+  },
+  {
+    "heading": "参考文献",
+    "pdf_page": 36,
+    "body_page": 32,
+    "toc_page": 32,
+    "match": true
+  },
+  {
+    "heading": "附录1 数据与复现说明",
+    "pdf_page": 37,
+    "body_page": 33,
+    "toc_page": 33,
+    "match": true
+  },
+  {
+    "heading": "致谢",
+    "pdf_page": 38,
+    "body_page": 34,
+    "toc_page": 34,
+    "match": true
+  }
+]

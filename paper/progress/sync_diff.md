@@ -1,12 +1,12 @@
 # 论文与项目同步差异报告
 
-检查时间：2026-11-05T14:23:57+08:00（Asia/Shanghai）。
+检查时间：2026-11-06T11:27:27+08:00（Asia/Shanghai）。
 
 此检查只比较文件 SHA-256，不运行训练、推理、构建或测试，不自动改写论文、实验指标或图像。源码新增不等于功能完成；历史 passed 标记不等于本次测试。
 
-基线时间：2026-11-05T14:23:55+08:00。
+基线时间：2026-11-06T11:27:25+08:00。
 
-本次核对 433 个文件；新增 0，变更 0，删除 0。
+本次核对 454 个文件；新增 0，变更 0，删除 0。
 
 ## 新增文件
 
@@ -40,10 +40,10 @@
 | experiment_source | 46 |
 | historical_web_evidence | 112 |
 | model_artifact | 6 |
-| paper_figure | 15 |
-| paper_source | 5 |
+| paper_figure | 31 |
+| paper_source | 8 |
 | used_experiment_figure | 10 |
-| used_screenshot | 3 |
+| used_screenshot | 5 |
 | web_backend | 15 |
 | web_config | 5 |
 | web_frontend | 46 |

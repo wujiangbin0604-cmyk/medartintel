@@ -1,0 +1,95 @@
+{
+  "variant": "focal_sqrt_rr",
+  "seed": 20261117,
+  "script_sha256": "8a6625da31294209dfbd8340786565e5fcd5e95f932e6974de42b6ac61eb967f",
+  "validation_npz_sha256": "42cd6589acec573dcaa3b1b838d6f213d11c388095124fd2c31570dfc476c6bb",
+  "rr_normalizer_sha256": "43c8cccdbdbab46fba9065fbf22c238c143516f8625009a71d6a5cf409e0d84b",
+  "checkpoint_sha256": "a8849b831d04f59bad500095b108492c758680841107ddae5bfec4bd25de685f",
+  "selected_by": "validation mean; middle validation-ranked seed; middle row of each true validation class",
+  "test_used_for_explanations": false,
+  "attributed_output": "predicted-class logit",
+  "baseline": "Zero normalized waveform and zero standardized timing = training means; not a physiological normal reference",
+  "clinical_interpretation": "Attribution describes this checkpoint and reference; it does not establish physiological causality, P/QRS/T recognition or clinical knowledge.",
+  "examples": [
+    {
+      "sample_id": "114:1743",
+      "record_id": "114",
+      "annotation_sample": 606470,
+      "true_class": "N",
+      "predicted_class": "N",
+      "npz_row": 6030,
+      "rr_attributions": [
+        -0.007088515907526016,
+        0.012956471182405949,
+        0.028275035321712494,
+        0.025497684255242348
+      ],
+      "steps": 128,
+      "wave_l1_change_64_to_128": 0.012644434347748756,
+      "target_logit_difference": -0.4226623773574829,
+      "attribution_sum": -0.42195942997932434,
+      "completeness_absolute_error": 0.0007029473781585693,
+      "completeness_relative_error": 0.0016631415896381633
+    },
+    {
+      "sample_id": "232:926",
+      "record_id": "232",
+      "annotation_sample": 317364,
+      "true_class": "S",
+      "predicted_class": "S",
+      "npz_row": 10402,
+      "rr_attributions": [
+        0.024158278480172157,
+        -0.25872570276260376,
+        2.033722162246704,
+        0.01291772909462452
+      ],
+      "steps": 128,
+      "wave_l1_change_64_to_128": 0.0035203024744987488,
+      "target_logit_difference": 1.2926156520843506,
+      "attribution_sum": 1.2914340496063232,
+      "completeness_absolute_error": 0.0011816024780273438,
+      "completeness_relative_error": 0.000914117414656091
+    },
+    {
+      "sample_id": "233:1128",
+      "record_id": "233",
+      "annotation_sample": 232731,
+      "true_class": "V",
+      "predicted_class": "V",
+      "npz_row": 12376,
+      "rr_attributions": [
+        -0.06559964269399643,
+        -0.25341111421585083,
+        0.9073420166969299,
+        0.44129112362861633
+      ],
+      "steps": 128,
+      "wave_l1_change_64_to_128": 0.03000776842236519,
+      "target_logit_difference": 2.331639289855957,
+      "attribution_sum": 2.328146457672119,
+      "completeness_absolute_error": 0.0034928321838378906,
+      "completeness_relative_error": 0.0014980156660740047
+    },
+    {
+      "sample_id": "233:411",
+      "record_id": "233",
+      "annotation_sample": 81396,
+      "true_class": "F",
+      "predicted_class": "F",
+      "npz_row": 11667,
+      "rr_attributions": [
+        -0.0017988462932407856,
+        -0.0011142416624352336,
+        0.1559211015701294,
+        -0.11640244722366333
+      ],
+      "steps": 128,
+      "wave_l1_change_64_to_128": 0.020197086036205292,
+      "target_logit_difference": 1.581407070159912,
+      "attribution_sum": 1.5799249410629272,
+      "completeness_absolute_error": 0.0014821290969848633,
+      "completeness_relative_error": 0.0009372217469819394
+    }
+  ]
+}
