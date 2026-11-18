@@ -22,18 +22,18 @@
     },
     {
       "path": "FINAL_REVIEW.md",
-      "bytes": 12756,
-      "sha256": "0f0bc0fa7391f93e128d7fe3a0f90d826f5fb58b7e11d46d270cf1e78ceeccee"
+      "bytes": 13181,
+      "sha256": "7548b1fbf8ba421fe815215733cd4250300d886489c27cb8386d2e019d3b4368"
     },
     {
       "path": "README.md",
-      "bytes": 26893,
-      "sha256": "5b7e8e71117b3d7eafbaa3768f9893124d3f219c5b59f5f0240dedee1e752ef1"
+      "bytes": 27520,
+      "sha256": "1eb23e9ffda04cb112116d01e2f973c0e646de4fa7f75b24d941d683ab9705c5"
     },
     {
       "path": "SUBMISSION_CHECKLIST.md",
-      "bytes": 3951,
-      "sha256": "124fde4ea4e8fc4514e970b74a7b5310937461ec4342503b5c5dcf5298fea77e"
+      "bytes": 4133,
+      "sha256": "ac8bfe6fe738a0982295fb2f5ccb6f1599683da4ba4962a6bb242fb0feacb4ca"
     },
     {
       "path": "checkpoints/nsvf44_v1/formal/cnn/cnn_best.pt",
@@ -2097,8 +2097,8 @@
     },
     {
       "path": "reports/final_test_report.md",
-      "bytes": 6510,
-      "sha256": "177c51ea960bb10a62831e061b8506c17f549c678ac6021749eb20e40146afbc"
+      "bytes": 6939,
+      "sha256": "0df62ba77aa1ac969c7f184f0824a81cd7089b19e728f190d217224e1b629489"
     },
     {
       "path": "reports/final_validation/baseline_tests.log",
@@ -2222,8 +2222,8 @@
     },
     {
       "path": "reports/repository_sync.md",
-      "bytes": 3475,
-      "sha256": "f1a4aa10ea503deba8ad1e964014ab3ba08806aa7b69edf0ff1f04d80f15f26f"
+      "bytes": 4140,
+      "sha256": "3b9884cbaa1bbacc352eea36f3079113cd9d4e2095a07b644c395d2bf5afb7a6"
     },
     {
       "path": "reports/visual_notes.md",

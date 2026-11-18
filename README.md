@@ -2,11 +2,15 @@
 
 包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。仅用于课程教学与算法研究。
 
+## 最新论文更新 · 2026年11月18日
+
+当前提交版本为 [V4论文DOCX](paper/final/ECG_AI_课程论文_语言润色版V4.docx)及[同版PDF](paper/final/ECG_AI_课程论文_语言润色版V4.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_语言润色版V4.md)一并保留。V4调整73段中文表达，实验数据、文献引用、图表、公式和研究结论未变；共39页，正文13429个汉字，全部页面和42条正文目录页码已检查。改稿及质量记录见[论文说明](paper/README.md)。V1—V3均保留，科研代码与模型沿用已公开版本。
+
 ## 最终优化与验收（2026年11月17日）
 
 本仓库本轮更新包含稳定性审计、12组受控实验、真实归因、报告导出、验收证据及V3论文。发布核对记录见[仓库同步记录](reports/repository_sync.md)。公开演示仍运行原有六模型版本，服务器尚未部署本轮界面与接口更新。
 
-- [最终验收与提交状态](FINAL_REVIEW.md)、[提交检查清单](SUBMISSION_CHECKLIST.md)。论文使用 `paper/final/ECG_AI_课程论文_最终优化版V3.docx` 及同名PDF。
+- [最终验收与提交状态](FINAL_REVIEW.md)、[提交检查清单](SUBMISSION_CHECKLIST.md)。最新论文使用 `paper/final/ECG_AI_课程论文_语言润色版V4.docx` 及同名PDF，V3保留为上一版。
 - [模型与数据划分审计](reports/cnn_generalization_audit.md)：全量原始信号重建、患者独立划分、索引、归一化与旧检查点重推通过。N/V验证/测试Macro-F1仍为0.6630/0.9865；患者109误报集中，不能把差异写成已消除。
 - [受控实验](reports/imbalance_experiments.md)：四方案、三随机种子，保留所有结果。验证预选RR方案的旧测试Macro-F1为 **0.5002±0.0036**，Balanced Accuracy为 **0.6056±0.0169**。S召回改善伴随大量误报；F召回仅约0.0108，相比新加权CE基线退步。旧测试已查看，这些是探索性复用结果，不是新盲测或临床验证。
 - 新增真实模型Integrated Gradients及完整性误差记录；教学界面仍使用原六模型，新研究候选与生产工件分开。
