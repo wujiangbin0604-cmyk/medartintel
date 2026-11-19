@@ -14,9 +14,26 @@ APPLIER = ROOT / "deploy/update/apply_update.py"
 
 
 class UpdatePackageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        selected = os.environ.get("ECG_UPDATE_ARCHIVE")
+        cls.temporary = None
+        if selected:
+            cls.archive_path = Path(selected)
+        else:
+            # A GitHub clone does not contain releases/. Build the real update fixture.
+            from deploy.update.build_update import build
+            cls.temporary = tempfile.TemporaryDirectory(prefix="ecg-update-package-")
+            cls.archive_path = Path(cls.temporary.name) / "update.zip"
+            build(cls.archive_path)
+
+    @classmethod
+    def tearDownClass(cls):
+        if cls.temporary is not None:
+            cls.temporary.cleanup()
+
     def test_shipped_archive_contains_local_launcher(self):
-        archive_path = Path(os.environ.get("ECG_UPDATE_ARCHIVE", ROOT / "releases/ECG-AI_Server_Update_20261109.zip"))
-        with zipfile.ZipFile(archive_path) as archive:
+        with zipfile.ZipFile(self.archive_path) as archive:
             self.assertTrue("payload/deploy/local.py" in archive.namelist(), "Missing/invalid artifact: deploy/local.py")
             runtime = json.loads(archive.read("payload/deploy/ubuntu22/bundle_manifest.json"))
             entry = next(e for e in runtime["files"] if e["path"] == "deploy/local.py")

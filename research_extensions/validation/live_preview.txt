@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:8142/rhythm-lab",
+  "health": {
+    "status": "ok",
+    "dataset": "MIT-BIH Arrhythmia Database",
+    "mode": "historical_teaching",
+    "models_loaded": 6,
+    "models_total": 6,
+    "clinical_use": false
+  },
+  "jobs": 60,
+  "seeds": [
+    20261118,
+    20261119,
+    20261120
+  ],
+  "uncertainty_results": 24,
+  "spa_status": 200
+}

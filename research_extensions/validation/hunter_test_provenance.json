@@ -1,0 +1,5 @@
+{
+  "source": "web\\frontend\\tests\\heartbeat-hunter.spec.ts",
+  "source_sha256": "cc1e3a3716ac109cf96346645c0076c81e75e4a260f3437308bdc91dd9dabbcf",
+  "adaptation": "Only output paths and isolated test database changed; original assertions unchanged"
+}

@@ -1,0 +1,18 @@
+
+Running 10 tests using 1 worker
+
+(node:28236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\rhythm-hunter-regression.spec.ts:31:5 › 完整新手流程：真实波形、取消、评分、连击、解析、AI、下一关、刷新、历史 (19.2s)
+  ok  2 tests\rhythm-hunter-regression.spec.ts:54:5 › 真实波形点击、清除选择与误选判分 (3.1s)
+
+  ok  3 tests\rhythm-hunter-regression.spec.ts:64:5 › 标准模式：隐藏候选、倒计时、波形选择、缩放、超时自动结算 (14.6s)
+  ok  4 tests\rhythm-hunter-regression.spec.ts:72:5 › 挑战模式：历史回放滚动、速度控制与页面清理 (8.7s)
+  ok  5 tests\rhythm-hunter-regression.spec.ts:80:5 › reduced motion：完整作答、音效设置、网络错误后重试 (2.9s)
+  ok  6 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1920x1080 (9.4s)
+  ok  7 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1440x900 (7.9s)
+  ok  8 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1366x768 (7.5s)
+  ok  9 tests\rhythm-hunter-regression.spec.ts:96:5 › 游戏渲染帧间隔采样 (4.3s)
+  ok 10 tests\rhythm-hunter-regression.spec.ts:102:5 › 连续十次进出游戏：恢复会话、移除图表、无页面异常 (18.3s)
+
+  10 passed (1.9m)

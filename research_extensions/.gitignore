@@ -1,0 +1,4 @@
+**/data/*.npz
+validation/*.sqlite3*
+baseline_generated_appData.json
+validation/preview_process.json

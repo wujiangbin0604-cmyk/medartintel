@@ -1,0 +1,27 @@
+........................................................................ [ 75%]
+........................                                                 [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\wfdb\io\annotation.py:3062
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3062: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_class_table.set_index(
+
+.venv\Lib\site-packages\wfdb\io\annotation.py:3232
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3232: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    ann_label_table.set_index(ann_label_table["label_store"].values, inplace=True)
+
+.venv\Lib\site-packages\starlette\testclient.py:51
+  E:\医学人工智能\.venv\Lib\site-packages\starlette\testclient.py:51: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+web/backend/tests/test_api_integration.py: 49 warnings
+web/backend/tests/test_heartbeat_hunter.py: 15 warnings
+web/backend/tests/test_inference_report.py: 1 warning
+research_extensions/rhythm_fusion/tests/test_service.py: 4 warnings
+  E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:1472: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
+  See https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html#deprecation-inplace for more details.
+    label_map.set_index(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+96 passed, 72 warnings in 8.48s

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone, timedelta
 import hashlib
 import json
 from pathlib import Path
@@ -10,7 +11,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[2]
 RUNTIME_MANIFEST = "deploy/ubuntu22/bundle_manifest.json"
-CODE_PREFIXES = ("deploy/", "web/backend/", "web/frontend/", "web/docs/site_reports/")
+CODE_PREFIXES = ("deploy/", "web/backend/", "web/frontend/", "web/docs/site_reports/", "research_extensions/")
+RELEASE_DAY = datetime.now(timezone(timedelta(hours=8))).date()
 
 
 def payload(path: Path) -> bytes:
@@ -37,7 +39,7 @@ def build(output: Path) -> dict:
     for entry in runtime["files"]:
         if entry["path"] in data and hashlib.sha256(data[entry["path"]]).hexdigest() != entry["sha256"]:
             raise RuntimeError("Regenerate bundle_manifest.json first: " + entry["path"])
-    manifest = {"format": 1, "date": "2026-11-09", "files": [
+    manifest = {"format": 1, "date": RELEASE_DAY.isoformat(), "files": [
         {"path": relative, "bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}
         for relative, content in data.items()]}
     contents = {"payload/" + name: content for name, content in data.items()}
@@ -48,7 +50,7 @@ def build(output: Path) -> dict:
     output.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for name, content in sorted(contents.items()):
-            info = zipfile.ZipInfo(name, (2026, 11, 9, 0, 0, 0))
+            info = zipfile.ZipInfo(name, (RELEASE_DAY.year, RELEASE_DAY.month, RELEASE_DAY.day, 0, 0, 0))
             info.create_system = 3
             info.external_attr = (stat.S_IFREG | (0o755 if name.endswith(".sh") else 0o644)) << 16
             info.compress_type = zipfile.ZIP_DEFLATED
@@ -62,7 +64,7 @@ def build(output: Path) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "releases/ECG-AI_Server_Update_20261109.zip")
+    parser.add_argument("--output", type=Path, default=ROOT / f"releases/ECG-AI_Server_Update_{RELEASE_DAY:%Y%m%d}.zip")
     args = parser.parse_args()
     print(json.dumps(build(args.output.resolve()), ensure_ascii=False, indent=2))
 

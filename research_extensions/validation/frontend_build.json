@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "E:\\医学人工智能\\web\\frontend",
+  "exit_code": 0,
+  "elapsed_seconds": 93.15469990001293,
+  "finished": "2026-11-18T20:01:56.989716+08:00",
+  "output": "frontend_build.txt"
+}

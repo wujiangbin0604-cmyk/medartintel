@@ -1,0 +1,14 @@
+{
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.protect",
+    "verify"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 1.7995061000110582,
+  "finished": "2026-11-18T20:34:47.503840+08:00",
+  "output": "protection_final.txt"
+}

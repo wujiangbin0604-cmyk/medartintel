@@ -1,0 +1,213 @@
+{
+  "status": "completed",
+  "smoke": false,
+  "model": "A1",
+  "seed": 20261118,
+  "fold": 1,
+  "task": "nsvf",
+  "classes": [
+    "N",
+    "S",
+    "V",
+    "F"
+  ],
+  "config": {
+    "experiment_id": "cv_cpu_v1",
+    "task": "nsvf",
+    "outer_folds": 5,
+    "fold_seed": 20261118,
+    "seeds": [
+      20261118
+    ],
+    "planned_seeds": [
+      20261118,
+      20261119,
+      20261120
+    ],
+    "models": [
+      "A0",
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "epochs": 12,
+    "patience": 4,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "threads": 2,
+    "inner_folds": 6,
+    "inner_stop_fold": 0,
+    "inner_calibration_fold": 1,
+    "class_weight": "balanced_training_only",
+    "shuffle_rule": "label-blind independent row derangement inside fit/stop/calibration/evaluation subsets; values and masks travel together; same map for all seeds; no cross-subset exchange",
+    "threshold_rule": "90th percentile uncertainty on separate inner calibration patients, no labels; fixed before outer evaluation",
+    "selection": "early stopping on inner stop macro-F1 only; all outer folds reported",
+    "test_policy": "original six test subjects excluded; retrospective development evidence only"
+  },
+  "checkpoint_sha256": "41ecde7a0f162beb81ff96de9d56fda392a88a520498ea22aad95b9672f89e42",
+  "best_epoch": 9,
+  "parameter_count": 1076,
+  "fit_seconds": 1.3277706000371836,
+  "device": "cpu",
+  "latency_ms_median": 0.05324999801814556,
+  "latency_ms_p95": 0.08771499560680238,
+  "latency_scope": "30 warmed batch=1 calls, CPU threads from config; transfer + forward + softmax; excludes IO",
+  "class_weights": [
+    0.27672359347343445,
+    12.201417922973633,
+    3.316890239715576,
+    351.992431640625
+  ],
+  "partitions": {
+    "fit": {
+      "subjects": [
+        "subject_105",
+        "subject_106",
+        "subject_108",
+        "subject_109",
+        "subject_112",
+        "subject_114",
+        "subject_115",
+        "subject_118",
+        "subject_119",
+        "subject_200",
+        "subject_203",
+        "subject_205",
+        "subject_207",
+        "subject_209",
+        "subject_210",
+        "subject_214",
+        "subject_220",
+        "subject_221",
+        "subject_222",
+        "subject_230"
+      ],
+      "samples": 46463,
+      "class_counts": [
+        41976,
+        952,
+        3502,
+        33
+      ]
+    },
+    "stop": {
+      "subjects": [
+        "subject_103",
+        "subject_117",
+        "subject_201_202",
+        "subject_223"
+      ],
+      "samples": 10263,
+      "class_counts": [
+        9298,
+        258,
+        690,
+        17
+      ]
+    },
+    "calibration": {
+      "subjects": [
+        "subject_101",
+        "subject_113",
+        "subject_213",
+        "subject_228",
+        "subject_234"
+      ],
+      "samples": 11646,
+      "class_counts": [
+        10611,
+        89,
+        584,
+        362
+      ]
+    },
+    "evaluation": {
+      "subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ],
+      "samples": 17914,
+      "class_counts": [
+        15405,
+        1452,
+        1040,
+        17
+      ]
+    }
+  },
+  "evaluation": {
+    "accuracy": 0.6546276655130066,
+    "macro_f1": 0.2726529875462214,
+    "balanced_accuracy_fixed_labels": 0.26980948783667424,
+    "sample_count": 17914,
+    "per_class": {
+      "N": {
+        "precision": 0.9091054568730997,
+        "recall": 0.7375527426160338,
+        "f1": 0.8143927176289288,
+        "support": 15405,
+        "predicted_count": 12498,
+        "subject_count": 8
+      },
+      "S": {
+        "precision": 0.008697876694806856,
+        "recall": 0.023415977961432508,
+        "f1": 0.01268420070882298,
+        "support": 1452,
+        "predicted_count": 3909,
+        "subject_count": 7
+      },
+      "V": {
+        "precision": 0.22486413043478262,
+        "recall": 0.31826923076923075,
+        "f1": 0.2635350318471338,
+        "support": 1040,
+        "predicted_count": 1472,
+        "subject_count": 6
+      },
+      "F": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 17,
+        "predicted_count": 35,
+        "subject_count": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        11362,
+        3206,
+        804,
+        33
+      ],
+      [
+        1086,
+        34,
+        332,
+        0
+      ],
+      [
+        39,
+        668,
+        331,
+        2
+      ],
+      [
+        11,
+        1,
+        5,
+        0
+      ]
+    ],
+    "balanced_accuracy": 0.26980948783667424,
+    "subject_count": 8
+  }
+}

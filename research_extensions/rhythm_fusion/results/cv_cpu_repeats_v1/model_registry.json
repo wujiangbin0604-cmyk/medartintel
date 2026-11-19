@@ -1,0 +1,662 @@
+{
+  "experiment_id": "cv_cpu_repeats_v1",
+  "models": [
+    {
+      "model": "A0",
+      "seed": 20261119,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261119\\A0\\best.pt",
+      "sha256": "f6d2e027c628f8e78dcc799f0718085faa50fda34203ace6fa8dd07ed1a17ea0",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261119,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261119\\A0\\best.pt",
+      "sha256": "cb33dedc332b5205bc34d335edf4753f6906ac473fc96523a97669a396a99ace",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261119,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261119\\A0\\best.pt",
+      "sha256": "942674b837a15d95063560271419edbc0869c529aceaf68419258d8750984a98",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261119,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261119\\A0\\best.pt",
+      "sha256": "4eccf8ad585f9b94d36a353c364fd04ef034e88be3d0416b90a88781d702a5c4",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261119,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261119\\A0\\best.pt",
+      "sha256": "ba1cff410175f9917e32d80943f7d9879821999a75eb37f84ba42f74b44d174a",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261119,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261119\\A1\\best.pt",
+      "sha256": "a6be25b52ce9251822db0ce78718f9d53428918957709dd0cd163b3abc443285",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261119,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261119\\A1\\best.pt",
+      "sha256": "3a856e1d2b5be2c2901b3081876823afdd5c901c8fec8be1be7abd9c90138c9d",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261119,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261119\\A1\\best.pt",
+      "sha256": "9c0d73ef1d87a98127a92c8a75eb2e85377b9f1d79779c702ceead3722eff520",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261119,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261119\\A1\\best.pt",
+      "sha256": "f5624164dd11c79f897748730530018acf330fc6f1552bf3e2dfa7b904d4f692",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261119,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261119\\A1\\best.pt",
+      "sha256": "bbabe3385da9ebb486c1a08a2024ce4c4c6d5ee6a713e727ec4b56d23d01f8b2",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261119,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261119\\A2\\best.pt",
+      "sha256": "9e0424bd4d7ebb62be5d16598fffd9409df074b99f51feaa2a798b15a3f99af0",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261119,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261119\\A2\\best.pt",
+      "sha256": "a3d3ba86b8fced379d5566a08cae14ade40d5aa14b7b1a40e76b0508c63bd6fa",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261119,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261119\\A2\\best.pt",
+      "sha256": "997cefc960c8f17b1d814a6f42d5535f7807872918fd8e454e260fa77ed077cf",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261119,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261119\\A2\\best.pt",
+      "sha256": "d9b3e2f016ee8a463766e1f4487dc49ef799599542ceb119f77b1c7bd24894b8",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261119,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261119\\A2\\best.pt",
+      "sha256": "dff7d7ed43ab5ce6ae0109e359bb854cce2e98c9129246446b7f8afeb209f1a0",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261119,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261119\\A3\\best.pt",
+      "sha256": "0cffdcfda5994f365a1c05022f2f8b57d01ef93093775dd70758d84d7b915434",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261119,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261119\\A3\\best.pt",
+      "sha256": "33696e7bc70105857ea71a45e8eda1607d151087f18e2830159bfcaf6c01753f",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261119,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261119\\A3\\best.pt",
+      "sha256": "9d1e2d387b301bb1c1aa63ff32c134ab4799598f0b93f3b7e3bd40700ab934ed",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261119,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261119\\A3\\best.pt",
+      "sha256": "5b08430bda5dd0ad19ab4de2a2aa6b14407e9095080b7240587c72204e40b43e",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261119,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261119\\A3\\best.pt",
+      "sha256": "39dfdb6bb527551e7b21946d99b1f799108f758ffbe4d9c0aefb5111b8e1e0df",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261120,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261120\\A0\\best.pt",
+      "sha256": "7ac209760de9a62679c02d4307597f285d1f3f5f92fd431c73217da16629a022",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261120,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261120\\A0\\best.pt",
+      "sha256": "80f17ddb2005b80184d8421a54c123d780b5d648efb69da00fe315c41c8f1ae8",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261120,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261120\\A0\\best.pt",
+      "sha256": "d3a080000bb5364c2d009e5ef74f3077cf66105b1bdd63cb05c7ae6fd9223abc",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261120,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261120\\A0\\best.pt",
+      "sha256": "fd6df1947a232759bf7a664b1176b65c2db900dc8b7ce547df44d020ac179671",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A0",
+      "seed": 20261120,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261120\\A0\\best.pt",
+      "sha256": "19fa1423ecdd5d3fad71f8a471bd0b0f905882cccadcd82273aaae7dfe74a223",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261120,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261120\\A1\\best.pt",
+      "sha256": "cc3a1be194f881c73ad50cf690bfa4eaa5358820f22707a0e71792bcb83fd8b7",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261120,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261120\\A1\\best.pt",
+      "sha256": "a42cd8e6d15828f9c749f508116dd3d8f6498a8d30707fec20712636dac18a74",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261120,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261120\\A1\\best.pt",
+      "sha256": "e7375cb12c4a7f89d795208bff372e7359889ccc5bd7d2b5713e5649a084b59f",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261120,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261120\\A1\\best.pt",
+      "sha256": "7d97cfa623d68e3d903d621237e8b0f9805aa637ef949b90807db75eb6f84c8b",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A1",
+      "seed": 20261120,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261120\\A1\\best.pt",
+      "sha256": "df4778f5026a52a141367a8b43b0df22bd7cfc0f58332cec6d30f187f948d30a",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261120,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261120\\A2\\best.pt",
+      "sha256": "0fa91791581f33709ea1bf0fe97e5467c82eacc8034703b2e0ff08cf09f85233",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261120,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261120\\A2\\best.pt",
+      "sha256": "306f0a566d1ffcd032bfedd5436620ca26e06560ab3e32615bd590819e1f9fe3",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261120,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261120\\A2\\best.pt",
+      "sha256": "1a8f98190caed45aaded8709b3bc48adf8fbec07292a52abff3fab932900ef72",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261120,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261120\\A2\\best.pt",
+      "sha256": "4f8e6b1ea1c6e3509726ddab86f869c6a8138999336ba6dd5589bd8298311d80",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A2",
+      "seed": 20261120,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261120\\A2\\best.pt",
+      "sha256": "5aad8e6758dec6d244d59132d5f9593fd300bdc841b43bdc64ff4e9bb352925c",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261120,
+      "fold": 0,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold0\\seed20261120\\A3\\best.pt",
+      "sha256": "f5754db4ffd5b53f9431ada2b35c78d9ff8ebede8ceca57b454f77ed118d52bc",
+      "evaluation_subjects": [
+        "subject_101",
+        "subject_106",
+        "subject_108",
+        "subject_118",
+        "subject_201_202",
+        "subject_207",
+        "subject_221",
+        "subject_230"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261120,
+      "fold": 1,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold1\\seed20261120\\A3\\best.pt",
+      "sha256": "aa3242226685ffd5ff2a2c59c4f9d060914acd95688418e5e0029c53de1afd1c",
+      "evaluation_subjects": [
+        "subject_100",
+        "subject_121",
+        "subject_122",
+        "subject_124",
+        "subject_215",
+        "subject_231",
+        "subject_232",
+        "subject_233"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261120,
+      "fold": 2,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold2\\seed20261120\\A3\\best.pt",
+      "sha256": "af65cfd85c77e103254dcdfffa4c473c3478ff2f498335d23e06995e6b4f3229",
+      "evaluation_subjects": [
+        "subject_103",
+        "subject_105",
+        "subject_114",
+        "subject_203",
+        "subject_220",
+        "subject_228",
+        "subject_234"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261120,
+      "fold": 3,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold3\\seed20261120\\A3\\best.pt",
+      "sha256": "ef0dd8b0e9af86ec92a7d048998cc35b326a99328671ce8c5bd83de0448b5576",
+      "evaluation_subjects": [
+        "subject_109",
+        "subject_113",
+        "subject_119",
+        "subject_205",
+        "subject_210",
+        "subject_222",
+        "subject_223"
+      ]
+    },
+    {
+      "model": "A3",
+      "seed": 20261120,
+      "fold": 4,
+      "checkpoint": "results\\cv_cpu_repeats_v1\\fold4\\seed20261120\\A3\\best.pt",
+      "sha256": "30742c44a38198aa2bd649d9eaa8721da51c606cddc049a7dc9430ccd5d01971",
+      "evaluation_subjects": [
+        "subject_112",
+        "subject_115",
+        "subject_117",
+        "subject_200",
+        "subject_209",
+        "subject_213",
+        "subject_214"
+      ]
+    }
+  ],
+  "selection": "use fold held out for requested patient's group; fixed first seed for demonstration, no refit or best-fold selection"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.run",
+    "--config",
+    "research_extensions/rhythm_fusion/configs/cv_cpu_repeats_v1.json"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 1,
+  "elapsed_seconds": 605.4658429999836,
+  "finished": "2026-11-18T20:17:12.963813+08:00",
+  "output": "repeated_seed_training.txt"
+}

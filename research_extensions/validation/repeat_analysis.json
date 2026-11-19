@@ -1,0 +1,15 @@
+{
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.analyze",
+    "--run",
+    "cv_cpu_repeats_v1"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 9.867955899972003,
+  "finished": "2026-11-18T20:33:29.908430+08:00",
+  "output": "repeat_analysis.txt"
+}

@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-c",
+    "import torch,pytest; torch.set_num_threads(2); raise SystemExit(pytest.main(['tests','web/backend/tests','research_extensions/rhythm_fusion/tests','research_extensions/uncertainty/tests','deploy/update/tests','-q','-p','no:cacheprovider','--basetemp=.test_tmp/github_publish','--junitxml=deploy/validation/20261119/pytest.xml']))"
+  ]
+}

@@ -18,6 +18,7 @@ from .model_registry import MODEL_IDS, TASKS
 from .schemas import BatchRequest, BeatRequest, CompareRequest
 from .inference_report import build_analysis_report
 from .heartbeat_hunter import HunterService, create_router
+from .rhythm_lab import create_rhythm_router
 
 ROOT = Path(__file__).resolve().parents[2]
 logging.basicConfig(level=os.getenv("ECG_LOG_LEVEL", "INFO"),
@@ -43,6 +44,7 @@ app.add_middleware(CORSMiddleware, allow_origins=origins, allow_credentials=Fals
                    allow_methods=["GET", "POST"], allow_headers=["*"])
 game_service = HunterService(service.store, Path(os.getenv("ECG_HUNTER_DATABASE", str(ROOT / "web/runtime/heartbeat_hunter.sqlite3"))))
 app.include_router(create_router(game_service))
+app.include_router(create_rhythm_router(service))
 
 
 @app.get("/api/research/summary", tags=["科研结果"])

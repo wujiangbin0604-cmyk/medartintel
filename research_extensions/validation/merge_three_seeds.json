@@ -1,0 +1,13 @@
+{
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.merge_repeats"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 6.034620799997356,
+  "finished": "2026-11-18T20:33:36.144951+08:00",
+  "output": "merge_three_seeds.txt"
+}

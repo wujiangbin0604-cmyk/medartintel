@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\20996\.codex\visualizations\2026\11\18\01a1ee78-1529-7701-8ca5-9b0cfdb6959e\ecg-git-export-msuw4hjy\deploy\ubuntu22\verify_bundle.py", line 128, in <module>
+    main()
+  File "C:\Users\20996\.codex\visualizations\2026\11\18\01a1ee78-1529-7701-8ca5-9b0cfdb6959e\ecg-git-export-msuw4hjy\deploy\ubuntu22\verify_bundle.py", line 121, in main
+    result.update(verify_rhythm_artifacts())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20996\.codex\visualizations\2026\11\18\01a1ee78-1529-7701-8ca5-9b0cfdb6959e\ecg-git-export-msuw4hjy\deploy\ubuntu22\verify_bundle.py", line 43, in verify_rhythm_artifacts
+    from research_extensions.rhythm_fusion.src.models import make_model
+ModuleNotFoundError: No module named 'research_extensions'

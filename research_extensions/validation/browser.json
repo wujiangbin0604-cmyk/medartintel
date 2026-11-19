@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "npx",
+    "playwright",
+    "test",
+    "--config",
+    "playwright.rhythm.config.ts"
+  ],
+  "cwd": "E:\\医学人工智能\\web\\frontend",
+  "exit_code": 1,
+  "elapsed_seconds": 58.896558000007644,
+  "finished": "2026-11-18T20:07:10.093146+08:00",
+  "output": "browser.txt"
+}

@@ -1,0 +1,35 @@
+{
+  "experiment_id": "cv_cpu_repeats_v1",
+  "task": "nsvf",
+  "outer_folds": 5,
+  "fold_seed": 20261118,
+  "seeds": [
+    20261119,
+    20261120
+  ],
+  "planned_seeds": [
+    20261118,
+    20261119,
+    20261120
+  ],
+  "models": [
+    "A0",
+    "A1",
+    "A2",
+    "A3"
+  ],
+  "epochs": 12,
+  "patience": 4,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "threads": 2,
+  "inner_folds": 6,
+  "inner_stop_fold": 0,
+  "inner_calibration_fold": 1,
+  "class_weight": "balanced_training_only",
+  "shuffle_rule": "label-blind independent row derangement inside fit/stop/calibration/evaluation subsets; values and masks travel together; same map for all seeds; no cross-subset exchange",
+  "threshold_rule": "90th percentile uncertainty on separate inner calibration patients, no labels; fixed before outer evaluation",
+  "selection": "early stopping on inner stop macro-F1 only; all outer folds reported",
+  "test_policy": "original six test subjects excluded; retrospective development evidence only"
+}

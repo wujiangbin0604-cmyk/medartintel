@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-c",
+    "import torch,pytest; torch.set_num_threads(2); raise SystemExit(pytest.main(['tests','web/backend/tests','research_extensions/rhythm_fusion/tests','research_extensions/uncertainty/tests','-q','-p','no:cacheprovider','--basetemp=.test_tmp/rhythm_final','--junitxml=research_extensions/validation/pytest.xml']))"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 16.142078800010495,
+  "finished": "2026-11-18T20:06:26.964431+08:00",
+  "output": "all_python_tests.txt"
+}

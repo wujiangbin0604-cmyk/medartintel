@@ -30,10 +30,14 @@ def main():
         source, destination = (payload / relative).resolve(), (target / relative).resolve()
         if not source.is_relative_to(payload) or not destination.is_relative_to(target):
             raise RuntimeError("Update path escapes project")
-        if relative.name == ".env" or "runtime" in relative.parts or relative.suffix in {".sqlite3", ".npz", ".dat", ".atr", ".hea", ".pt", ".joblib"}:
+        research_checkpoint = (relative.suffix == ".pt" and relative.name == "best.pt"
+                               and relative.parts[:3] == ("research_extensions", "rhythm_fusion", "results"))
+        if relative.name == ".env" or "runtime" in relative.parts or relative.suffix in {".sqlite3", ".npz", ".dat", ".atr", ".hea", ".joblib"} or (relative.suffix == ".pt" and not research_checkpoint):
             raise RuntimeError("Update contains protected data")
         if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != entry["sha256"]:
             raise RuntimeError("Payload checksum mismatch: " + entry["path"])
+        if research_checkpoint and destination.exists() and hashlib.sha256(destination.read_bytes()).hexdigest() != entry["sha256"]:
+            raise RuntimeError("Existing research checkpoint differs; use a new experiment directory: " + entry["path"])
     # Check the complete resulting deployment before copying anything. An older
     # server may not have launchers that were introduced after its initial ZIP.
     runtime_manifest_name = "deploy/ubuntu22/bundle_manifest.json"

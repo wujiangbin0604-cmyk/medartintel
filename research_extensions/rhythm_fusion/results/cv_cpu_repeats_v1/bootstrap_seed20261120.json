@@ -1,0 +1,9 @@
+{
+  "seed": 20261120,
+  "unit": "patient group, paired OOF predictions, 1000 draws",
+  "delta_macro_f1_percentile_95": [
+    0.025722915879592894,
+    0.2128463966455076
+  ],
+  "limit": "Descriptive resampling of 37 development patients with dependent fitted folds; not an external-validation CI or independent-beat significance test"
+}

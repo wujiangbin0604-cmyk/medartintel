@@ -53,7 +53,9 @@ def main() -> int:
         status = InferenceService(ROOT).models.load_all()
         if not status["all_loaded"]:
             raise RuntimeError(f"Model load failure: {status}")
-        print("Ready: all 6 models loaded; frontend and runtime artifacts verified.")
+        from deploy.ubuntu22.verify_bundle import verify_rhythm_artifacts
+        print(verify_rhythm_artifacts(), flush=True)
+        print("Ready: 6 production models + 60 research checkpoints; frontend and runtime artifacts verified.")
         return 0
     print(f"Open http://{'127.0.0.1' if args.host == '0.0.0.0' else args.host}:{args.port}/dashboard", flush=True)
     import uvicorn

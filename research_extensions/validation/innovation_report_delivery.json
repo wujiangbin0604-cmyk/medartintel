@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.report"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 9.260260700015351,
+  "finished": "2026-11-18T20:36:51.139295+08:00",
+  "output": "innovation_report_delivery.txt"
+}

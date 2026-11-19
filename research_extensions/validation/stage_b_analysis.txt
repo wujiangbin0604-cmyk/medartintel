@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "model": "A0",
+      "method": "max_score",
+      "coverage": 0.8449574670282549,
+      "accepted_error_rate": 0.3116393262742086,
+      "rejected_error_rate": 0.5600239198684407,
+      "error_detection_auroc": 0.6742615469567091
+    },
+    {
+      "model": "A0",
+      "method": "entropy",
+      "coverage": 0.817166168323946,
+      "accepted_error_rate": 0.32348603035030493,
+      "rejected_error_rate": 0.4693204868154158,
+      "error_detection_auroc": 0.5760778213595249
+    },
+    {
+      "model": "A1",
+      "method": "max_score",
+      "coverage": 0.8027953549822683,
+      "accepted_error_rate": 0.15514652807853327,
+      "rejected_error_rate": 0.46185942642219086,
+      "error_detection_auroc": 0.6921640511976741
+    },
+    {
+      "model": "A1",
+      "method": "entropy",
+      "coverage": 0.8425237002526482,
+      "accepted_error_rate": 0.1726319843737104,
+      "rejected_error_rate": 0.4456873712098911,
+      "error_detection_auroc": 0.6604704302407343
+    },
+    {
+      "model": "A2",
+      "method": "max_score",
+      "coverage": 0.8930185661636882,
+      "accepted_error_rate": 0.158120822788917,
+      "rejected_error_rate": 0.3594410139746506,
+      "error_detection_auroc": 0.661115409910067
+    },
+    {
+      "model": "A2",
+      "method": "entropy",
+      "coverage": 0.884523561180261,
+      "accepted_error_rate": 0.1628495060401981,
+      "rejected_error_rate": 0.30841027699718987,
+      "error_detection_auroc": 0.6436852995387284
+    },
+    {
+      "model": "A3",
+      "method": "max_score",
+      "coverage": 0.8737338618084046,
+      "accepted_error_rate": 0.30560677003886405,
+      "rejected_error_rate": 0.5903625516291877,
+      "error_detection_auroc": 0.7193263319402893
+    },
+    {
+      "model": "A3",
+      "method": "entropy",
+      "coverage": 0.8454210416521799,
+      "accepted_error_rate": 0.31292153314689913,
+      "rejected_error_rate": 0.49820062977957713,
+      "error_detection_auroc": 0.6434934449937731
+    }
+  ]
+}

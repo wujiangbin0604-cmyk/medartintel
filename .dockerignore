@@ -22,3 +22,7 @@ deploy/ubuntu22/validation*.json
 data/processed/**/*.npz
 data/processed/**/metadata.csv
 paper
+research_extensions/**/data/*.npz
+research_extensions/**/results/**/*.npz
+research_extensions/validation
+research_extensions/baseline_generated_appData.json

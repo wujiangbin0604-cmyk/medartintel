@@ -8,6 +8,8 @@
 
 建议配置：2 核 CPU / 4 GB 内存起，建议至少 8 GB 可用磁盘用于镜像、依赖与数据。首次构建需要联网访问 Docker Hub、Docker 官方仓库、PyPI 和 PyTorch CPU 索引；这不是完全离线镜像包。
 
+本次发布另外包含节律融合实验室与60个研究模型。已有服务器更新见 [GitHub更新说明](../../SERVER_UPDATE.md)，不需要重新上传完整数据集或重训。
+
 ## 1. 上传和解压
 
 将 `ECG-AI_Ubuntu22_amd64.zip` 上传到服务器，例如 `/home/ubuntu/`。可选一起上传 `.zip.sha256` 核验文件。

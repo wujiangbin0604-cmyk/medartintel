@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.analyze"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 10.084851199993864,
+  "finished": "2026-11-18T20:04:28.791809+08:00",
+  "output": "stage_a_analysis.txt"
+}

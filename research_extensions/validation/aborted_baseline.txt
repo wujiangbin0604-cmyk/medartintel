@@ -1,0 +1,1 @@
+Initial sandbox baseline interrupted after 34 completed cases; no complete verdict. Minimal socket-pair diagnosis: sandbox_diagnosis.md. Final complete verdict: all_python_tests.txt.

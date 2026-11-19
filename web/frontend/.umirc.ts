@@ -10,6 +10,7 @@ export default defineConfig({
       { path: '/ai-detection', component: '@/pages/ai-detection' },
       { path: '/ai-inference', component: '@/pages/ai-detection' },
       { path: '/experiments', component: '@/pages/experiments' },
+      { path: '/rhythm-lab', component: '@/pages/rhythm-lab' },
       { path: '/generalization', component: '@/pages/generalization' },
       { path: '/gallery', component: '@/pages/gallery' },
       { path: '/presentation-demo', component: '@/pages/presentation-demo' },

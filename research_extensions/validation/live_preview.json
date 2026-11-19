@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-c",
+    "import json,urllib.request; base='http://127.0.0.1:8142'; health=json.load(urllib.request.urlopen(base+'/api/health',timeout=10)); data=json.load(urllib.request.urlopen(base+'/api/rhythm/summary',timeout=10)); page=urllib.request.urlopen(base+'/rhythm-lab',timeout=10); assert health['models_loaded']==6 and len(data['folds'])==60 and len(data['config']['seeds'])==3 and len(data['uncertainty']['results'])==24 and page.status==200; print(json.dumps({'url':base+'/rhythm-lab','health':health,'jobs':len(data['folds']),'seeds':data['config']['seeds'],'uncertainty_results':len(data['uncertainty']['results']),'spa_status':page.status},ensure_ascii=False,indent=2))"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 0.7640023999847472,
+  "finished": "2026-11-18T20:36:40.673722+08:00",
+  "output": "live_preview.txt"
+}

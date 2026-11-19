@@ -1,0 +1,40 @@
+
+Running 10 tests using 1 worker
+
+(node:44656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\rhythm-hunter-regression.spec.ts:31:5 › 完整新手流程：真实波形、取消、评分、连击、解析、AI、下一关、刷新、历史 (17.2s)
+  ok  2 tests\rhythm-hunter-regression.spec.ts:54:5 › 真实波形点击、清除选择与误选判分 (4.0s)
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOSPC: no space left on device, write
+    at writeSync (node:fs:916:3)
+    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at SyncWriteStream.Writable.write (node:internal/streams/writable:508:10)
+    at StripAnsiStream.write (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:1067:25)
+    at ListReporter._dumpToStdio (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:4960:12)
+    at ListReporter.onStdErr (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:4883:10)
+    at E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:1626:43
+    at Multiplexer._wrap (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:1677:7)
+    at Multiplexer.onStdErr (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:1626:12)
+    at InternalReporter.onStdErr (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:1811:30)
+    at Socket.<anonymous> (E:\医学人工智能\web\frontend\node_modules\playwright\lib\runner\index.js:914:34)
+    at Socket.emit (node:events:520:35)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Socket.Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+Emitted 'error' event on SyncWriteStream instance at:
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  errno: -4055,
+  syscall: 'write',
+  code: 'ENOSPC'
+}
+
+Node.js v24.14.0

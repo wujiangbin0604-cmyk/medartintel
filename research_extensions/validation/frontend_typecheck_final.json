@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "npm",
+    "run",
+    "typecheck"
+  ],
+  "cwd": "E:\\医学人工智能\\web\\frontend",
+  "exit_code": 0,
+  "elapsed_seconds": 20.49467960000038,
+  "finished": "2026-11-18T20:24:11.578683+08:00",
+  "output": "frontend_typecheck_final.txt"
+}

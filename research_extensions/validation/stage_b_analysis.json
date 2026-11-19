@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "research_extensions.uncertainty.src.evaluate"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 12.042974100040738,
+  "finished": "2026-11-18T20:05:18.865075+08:00",
+  "output": "stage_b_analysis.txt"
+}

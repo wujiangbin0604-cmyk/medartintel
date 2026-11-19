@@ -2,6 +2,16 @@
 
 包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。仅用于课程教学与算法研究。
 
+## 节律融合与可靠性实验室 · 2026年11月19日发布
+
+新增 `/rhythm-lab`、历史 RR 特征及掩码、双分支模型、四模型消融和独立校准患者的拒识分析；Heartbeat Hunter 在专家答案后可跳转到同一真实心拍。原六模型、论文与历史实验保持独立。
+
+实际完成 37 个开发患者组、86,286 拍上的 **5 折 × 3 种子 × 4 模型＝60 组训练**。合并 OOF Macro-F1 的种子均值：CNN 0.3584、RR-only 0.3754、融合 0.4628、打乱 RR 0.3530。S 类 Precision 改善伴随平均 Recall 下降，F 类仍困难；详见[独立研究报告](research_extensions/INNOVATION_REPORT.md)，不能解释为新盲测或临床验证。
+
+GitHub 下载包含前端构建、60 个正式研究 checkpoint、样本索引和全部运行所需 JSON。**打开网页或推理无需训练 NPZ、Node.js 或重新训练**。Windows 运行 `powershell -ExecutionPolicy Bypass -File .\start-local.ps1`，随后访问 `http://127.0.0.1:8000/rhythm-lab`。
+
+现有服务器更新（兼容旧 ZIP 部署）：[复制更新命令](SERVER_UPDATE.md)。首次/本地部署：[DEPLOY_LOCAL.md](DEPLOY_LOCAL.md)。代码发布与服务器部署是两步，执行服务器命令后新页面才会生效。
+
 ## 最新论文更新 · 2026年11月18日
 
 当前提交版本为 [V4论文DOCX](paper/final/ECG_AI_课程论文_语言润色版V4.docx)及[同版PDF](paper/final/ECG_AI_课程论文_语言润色版V4.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_语言润色版V4.md)一并保留。V4调整73段中文表达，实验数据、文献引用、图表、公式和研究结论未变；共39页，正文13429个汉字，全部页面和42条正文目录页码已检查。改稿及质量记录见[论文说明](paper/README.md)。V1—V3均保留，科研代码与模型沿用已公开版本。
@@ -195,7 +205,7 @@ PCA 对全部有效同导联窗口投影；t-SNE 按记录×类别各最多 500 
 
 ## 环境与安装
 
-Python 3.10+，推荐 Windows PowerShell。请将项目放在当前用户有修改权限的目录；脚本不会修改原始数据。首次下载约 4 MB 的两条记录，需联网到 PhysioNet；全 48 条信号约 94 MB（另加头文件和标注）。
+本版运行和保存模型加载需要 64 位 Python 3.12，推荐 Windows PowerShell。请将项目放在当前用户有修改权限的目录；脚本不会修改原始数据。首次下载约 4 MB 的两条记录，需联网到 PhysioNet；全 48 条信号约 94 MB（另加头文件和标注）。
 
 ```powershell
 python -m venv .venv

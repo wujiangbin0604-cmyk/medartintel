@@ -1,0 +1,13 @@
+{
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.uncertainty.src.evaluate"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 10.661868399998639,
+  "finished": "2026-11-18T20:33:47.029346+08:00",
+  "output": "stage_b_three_seeds.txt"
+}

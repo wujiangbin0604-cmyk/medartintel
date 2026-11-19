@@ -1,0 +1,308 @@
+{
+  "config": {
+    "argv": [
+      "E:\\node.exe",
+      "E:\\医学人工智能\\web\\frontend\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.rhythm.config.ts"
+    ],
+    "configFile": "E:\\医学人工智能\\web\\frontend\\playwright.rhythm.config.ts",
+    "rootDir": "E:/医学人工智能/web/frontend/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/20996/AppData/Local/Temp/ecg-rhythm-tests",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "E:/医学人工智能/web/frontend/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "rhythm-lab.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\20996\\AppData\\Local\\Temp\\ecg-rhythm-tests",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "E:\\医学人工智能\\web\\frontend\\tests",
+        "snapshotDir": "E:\\医学人工智能\\web\\frontend\\tests",
+        "testIgnore": [],
+        "testMatch": "rhythm-lab.spec.ts",
+        "timeout": 90000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8142",
+          "channel": "chrome",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../../research_extensions/validation/browser_results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": ".venv\\Scripts\\python.exe -B -m uvicorn web.backend.production:app --host 127.0.0.1 --port 8142 --log-level warning",
+      "cwd": "E:\\医学人工智能",
+      "url": "http://127.0.0.1:8142/api/health",
+      "timeout": 180000,
+      "reuseExistingServer": false,
+      "env": {
+        "ECG_LOG_LEVEL": "WARNING",
+        "ECG_HUNTER_DATABASE": "E:\\医学人工智能\\research_extensions\\validation\\hunter.sqlite3",
+        "OMP_NUM_THREADS": "2",
+        "MKL_NUM_THREADS": "2"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "rhythm-lab.spec.ts",
+      "file": "rhythm-lab.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "真实结果、折/类别切换、空状态与刷新",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T12:34:24.454Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a315245b3520a0f63906-f822df293f84c8d01dab",
+          "file": "rhythm-lab.spec.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "真实单拍、独立阈值与布局 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T12:34:28.522Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a315245b3520a0f63906-7ced01a9eec624236868",
+          "file": "rhythm-lab.spec.ts",
+          "line": 33,
+          "column": 7
+        },
+        {
+          "title": "真实单拍、独立阈值与布局 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T12:34:31.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a315245b3520a0f63906-d23b755c03490c2bcede",
+          "file": "rhythm-lab.spec.ts",
+          "line": 33,
+          "column": 7
+        },
+        {
+          "title": "研究未就绪与原页面回归",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T12:34:33.648Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a315245b3520a0f63906-6492270a864446dcb148",
+          "file": "rhythm-lab.spec.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "Hunter 作答、计时、评分、历史与精确样本联动",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5328,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-18T12:34:39.232Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a315245b3520a0f63906-1b88e6a9688404036ab3",
+          "file": "rhythm-lab.spec.ts",
+          "line": 66,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T12:34:17.062Z",
+    "duration": 28375.13,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

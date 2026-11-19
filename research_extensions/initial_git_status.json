@@ -1,0 +1,13 @@
+{
+  "command": "git status --short",
+  "recorded_from": "first repository inspection before edits",
+  "head": "6fbb598802f1f4aa2f61b475798ab6cfb5299e9f",
+  "branch": "main",
+  "preexisting_changes": [
+    " M web/frontend/src/.umi-production/appData.json",
+    "?? paper/qa/v2/",
+    "?? paper/qa/v3/pagination_probe.docx",
+    "?? paper/qa/v3/pagination_probe.pdf",
+    "?? paper/review/backup_v1/"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "config": {
+    "experiment_id": "smoke_v1",
+    "task": "nsvf",
+    "outer_folds": 5,
+    "fold_seed": 20261118,
+    "seeds": [
+      20261118
+    ],
+    "planned_seeds": [
+      20261118,
+      20261119,
+      20261120
+    ],
+    "models": [
+      "A0",
+      "A1",
+      "A2",
+      "A3"
+    ],
+    "epochs": 1,
+    "patience": 1,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "threads": 2,
+    "inner_folds": 6,
+    "inner_stop_fold": 0,
+    "inner_calibration_fold": 1,
+    "class_weight": "balanced_training_only",
+    "shuffle_rule": "label-blind independent row derangement inside fit/stop/calibration/evaluation subsets; values and masks travel together; same map for all seeds; no cross-subset exchange",
+    "threshold_rule": "90th percentile uncertainty on separate inner calibration patients, no labels; fixed before outer evaluation",
+    "selection": "early stopping on inner stop macro-F1 only; all outer folds reported",
+    "test_policy": "original six test subjects excluded; retrospective development evidence only"
+  },
+  "source_sha256": {
+    "run.py": "cbdc3e5a9347c59a80f8cc3d1af9679411298db1d85bc069f9eb747efef55a7e",
+    "data.py": "2c2ec611bbf09d948454598a368f36f76c58943ef5f22657c6917aaa7fc0b0f4",
+    "models.py": "5b79178de3ef45ad5cb31d8f18e56322e0925c704eb1763a2033c9789c6c36a7"
+  },
+  "data_sha256": "84c34c5e843f9d120eb54a4c9632c7da9f84b1af016104fbfc73920beb5367e8"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cmd",
+    "/c",
+    "npx",
+    "playwright",
+    "test",
+    "--config",
+    "playwright.rhythm-hunter.config.ts"
+  ],
+  "cwd": "E:\\医学人工智能\\web\\frontend",
+  "exit_code": 1,
+  "elapsed_seconds": 40.958482199988794,
+  "finished": "2026-11-18T20:16:56.529570+08:00",
+  "output": "hunter_browser.txt"
+}

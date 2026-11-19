@@ -1,0 +1,188 @@
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=1 stop-F1=0.2838 elapsed=5.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=2 stop-F1=0.3181 elapsed=10.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=3 stop-F1=0.3522 elapsed=14.9s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=4 stop-F1=0.2808 elapsed=19.8s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=5 stop-F1=0.3275 elapsed=25.1s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=6 stop-F1=0.3219 elapsed=31.1s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A0 epoch=7 stop-F1=0.3484 elapsed=36.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=1 stop-F1=0.4097 elapsed=0.2s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=2 stop-F1=0.3757 elapsed=0.3s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=3 stop-F1=0.4022 elapsed=0.4s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=4 stop-F1=0.4001 elapsed=0.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=5 stop-F1=0.4119 elapsed=0.6s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=6 stop-F1=0.4037 elapsed=0.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=7 stop-F1=0.3897 elapsed=0.9s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=8 stop-F1=0.3949 elapsed=1.0s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A1 epoch=9 stop-F1=0.3926 elapsed=1.1s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=1 stop-F1=0.4389 elapsed=5.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=2 stop-F1=0.4380 elapsed=10.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=3 stop-F1=0.4464 elapsed=15.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=4 stop-F1=0.4307 elapsed=20.2s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=5 stop-F1=0.4302 elapsed=25.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=6 stop-F1=0.4561 elapsed=30.0s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=7 stop-F1=0.4342 elapsed=34.9s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=8 stop-F1=0.4206 elapsed=39.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=9 stop-F1=0.4239 elapsed=44.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=10 stop-F1=0.4604 elapsed=49.9s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=11 stop-F1=0.4733 elapsed=58.1s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A2 epoch=12 stop-F1=0.4815 elapsed=65.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=1 stop-F1=0.2755 elapsed=9.4s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=2 stop-F1=0.3155 elapsed=15.8s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=3 stop-F1=0.3493 elapsed=21.1s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=4 stop-F1=0.2808 elapsed=26.3s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=5 stop-F1=0.3019 elapsed=31.5s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=6 stop-F1=0.3447 elapsed=36.7s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=7 stop-F1=0.3807 elapsed=41.9s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=8 stop-F1=0.3366 elapsed=47.0s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=9 stop-F1=0.3531 elapsed=52.2s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=10 stop-F1=0.3175 elapsed=57.4s
+cv_cpu_repeats_v1 fold=0 seed=20261119 A3 epoch=11 stop-F1=0.3430 elapsed=62.6s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=1 stop-F1=0.3182 elapsed=5.1s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=2 stop-F1=0.2746 elapsed=10.2s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=3 stop-F1=0.3667 elapsed=15.4s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=4 stop-F1=0.3118 elapsed=20.8s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=5 stop-F1=0.3019 elapsed=26.1s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=6 stop-F1=0.2900 elapsed=31.1s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A0 epoch=7 stop-F1=0.3108 elapsed=36.4s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=1 stop-F1=0.3888 elapsed=0.1s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=2 stop-F1=0.4220 elapsed=0.3s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=3 stop-F1=0.4209 elapsed=0.4s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=4 stop-F1=0.4117 elapsed=0.6s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=5 stop-F1=0.4103 elapsed=0.7s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A1 epoch=6 stop-F1=0.4085 elapsed=0.8s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=1 stop-F1=0.4040 elapsed=5.4s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=2 stop-F1=0.4184 elapsed=10.6s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=3 stop-F1=0.4186 elapsed=16.2s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=4 stop-F1=0.4354 elapsed=21.7s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=5 stop-F1=0.4196 elapsed=26.9s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=6 stop-F1=0.4368 elapsed=32.0s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=7 stop-F1=0.4490 elapsed=37.1s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=8 stop-F1=0.4362 elapsed=42.3s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=9 stop-F1=0.4547 elapsed=47.5s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=10 stop-F1=0.4606 elapsed=52.8s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=11 stop-F1=0.4478 elapsed=57.7s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A2 epoch=12 stop-F1=0.4476 elapsed=62.8s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=1 stop-F1=0.3194 elapsed=5.0s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=2 stop-F1=0.2931 elapsed=9.4s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=3 stop-F1=0.3858 elapsed=13.7s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=4 stop-F1=0.3331 elapsed=18.0s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=5 stop-F1=0.3158 elapsed=22.3s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=6 stop-F1=0.3256 elapsed=26.6s
+cv_cpu_repeats_v1 fold=0 seed=20261120 A3 epoch=7 stop-F1=0.3616 elapsed=31.3s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=1 stop-F1=0.3149 elapsed=4.5s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=2 stop-F1=0.3263 elapsed=9.1s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=3 stop-F1=0.3226 elapsed=13.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=4 stop-F1=0.3661 elapsed=17.9s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=5 stop-F1=0.4568 elapsed=22.2s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=6 stop-F1=0.4733 elapsed=26.5s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=7 stop-F1=0.3427 elapsed=30.8s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=8 stop-F1=0.4581 elapsed=35.1s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=9 stop-F1=0.3710 elapsed=39.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A0 epoch=10 stop-F1=0.3560 elapsed=43.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=1 stop-F1=0.3414 elapsed=0.1s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=2 stop-F1=0.3559 elapsed=0.2s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=3 stop-F1=0.3556 elapsed=0.3s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=4 stop-F1=0.3568 elapsed=0.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=5 stop-F1=0.3561 elapsed=0.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=6 stop-F1=0.3591 elapsed=0.5s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=7 stop-F1=0.3701 elapsed=0.6s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=8 stop-F1=0.3712 elapsed=0.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=9 stop-F1=0.3723 elapsed=0.8s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=10 stop-F1=0.3853 elapsed=0.9s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=11 stop-F1=0.3836 elapsed=1.0s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A1 epoch=12 stop-F1=0.3955 elapsed=1.1s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A2 epoch=1 stop-F1=0.4834 elapsed=4.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A2 epoch=2 stop-F1=0.4711 elapsed=9.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A2 epoch=3 stop-F1=0.4734 elapsed=13.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A2 epoch=4 stop-F1=0.4794 elapsed=18.1s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A2 epoch=5 stop-F1=0.4730 elapsed=22.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=1 stop-F1=0.3298 elapsed=4.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=2 stop-F1=0.3186 elapsed=8.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=3 stop-F1=0.3287 elapsed=13.0s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=4 stop-F1=0.3759 elapsed=17.4s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=5 stop-F1=0.4428 elapsed=21.7s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=6 stop-F1=0.4559 elapsed=26.0s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=7 stop-F1=0.3649 elapsed=30.3s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=8 stop-F1=0.4452 elapsed=34.6s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=9 stop-F1=0.3613 elapsed=38.9s
+cv_cpu_repeats_v1 fold=1 seed=20261119 A3 epoch=10 stop-F1=0.3691 elapsed=43.7s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=1 stop-F1=0.3926 elapsed=4.5s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=2 stop-F1=0.4267 elapsed=8.7s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=3 stop-F1=0.3319 elapsed=13.7s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=4 stop-F1=0.3628 elapsed=18.8s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=5 stop-F1=0.3480 elapsed=23.2s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A0 epoch=6 stop-F1=0.3589 elapsed=27.6s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=1 stop-F1=0.3536 elapsed=0.1s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=2 stop-F1=0.3605 elapsed=0.2s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=3 stop-F1=0.3620 elapsed=0.3s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=4 stop-F1=0.3595 elapsed=0.4s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=5 stop-F1=0.3655 elapsed=0.4s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=6 stop-F1=0.3731 elapsed=0.5s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=7 stop-F1=0.3781 elapsed=0.6s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=8 stop-F1=0.3825 elapsed=0.7s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=9 stop-F1=0.3894 elapsed=0.8s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=10 stop-F1=0.3847 elapsed=0.9s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=11 stop-F1=0.3944 elapsed=1.0s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A1 epoch=12 stop-F1=0.3954 elapsed=1.1s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=1 stop-F1=0.4924 elapsed=4.4s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=2 stop-F1=0.4998 elapsed=9.0s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=3 stop-F1=0.4361 elapsed=13.6s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=4 stop-F1=0.4795 elapsed=18.2s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=5 stop-F1=0.5043 elapsed=23.0s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=6 stop-F1=0.5184 elapsed=27.9s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=7 stop-F1=0.4969 elapsed=32.6s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=8 stop-F1=0.5115 elapsed=36.9s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=9 stop-F1=0.4496 elapsed=42.1s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A2 epoch=10 stop-F1=0.4859 elapsed=47.6s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A3 epoch=1 stop-F1=0.4022 elapsed=5.2s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A3 epoch=2 stop-F1=0.3876 elapsed=10.3s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A3 epoch=3 stop-F1=0.3423 elapsed=14.9s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A3 epoch=4 stop-F1=0.3594 elapsed=19.9s
+cv_cpu_repeats_v1 fold=1 seed=20261120 A3 epoch=5 stop-F1=0.3689 elapsed=24.8s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A0 epoch=1 stop-F1=0.4247 elapsed=5.4s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A0 epoch=2 stop-F1=0.3800 elapsed=11.0s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A0 epoch=3 stop-F1=0.3966 elapsed=16.5s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A0 epoch=4 stop-F1=0.3091 elapsed=21.9s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A0 epoch=5 stop-F1=0.3872 elapsed=28.0s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=1 stop-F1=0.3348 elapsed=0.2s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=2 stop-F1=0.3403 elapsed=0.3s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=3 stop-F1=0.3502 elapsed=0.5s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=4 stop-F1=0.3744 elapsed=0.7s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=5 stop-F1=0.3895 elapsed=1.0s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=6 stop-F1=0.3681 elapsed=1.2s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=7 stop-F1=0.3525 elapsed=1.4s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=8 stop-F1=0.3634 elapsed=1.6s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A1 epoch=9 stop-F1=0.3453 elapsed=1.7s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A2 epoch=1 stop-F1=0.4808 elapsed=6.5s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A2 epoch=2 stop-F1=0.4526 elapsed=13.7s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A2 epoch=3 stop-F1=0.4594 elapsed=19.5s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A2 epoch=4 stop-F1=0.4649 elapsed=24.8s
+cv_cpu_repeats_v1 fold=2 seed=20261119 A2 epoch=5 stop-F1=0.4721 elapsed=30.2s
+Traceback (most recent call last):
+  File "E:\医学人工智能\.venv\Lib\site-packages\numpy\lib\_npyio_impl.py", line 786, in _savez
+    format.write_array(fid, val,
+  File "E:\医学人工智能\.venv\Lib\site-packages\numpy\lib\_format_impl.py", line 777, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "C:\Users\20996\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1221, in write
+    self._fileobj.write(data)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\医学人工智能\research_extensions\rhythm_fusion\src\run.py", line 201, in <module>
+    main()
+  File "E:\医学人工智能\research_extensions\rhythm_fusion\src\run.py", line 196, in main
+    job(data, parts, config, fold, seed, name, target, smoke=args.smoke)
+  File "E:\医学人工智能\research_extensions\rhythm_fusion\src\run.py", line 134, in job
+    np.savez_compressed(output / "predictions.npz", eval_indices=e, eval_probability=eval_p,
+  File "E:\医学人工智能\.venv\Lib\site-packages\numpy\lib\_npyio_impl.py", line 753, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "E:\医学人工智能\.venv\Lib\site-packages\numpy\lib\_npyio_impl.py", line 785, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\20996\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1233, in close
+    self._fileobj.write(buf)
+OSError: [Errno 28] No space left on device

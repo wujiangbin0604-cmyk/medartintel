@@ -2,6 +2,8 @@
 
 线上工作台：[http://47.83.150.55:8000/dashboard](http://47.83.150.55:8000/dashboard)。服务器由项目维护者提供。
 
+当前版本也包含节律融合与可靠性实验室、60个研究checkpoint、样本索引与拒识策略。启动后访问 /rhythm-lab；无需训练NPZ。服务器更新见 [SERVER_UPDATE.md](SERVER_UPDATE.md)。
+
 ## 1. 下载项目
 
 ```bash

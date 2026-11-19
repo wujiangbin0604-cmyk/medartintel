@@ -1,0 +1,57 @@
+
+> ecg-ai-detection-workspace@0.2.0 build
+> max build
+
+info  - [你知道吗？] 遇到难解的配置问题，试试从 Umi FAQ 中寻找答案，详见 https://umijs.org/docs/introduce/faq
+info  - Umi v4.7.29
+info  - Preparing...
+[webpackbar] i Compiling Webpack
+[webpackbar] √ Webpack: Compiled successfully in 43.39s
+info  - Memory Usage: 689.82 MB (RSS: 1078.93 MB)
+
+info  - File sizes after gzip:
+
+  391.15 kB  dist\608.async.js
+  243.93 kB  dist\umi.js
+  66.1 kB    dist\273.async.js
+  55.1 kB    dist\137.async.js
+  52.47 kB   dist\220.async.js
+  43.14 kB   dist\978.async.js
+  19.35 kB   dist\483.async.js
+  17.46 kB   dist\196.async.js
+  16.39 kB   dist\686.async.js
+  14.84 kB   dist\p__interactive-lab__HeartbeatHunter.async.js
+  11.38 kB   dist\409.async.js
+  11.2 kB    dist\23.async.js
+  10.45 kB   dist\layouts__index.chunk.css
+  9.55 kB    dist\p__rhythm-lab__index.async.js
+  8.86 kB    dist\p__interactive-lab__index.async.js
+  8.55 kB    dist\735.async.js
+  8.39 kB    dist\733.async.js
+  6.88 kB    dist\128.async.js
+  6.59 kB    dist\p__experiments__index.async.js
+  6.41 kB    dist\836.async.js
+  6.06 kB    dist\p__gallery__index.async.js
+  5.33 kB    dist\p__dashboard__index.async.js
+  4.96 kB    dist\295.async.js
+  4.53 kB    dist\p__presentation-demo__index.async.js
+  4.43 kB    dist\196.chunk.css
+  4.4 kB     dist\487.async.js
+  4.38 kB    dist\831.async.js
+  4.36 kB    dist\338.chunk.css
+  4.27 kB    dist\layouts__index.async.js
+  4.25 kB    dist\996.async.js
+  4.09 kB    dist\611.async.js
+  4.01 kB    dist\737.async.js
+  3.85 kB    dist\809.async.js
+  3.3 kB     dist\p__generalization__index.async.js
+  2.79 kB    dist\p__dashboard__index.chunk.css
+  2.79 kB    dist\p__presentation-demo__index.chunk.css
+  2.79 kB    dist\215.async.js
+  2.5 kB     dist\p__ai-detection__index.async.js
+  2.48 kB    dist\umi.css
+  2.47 kB    dist\472.async.js
+  1.03 kB    dist\p__rhythm-lab__index.chunk.css
+  229 B      dist\209.async.js
+
+event - Build index.html

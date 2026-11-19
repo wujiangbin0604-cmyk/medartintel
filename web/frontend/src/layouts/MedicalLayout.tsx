@@ -9,7 +9,7 @@ import WelcomeOnboarding from '@/components/onboarding/WelcomeOnboarding';
 import '../global.less';
 import '../styles/medical.less';
 import '../styles/fidelity.less';
-const links=[['/dashboard','项目总览',DashboardOutlined,'Dashboard'],['/ai-detection','ECG 波形分析',LineChartOutlined,'ECG workspace'],['/ai-inference','AI 智能检测',HeartOutlined,'AI detection'],['/experiments','模型实验中心',ExperimentOutlined,'Model experiments'],['/generalization','错误与泛化分析',BarChartOutlined,'Generalization'],['/gallery','科研可视化图库',PictureOutlined,'Research gallery'],['/presentation-demo','课程答辩演示',FundProjectionScreenOutlined,'Presentation'],['/interactive-lab','心电互动实验室',ExperimentOutlined,'ECG Interactive Lab']] as const;
+const links=[['/dashboard','项目总览',DashboardOutlined,'Dashboard'],['/ai-detection','ECG 波形分析',LineChartOutlined,'ECG workspace'],['/ai-inference','AI 智能检测',HeartOutlined,'AI detection'],['/experiments','模型实验中心',ExperimentOutlined,'Model experiments'],['/rhythm-lab','节律融合与可靠性',ExperimentOutlined,'Rhythm research'],['/generalization','错误与泛化分析',BarChartOutlined,'Generalization'],['/gallery','科研可视化图库',PictureOutlined,'Research gallery'],['/presentation-demo','课程答辩演示',FundProjectionScreenOutlined,'Presentation'],['/interactive-lab','心电互动实验室',ExperimentOutlined,'ECG Interactive Lab']] as const;
 export default function MedicalLayout(){
  const location=useLocation();const outlet=useOutlet();const {mode,setMode,reduced,duration}=useMotionSettings();
  const [collapsed,setCollapsed]=useState(false);const [health,setHealth]=useState({status:'processing' as 'success'|'error'|'processing',models:0});

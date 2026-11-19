@@ -1,0 +1,24 @@
+.rhythm-lab {
+  --lab-blue: #1677ff; --lab-teal: #13a2a2; --lab-line: #dce8f2; --lab-ink: #213b55;
+  .ant-card { margin-top: 20px; }
+  .rhythm-overview { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; padding: 28px 30px; margin-bottom: 18px; background: #f0f7fd; border: 1px solid var(--lab-line); border-radius: 12px; color: var(--lab-ink); }
+  .rhythm-overview h2 { font-size: 24px; margin: 0 0 10px; }
+  .rhythm-overview p { line-height: 1.9; max-width: 44em; }
+  dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 0; }
+  dt { color: #596f83; font-size: 13px; } dd { margin: 4px 0 0; font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .rhythm-architecture { display: flex; align-items: center; gap: 20px; margin: 22px 0 16px; }
+  .rhythm-branches { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex: 2; }
+  .rhythm-branch, .rhythm-fusion { min-width: 0; border: 1px solid var(--lab-line); padding: 20px; border-radius: 10px; display: flex; flex-direction: column; gap: 12px; background: #fafcfe; transition: border-color .25s, background-color .25s, box-shadow .25s; }
+  .rhythm-branch b, .rhythm-fusion b { font-size: 17px; } .rhythm-branch span, .rhythm-fusion span { color: #536b82; }
+  .rhythm-branch i, .rhythm-fusion i { font-style: normal; line-height: 1.9; font-size: 13px; } .rhythm-branch strong { color: #226bad; }
+  .rhythm-fusion { flex: .85; background: #f1f9f8; } .rhythm-join { font-size: 26px; color: var(--lab-teal); }
+  .stage-0 .morphology, .stage-1 .timing, .stage-2 .rhythm-fusion { border-color: var(--lab-blue); background: #eff6ff; box-shadow: 0 0 0 2px #1677ff12; }
+  .rhythm-two-column { display: grid; grid-template-columns: 1.5fr 1fr; gap: 20px; }
+  .rhythm-feature-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0; }
+  .rhythm-feature-strip div { padding: 10px; background: #f4f8fc; border-radius: 6px; min-width: 0; } .rhythm-feature-strip small { display: block; overflow-wrap: anywhere; font-size: 11px; color: #536b82; } .rhythm-feature-strip b { font-variant-numeric: tabular-nums; }
+  .rhythm-picker { margin-bottom: 22px; max-width: 100%; } .rhythm-picker .ant-input-number { width: 150px; }
+  details { margin: 12px 0; font-size: 12px; color: #536b82; overflow-wrap: anywhere; } summary { cursor: pointer; color: #226bad; }
+  @media (max-width: 900px) { .rhythm-overview { grid-template-columns: 1fr; gap: 20px; padding: 22px; } .rhythm-architecture { flex-wrap: wrap; gap: 12px; } .rhythm-branches { flex-basis: 100%; } .rhythm-fusion { flex-basis: 80%; } .rhythm-two-column { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .rhythm-branches { grid-template-columns: 1fr; } .rhythm-picker .ant-select { max-width: calc(100vw - 140px) !important; } .rhythm-overview { padding: 18px; } dd { font-size: 22px; } .rhythm-stage-controls { display: flex; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; } }
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "research_extensions.rhythm_fusion.src.run"
+  ],
+  "cwd": "E:\\医学人工智能",
+  "exit_code": 0,
+  "elapsed_seconds": 14.913370699970983,
+  "finished": "2026-11-18T20:15:13.627536+08:00",
+  "output": "resume_completed_jobs.txt"
+}

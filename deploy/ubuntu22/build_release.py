@@ -24,11 +24,23 @@ def selected_files():
         for path in (ROOT / "data/processed" / dataset).iterdir():
             if path.is_file() and path.suffix in {".json", ".csv"} and path.name != "metadata.csv":
                 files.add(path)
-    for name in ("README.md", "DEPLOY_LOCAL.md", "DEPLOY_UBUNTU22.md", "compose.yaml", ".env.example", "start-local.ps1", "start-local.sh", "deploy/local.py", "requirements.txt", "requirements-lock.txt", ".dockerignore", "web/__init__.py", "web/docs/welcome_onboarding.md"):
+    for name in ("README.md", "SERVER_UPDATE.md", "DEPLOY_LOCAL.md", "DEPLOY_UBUNTU22.md", "compose.yaml", ".env.example", "start-local.ps1", "start-local.sh", "deploy/local.py", "requirements.txt", "requirements-lock.txt", ".dockerignore", "web/__init__.py", "web/docs/welcome_onboarding.md"):
         files.add(ROOT / name)
     for pattern in ("*.json", "*.ts", ".umirc.ts"):
         files.update((ROOT / "web/frontend").glob(pattern))
     tree("web/docs/site_reports")
+    # Research inference uses the exported alignment/JSON/checkpoints, never training NPZ.
+    for folder in ("research_extensions/rhythm_fusion/src", "research_extensions/rhythm_fusion/configs",
+                   "research_extensions/rhythm_fusion/data", "research_extensions/rhythm_fusion/results/cv_cpu_v1",
+                   "research_extensions/rhythm_fusion/results/cv_cpu_repeats_v1",
+                   "research_extensions/rhythm_fusion/figures", "research_extensions/rhythm_fusion/reports",
+                   "research_extensions/uncertainty/src", "research_extensions/uncertainty/results"):
+        tree(folder)
+    for name in ("research_extensions/__init__.py", "research_extensions/protect.py",
+                 "research_extensions/rhythm_fusion/__init__.py", "research_extensions/uncertainty/__init__.py",
+                 "research_extensions/README.md", "research_extensions/INNOVATION_REPORT.md",
+                 "research_extensions/PAPER_CHAPTER_DRAFT.md"):
+        files.add(ROOT / name)
     for name in ("FINAL_REVIEW.md", "SUBMISSION_CHECKLIST.md", "deploy/diagnose_public_demo.py"):
         if (ROOT / name).is_file():
             files.add(ROOT / name)

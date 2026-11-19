@@ -1,0 +1,12 @@
+
+Running 5 tests using 1 worker
+
+(node:51636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\rhythm-lab.spec.ts:9:5 › 真实结果、折/类别切换、空状态与刷新 (4.8s)
+  ok 2 tests\rhythm-lab.spec.ts:27:7 › 真实单拍、独立阈值与布局 1440 (4.3s)
+  ok 3 tests\rhythm-lab.spec.ts:27:7 › 真实单拍、独立阈值与布局 390 (3.8s)
+  ok 4 tests\rhythm-lab.spec.ts:47:5 › 研究未就绪与原页面回归 (7.9s)
+  ok 5 tests\rhythm-lab.spec.ts:58:5 › Hunter 作答、计时、评分、历史与精确样本联动 (7.7s)
+
+  5 passed (46.0s)
