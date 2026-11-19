@@ -1,5 +1,5 @@
-........................................................................ [ 68%]
-.................................                                        [100%]
+........................................................................ [ 67%]
+...................................                                      [100%]
 ============================== warnings summary ===============================
 .venv\Lib\site-packages\wfdb\io\annotation.py:3062
   E:\医学人工智能\.venv\Lib\site-packages\wfdb\io\annotation.py:3062: Pandas4Warning: The inplace keyword in DataFrame.set_index is deprecated and will be removed in a future version (PDEP-8).
@@ -24,4 +24,4 @@ research_extensions/rhythm_fusion/tests/test_service.py: 4 warnings
     label_map.set_index(
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-105 passed, 70 warnings in 15.74s
+107 passed, 70 warnings in 16.03s

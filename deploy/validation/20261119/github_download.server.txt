@@ -1,0 +1,30 @@
+{'verified_files': 1278, 'source_records': 48, 'game_levels': 62, 'frontend_built': True}
+Open http://127.0.0.1:8146/dashboard
+INFO:     Started server process [32960]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8146 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53913 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63717 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63728 - "GET /api/research/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63729 - "GET /api/ecg/records HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63730 - "GET /api/research/gallery HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63731 - "GET /api/research/figures/0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63732 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63733 - "GET /ai-detection HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63734 - "GET /ai-inference HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63735 - "GET /interactive-lab/heartbeat-hunter HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63736 - "GET /rhythm-lab HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63737 - "GET /api/games/heartbeat-hunter/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63738 - "POST /api/games/heartbeat-hunter/start HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63739 - "POST /api/games/heartbeat-hunter/submit HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63741 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63773 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63774 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63775 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63776 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63777 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63778 - "POST /api/inference/compare HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63779 - "GET /api/rhythm/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63780 - "GET /api/rhythm/samples?label=S HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63781 - "GET /api/rhythm/beat?record_id=100&annotation_sample=2044 HTTP/1.1" 200 OK

@@ -11,6 +11,32 @@ APPLIER = Path(__file__).resolve().parents[1] / "apply_update.py"
 
 
 class ResearchUpdateTests(unittest.TestCase):
+    def test_partial_http_body_is_retried_without_appending_stale_bytes(self):
+        from deploy.update.from_github import download
+        from unittest.mock import patch
+        from io import BytesIO
+        from http.client import IncompleteRead
+        class Interrupted(BytesIO):
+            def read(self,*args):
+                if self.tell()>=2:raise IncompleteRead(b"partial HTTP body")
+                return super().read(2)
+        with tempfile.TemporaryDirectory(prefix="ecg-download-") as temp:
+            destination=Path(temp)/"source.zip"
+            with patch("deploy.update.from_github.urlopen",side_effect=[Interrupted(b"broken"),BytesIO(b"complete archive")]),patch("deploy.update.from_github.time.sleep"):
+                download("https://codeload.github.com/example/archive.zip",destination)
+            self.assertEqual(destination.read_bytes(),b"complete archive")
+
+    def test_interrupted_download_retries_from_clean_file(self):
+        from deploy.update.from_github import download
+        from unittest.mock import patch
+        from io import BytesIO
+        with tempfile.TemporaryDirectory(prefix="ecg-download-") as temp:
+            destination=Path(temp)/"source.zip"
+            destination.write_bytes(b"old partial bytes")
+            with patch("deploy.update.from_github.urlopen",side_effect=[OSError("connection closed"),BytesIO(b"complete archive")]),patch("deploy.update.from_github.time.sleep"):
+                download("https://codeload.github.com/example/archive.zip",destination)
+            self.assertEqual(destination.read_bytes(),b"complete archive")
+
     def test_verify_bundle_cli_imports_project_in_isolated_python(self):
         verifier=Path(__file__).resolve().parents[2]/"ubuntu22/verify_bundle.py"
         result=subprocess.run([sys.executable,"-I",str(verifier),"--files-only"],cwd=verifier.parents[2],capture_output=True,text=True)

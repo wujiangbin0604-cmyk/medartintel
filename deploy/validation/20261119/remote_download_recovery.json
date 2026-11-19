@@ -1,0 +1,9 @@
+{
+  "commit": "8ac19122efab2b25878f24c02eb7b008db3771e3",
+  "archive_bytes_received": 324009984,
+  "zip_entries_recovered_with_crc": 1686,
+  "runtime_files": 1278,
+  "files_fetched_from_github_raw": 163,
+  "checkout": "C:\\Users\\20996\\AppData\\Local\\Temp\\ecg-gh-recovery-m53yps9_\\medartintel-8ac19122efab2b25878f24c02eb7b008db3771e3",
+  "method": "GitHub official commit ZIP interrupted; CRC-verified entries recovered, missing runtime entries fetched from official raw at same commit; all SHA256 verified"
+}

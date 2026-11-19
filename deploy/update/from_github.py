@@ -8,12 +8,14 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+from http.client import IncompleteRead
 import json
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from urllib.request import Request, urlopen
 import zipfile
 
@@ -22,8 +24,16 @@ REPOSITORY = "wujiangbin0604-cmyk/medartintel"
 
 def download(url, destination):
     request = Request(url, headers={"User-Agent": "ECG-AI-updater", "Accept": "application/vnd.github+json"})
-    with urlopen(request, timeout=180) as response, destination.open("wb") as output:
-        shutil.copyfileobj(response, output)
+    for attempt in range(1, 4):
+        try:
+            with urlopen(request, timeout=180) as response, destination.open("wb") as output:
+                shutil.copyfileobj(response, output)
+            return
+        except (OSError, EOFError, IncompleteRead):
+            if attempt == 3:
+                raise
+            print(f"GitHub download interrupted; retry {attempt}/2", flush=True)
+            time.sleep(attempt * 2)
 
 
 def extract_snapshot(archive_path, destination):
