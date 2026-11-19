@@ -4,7 +4,7 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
 const root=path.resolve(__dirname,'../../..');
-const screenshots=path.resolve(root,'research_extensions/validation/screenshots/hunter');
+const screenshots=path.resolve(process.env.ECG_REVALIDATION_SHOTS || path.join(root,'research_extensions/validation/screenshots'),'hunter');
 fs.mkdirSync(screenshots,{recursive:true});
 const game='/interactive-lab/heartbeat-hunter';
 const api='/api/games/heartbeat-hunter';
@@ -25,7 +25,7 @@ async function selectTargets(page:Page,s:any,includeWrong=false){
 }
 function shortenDeadline(id:string,remaining:number){
  const script="import sqlite3,json,time,sys; db=sqlite3.connect(sys.argv[1]); row=db.execute('SELECT data FROM hunter_sessions WHERE id=?',(sys.argv[2],)).fetchone(); s=json.loads(row[0]); s['deadline']=time.time()+float(sys.argv[3]); db.execute('UPDATE hunter_sessions SET data=? WHERE id=?',(json.dumps(s),sys.argv[2])); db.commit(); db.close()";
- execFileSync(path.join(root,'.venv/Scripts/python.exe'),['-c',script,path.join(root,'research_extensions/validation/hunter.sqlite3'),id,String(remaining)]);
+ execFileSync(path.join(root,'.venv/Scripts/python.exe'),['-c',script,process.env.ECG_HUNTER_DATABASE || path.join(root,'research_extensions/validation/hunter.sqlite3'),id,String(remaining)]);
 }
 
 test('完整新手流程：真实波形、取消、评分、连击、解析、AI、下一关、刷新、历史',async({page})=>{

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\生物信息学\\medartintel-local\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "deploy/update/tests",
+    "-v"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-release",
+  "exit_code": 0,
+  "elapsed_seconds": 8.018947799995658,
+  "finished": "2026-11-19T15:15:35.662351+08:00",
+  "output": "v5_update_package_tests.txt"
+}

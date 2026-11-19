@@ -1,0 +1,18 @@
+test_different_existing_research_checkpoint_is_preserved (test_research_update.ResearchUpdateTests.test_different_existing_research_checkpoint_is_preserved) ... ok
+test_github_noop_package_can_validate_current_checkout (test_research_update.ResearchUpdateTests.test_github_noop_package_can_validate_current_checkout) ... ok
+test_github_package_includes_missing_runtime_source (test_research_update.ResearchUpdateTests.test_github_package_includes_missing_runtime_source) ... ok
+test_interrupted_download_retries_from_clean_file (test_research_update.ResearchUpdateTests.test_interrupted_download_retries_from_clean_file) ... GitHub download interrupted; retry 1/2
+ok
+test_new_research_checkpoint_is_installed (test_research_update.ResearchUpdateTests.test_new_research_checkpoint_is_installed) ... ok
+test_original_formal_model_is_rejected (test_research_update.ResearchUpdateTests.test_original_formal_model_is_rejected) ... ok
+test_partial_http_body_is_retried_without_appending_stale_bytes (test_research_update.ResearchUpdateTests.test_partial_http_body_is_retried_without_appending_stale_bytes) ... GitHub download interrupted; retry 1/2
+ok
+test_verify_bundle_cli_imports_project_in_isolated_python (test_research_update.ResearchUpdateTests.test_verify_bundle_cli_imports_project_in_isolated_python) ... ok
+test_apply_rejects_missing_dependency_before_overwriting (test_update_package.UpdatePackageTests.test_apply_rejects_missing_dependency_before_overwriting) ... ok
+test_check_rejects_missing_runtime_dependency (test_update_package.UpdatePackageTests.test_check_rejects_missing_runtime_dependency) ... ok
+test_shipped_archive_contains_local_launcher (test_update_package.UpdatePackageTests.test_shipped_archive_contains_local_launcher) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 8.278s
+
+OK

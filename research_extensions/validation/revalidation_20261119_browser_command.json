@@ -1,0 +1,14 @@
+{
+  "command": [
+    "E:\\node.exe",
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "--config",
+    "playwright.revalidation.config.ts"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local\\web\\frontend",
+  "exit_code": 0,
+  "elapsed_seconds": 125.57089450000058,
+  "finished": "2026-11-19T14:47:56.547893+08:00",
+  "output": "revalidation_20261119_browser_command.txt"
+}

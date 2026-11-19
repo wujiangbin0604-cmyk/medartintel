@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.revalidate",
+    "--full"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local",
+  "exit_code": 0,
+  "elapsed_seconds": 69.48275300000387,
+  "finished": "2026-11-19T14:44:10.264192+08:00",
+  "output": "revalidation_20261119_artifact_command.txt"
+}

@@ -12,9 +12,11 @@ GitHub 下载包含前端构建、60 个正式研究 checkpoint、样本索引�
 
 现有服务器更新（兼容旧 ZIP 部署）：[复制更新命令](SERVER_UPDATE.md)。首次/本地部署：[DEPLOY_LOCAL.md](DEPLOY_LOCAL.md)。代码发布与服务器部署是两步，执行服务器命令后新页面才会生效。
 
-## 最新论文更新 · 2026年11月18日
+## 最新论文更新 · 2026年11月19日
 
-当前提交版本为 [V4论文DOCX](paper/final/ECG_AI_课程论文_语言润色版V4.docx)及[同版PDF](paper/final/ECG_AI_课程论文_语言润色版V4.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_语言润色版V4.md)一并保留。V4调整73段中文表达，实验数据、文献引用、图表、公式和研究结论未变；共39页，正文13429个汉字，全部页面和42条正文目录页码已检查。改稿及质量记录见[论文说明](paper/README.md)。V1—V3均保留，科研代码与模型沿用已公开版本。
+当前版本为 [V5论文DOCX](paper/final/ECG_AI_课程论文_自然表达版V5.docx)及[同版PDF](paper/final/ECG_AI_课程论文_自然表达版V5.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_自然表达版V5.md)一并发布。本轮使用新安装的 humanizer-zh 调整29段中文表达，实验数字、引文、图表、公式、英文摘要及结论边界保持不变。V5共39页，42条正文目录页码已核对；V1—V4保留，详见[论文说明](paper/README.md)。
+
+研究扩展本次独立复核了60个checkpoint的完整外层/校准预测及86,286行RR特征，另执行四模型训练Smoke Test、拒识复算和13对PNG/SVG重绘。Python回归96项、浏览器回归15项通过，前端构建及类型检查通过。继承训练与本次复核严格区分，见[本次复核交付](research_extensions/REVALIDATION_DELIVERY.md)。
 
 ## 最终优化与验收（2026年11月17日）
 

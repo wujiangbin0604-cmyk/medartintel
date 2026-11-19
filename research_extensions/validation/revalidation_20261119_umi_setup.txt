@@ -1,0 +1,3 @@
+info  - [你知道吗？] father 4 正式发布了，详见 https://zhuanlan.zhihu.com/p/558192063
+info  - generate files
+info  - Preparing...

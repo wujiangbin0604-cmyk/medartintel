@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="784.8pt" height="279.262125pt" viewBox="0 0 784.8 279.262125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-19T14:44:50.694314</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 279.262125 
+L 784.8 279.262125 
+L 784.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 22.608 127.610925 
+L 315.36 127.610925 
+Q 330.768 127.610925 330.768 123.223725 
+L 330.768 61.802925 
+Q 330.768 57.415725 315.36 57.415725 
+L 22.608 57.415725 
+Q 7.2 57.415725 7.2 61.802925 
+L 7.2 123.223725 
+Q 7.2 127.610925 22.608 127.610925 
+z
+" clip-path="url(#p91d7e917cb)" style="fill: #f0f7fd; stroke: #1677ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 22.608 215.354925 
+L 315.36 215.354925 
+Q 330.768 215.354925 330.768 210.967725 
+L 330.768 149.546925 
+Q 330.768 145.159725 315.36 145.159725 
+L 22.608 145.159725 
+Q 7.2 145.159725 7.2 149.546925 
+L 7.2 210.967725 
+Q 7.2 215.354925 22.608 215.354925 
+z
+" clip-path="url(#p91d7e917cb)" style="fill: #f0f7fd; stroke: #1677ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 477.144 173.676525 
+L 746.784 173.676525 
+Q 762.192 173.676525 762.192 169.289325 
+L 762.192 103.481325 
+Q 762.192 99.094125 746.784 99.094125 
+L 477.144 99.094125 
+Q 461.736 99.094125 461.736 103.481325 
+L 461.736 169.289325 
+Q 461.736 173.676525 477.144 173.676525 
+z
+" clip-path="url(#p91d7e917cb)" style="fill: #f0f7fd; stroke: #1677ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(118.77775 89.110005)">Waveform [B,1,253]</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(79.675406 101.112739)">Conv/Pool x2 + Conv/AvgPool -&gt; 64</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(81.976969 176.854005)">7 past-only RR features + 7 masks</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(100.889469 188.856739)">Linear 14-&gt;32-&gt;16 + ReLU</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(563.252281 132.982005)">Concatenate [B,80]</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(551.861656 144.984739)">Linear 80-&gt;4 -&gt; N/S/V/F</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 332.676602 93.117154 
+Q 400.104613 114.449519 466.466665 135.444644 
+" style="fill: none; stroke: #13a2a2; stroke-linecap: round"/>
+    <path d="M 463.256247 132.331251 
+L 466.466665 135.444644 
+L 462.0497 136.144943 
+" style="fill: none; stroke: #13a2a2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 332.676602 179.653496 
+Q 400.104613 158.321131 466.466665 137.326006 
+" style="fill: none; stroke: #13a2a2; stroke-linecap: round"/>
+    <path d="M 462.0497 136.625707 
+L 466.466665 137.326006 
+L 463.256247 140.439399 
+" style="fill: none; stroke: #13a2a2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="392.4" y="16.318125" transform="rotate(-0 392.4 16.318125)">RhythmMorphologyCNN: implemented tensor structure</text>
+   </g>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #536b82" transform="translate(224.874141 261.277887)">Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs</text>
+   <text style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #536b82" transform="translate(224.330547 269.679801)">Architecture schematic, not neuron activation; CNN encoder identical to original HeartbeatCNN.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p91d7e917cb">
+   <rect x="7.2" y="22.318125" width="770.4" height="219.36"/>
+  </clipPath>
+ </defs>
+</svg>

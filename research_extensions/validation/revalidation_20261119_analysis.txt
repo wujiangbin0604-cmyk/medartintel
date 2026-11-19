@@ -1,0 +1,198 @@
+{
+  "results": [
+    {
+      "model": "A0",
+      "method": "max_score",
+      "coverage": 0.8449574670282549,
+      "accepted_error_rate": 0.3116393262742086,
+      "rejected_error_rate": 0.5600239198684407,
+      "error_detection_auroc": 0.6742615469567091
+    },
+    {
+      "model": "A0",
+      "method": "entropy",
+      "coverage": 0.817166168323946,
+      "accepted_error_rate": 0.32348603035030493,
+      "rejected_error_rate": 0.4693204868154158,
+      "error_detection_auroc": 0.5760778213595249
+    },
+    {
+      "model": "A1",
+      "method": "max_score",
+      "coverage": 0.8027953549822683,
+      "accepted_error_rate": 0.15514652807853327,
+      "rejected_error_rate": 0.46185942642219086,
+      "error_detection_auroc": 0.6921640511976741
+    },
+    {
+      "model": "A1",
+      "method": "entropy",
+      "coverage": 0.8425237002526482,
+      "accepted_error_rate": 0.1726319843737104,
+      "rejected_error_rate": 0.4456873712098911,
+      "error_detection_auroc": 0.6604704302407343
+    },
+    {
+      "model": "A2",
+      "method": "max_score",
+      "coverage": 0.8930185661636882,
+      "accepted_error_rate": 0.158120822788917,
+      "rejected_error_rate": 0.3594410139746506,
+      "error_detection_auroc": 0.661115409910067
+    },
+    {
+      "model": "A2",
+      "method": "entropy",
+      "coverage": 0.884523561180261,
+      "accepted_error_rate": 0.1628495060401981,
+      "rejected_error_rate": 0.30841027699718987,
+      "error_detection_auroc": 0.6436852995387284
+    },
+    {
+      "model": "A3",
+      "method": "max_score",
+      "coverage": 0.8737338618084046,
+      "accepted_error_rate": 0.30560677003886405,
+      "rejected_error_rate": 0.5903625516291877,
+      "error_detection_auroc": 0.7193263319402893
+    },
+    {
+      "model": "A3",
+      "method": "entropy",
+      "coverage": 0.8454210416521799,
+      "accepted_error_rate": 0.31292153314689913,
+      "rejected_error_rate": 0.49820062977957713,
+      "error_detection_auroc": 0.6434934449937731
+    },
+    {
+      "model": "A0",
+      "method": "max_score",
+      "coverage": 0.8803977470273278,
+      "accepted_error_rate": 0.3415738619908907,
+      "rejected_error_rate": 0.39602713178294574,
+      "error_detection_auroc": 0.6129258287687966
+    },
+    {
+      "model": "A0",
+      "method": "entropy",
+      "coverage": 0.8426164151774332,
+      "accepted_error_rate": 0.3398206475394053,
+      "rejected_error_rate": 0.3923416789396171,
+      "error_detection_auroc": 0.5127210298644873
+    },
+    {
+      "model": "A1",
+      "method": "max_score",
+      "coverage": 0.7885172565653756,
+      "accepted_error_rate": 0.17074282018871806,
+      "rejected_error_rate": 0.42256685664182375,
+      "error_detection_auroc": 0.6492552772035213
+    },
+    {
+      "model": "A1",
+      "method": "entropy",
+      "coverage": 0.8188466263356744,
+      "accepted_error_rate": 0.17523175996037083,
+      "rejected_error_rate": 0.4444373360629518,
+      "error_detection_auroc": 0.651712221570421
+    },
+    {
+      "model": "A2",
+      "method": "max_score",
+      "coverage": 0.8631295922861183,
+      "accepted_error_rate": 0.15265320371663355,
+      "rejected_error_rate": 0.4994072819644369,
+      "error_detection_auroc": 0.6621193740683127
+    },
+    {
+      "model": "A2",
+      "method": "entropy",
+      "coverage": 0.8736295575180215,
+      "accepted_error_rate": 0.1579024170226314,
+      "rejected_error_rate": 0.49192956713132796,
+      "error_detection_auroc": 0.608777104914761
+    },
+    {
+      "model": "A3",
+      "method": "max_score",
+      "coverage": 0.815080082516283,
+      "accepted_error_rate": 0.28504194511588227,
+      "rejected_error_rate": 0.43908247681123086,
+      "error_detection_auroc": 0.5539375221855587
+    },
+    {
+      "model": "A3",
+      "method": "entropy",
+      "coverage": 0.8248499177155042,
+      "accepted_error_rate": 0.2887892880727242,
+      "rejected_error_rate": 0.43002712896182094,
+      "error_detection_auroc": 0.5130803229688456
+    },
+    {
+      "model": "A0",
+      "method": "max_score",
+      "coverage": 0.8671395127830702,
+      "accepted_error_rate": 0.3823340728662693,
+      "rejected_error_rate": 0.5211967899511515,
+      "error_detection_auroc": 0.6292256791556871
+    },
+    {
+      "model": "A0",
+      "method": "entropy",
+      "coverage": 0.8237721067148784,
+      "accepted_error_rate": 0.3864659538548115,
+      "rejected_error_rate": 0.46771011442851507,
+      "error_detection_auroc": 0.5759672190050065
+    },
+    {
+      "model": "A1",
+      "method": "max_score",
+      "coverage": 0.8771759033910483,
+      "accepted_error_rate": 0.17409629003276608,
+      "rejected_error_rate": 0.5048122287224005,
+      "error_detection_auroc": 0.6256316231452068
+    },
+    {
+      "model": "A1",
+      "method": "entropy",
+      "coverage": 0.8649259439538279,
+      "accepted_error_rate": 0.17630743256823572,
+      "rejected_error_rate": 0.46066066066066064,
+      "error_detection_auroc": 0.6178123322306206
+    },
+    {
+      "model": "A2",
+      "method": "max_score",
+      "coverage": 0.8823447604478131,
+      "accepted_error_rate": 0.17245908529697637,
+      "rejected_error_rate": 0.49763593380614657,
+      "error_detection_auroc": 0.7204104243023116
+    },
+    {
+      "model": "A2",
+      "method": "entropy",
+      "coverage": 0.8647636928354542,
+      "accepted_error_rate": 0.16981384939088948,
+      "rejected_error_rate": 0.47227697317679324,
+      "error_detection_auroc": 0.7146566737668697
+    },
+    {
+      "model": "A3",
+      "method": "max_score",
+      "coverage": 0.8566859050135596,
+      "accepted_error_rate": 0.3171130952380952,
+      "rejected_error_rate": 0.44492964580300826,
+      "error_detection_auroc": 0.5610082878168408
+    },
+    {
+      "model": "A3",
+      "method": "entropy",
+      "coverage": 0.8203880119602253,
+      "accepted_error_rate": 0.32142453523196024,
+      "rejected_error_rate": 0.39940637501613113,
+      "error_detection_auroc": 0.5103073426724962
+    }
+  ]
+}
+Generated 13 PNG+SVG figure pairs in D:\生物信息学\medartintel-local\research_extensions\rhythm_fusion\figures\revalidation_20261119
+Selective metrics exactly match inherited results; all figures regenerated separately

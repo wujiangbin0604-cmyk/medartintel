@@ -1,0 +1,23 @@
+
+Running 15 tests using 1 worker
+
+(node:36600) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\rhythm-hunter-regression.spec.ts:31:5 › 完整新手流程：真实波形、取消、评分、连击、解析、AI、下一关、刷新、历史 (17.4s)
+  ok  2 tests\rhythm-hunter-regression.spec.ts:54:5 › 真实波形点击、清除选择与误选判分 (2.8s)
+
+  ok  3 tests\rhythm-hunter-regression.spec.ts:64:5 › 标准模式：隐藏候选、倒计时、波形选择、缩放、超时自动结算 (14.4s)
+  ok  4 tests\rhythm-hunter-regression.spec.ts:72:5 › 挑战模式：历史回放滚动、速度控制与页面清理 (9.6s)
+  ok  5 tests\rhythm-hunter-regression.spec.ts:80:5 › reduced motion：完整作答、音效设置、网络错误后重试 (2.1s)
+  ok  6 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1920x1080 (8.1s)
+  ok  7 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1440x900 (6.7s)
+  ok  8 tests\rhythm-hunter-regression.spec.ts:89:6 › 视觉与原页面回归 1366x768 (10.9s)
+  ok  9 tests\rhythm-hunter-regression.spec.ts:96:5 › 游戏渲染帧间隔采样 (4.2s)
+  ok 10 tests\rhythm-hunter-regression.spec.ts:102:5 › 连续十次进出游戏：恢复会话、移除图表、无页面异常 (17.5s)
+  ok 11 tests\rhythm-lab.spec.ts:9:5 › 真实结果、折/类别切换、空状态与刷新 (3.6s)
+  ok 12 tests\rhythm-lab.spec.ts:33:7 › 真实单拍、独立阈值与布局 1440 (3.0s)
+  ok 13 tests\rhythm-lab.spec.ts:33:7 › 真实单拍、独立阈值与布局 390 (2.8s)
+  ok 14 tests\rhythm-lab.spec.ts:55:5 › 研究未就绪与原页面回归 (5.4s)
+  ok 15 tests\rhythm-lab.spec.ts:66:5 › Hunter 作答、计时、评分、历史与精确样本联动 (5.5s)
+
+  15 passed (2.1m)

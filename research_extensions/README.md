@@ -2,6 +2,8 @@
 
 入口：[`INNOVATION_REPORT.md`](INNOVATION_REPORT.md)、[`PAPER_CHAPTER_DRAFT.md`](PAPER_CHAPTER_DRAFT.md)。不覆盖原正式模型、测试结果或课程论文。
 
+2026年11月19日另行完成全部60个模型的权重推理复核、86,286行RR对齐检查、独立Smoke Test、拒识复算和图表重绘，记录见[本次独立复核交付](REVALIDATION_DELIVERY.md)。本次复核不计为重新完成60组正式训练。课程论文另存自然表达版V5，未把两套实验指标混写。
+
 ## 复现
 
 在仓库根目录使用现有 `.venv`：
