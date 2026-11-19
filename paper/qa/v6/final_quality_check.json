@@ -1,0 +1,376 @@
+{
+  "status": "PASS",
+  "pages": 50,
+  "render_dir": "C:\\Users\\20996\\.codex\\visualizations\\2026\\11\\18\\01a1ee78-1529-7701-8ca5-9b0cfdb6959e\\ecg-v6-paper-qa\\final50",
+  "toc_anchors": 57,
+  "toc_bookmarks_exist": true,
+  "figures": 26,
+  "tables": 25,
+  "native_equations": 7,
+  "reference_count": 16,
+  "new_training_runs": 60,
+  "V5_original_preserved": true,
+  "all_pages_inside_page_bounds": true,
+  "page_geometry": [
+    {
+      "page": 1,
+      "text_characters": 127,
+      "images": 4,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 2,
+      "text_characters": 937,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 3,
+      "text_characters": 2991,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 4,
+      "text_characters": 6032,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 5,
+      "text_characters": 1671,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 6,
+      "text_characters": 1184,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 7,
+      "text_characters": 1245,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 8,
+      "text_characters": 673,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 9,
+      "text_characters": 719,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 10,
+      "text_characters": 831,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 11,
+      "text_characters": 578,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 12,
+      "text_characters": 626,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 13,
+      "text_characters": 466,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 14,
+      "text_characters": 772,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 15,
+      "text_characters": 1149,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 16,
+      "text_characters": 1280,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 17,
+      "text_characters": 907,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 18,
+      "text_characters": 455,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 19,
+      "text_characters": 1038,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 20,
+      "text_characters": 1296,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 21,
+      "text_characters": 848,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 22,
+      "text_characters": 633,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 23,
+      "text_characters": 562,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 24,
+      "text_characters": 1200,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 25,
+      "text_characters": 683,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 26,
+      "text_characters": 890,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 27,
+      "text_characters": 856,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 28,
+      "text_characters": 843,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 29,
+      "text_characters": 466,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 30,
+      "text_characters": 1329,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 31,
+      "text_characters": 745,
+      "images": 2,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 32,
+      "text_characters": 992,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 33,
+      "text_characters": 598,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 34,
+      "text_characters": 1050,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 35,
+      "text_characters": 737,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 36,
+      "text_characters": 1001,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 37,
+      "text_characters": 1060,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 38,
+      "text_characters": 653,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 39,
+      "text_characters": 857,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 40,
+      "text_characters": 53,
+      "images": 2,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 41,
+      "text_characters": 949,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 42,
+      "text_characters": 619,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 43,
+      "text_characters": 999,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 44,
+      "text_characters": 538,
+      "images": 1,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 45,
+      "text_characters": 801,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 46,
+      "text_characters": 2842,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 47,
+      "text_characters": 401,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 48,
+      "text_characters": 333,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 49,
+      "text_characters": 814,
+      "images": 0,
+      "outside_page_blocks": []
+    },
+    {
+      "page": 50,
+      "text_characters": 85,
+      "images": 0,
+      "outside_page_blocks": []
+    }
+  ],
+  "docx_sha256": "93ec8da79f500ec5810f4143270e1c9ab748507e0683895ef7771a9c09d534a2",
+  "pdf_sha256": "68d5d87cd662ad9fde8b15dfcb5e165daaf10774f14a4ec29984e27da2aac050",
+  "visual_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "render_engine": "bundled render_docx.py with native Word PDF; 120 dpi PNG",
+  "toc_entries_verified": 57,
+  "numeric_comparisons_verified": 135,
+  "layout_revision": "Moved chapter breaks onto heading paragraphs; removed empty page; retained V5 style system",
+  "visual_review_method": "Every initial page inspected; final changed pages re-inspected, 40 unchanged body regions checked byte-for-byte against inspected renders",
+  "body_page_numbers_verified": true
+}

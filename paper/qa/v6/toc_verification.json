@@ -1,0 +1,347 @@
+{
+  "status": "PASS",
+  "entries": [
+    {
+      "title": "摘  要",
+      "page": "I",
+      "physical_page": 2,
+      "verified": true
+    },
+    {
+      "title": "Abstract",
+      "page": "II",
+      "physical_page": 3,
+      "verified": true
+    },
+    {
+      "title": "第1章 绪论",
+      "page": "1",
+      "physical_page": 6,
+      "verified": true
+    },
+    {
+      "title": "1.1 研究背景",
+      "page": "1",
+      "physical_page": 6,
+      "verified": true
+    },
+    {
+      "title": "1.2 相关研究与研究定位",
+      "page": "1",
+      "physical_page": 6,
+      "verified": true
+    },
+    {
+      "title": "1.3 研究目标",
+      "page": "2",
+      "physical_page": 7,
+      "verified": true
+    },
+    {
+      "title": "1.4 主要工作",
+      "page": "3",
+      "physical_page": 8,
+      "verified": true
+    },
+    {
+      "title": "1.5 研究问题与可检验假设",
+      "page": "3",
+      "physical_page": 8,
+      "verified": true
+    },
+    {
+      "title": "第2章 数据集与预处理",
+      "page": "4",
+      "physical_page": 9,
+      "verified": true
+    },
+    {
+      "title": "2.1 数据来源与记录选择",
+      "page": "4",
+      "physical_page": 9,
+      "verified": true
+    },
+    {
+      "title": "2.2 心拍标签及任务边界",
+      "page": "4",
+      "physical_page": 9,
+      "verified": true
+    },
+    {
+      "title": "2.3 信号预处理",
+      "page": "5",
+      "physical_page": 10,
+      "verified": true
+    },
+    {
+      "title": "2.4 数据集划分",
+      "page": "7",
+      "physical_page": 12,
+      "verified": true
+    },
+    {
+      "title": "2.5 数据探索",
+      "page": "7",
+      "physical_page": 12,
+      "verified": true
+    },
+    {
+      "title": "2.6 新增研究的开发池与事件对齐",
+      "page": "8",
+      "physical_page": 13,
+      "verified": true
+    },
+    {
+      "title": "第3章 模型设计",
+      "page": "9",
+      "physical_page": 14,
+      "verified": true
+    },
+    {
+      "title": "3.1 逻辑回归",
+      "page": "9",
+      "physical_page": 14,
+      "verified": true
+    },
+    {
+      "title": "3.2 随机森林",
+      "page": "9",
+      "physical_page": 14,
+      "verified": true
+    },
+    {
+      "title": "3.3 一维卷积神经网络",
+      "page": "9",
+      "physical_page": 14,
+      "verified": true
+    },
+    {
+      "title": "3.4 训练与模型选择",
+      "page": "10",
+      "physical_page": 15,
+      "verified": true
+    },
+    {
+      "title": "3.5 类别不平衡与RR上下文方案",
+      "page": "11",
+      "physical_page": 16,
+      "verified": true
+    },
+    {
+      "title": "3.6 历史节律与形态的双分支模型",
+      "page": "11",
+      "physical_page": 16,
+      "verified": true
+    },
+    {
+      "title": "3.7 预测不确定性与固定拒识规则",
+      "page": "13",
+      "physical_page": 18,
+      "verified": true
+    },
+    {
+      "title": "第4章 实验设计与评价指标",
+      "page": "14",
+      "physical_page": 19,
+      "verified": true
+    },
+    {
+      "title": "4.1 实验环境",
+      "page": "14",
+      "physical_page": 19,
+      "verified": true
+    },
+    {
+      "title": "4.2 评价指标",
+      "page": "14",
+      "physical_page": 19,
+      "verified": true
+    },
+    {
+      "title": "4.3 对照实验与证据范围",
+      "page": "14",
+      "physical_page": 19,
+      "verified": true
+    },
+    {
+      "title": "4.4 新增五折三种子研究协议",
+      "page": "15",
+      "physical_page": 20,
+      "verified": true
+    },
+    {
+      "title": "4.5 汇总单位与选择性评价",
+      "page": "16",
+      "physical_page": 21,
+      "verified": true
+    },
+    {
+      "title": "第5章 实验结果与分析",
+      "page": "17",
+      "physical_page": 22,
+      "verified": true
+    },
+    {
+      "title": "5.1 N/V二分类结果",
+      "page": "17",
+      "physical_page": 22,
+      "verified": true
+    },
+    {
+      "title": "5.1.1 验证集与测试集结果差异讨论",
+      "page": "19",
+      "physical_page": 24,
+      "verified": true
+    },
+    {
+      "title": "5.2 N/S/V/F四分类结果",
+      "page": "20",
+      "physical_page": 25,
+      "verified": true
+    },
+    {
+      "title": "5.3 类别不平衡与患者集中度",
+      "page": "21",
+      "physical_page": 26,
+      "verified": true
+    },
+    {
+      "title": "5.4 类别权重消融",
+      "page": "22",
+      "physical_page": 27,
+      "verified": true
+    },
+    {
+      "title": "5.5 患者级泛化与折间波动",
+      "page": "23",
+      "physical_page": 28,
+      "verified": true
+    },
+    {
+      "title": "5.6 错误样本分析",
+      "page": "24",
+      "physical_page": 29,
+      "verified": true
+    },
+    {
+      "title": "5.7 原固定分区结果讨论",
+      "page": "25",
+      "physical_page": 30,
+      "verified": true
+    },
+    {
+      "title": "5.8 既有三种子损失与四维RR探索",
+      "page": "25",
+      "physical_page": 30,
+      "verified": true
+    },
+    {
+      "title": "5.9 真实模型的梯度归因分析",
+      "page": "27",
+      "physical_page": 32,
+      "verified": true
+    },
+    {
+      "title": "5.10 形态与历史节律的四模型消融结果",
+      "page": "28",
+      "physical_page": 33,
+      "verified": true
+    },
+    {
+      "title": "5.11 患者异质性与结果敏感性",
+      "page": "30",
+      "physical_page": 35,
+      "verified": true
+    },
+    {
+      "title": "5.12 不确定性拒识的收益与类别损失",
+      "page": "31",
+      "physical_page": 36,
+      "verified": true
+    },
+    {
+      "title": "5.13 新旧研究的关系与有效性限制",
+      "page": "32",
+      "physical_page": 37,
+      "verified": true
+    },
+    {
+      "title": "第6章 ECG-AI系统设计与实现",
+      "page": "33",
+      "physical_page": 38,
+      "verified": true
+    },
+    {
+      "title": "6.1 系统总体架构",
+      "page": "33",
+      "physical_page": 38,
+      "verified": true
+    },
+    {
+      "title": "6.2 真实心拍推理流程与界面",
+      "page": "34",
+      "physical_page": 39,
+      "verified": true
+    },
+    {
+      "title": "6.3 既有系统功能验证",
+      "page": "36",
+      "physical_page": 41,
+      "verified": true
+    },
+    {
+      "title": "6.4 模型部署一致性",
+      "page": "37",
+      "physical_page": 42,
+      "verified": true
+    },
+    {
+      "title": "6.5 互动教学模块",
+      "page": "38",
+      "physical_page": 43,
+      "verified": true
+    },
+    {
+      "title": "6.6 节律融合与可靠性实验室",
+      "page": "38",
+      "physical_page": 43,
+      "verified": true
+    },
+    {
+      "title": "6.7 发布包完整性与实际验证范围",
+      "page": "39",
+      "physical_page": 44,
+      "verified": true
+    },
+    {
+      "title": "结论",
+      "page": "40",
+      "physical_page": 45,
+      "verified": true
+    },
+    {
+      "title": "参考文献",
+      "page": "41",
+      "physical_page": 46,
+      "verified": true
+    },
+    {
+      "title": "附录1 数据与复现说明",
+      "page": "43",
+      "physical_page": 48,
+      "verified": true
+    },
+    {
+      "title": "附录2 新增研究与部署复现索引",
+      "page": "44",
+      "physical_page": 49,
+      "verified": true
+    },
+    {
+      "title": "致谢",
+      "page": "45",
+      "physical_page": 50,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": "V6 complete research integration",
+  "date_Asia_Shanghai": "2026-11-19",
+  "source_markdown": "D:\\生物信息学\\medartintel-release\\paper\\draft\\ECG_AI_课程论文_自然表达版V5.md",
+  "source_md_sha256": "04a95c5d8afdab2710fafe8e2472b55f6e99b44e68bb8eaa9363b454e7dee92d",
+  "reference_docx": "D:\\生物信息学\\medartintel-release\\paper\\final\\ECG_AI_课程论文_自然表达版V5.docx",
+  "reference_sha256": "1c54aa084246ffc7771cf736c4c9b66ff2df098bf6c72d835e6a432e89e94e93",
+  "retains_original_V5": true,
+  "original_experimental_results_rewritten": false,
+  "new_runs": 60,
+  "new_seeds": [
+    20261118,
+    20261119,
+    20261120
+  ],
+  "independent_development_patient_groups": 37,
+  "independent_development_beats": 86286,
+  "new_original_test_evaluation": false,
+  "reference_renumbering": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": 11,
+    "14": 12,
+    "15": 13,
+    "16": 14,
+    "12": 15,
+    "13": 16
+  },
+  "new_sources_verified": [
+    "https://jmlr.org/papers/v11/el-yaniv10a.html",
+    "https://papers.neurips.cc/paper_files/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html",
+    "https://proceedings.mlr.press/v70/guo17a.html"
+  ],
+  "new_results_report_sha256": "68b825e0752d7dbfa2c5e497fe88e1f595de6a56621f9e0b895daffc6e301a2a",
+  "draft_sha256": "fa51545f6a08d590440d7d1e77a750ca05e4eb84b6c43483e78f943d10c8f611",
+  "figure_count": 26,
+  "body_cjk_characters": 19544,
+  "render_status": "PASS",
+  "pages": 50,
+  "docx_sha256": "93ec8da79f500ec5810f4143270e1c9ab748507e0683895ef7771a9c09d534a2",
+  "pdf_sha256": "68d5d87cd662ad9fde8b15dfcb5e165daaf10774f14a4ec29984e27da2aac050"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "numeric_comparisons": 135,
+  "checked_tables": [
+    "5-9",
+    "5-10",
+    "5-11",
+    "5-12",
+    "5-13"
+  ],
+  "completed_training_jobs": 60,
+  "thresholds": 120,
+  "uncertainty_results": 24,
+  "independent_patients": 37,
+  "beats": 86286
+}
