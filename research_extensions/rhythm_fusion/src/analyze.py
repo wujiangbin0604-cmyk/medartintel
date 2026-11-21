@@ -44,7 +44,7 @@ def analyze(run_id="cv_cpu_v1"):
                        "per_class": result["evaluation"]["per_class"], "confusion_matrix": result["evaluation"]["confusion_matrix"]}
                 rows.append(row)
                 fold_rows.append(row)
-                registry.append({"model":name, "seed":seed, "fold":fold, "checkpoint":str((path / "best.pt").relative_to(BASE)),
+                registry.append({"model":name, "seed":seed, "fold":fold, "checkpoint":(path / "best.pt").relative_to(BASE).as_posix(),
                                  "sha256":result["checkpoint_sha256"],
                                  "evaluation_subjects":result["partitions"]["evaluation"]["subjects"]})
             assert np.all(seen == 1) and np.isfinite(oof).all()

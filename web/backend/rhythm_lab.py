@@ -9,6 +9,7 @@ from fastapi import APIRouter, HTTPException, Query
 from research_extensions.protect import sha256
 from research_extensions.rhythm_fusion.src.data import NAMES, event_positions, rhythm_at, transform
 from research_extensions.rhythm_fusion.src.models import make_model, forward
+from research_extensions.rhythm_fusion.src.artifact_paths import artifact_path
 from research_extensions.uncertainty.src.evaluate import uncertainty
 
 RUN = "cv_cpu_v1"
@@ -21,6 +22,8 @@ def read(path):
 @lru_cache(maxsize=12)
 def load_bundle(path_string, expected_hash):
     path = Path(path_string)
+    if not path.is_file():
+        raise RuntimeError("Research checkpoint is missing: " + path.name)
     if sha256(path) != expected_hash:
         raise RuntimeError("Research checkpoint SHA-256 mismatch")
     bundle = torch.load(path, map_location="cpu", weights_only=True)
@@ -90,7 +93,7 @@ def create_rhythm_router(service):
                 entry=next((m for m in registry["models"] if m["model"]==name and m["seed"]==seed and signal["subject_id"] in m["evaluation_subjects"]),None)
                 if not entry:
                     continue
-                model,bundle=load_bundle(str(base/entry["checkpoint"]),entry["sha256"])
+                model,bundle=load_bundle(str(artifact_path(base,entry["checkpoint"])),entry["sha256"])
                 x,r=transform(np.array(signal["filtered_amplitude_mv"],np.float32)[None,None,:],features[None],mask[None],bundle["scaler"])
                 with torch.inference_mode():
                     p=forward(model,name,torch.from_numpy(x),torch.from_numpy(r)).softmax(1).numpy()

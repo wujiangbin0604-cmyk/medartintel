@@ -5,6 +5,7 @@ import numpy as np
 from sklearn.metrics import roc_auc_score
 from research_extensions.rhythm_fusion.src.data import BASE, load
 from research_extensions.rhythm_fusion.src.run import write, score
+from research_extensions.rhythm_fusion.src.artifact_paths import artifact_path
 from research_extensions.protect import sha256
 
 OUT = BASE.parent / "uncertainty/results"
@@ -73,7 +74,7 @@ def evaluate(run_id="cv_cpu_v1"):
                 all_u=np.zeros(len(y))
                 for fold in range(summary["config"]["outer_folds"]):
                     entry=next(r for r in registry if r["fold"]==fold and r["seed"]==seed and r["model"]==name)
-                    path=(BASE/entry["checkpoint"]).with_name("predictions.npz")
+                    path=artifact_path(BASE,entry["checkpoint"]).with_name("predictions.npz")
                     with np.load(path) as z:
                         e,c=z["eval_indices"],z["calibration_indices"]
                         ep,cp=z["eval_probability"],z["calibration_probability"]

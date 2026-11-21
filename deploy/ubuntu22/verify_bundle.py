@@ -42,10 +42,11 @@ def verify_rhythm_artifacts():
     if summary["status"] != "completed" or len(summary["folds"]) != 60 or len(registry) != 60:
         raise RuntimeError("Incomplete rhythm-fusion research artifacts")
     from research_extensions.rhythm_fusion.src.models import make_model
+    from research_extensions.rhythm_fusion.src.artifact_paths import artifact_path
     import torch
     for entry in registry:
-        path = (base / entry["checkpoint"]).resolve()
-        if not path.is_relative_to(base) or hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
+        path = artifact_path(base, entry["checkpoint"])
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]:
             raise RuntimeError("Missing or changed research checkpoint: " + entry["checkpoint"])
         bundle = torch.load(path, map_location="cpu", weights_only=True)
         model = make_model(entry["model"], 4)

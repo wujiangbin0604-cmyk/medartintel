@@ -10,7 +10,7 @@ import stat
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-NAME = 'ECG-AI_Full_Server_V6_20261119.zip'
+NAME = 'ECG-AI_Full_Server_V6_LinuxFix_20261121.zip'
 
 
 def digest(data):
@@ -31,7 +31,7 @@ def main():
     files.extend(p for p in (ROOT / 'deploy/update').rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc')
     files.extend(ROOT / p for p in [
         'deploy/validate_git_checkout.py', 'deploy/build_complete_delivery.py',
-        'UPLOAD_SERVER_V6.md', 'paper/final/ECG_AI_课程论文_完整研究版V6.docx',
+        'UPLOAD_SERVER_V6.md', 'SERVER_LINUX_FIX.md', 'paper/final/ECG_AI_课程论文_完整研究版V6.docx',
         'paper/final/ECG_AI_课程论文_完整研究版V6.pdf',
         'paper/qa/v6/final_quality_check.json', 'paper/qa/v6/integration_manifest.json'])
     files = sorted(set(files), key=lambda p:p.relative_to(ROOT).as_posix())
@@ -44,12 +44,12 @@ def main():
             assert not path.suffix in {'.npz', '.sqlite', '.sqlite3', '.pyc'}
             data = b.payload(path)
             entries.append({'path':rel, 'bytes':len(data), 'sha256':digest(data)})
-            info = zipfile.ZipInfo('ecg-ai/' + rel, (2026,11,19,0,0,0))
+            info = zipfile.ZipInfo('ecg-ai/' + rel, (2026,11,21,0,0,0))
             info.create_system = 3
             info.external_attr = (stat.S_IFREG | (0o755 if path.suffix == '.sh' else 0o644)) << 16
             info.compress_type = zipfile.ZIP_DEFLATED
             z.writestr(info, data, compresslevel=6)
-        manifest = {'date_Asia_Shanghai':'2026-11-19','release':'V6 complete paper and server',
+        manifest = {'date_Asia_Shanghai':'2026-11-21','release':'V6 complete paper and server with Linux path repair',
                     'application_commit_base':'307d81c0b8776052b7a18dce8a767866eda468b8',
                     'archive_root':'ecg-ai','files':entries,
                     'records':48,'original_production_models':6,'research_models':60,

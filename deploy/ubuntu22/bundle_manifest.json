@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 28815,
-      "sha256": "77336f65c06250ca62fa9e7460e3eb0141ae50db8a92f67c292f0e1ac63920b5"
+      "bytes": 29886,
+      "sha256": "67f4ef9cfc5f2da026ec5f4686cfe14a0e0196180ad69a78117f990cffd35540"
     },
     {
       "path": "SERVER_UPDATE.md",
@@ -1106,6 +1106,16 @@
       "sha256": "ee6175b4922f1afd384ba7d4520b1ffbec0b4b08688cdf83ded1c218b24e41e1"
     },
     {
+      "path": "deploy/ubuntu22/ecg_v6_linux_fix.py",
+      "bytes": 46507,
+      "sha256": "bc6d8131b1963240e5ab049a400e07df8b4d16a72e9680b1132a3146d870d89a"
+    },
+    {
+      "path": "deploy/ubuntu22/ecg_v6_prepare.py",
+      "bytes": 4676,
+      "sha256": "7de14e9e33e266c85b12b2c397c1bdf6f1498934902af7e8af815c96ea19a845"
+    },
+    {
       "path": "deploy/ubuntu22/healthcheck.py",
       "bytes": 492,
       "sha256": "6f1b39b1f7d3543dcd88317ca23e44ad70a563a75d3753439c927accc2bdd01c"
@@ -1142,8 +1152,8 @@
     },
     {
       "path": "deploy/ubuntu22/verify_bundle.py",
-      "bytes": 7753,
-      "sha256": "761ed9dc1477bdf1364a4f60da51a9093debd2dc54e5cf0cee508c78c61418a5"
+      "bytes": 7827,
+      "sha256": "b5275827876605a6a841e33309d663b63eef7ec90b9a120653f983ccb0062402"
     },
     {
       "path": "figures/07_preprocessing/100_raw_vs_filtered_first10s.png",
@@ -3472,8 +3482,13 @@
     },
     {
       "path": "research_extensions/rhythm_fusion/src/analyze.py",
-      "bytes": 7089,
-      "sha256": "3f32e019edb9c840a1c930efd3cc278da0159ce9ef6c3a0339b4a94c0f7c4d76"
+      "bytes": 7095,
+      "sha256": "c5fe9d0c513b86936bf69b9b8a91a4c11c85840c374e7b3ba1dd654af02a070b"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/src/artifact_paths.py",
+      "bytes": 848,
+      "sha256": "4d6ec050e7e827a4778d453e0d17e4bfb2d30ada914445010e2d5d911a386d98"
     },
     {
       "path": "research_extensions/rhythm_fusion/src/data.py",
@@ -3527,8 +3542,8 @@
     },
     {
       "path": "research_extensions/uncertainty/src/evaluate.py",
-      "bytes": 6774,
-      "sha256": "59c9985e5898647fb7f56adcdaae644c2368fe2cad228eb25566c103be95d5b4"
+      "bytes": 6866,
+      "sha256": "b669b4d8fda2b8c65102695d29d807f61d878fbb76d2ae0e43c3c92ee120a700"
     },
     {
       "path": "results/aami_counts.csv",
@@ -5421,14 +5436,29 @@
       "sha256": "e9114681d27c0454becc87d6b91c2cd453772ec3b009ec2cddf4ba5b6e72ee5f"
     },
     {
+      "path": "tests/test_linux_path_fix.py",
+      "bytes": 3631,
+      "sha256": "6008c5c2e5a472f3c4b46a2f36b9543491b8ac57b9f472fd9b860d330461d662"
+    },
+    {
       "path": "tests/test_preprocessing.py",
       "bytes": 4712,
       "sha256": "ef929b496b0d8ff61d54242cbee180904aad195323d5659d08ffbe1282f44768"
     },
     {
+      "path": "tests/test_registry_portability.py",
+      "bytes": 3256,
+      "sha256": "a3fc5eb88f588eb0bb5d5537fbe48257b9d056d1637de71fa6ca6a4bd67a1761"
+    },
+    {
       "path": "tests/test_rules.py",
       "bytes": 1395,
       "sha256": "044bba3f480c6b22606e5d6ab3705e6a667e6db0d348120e8d9bbe8f29826c1c"
+    },
+    {
+      "path": "tests/test_server_v6_prepare.py",
+      "bytes": 3246,
+      "sha256": "5387a68d226a2cdd78c37d23406b74e82e0f5a8a1e811ae67cb956109e267698"
     },
     {
       "path": "tests/test_stability_audit.py",
@@ -5502,8 +5532,8 @@
     },
     {
       "path": "web/backend/rhythm_lab.py",
-      "bytes": 6920,
-      "sha256": "39ad73fdc84574b6710ddb45bea3c4e57867aa6158a3f2192ff22e36eec4ba29"
+      "bytes": 7116,
+      "sha256": "d946831dda9c8104224c045b31d1a5421c858a8572c568d46e855af2f8d04002"
     },
     {
       "path": "web/backend/schemas.py",

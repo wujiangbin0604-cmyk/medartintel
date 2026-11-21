@@ -2,6 +2,14 @@
 
 包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。仅用于课程教学与算法研究。
 
+## 当前交付 V6与Linux部署修复 · 2026年11月21日
+
+当前完整论文为 [V6 Word](paper/final/ECG_AI_课程论文_完整研究版V6.docx)及[同版PDF](paper/final/ECG_AI_课程论文_完整研究版V6.pdf)，共50页、26幅图、25张表，整合60次节律融合训练及独立校准拒识分析。V5与历史实验保留，正文、数据核验和评分说明见 [V6交付索引](PAPER_V6.md)。
+
+本次修复Windows注册表路径在Linux下无法读取的问题，覆盖镜像构建校验、真实单拍推理和离线结果读取；新注册表统一保存正斜杠。模型权重、患者分区及实验指标保持原值。已有V6服务器可直接上传[独立修复脚本](deploy/ubuntu22/ecg_v6_linux_fix.py)，按[Linux修复与重建说明](SERVER_LINUX_FIX.md)执行。修正后的完整运行包名为 `ECG-AI_Full_Server_V6_LinuxFix_20261121.zip`。
+
+从GitHub下载代码后，可继续使用下文的Windows、Linux或Docker启动流程；网页运行不依赖训练NPZ。此次代码发布不等同于远程服务器已经完成部署。
+
 ## 节律融合与可靠性实验室 · 2026年11月19日发布
 
 新增 `/rhythm-lab`、历史 RR 特征及掩码、双分支模型、四模型消融和独立校准患者的拒识分析；Heartbeat Hunter 在专家答案后可跳转到同一真实心拍。原六模型、论文与历史实验保持独立。

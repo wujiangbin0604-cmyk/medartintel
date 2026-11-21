@@ -1,6 +1,10 @@
 # ECG-AI V6 完整包上传与启动
 
+**Linux修复入口（2026年11月21日）：** 原20261119包的模型注册表路径存在跨平台读取问题。已上传旧包时，先按[Linux修复说明](SERVER_LINUX_FIX.md)应用随附的ecg_v6_linux_fix.py，再构建镜像。新部署可使用ECG-AI_Full_Server_V6_LinuxFix_20261121.zip。下文原包准备流程仍可用于原ZIP的完整性检查。
+
 发布日：2026年11月19日。适用于 Ubuntu 22.04、amd64/x86_64、Docker CPU 部署。ZIP 是完整网页运行包，包含48条原始记录、6个原生产模型、60个研究检查点、预构建前端、结果、部署脚本以及 V6 论文 Word/PDF。服务器无需训练或安装 Node.js。第一次 Docker 构建需要联网下载基础镜像与固定依赖；ZIP 不含 Docker 镜像。
+
+2026年11月21日修正执行方式：准备步骤改为独立Python脚本，逐步输出并保存日志。完整解压目录可重复校验。原ZIP及校验值不变；使用本说明和随附的ecg_v6_prepare.py替换原ZIP内旧说明的第2步。
 
 ## 1 在本地 PowerShell 上传
 
@@ -9,48 +13,35 @@
 ```powershell
 Get-FileHash .\ECG-AI_Full_Server_V6_20261119.zip -Algorithm SHA256
 scp .\ECG-AI_Full_Server_V6_20261119.zip .\ECG-AI_Full_Server_V6_20261119.zip.sha256 root@47.83.150.55:/tmp/
+scp .\ecg_v6_prepare.py root@47.83.150.55:/tmp/
 ssh root@47.83.150.55
 ```
 
 ## 2 在服务器校验并解压到新目录
 
-整个代码块复制执行；任何一步失败立即停止后续步骤。保留原 `/root/ecg-ai`，本次使用新目录，避免覆盖本地源码或配置。重复执行时新目录必须不存在，可另选一个目录名。
+先上传随附脚本，再执行下面命令。交互式SSH中不启用set -e，脚本失败以非零退出码报告，不退出会话。原/root/ecg-ai保留；新目标才解压，已有目标则校验全部文件，不覆盖。直接复制代码块，不在每行末尾加反斜杠，也不要复制HTML实体&#x20;。
 
 ```bash
-set -euo pipefail
-cd /tmp
-sha256sum -c ECG-AI_Full_Server_V6_20261119.zip.sha256
-python3 - <<'PY'
-from pathlib import Path, PurePosixPath
-import zipfile
-archive = Path('/tmp/ECG-AI_Full_Server_V6_20261119.zip')
-target = Path('/root/ecg-ai-v6-20261119')
-if target.exists():
-    raise SystemExit('目标目录已存在：请另选新目录，不要覆盖现有项目。')
-with zipfile.ZipFile(archive) as z:
-    bad = z.testzip()
-    if bad:
-        raise SystemExit('ZIP损坏：' + bad)
-    for name in z.namelist():
-        p = PurePosixPath(name)
-        if p.is_absolute() or '..' in p.parts or '\\' in name or not p.parts or p.parts[0] != 'ecg-ai':
-            raise SystemExit('不安全或错误的归档路径：' + name)
-    z.extractall(target)
-print('解压完成：', target / 'ecg-ai')
-PY
-cd /root/ecg-ai-v6-20261119/ecg-ai
-python3 - <<'PY'
-import hashlib, json
-from pathlib import Path
-root = Path.cwd()
-manifest = json.loads((root/'DELIVERY_MANIFEST.json').read_text(encoding='utf-8'))
-for row in manifest['files']:
-    p = root/row['path']
-    if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest() != row['sha256']:
-        raise SystemExit('文件校验失败：' + row['path'])
-print('完整包校验通过：', len(manifest['files']), '个文件')
-PY
+set +e
+set +u
+set +o pipefail
+python3 -u /tmp/ecg_v6_prepare.py --log /tmp/ecg-v6-prepare.log
+printf 'prepare_exit=%s\n' "$?"
 ```
+
+脚本内置原V6 ZIP的SHA-256，随后检查ZIP CRC及全部1294个交付文件。看到PASS: complete package verified.和prepare_exit=0才进入第3步。错误同时输出到终端和/tmp/ecg-v6-prepare.log。若仍断开，重新连接后执行以下命令读取最后阶段：
+
+```bash
+tail -n 80 /tmp/ecg-v6-prepare.log
+```
+
+已有目录不完整或文件改动时，脚本保留它们并报错。可用新目录重试：
+
+```bash
+python3 -u /tmp/ecg_v6_prepare.py --target /root/ecg-ai-v6-20261121-retry --log /tmp/ecg-v6-prepare.log
+```
+
+后续进入目录时，以成功输出的PROJECT=路径为准。
 
 服务器建议预留至少 8 GB 可用磁盘供镜像构建、包和日志使用；实际占用随镜像缓存变化。Python 3 用于 ZIP 解压与校验，应用的 Python 3.12 位于容器内。
 
