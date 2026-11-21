@@ -16,7 +16,7 @@ def main():
     a=p.parse_args();checkout=a.checkout.resolve();report=a.report.resolve();report.parent.mkdir(parents=True,exist_ok=True)
     forbidden=[checkout/".venv",checkout/"web/frontend/node_modules",checkout/"data/processed/mitdb44_nsvf_v1/train.npz",checkout/"research_extensions/rhythm_fusion/data/development.npz"]
     if any(path.exists() for path in forbidden):raise RuntimeError("Validation checkout contains ignored dependencies/data")
-    env=dict(os.environ,PYTHONDONTWRITEBYTECODE="1",OMP_NUM_THREADS="2",MKL_NUM_THREADS="2",OPENBLAS_NUM_THREADS="2",MPLBACKEND="Agg",ECG_LOG_LEVEL="WARNING",ECG_HUNTER_DATABASE=str(checkout/"web/runtime/clone-validation.sqlite3"))
+    env=dict(os.environ,PYTHONDONTWRITEBYTECODE="1",PYTHONIOENCODING="utf-8",PYTHONUTF8="1",OMP_NUM_THREADS="2",MKL_NUM_THREADS="2",OPENBLAS_NUM_THREADS="2",MPLBACKEND="Agg",ECG_LOG_LEVEL="WARNING",ECG_HUNTER_DATABASE=str(checkout/"web/runtime/clone-validation.sqlite3"))
     env.pop("PYTHONPATH",None)
     check=subprocess.run([sys.executable,"-B","deploy/local.py","--check"],cwd=checkout,env=env,capture_output=True,text=True,encoding="utf-8")
     report.with_suffix(".check.txt").write_text(check.stdout+check.stderr,encoding="utf-8")

@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.protect",
+    "verify"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local",
+  "exit_code": 0,
+  "elapsed_seconds": 1.7374644999945303,
+  "finished": "2026-11-19T14:48:47.464597+08:00",
+  "output": "revalidation_20261119_final_protection.txt"
+}

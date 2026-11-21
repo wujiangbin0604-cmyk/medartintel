@@ -1,5 +1,6 @@
 """PNG + SVG scientific figures generated exclusively from completed artifacts."""
 import json
+from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
@@ -12,12 +13,13 @@ from .run import write
 COLORS=["#1677ff","#13a2a2","#4059a9","#8295ab"]
 
 
-def generate(run_id="cv_cpu_v1"):
+def generate(run_id="cv_cpu_v1", output_directory=None):
     folder=BASE/"results"/run_id
     summary=json.loads((folder/"summary.json").read_text(encoding="utf-8"))
     bpath=BASE.parent/f"uncertainty/results/{run_id}/summary.json"
     uncertainty=json.loads(bpath.read_text(encoding="utf-8")) if bpath.is_file() else None
-    output=BASE/"figures"/run_id; output.mkdir(parents=True,exist_ok=True)
+    output=Path(output_directory) if output_directory is not None else BASE/"figures"/run_id
+    output.mkdir(parents=True,exist_ok=True)
     seed=summary["config"]["seeds"][0]
     models=[m for m in summary["models"] if m["seed"]==seed]
     classes=summary["classes"]; data=load()

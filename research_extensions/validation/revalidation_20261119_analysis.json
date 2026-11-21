@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "research_extensions.revalidate_analysis"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local",
+  "exit_code": 0,
+  "elapsed_seconds": 22.968919099999766,
+  "finished": "2026-11-19T14:44:59.809619+08:00",
+  "output": "revalidation_20261119_analysis.txt"
+}

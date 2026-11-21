@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 from web.backend.app import app
 from research_extensions.rhythm_fusion.src.data import load, BASE, transform
 from research_extensions.rhythm_fusion.src.models import forward
+from research_extensions.rhythm_fusion.src.artifact_paths import artifact_path
 from web.backend.rhythm_lab import load_bundle
 
 torch.set_num_threads(2)
@@ -28,7 +29,7 @@ def test_registry_api_and_real_checkpoint_predictions():
     assert result["research_available"]
     a2=next(r for r in result["models"] if r["model"]=="A2")
     assert a2["sha256"]==entry["sha256"] and a2["fold"]==entry["fold"]
-    model,bundle=load_bundle(str(BASE/entry["checkpoint"]),entry["sha256"])
+    model,bundle=load_bundle(str(artifact_path(BASE,entry["checkpoint"])),entry["sha256"])
     x,r=transform(data["waveform"][ix:ix+1],data["rhythm_features"][ix:ix+1],data["rhythm_valid_mask"][ix:ix+1],bundle["scaler"])
     with torch.inference_mode():p=forward(model,"A2",torch.from_numpy(x),torch.from_numpy(r)).softmax(1).numpy()[0]
     np.testing.assert_allclose(list(a2["probabilities"].values()),p,rtol=1e-5,atol=1e-6)

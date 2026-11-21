@@ -1,0 +1,132 @@
+[
+  {
+    "name": "01_architecture",
+    "png": "01_architecture.png",
+    "vector": "01_architecture.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "model structure",
+    "meaning": "Architecture schematic, not neuron activation; CNN encoder identical to original HeartbeatCNN.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "02_rr_distribution",
+    "png": "02_rr_distribution.png",
+    "vector": "02_rr_distribution.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Descriptive development feature distributions; original expert-event positions, no target-only RR sequence.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "03_macro_f1",
+    "png": "03_macro_f1.png",
+    "vector": "03_macro_f1.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Pooled OOF across all folds, no best fold selection; parameter counts reported separately.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "04_class_f1",
+    "png": "04_class_f1.png",
+    "vector": "04_class_f1.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Fixed N/S/V/F label set; F support must be read with patient concentration.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "05_confusion_matrices",
+    "png": "05_confusion_matrices.png",
+    "vector": "05_confusion_matrices.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Cell text: actual counts; color: row-normalized recall, common 0-1 scale.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "06_patient_performance",
+    "png": "06_patient_performance.png",
+    "vector": "06_patient_performance.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "patient group",
+    "meaning": "One point per patient group, fixed four-class Macro-F1; not patient-independent repeated observations.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "07_fold_seed_variability",
+    "png": "07_fold_seed_variability.png",
+    "vector": "07_fold_seed_variability.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seeds 20261118,20261119,20261120 | max 12 epochs",
+    "evaluation_unit": "patient-group fold",
+    "meaning": "Fold variation is descriptive; shared training patients make folds dependent.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "08_error_transitions",
+    "png": "08_error_transitions.png",
+    "vector": "08_error_transitions.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Paired same-sample OOF comparison; corrected errors and new errors both retained.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "09_risk_coverage",
+    "png": "09_risk_coverage.png",
+    "vector": "09_risk_coverage.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Equal-fold mean descriptive score sweeps with tied scores retained; deployment thresholds use separate calibration patients.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "10_class_rejection",
+    "png": "10_class_rejection.png",
+    "vector": "10_class_rejection.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seed 20261118 | max 12 epochs",
+    "evaluation_unit": "heartbeat",
+    "meaning": "Fixed calibration-patient 90th-percentile thresholds; per-class denominator is all true-class OOF beats.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "11_patient_rejection",
+    "png": "11_patient_rejection.png",
+    "vector": "11_patient_rejection.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seeds 20261118,20261119,20261120 | max 12 epochs",
+    "evaluation_unit": "patient group",
+    "meaning": "All completed seeds averaged within each patient; fixed independently calibrated thresholds; not a new patient cohort.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "12_seed_comparison",
+    "png": "12_seed_comparison.png",
+    "vector": "12_seed_comparison.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seeds 20261118,20261119,20261120 | max 12 epochs",
+    "evaluation_unit": "training seed (same patient cohort)",
+    "meaning": "All completed seeds; error bars show sample SD of training randomness, not independent-patient SE or CI.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  },
+  {
+    "name": "13_class_seed_variability",
+    "png": "13_class_seed_variability.png",
+    "vector": "13_class_seed_variability.svg",
+    "scope": "Original train+val only | 37 patient groups | 5-fold outer OOF | seeds 20261118,20261119,20261120 | max 12 epochs",
+    "evaluation_unit": "training seed (same patient cohort)",
+    "meaning": "Dots are every seed; bars are mean + sample SD, not a patient CI. Rare-class seed variability must remain visible.",
+    "source": "results\\cv_cpu_v1\\summary.json",
+    "source_sha256": "88a529a82e27e482a68cbed68a9e295cc74a418b1d11a1b996635b92921fcfdd"
+  }
+]

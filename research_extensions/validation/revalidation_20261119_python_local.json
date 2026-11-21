@@ -1,0 +1,20 @@
+{
+  "command": [
+    "E:\\医学人工智能\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "tests",
+    "web/backend/tests",
+    "research_extensions/rhythm_fusion/tests",
+    "research_extensions/uncertainty/tests",
+    "-q",
+    "--basetemp=research_extensions/validation/revalidation_local_tmp",
+    "--junitxml=research_extensions/validation/revalidation_20261119_pytest.xml"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local",
+  "exit_code": 0,
+  "elapsed_seconds": 19.492154800005665,
+  "finished": "2026-11-19T14:42:00.721501+08:00",
+  "output": "revalidation_20261119_python_local.txt"
+}

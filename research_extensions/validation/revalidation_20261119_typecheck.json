@@ -1,0 +1,12 @@
+{
+  "command": [
+    "E:\\node.exe",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit"
+  ],
+  "cwd": "D:\\生物信息学\\medartintel-local\\web\\frontend",
+  "exit_code": 2,
+  "elapsed_seconds": 31.876490400005423,
+  "finished": "2026-11-19T14:46:08.171932+08:00",
+  "output": "revalidation_20261119_typecheck.txt"
+}

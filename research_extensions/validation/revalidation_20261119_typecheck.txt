@@ -1,0 +1,16 @@
+src/components/ErrorCases.tsx(2,9): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/components/onboarding/GameRecommendation.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/components/onboarding/WelcomeOnboarding.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'history'.
+src/components/onboarding/WelcomeOnboarding.tsx(2,19): error TS2305: Module '"@umijs/max"' has no exported member 'useLocation'.
+src/layouts/MedicalLayout.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/layouts/MedicalLayout.tsx(2,16): error TS2305: Module '"@umijs/max"' has no exported member 'useOutlet'.
+src/layouts/MedicalLayout.tsx(2,27): error TS2305: Module '"@umijs/max"' has no exported member 'useLocation'.
+src/pages/ai-detection/index.tsx(9,9): error TS2305: Module '"@umijs/max"' has no exported member 'useLocation'.
+src/pages/dashboard/DashboardView.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/pages/dashboard/FidelityDashboard.tsx(2,9): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/pages/gallery/index.tsx(8,9): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/pages/interactive-lab/HeartbeatHunter.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/pages/interactive-lab/HeartbeatHunter.tsx(2,16): error TS2305: Module '"@umijs/max"' has no exported member 'history'.
+src/pages/interactive-lab/HeartbeatHunter.tsx(2,44): error TS2305: Module '"@umijs/max"' has no exported member 'useLocation'.
+src/pages/interactive-lab/index.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.
+src/pages/presentation-demo/index.tsx(2,10): error TS2305: Module '"@umijs/max"' has no exported member 'Link'.

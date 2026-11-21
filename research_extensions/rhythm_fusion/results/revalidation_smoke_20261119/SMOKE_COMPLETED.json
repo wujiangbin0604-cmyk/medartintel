@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "models": [
+    "A0",
+    "A1",
+    "A2",
+    "A3"
+  ],
+  "purpose": "Fresh one-epoch training and persistence check; never pooled into formal experiments"
+}

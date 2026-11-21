@@ -27,13 +27,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 29886,
-      "sha256": "67f4ef9cfc5f2da026ec5f4686cfe14a0e0196180ad69a78117f990cffd35540"
+      "bytes": 30210,
+      "sha256": "8743a4aba47baeef4ef88d9914d440f2dcf8a73c6bbf285d3d61861b81383777"
     },
     {
       "path": "SERVER_UPDATE.md",
-      "bytes": 3907,
-      "sha256": "374d2a2e4cf16fd527d9387939e60a070b2cb61309db527029dcd320a76ae7eb"
+      "bytes": 4184,
+      "sha256": "45daa8811f03960f5d8a4d5b2787c87273e617f0a6ccc73af376ebbebdfbafe9"
     },
     {
       "path": "SUBMISSION_CHECKLIST.md",
@@ -2282,8 +2282,8 @@
     },
     {
       "path": "research_extensions/README.md",
-      "bytes": 4082,
-      "sha256": "1e70195fc852dff7a4efbfcba2863a222b279344e9f2e56441e9339f2bbd2444"
+      "bytes": 4417,
+      "sha256": "6439350426b355b3f019d151eec9d3a4572fc38d21760ccd34b1aa0df52ec146"
     },
     {
       "path": "research_extensions/__init__.py",
@@ -2452,6 +2452,141 @@
     },
     {
       "path": "research_extensions/rhythm_fusion/figures/cv_cpu_v1/catalog.json",
+      "bytes": 7074,
+      "sha256": "46bd14fc268bceeace622451ebff756c04764ffdf1d518e5212b857a1ec4bf56"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/01_architecture.png",
+      "bytes": 152886,
+      "sha256": "f925b39409fbc48090888e59bdd42faf29c9dabb836be719d3e2d7c5ab283440"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/01_architecture.svg",
+      "bytes": 4824,
+      "sha256": "fb90776300676f0aa3db0239333900be60e8701b12580b19b42573abf7e2b18e"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/02_rr_distribution.png",
+      "bytes": 153698,
+      "sha256": "f21df0d24695b3ef764996d40c937e68f63f3d010ac768c9618d3c8fae014eca"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/02_rr_distribution.svg",
+      "bytes": 53989,
+      "sha256": "fb0f00463de21fb246feed012729ae5fed3e3816a2b9ef1088c073801f65953e"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/03_macro_f1.png",
+      "bytes": 93155,
+      "sha256": "3a6e7d42d9f574f2c5d1dd4a52167707d1db4794d74d7a9b0aab7b99e54b2d67"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/03_macro_f1.svg",
+      "bytes": 8818,
+      "sha256": "11afd8eb9310e43bdc052b5d542038fccb64be9cd0bb0a1edcdac351cc45266e"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/04_class_f1.png",
+      "bytes": 100555,
+      "sha256": "fb14cb55d1c7001e08541399429e27f3f243b751dd7870fcfe4ecd0a06717073"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/04_class_f1.svg",
+      "bytes": 12756,
+      "sha256": "3338450b2a96f79b00c4b3cf425b0d37a4ff9042dc10ebf305aef0ba2e7d3d07"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/05_confusion_matrices.png",
+      "bytes": 191288,
+      "sha256": "47f3acc243fabf8996c90133a2ed040f645cc8fcb3bfe2fa044575ddd557649e"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/05_confusion_matrices.svg",
+      "bytes": 58392,
+      "sha256": "66cb9ea232c6a4392b00d84b5696be6dd392933cc1fb08eaaccd93cf3db03607"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/06_patient_performance.png",
+      "bytes": 330877,
+      "sha256": "6da02f961c032c33f76f7269eb21b881865346f8419c697353ed6aed15de952a"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/06_patient_performance.svg",
+      "bytes": 32003,
+      "sha256": "12e34c97acadd5b63be2f1a12de366aead16452c5b818b5b2748ac4802458a78"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/07_fold_seed_variability.png",
+      "bytes": 218630,
+      "sha256": "89792d6616d3a85d28361462d23f1b101fad805880ed7fd34934cea3c63a688f"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/07_fold_seed_variability.svg",
+      "bytes": 27022,
+      "sha256": "757b918720fdd2f69820b35ccd8234a91f64cf1a9541ef55b270d44f2d9b14fa"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/08_error_transitions.png",
+      "bytes": 132573,
+      "sha256": "a6e8b13acb72503ee024675fa31ed598471b14dd90406899cd781f84658dcece"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/08_error_transitions.svg",
+      "bytes": 23241,
+      "sha256": "568283dddd59452d046f7bdf5884f6c52663507168b0c0fadcb78a1eb111a4fe"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/09_risk_coverage.png",
+      "bytes": 274743,
+      "sha256": "19a8feed59c35363e31a4e5571427b80622b69feb2ccef1f46a200df66beb9b8"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/09_risk_coverage.svg",
+      "bytes": 21943,
+      "sha256": "6dffdfa3b5ed24ab341c39fd7855f86977bc1be70dc3221426dc56b0613e8333"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/10_class_rejection.png",
+      "bytes": 110319,
+      "sha256": "73d85a156602959d1b303ca78aa16ad30b856304008b295567d70c47f8dff6ec"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/10_class_rejection.svg",
+      "bytes": 22681,
+      "sha256": "0538317bf1cba5bef9009e2d8ac7f4a7a46c7b41b21ec5e7c16f86ea3fbcedc1"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/11_patient_rejection.png",
+      "bytes": 282148,
+      "sha256": "1eae1b795ffdbf09a6e19eab547f98708eb7884ffb33b359f1069ec243d951e1"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/11_patient_rejection.svg",
+      "bytes": 32048,
+      "sha256": "c8a4391aa0a8b1d9d3c0f24ba3ca4af85ddbe761038670dce5ce703bdaf246af"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/12_seed_comparison.png",
+      "bytes": 156933,
+      "sha256": "ca8ec41de652a2add856debcff5288ddee14fd04a45bbd4c2b393a8248692792"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/12_seed_comparison.svg",
+      "bytes": 24610,
+      "sha256": "f09c7991fbb1b1f9c68e274847bfaa6e094f502cc344fa46cfb765a9a1619022"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/13_class_seed_variability.png",
+      "bytes": 174503,
+      "sha256": "a9e1b122d50d09af4d8445f7318cd7716baff17ebf8e15e795e6fe324afcfaf4"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/13_class_seed_variability.svg",
+      "bytes": 43046,
+      "sha256": "512d26949e9629d6e3badc4f67867616649b03b98b9c6fd914a9aad5101a0767"
+    },
+    {
+      "path": "research_extensions/rhythm_fusion/figures/revalidation_20261119/catalog.json",
       "bytes": 7074,
       "sha256": "46bd14fc268bceeace622451ebff756c04764ffdf1d518e5212b857a1ec4bf56"
     },
@@ -3497,8 +3632,8 @@
     },
     {
       "path": "research_extensions/rhythm_fusion/src/figures.py",
-      "bytes": 12347,
-      "sha256": "963ee699a88c13674c0053fe5db18504fe28bf25391882064c48f3a06c8c073b"
+      "bytes": 12458,
+      "sha256": "9bb331b8cafd4206e2e852a44a84bea217a3a0fcfffe197a85fc1ca815b46c7e"
     },
     {
       "path": "research_extensions/rhythm_fusion/src/merge_repeats.py",
@@ -3534,6 +3669,11 @@
       "path": "research_extensions/uncertainty/results/cv_cpu_v1/summary_single_seed.json",
       "bytes": 242528,
       "sha256": "3151656d30f2fdda21d19b275a291cfa9a81b1a398241b4692c8b9f8da878e13"
+    },
+    {
+      "path": "research_extensions/uncertainty/results/revalidation_20261119/cv_cpu_v1/summary.json",
+      "bytes": 726678,
+      "sha256": "a89a8a16367caeb870cce3f83d3904de8a399872ef4ac7612ae7c708f607e8e9"
     },
     {
       "path": "research_extensions/uncertainty/src/__init__.py",
@@ -6101,6 +6241,11 @@
       "sha256": "56805b4ba507721f8d3d85ec2f34a277c3791159de3549809510b74f46e97dda"
     },
     {
+      "path": "web/frontend/playwright.revalidation.config.ts",
+      "bytes": 1231,
+      "sha256": "5c4da913448a3c0619a03673134677f90fbed79450bfa15642307181f080606a"
+    },
+    {
       "path": "web/frontend/playwright.rhythm-hunter.config.ts",
       "bytes": 1069,
       "sha256": "10f2383fb49c0249a57698c107180b269b85dce1beb199b3674317b1625a75e2"
@@ -6402,13 +6547,13 @@
     },
     {
       "path": "web/frontend/tests/rhythm-hunter-regression.spec.ts",
-      "bytes": 13804,
-      "sha256": "6c61299d085b8730ca4e8b5b52db135058b6ba62547cb7fac3989c473ab43567"
+      "bytes": 13890,
+      "sha256": "5ca9b3a83236a5d73f019260efb7044b0cd8e027c0aec445ee859e93f35f15a5"
     },
     {
       "path": "web/frontend/tests/rhythm-lab.spec.ts",
-      "bytes": 8085,
-      "sha256": "4aff8ed413fdf0f9357ab252561bab61d9344c382feadde4e675b0d26a710777"
+      "bytes": 8123,
+      "sha256": "de4074d2ec44db58bec7c7bfafeade3912717e55bceb5fad7b727260d5a2913a"
     },
     {
       "path": "web/frontend/tests/welcome-onboarding.spec.ts",

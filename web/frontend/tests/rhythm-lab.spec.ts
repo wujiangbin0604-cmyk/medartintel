@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import path from 'node:path';
 import fs from 'node:fs';
 
-const output = path.resolve(__dirname, '../../../research_extensions/validation/screenshots');
+const output = process.env.ECG_REVALIDATION_SHOTS || path.resolve(__dirname, '../../../research_extensions/validation/screenshots');
 fs.mkdirSync(output, { recursive: true });
 test.beforeEach(async ({ page }) => { await page.addInitScript(() => { localStorage.setItem('ecg_ai_welcome_v1', JSON.stringify({ version: 1, completed: true })); localStorage.setItem('ecg_ai_hunter_tutorial_v1', 'completed'); }); });
 

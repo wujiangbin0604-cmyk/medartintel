@@ -1,0 +1,4 @@
+revalidation_smoke_20261119 fold=0 seed=20261119 A0 epoch=1 stop-F1=0.0914 elapsed=0.1s
+revalidation_smoke_20261119 fold=0 seed=20261119 A1 epoch=1 stop-F1=0.0254 elapsed=0.0s
+revalidation_smoke_20261119 fold=0 seed=20261119 A2 epoch=1 stop-F1=0.1011 elapsed=0.1s
+revalidation_smoke_20261119 fold=0 seed=20261119 A3 epoch=1 stop-F1=0.0874 elapsed=0.1s

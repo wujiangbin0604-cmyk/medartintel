@@ -1,0 +1,6 @@
+{
+  "staged_runtime_files": 1307,
+  "sha256": "all index blobs match manifest",
+  "protected_runtime_or_credentials_staged": false,
+  "base_commit": "8ac19122efab2b25878f24c02eb7b008db3771e3"
+}

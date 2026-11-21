@@ -9,5 +9,7 @@
 - 原六模型18条参考预测、真实波形、游戏、163张图库及研究单拍API通过，见linux_fix_validation.json。
 - 修正完整ZIP的CRC、1296个交付文件哈希及60个模型路径检查通过，见linux_fixed_zip.json。
 - 源工作区已通过本地启动器检查；最终合并远端资料后重新生成运行文件清单。
+- 合并远端V5独立复核资料后，TypeScript类型检查通过；Python回归74项及11个subtest通过。更新包测试在Windows的UTF-8模式下执行，避免默认GBK误解码中文目录的错误输出。
+- 待发布Git暂存区独立导出副本通过1313个运行文件、原六模型18条参考预测、60个研究checkpoint、真实研究接口与163张图库检查，见[独立导出运行记录](merged_git_runtime.json)。副本没有虚拟环境、node_modules或训练NPZ；运行时复用本机已验证的Python依赖。
 
 这些运行检查使用本机Windows及已验证的Python 3.12依赖。POSIX路径回归模拟Linux的路径语义，本机没有执行Docker镜像构建；服务器修复脚本的--rebuild选项会在实际服务器构建并执行API自检。文件数反映各次验证对应的目录，合并后的发布目录以新生成清单为准。
