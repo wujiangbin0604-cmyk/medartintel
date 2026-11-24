@@ -13,6 +13,8 @@ cd medartintel
 
 仓库包含页面运行所需的前端构建、48 条原始 ECG、六个正式模型、处理参数、科研报告与图集。正常使用不需要重新下载 ECG、构建前端或训练模型。建议 2 核 CPU、4 GB 内存，安装依赖或 Docker 镜像还需数 GB 磁盘。
 
+也可以在GitHub仓库点击 **Code → Download ZIP**，完整解压后在含有 `start-local.ps1` 的目录打开PowerShell。请先解压，勿在压缩包预览窗口中启动。首次安装需要能连接PyPI和PyTorch官方CPU下载站；运行页面本身使用仓库附带的数据、模型与前端构建。
+
 ## 2. Windows：Python 3.12 直接运行
 
 安装 64 位 Python 3.12（推荐 3.12.10）。在项目根目录打开 PowerShell：
@@ -21,7 +23,9 @@ cd medartintel
 powershell -ExecutionPolicy Bypass -File .\start-local.ps1
 ```
 
-启动脚本使用 `.venv`，没有时自动创建；依赖缺失时从官方 PyPI/PyTorch CPU 索引安装。首次需要联网，完成后日常运行使用本地数据、模型和页面。虚拟环境不需要 Activate。
+启动脚本自动创建隔离的Python环境；项目路径较短时使用 `.venv`，较长时自动改用 `%LOCALAPPDATA%\ECG-AI\venvs\<项目标识>`，避免PyTorch安装触发Windows路径长度限制。依赖缺失时从PyPI/PyTorch CPU索引安装。首次需要联网，完成后日常运行使用本地数据、模型和页面。虚拟环境不需要Activate，也无需管理员权限。
+
+2026年11月24日已在Windows x64、Python 3.12.10的全新隔离环境实测首次安装，`pip check`、6个正式模型及60个研究checkpoint加载通过。隔离环境不继承原项目已安装包；pip可复用已下载的官方wheel缓存。完整验收范围见[本地运行验收记录](deploy/validation/20261124/README.md)。
 
 打开 [本地工作台](http://127.0.0.1:8000/dashboard)，按 Ctrl+C 停止。
 
@@ -32,6 +36,8 @@ powershell -ExecutionPolicy Bypass -File .\start-local.ps1 -CheckOnly
 powershell -ExecutionPolicy Bypass -File .\start-local.ps1 -Port 8002
 # 修复/重新安装固定版本依赖
 powershell -ExecutionPolicy Bypass -File .\start-local.ps1 -InstallDeps
+# 可选：指定较短的虚拟环境目录（绝对路径，不超过85字符）
+powershell -ExecutionPolicy Bypass -File .\start-local.ps1 -VenvPath "$env:TEMP\ecg-ai-runtime"
 ```
 
 ## 3. Linux：Python 3.12 直接运行

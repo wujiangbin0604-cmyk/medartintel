@@ -12,8 +12,8 @@
     },
     {
       "path": "DEPLOY_LOCAL.md",
-      "bytes": 4476,
-      "sha256": "7e8334dca900ad44bc6383bd1f727482d1ec16bd20be0b6ca3e1e10132f6fdc5"
+      "bytes": 5489,
+      "sha256": "252b35636ecf1d453ef61c5c2e5cfcd4db577db9f3fba07c5b766f00a547f53d"
     },
     {
       "path": "DEPLOY_UBUNTU22.md",
@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 30210,
-      "sha256": "8743a4aba47baeef4ef88d9914d440f2dcf8a73c6bbf285d3d61861b81383777"
+      "bytes": 30513,
+      "sha256": "469547f889160ff2a180efb8e6a7a0a2c4a5b032bafb88de61848c36f44ae1be"
     },
     {
       "path": "SERVER_UPDATE.md",
@@ -5552,8 +5552,8 @@
     },
     {
       "path": "start-local.ps1",
-      "bytes": 878,
-      "sha256": "32f9eaec9a8e832fb7b7804bcdf72c516a15829aebafc7096ea53dd31836a4a8"
+      "bytes": 1831,
+      "sha256": "3e552ce4abbadc40f15687beea6ab484711b34898b7c152fd573118f88055382"
     },
     {
       "path": "start-local.sh",
@@ -5609,6 +5609,11 @@
       "path": "tests/test_visualization.py",
       "bytes": 2965,
       "sha256": "989a326e9005484b65a83ac1f913e8197d8b9521ac1a66f5e5892d3f49bcba8c"
+    },
+    {
+      "path": "tests/test_windows_launcher.py",
+      "bytes": 2396,
+      "sha256": "e5d78c521ae07d137881cdbba28afb603646c8ec59c459d4033ae743deaf8c8f"
     },
     {
       "path": "web/__init__.py",
