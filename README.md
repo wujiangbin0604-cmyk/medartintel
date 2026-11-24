@@ -1,6 +1,6 @@
 # ECG-AI · MIT-BIH 心电教学与人工智能实验平台
 
-包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。仅用于课程教学与算法研究。
+包含 ECG 波形浏览、六个已训练模型的心拍分类、科研结果与图集、Heartbeat Hunter 心电互动游戏，以及完整的实验源码和课程论文资料。前端为 React/Umi，后端为 FastAPI/PyTorch。
 
 ## 当前交付 V6与Linux部署修复 · 2026年11月21日
 
@@ -8,7 +8,7 @@
 
 本次修复Windows注册表路径在Linux下无法读取的问题，覆盖镜像构建校验、真实单拍推理和离线结果读取；新注册表统一保存正斜杠。模型权重、患者分区及实验指标保持原值。已有V6服务器可直接上传[独立修复脚本](deploy/ubuntu22/ecg_v6_linux_fix.py)，按[Linux修复与重建说明](SERVER_LINUX_FIX.md)执行。修正后的完整运行包名为 `ECG-AI_Full_Server_V6_LinuxFix_20261121.zip`。
 
-从GitHub下载代码后，可继续使用下文的Windows、Linux或Docker启动流程；网页运行不依赖训练NPZ。此次代码发布不等同于远程服务器已经完成部署。
+从GitHub下载代码后，按下文的Windows、Linux或Docker流程启动；网页使用随仓库提供的数据和模型。服务器部署步骤见[更新说明](SERVER_UPDATE.md)。
 
 2026年11月24日补充Windows首次安装修复：下载目录较深时，启动器自动选择较短的隔离环境目录，避免PyTorch安装触发Windows路径长度限制；也可用 `-VenvPath` 指定短目录。[本地运行说明](DEPLOY_LOCAL.md)包含Download ZIP与启动、自检步骤。
 
@@ -16,25 +16,25 @@
 
 新增 `/rhythm-lab`、历史 RR 特征及掩码、双分支模型、四模型消融和独立校准患者的拒识分析；Heartbeat Hunter 在专家答案后可跳转到同一真实心拍。原六模型、论文与历史实验保持独立。
 
-实际完成 37 个开发患者组、86,286 拍上的 **5 折 × 3 种子 × 4 模型＝60 组训练**。合并 OOF Macro-F1 的种子均值：CNN 0.3584、RR-only 0.3754、融合 0.4628、打乱 RR 0.3530。S 类 Precision 改善伴随平均 Recall 下降，F 类仍困难；详见[独立研究报告](research_extensions/INNOVATION_REPORT.md)，不能解释为新盲测或临床验证。
+在37个开发患者组、86,286拍上完成 **5折 × 3种子 × 4模型＝60组训练**。开发池分组交叉验证的合并OOF Macro-F1种子均值为：CNN 0.3584、RR-only 0.3754、融合0.4628、打乱RR 0.3530。S类Precision改善伴随平均Recall下降，F类识别仍较弱；详见[研究报告](research_extensions/INNOVATION_REPORT.md)。
 
 GitHub 下载包含前端构建、60 个正式研究 checkpoint、样本索引和全部运行所需 JSON。**打开网页或推理无需训练 NPZ、Node.js 或重新训练**。Windows 运行 `powershell -ExecutionPolicy Bypass -File .\start-local.ps1`，随后访问 `http://127.0.0.1:8000/rhythm-lab`。
 
-现有服务器更新（兼容旧 ZIP 部署）：[复制更新命令](SERVER_UPDATE.md)。首次/本地部署：[DEPLOY_LOCAL.md](DEPLOY_LOCAL.md)。代码发布与服务器部署是两步，执行服务器命令后新页面才会生效。
+现有服务器更新（兼容旧ZIP部署）：[复制更新命令](SERVER_UPDATE.md)。首次/本地部署：[DEPLOY_LOCAL.md](DEPLOY_LOCAL.md)。执行服务器更新命令即可部署新页面。
 
 ## V5论文与独立复核 · 2026年11月19日
 
-保留 [V5论文DOCX](paper/final/ECG_AI_课程论文_自然表达版V5.docx)及[同版PDF](paper/final/ECG_AI_课程论文_自然表达版V5.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_自然表达版V5.md)一并发布。该轮使用新安装的 humanizer-zh 调整29段中文表达，实验数字、引文、图表、公式、英文摘要及结论边界保持不变。V5共39页，42条正文目录页码已核对；V1—V4保留，当前完整研究版为上文V6，详见[论文说明](paper/README.md)。
+保留 [V5论文DOCX](paper/final/ECG_AI_课程论文_自然表达版V5.docx)及[同版PDF](paper/final/ECG_AI_课程论文_自然表达版V5.pdf)，[Markdown源稿](paper/draft/ECG_AI_课程论文_自然表达版V5.md)一并发布。该轮使用humanizer-zh调整29段中文表达，沿用既有实验数字、引文、图表、公式、英文摘要及结论。V5共39页，42条正文目录页码已核对；V1—V4保留，当前完整研究版为上文V6，详见[论文说明](paper/README.md)。
 
-研究扩展本次独立复核了60个checkpoint的完整外层/校准预测及86,286行RR特征，另执行四模型训练Smoke Test、拒识复算和13对PNG/SVG重绘。Python回归96项、浏览器回归15项通过，前端构建及类型检查通过。继承训练与本次复核严格区分，见[本次复核交付](research_extensions/REVALIDATION_DELIVERY.md)。
+研究扩展本次复核了既有60个checkpoint的完整外层/校准预测及86,286行RR特征，另执行四模型训练Smoke Test、拒识复算和13对PNG/SVG重绘。Python回归96项、浏览器回归15项通过，前端构建及类型检查通过，见[本次复核交付](research_extensions/REVALIDATION_DELIVERY.md)。
 
 ## 最终优化与验收（2026年11月17日）
 
-本仓库本轮更新包含稳定性审计、12组受控实验、真实归因、报告导出、验收证据及V3论文。发布核对记录见[仓库同步记录](reports/repository_sync.md)。公开演示仍运行原有六模型版本，服务器尚未部署本轮界面与接口更新。
+该阶段更新包含稳定性审计、12组受控实验、模型归因、报告导出、验收记录及V3论文。发布核对记录见[仓库同步记录](reports/repository_sync.md)。该阶段公开演示采用原有六模型版本。
 
 - [最终验收与提交状态](FINAL_REVIEW.md)、[提交检查清单](SUBMISSION_CHECKLIST.md)。该阶段论文及后续V4润色版保留，当前论文见[V6交付索引](PAPER_V6.md)。
-- [模型与数据划分审计](reports/cnn_generalization_audit.md)：全量原始信号重建、患者独立划分、索引、归一化与旧检查点重推通过。N/V验证/测试Macro-F1仍为0.6630/0.9865；患者109误报集中，不能把差异写成已消除。
-- [受控实验](reports/imbalance_experiments.md)：四方案、三随机种子，保留所有结果。验证预选RR方案的旧测试Macro-F1为 **0.5002±0.0036**，Balanced Accuracy为 **0.6056±0.0169**。S召回改善伴随大量误报；F召回仅约0.0108，相比新加权CE基线退步。旧测试已查看，这些是探索性复用结果，不是新盲测或临床验证。
+- [模型与数据划分审计](reports/cnn_generalization_audit.md)：全量原始信号重建、患者独立划分、索引、归一化与旧检查点重推通过。N/V验证/测试Macro-F1为0.6630/0.9865，患者109误报集中。
+- [受控实验](reports/imbalance_experiments.md)：四方案、三随机种子，保留所有结果。验证预选RR方案在已查看测试集上的探索性复用结果为：Macro-F1 **0.5002±0.0036**，Balanced Accuracy **0.6056±0.0169**。S召回改善伴随大量误报；F召回约0.0108，低于新加权CE基线。
 - 新增真实模型Integrated Gradients及完整性误差记录；教学界面仍使用原六模型，新研究候选与生产工件分开。
 - 分析工作台可导出真实心拍、专家标注、三模型分数及工件/输入来源哈希。健康检查在六模型未全部就绪时返回503。
 - 当前原58项及新增测试合计 **73项通过**，类型检查和生产构建通过；Chrome完成本机11项流程检查。公网通过直连验证波形、真实推理和三模型比较；配置网络出口返回502的差异见[演示验收报告](reports/application_demo_check.md)。
@@ -52,7 +52,7 @@ GitHub 下载包含前端构建、60 个正式研究 checkpoint、样本索引�
 .\.venv\Scripts\python.exe -m src.evaluation.controlled_report
 ```
 
-训练协议与代码、数据哈希保存于 `results/controlled_imbalance_20261116/protocol.json`；逐seed检查点、历史和逐拍预测均在独立的 `runs/` 子目录。三seed的标准差描述训练随机性，不是患者层面的置信区间。
+训练协议与代码、数据哈希保存于 `results/controlled_imbalance_20261116/protocol.json`；逐seed检查点、历史和逐拍预测均在独立的 `runs/` 子目录。标准差按三个训练种子计算，描述训练随机性。
 
 - **线上体验**：[打开 ECG-AI 工作台](http://47.83.150.55:8000/dashboard)
 - **GitHub 仓库**：[wujiangbin0604-cmyk/medartintel](https://github.com/wujiangbin0604-cmyk/medartintel)
@@ -88,7 +88,7 @@ docker compose up -d --build --wait --wait-timeout 240
 
 ## 第二阶段：预处理与受试者独立数据集
 
-第二阶段使用官方 **全部 48 条记录**，构建 N/V 数据文件，仍不训练任何分类器或深度模型、不开发前端。
+第二阶段使用官方 **全部48条记录**，完成N/V数据文件构建。
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
@@ -114,7 +114,7 @@ docker compose up -d --build --wait --wait-timeout 240
 
 处理流程：实际 MLII 优先，否则首导联；先对连续有限信号执行 0.5–40 Hz Butterworth SOS 双向滤波，再用专家标注前 0.3 s、后 0.4 s 的**含端点 253 点窗口**截取。记录两端和非有限缺口两侧设 5 s 滤波保护区。边界/非有限/平直/重复目标位置等技术问题被明确记录；幅值大、ADC 触轨和形态变化只作保留样本的复核标记，不按外观改标签。
 
-N←N/L/R/e/j，V←V/E，默认编码 N=0、V=1；其余类别仍保留原始文件与元数据。100、200 已被前期探索，固定放训练集；其余按受试者与预声明的 V 类覆盖约束一次性分层划分，约 70/15/15 对应受试者比例。201/202 必须在同一集合。分区在滤波比较前写入并锁定，不允许静默更换种子或依据测试表现重新划分。候选滤波比较仅用训练记录；没有过采样、欠采样或 SMOTE。
+N←N/L/R/e/j，V←V/E，默认编码N=0、V=1；其余类别保留原始文件与元数据。100、200已用于前期探索，固定放入训练集；其余按受试者与预声明的V类覆盖条件一次性分层划分，受试者比例约70/15/15。201/202放在同一集合。分区和随机种子在滤波比较前写入并锁定；候选滤波比较使用训练记录，保留原始类别采样分布。
 
 `X` 形状为 `(样本数, 1, 253)`，float32；`X_filtered` 为对应的滤波后 mV 信号；`y` 为 int64。所有分区使用同一个训练集标量均值/标准差，未逐拍缩放或按测试范围裁剪。加载示例：
 
@@ -135,7 +135,7 @@ with np.load(dataset_dir / 'train.npz', allow_pickle=False) as data:
 .\.venv\Scripts\python.exe -m src.preprocess --offline --classes N S V F --output-dir data/processed/nsvf_v1 --split-plan data/processed/nv_v1/split_plan.json
 ```
 
-原始 `.dat/.hea/.atr` 始终保留；N 组不等于全部医学正常，N/V 任务也不覆盖所有异常。双向滤波依赖未来采样，当前成果是离线数据集，实时任务需要另行设计因果滤波。保留的质量问题、导联差异、稀有类与患者差异应在下一阶段训练/验证侧处理；测试集继续锁定。
+原始 `.dat/.hea/.atr` 保留，N组按N/L/R/e/j映射，V组按V/E映射。数据集采用依赖前后采样的双向滤波，面向离线分析；实时任务采用因果滤波。质量问题、导联差异、稀有类与患者差异在训练/验证侧处理，测试集按固定分区管理。
 
 ## 第三阶段：44 条记录基线分类实验
 
@@ -157,13 +157,13 @@ with np.load(dataset_dir / 'train.npz', allow_pickle=False) as data:
 
 44 条实验以患者组为单位，按约 70/15/15 的目标比例得到 31/6/6 个 train/validation/test 患者组，对应 32/6/6 条记录；100、200 因前期已经查看而预先只放训练集。记录 201、202 合并成一个受试者组。稀有类在留出患者的覆盖有限，特别是四分类 S/F 需要结合实际 support、各类 Recall、Macro-F1 和混淆矩阵解释。模型配置位于 `configs/`；模型及日志分别保存在 `checkpoints/`、`results/classification/`。实验总报告为 `reports/classification/experiment_summary.md`；预处理与分类图分别位于 `figures/07_preprocessing/`、`figures/08_binary_classification/`、`figures/09_multiclass_classification/`。
 
-`requirements.txt` 记录跨环境的兼容版本范围；`requirements-lock.txt` 是本次验证环境的精确包版本快照（Python 3.12.10、Windows、CPU-only PyTorch）。项目代码面向 Python 3.10+，但本次未在 Python 3.10 运行验证。
+`requirements.txt` 记录跨环境的兼容版本范围；`requirements-lock.txt` 记录已验证环境的精确包版本（Python 3.12.10、Windows、CPU-only PyTorch）。本地启动与保存模型加载使用Python 3.12。
 
-模型限于 Logistic Regression、Random Forest 与 1D-CNN 基线。CNN 使用加权 CrossEntropyLoss 与验证集 Macro-F1 早停；类别权重只从训练集计算。测试集只在三个模型完成拟合、保存检查点后评估一次；代码从测试预测 CSV 独立重算并核对指标。CNN 的概率和类别分数是课程实验输出，不是临床诊断结果。
+基线模型包括Logistic Regression、Random Forest与1D-CNN。CNN使用加权CrossEntropyLoss与验证集Macro-F1早停，类别权重从训练集计算。三个模型完成拟合、保存检查点后统一评估一次测试集；代码从测试预测CSV重算指标，并输出CNN的类别分数与概率。
 
 ## 四分类失败诊断（新增）
 
-对已完成的 N/S/V/F 四分类做患者类别覆盖、患者级既有测试错误回顾、CNN 权重策略 train/validation 对照和五折受试者分组 CV。默认命令会重新运行权重对照与 CV，二者只使用 train/validation；历史正式测试预测只用于已查看结果的分患者统计和典型错误波形，不参与新拟合/调参。报告及交叉验证会显式说明原验证集已经用于早停，因此 CV 属探索性结果。
+对已完成的N/S/V/F四分类进行患者类别覆盖、患者级测试错误回顾、CNN权重策略train/validation对照和五折受试者分组CV。默认命令在train/validation上重新运行权重对照与CV；历史测试预测用于分患者统计和典型错误波形。原验证集已参与早停，交叉验证按探索性分析报告。
 
 ```powershell
 .\.venv\Scripts\python.exe -m src.evaluation.four_class_diagnosis
@@ -175,7 +175,7 @@ with np.load(dataset_dir / 'train.npz', allow_pickle=False) as data:
 
 ## 最终实验结果核验与课程报告（新增）
 
-独立复算已保存的 N/V 与 N/S/V/F 测试预测、核验 split 统计并生成整合报告；不重新训练模型。测试集此前已查看，本工具只用于指标核对和错误示例描述，不用于新拟合或调参。
+读取已保存的N/V与N/S/V/F测试预测，复算指标、核验split统计，生成整合报告和错误示例。该步骤使用此前已查看的测试预测。
 
 ```powershell
 .\.venv\Scripts\python.exe -m src.evaluation.final_report
@@ -185,7 +185,7 @@ with np.load(dataset_dir / 'train.npz', allow_pickle=False) as data:
 
 ## A–F 可视化图集（新增）
 
-新版入口生成分布、原始波形、单心拍形态、节律、质量、PCA/t-SNE 六类图集，并为**本轮每张图**自动写出用途、计算结果、解释边界和数据范围。
+新版入口生成分布、原始波形、单心拍形态、节律、质量、PCA/t-SNE六类图集，并为**本轮每张图**自动写出用途、计算结果、分析说明和数据范围。
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
@@ -207,17 +207,17 @@ with np.load(dataset_dir / 'train.npz', allow_pickle=False) as data:
 
 模块组织：加载复用 `src/io.py`，映射复用 `src/labels.py`，片段截取与描述量为 `src/heartbeat.py`；六类绘图位于 `src/visuals/`；报告生成为 `src/visualization_report.py`；主入口为 `src/visualize.py`。
 
-随机 20 拍采用固定种子、不放回抽取；不足 20 拍全取，缺失类别显示缺失，绝不复制生成假样本。`plotted_heartbeat_windows.csv` 保存叠图/网格所选每拍的记录、导联、原始样本和时间。网格以距类均值最近及不同峰峰值排序位置选例，所有波形都来自真实信号。
+随机20拍采用固定种子、不放回抽取；不足20拍时全取，缺失类别标记为缺失。`plotted_heartbeat_windows.csv` 保存叠图/网格所选每拍的记录、导联、原始样本和时间。网格以距类均值最近及不同峰峰值排序位置选例，波形取自原始信号。
 
-形态与降维按同一导联名称独立处理；窗口默认前 0.25 s、后 0.45 s。`heartbeat_features.csv` 含有效窗口的峰峰值、最大/最小值、`sum(x²)/fs` 物理能量和减中位数后的能量。`all_beat_metadata.csv` 保留未能提取窗口的心拍、边界原因及完整 RR；RR 不跨记录、不把非心拍当邻居。图中的非 N 比例是 `(S+V+F+Q)/已映射心拍`，并非临床异常患病率。
+形态与降维按同一导联名称独立处理；窗口默认前0.25 s、后0.45 s。`heartbeat_features.csv` 含有效窗口的峰峰值、最大/最小值、`sum(x²)/fs` 物理能量和减中位数后的能量。`all_beat_metadata.csv` 保留未能提取窗口的心拍、边界原因及完整RR；RR按记录内相邻心拍计算。图中的非N比例按 `(S+V+F+Q)/已映射心拍` 统计。
 
-PCA 对全部有效同导联窗口投影；t-SNE 按记录×类别各最多 500 拍，再在总数超过 3000 时按层均衡分配，保留小样本层，不放回抽取。降维前比较“各窗减中位数”和“再除以各窗 RMS”两个版本；t-SNE 预先 PCA 到最多 50 维。相同投影分别按类别、记录着色，并比较 perplexity=15/40。精确点坐标、原始标签、参数与解释率分别保存在 `embedding_coordinates.csv`、`embedding_parameters.csv`、`pca_explained_variance.csv`。这只是无监督探索，不是训练分类器，投影分离或 KL 数值不能当作分类性能。小数据运行时，perplexity 必须小于抽样窗口数。
+PCA对全部有效同导联窗口投影；t-SNE按记录×类别各最多500拍，再在总数超过3000时按层均衡分配，保留小样本层，不放回抽取。降维前比较“各窗减中位数”和“再除以各窗RMS”两个版本；t-SNE预先PCA到最多50维。相同投影分别按类别、记录着色，并比较perplexity=15/40。精确点坐标、原始标签、参数与解释率分别保存在 `embedding_coordinates.csv`、`embedding_parameters.csv`、`pca_explained_variance.csv`。投影分离和KL数值用于描述无监督降维结果。小数据运行时，perplexity必须小于抽样窗口数。
 
-质量图中的 1 s 块中位数仅是基线/幅值漂移候选代理；宽心拍与突变伪迹也可能影响它。阈值 0.5 mV 只用于选择示意片段，不自动判定噪声或删样本。报告的额外视觉核查绑定原始数据哈希和运行配置，不同数据或参数不会套用旧观察。
+质量图中的1 s块中位数用于观察基线/幅值漂移，也受宽心拍和突变伪迹影响。0.5 mV阈值用于选择示意片段，样本保留。报告的视觉核查按原始数据哈希和运行配置匹配。
 
 ## 环境与安装
 
-本版运行和保存模型加载需要 64 位 Python 3.12，推荐 Windows PowerShell。请将项目放在当前用户有修改权限的目录；脚本不会修改原始数据。首次下载约 4 MB 的两条记录，需联网到 PhysioNet；全 48 条信号约 94 MB（另加头文件和标注）。
+本版运行和保存模型加载需要64位Python 3.12，推荐Windows PowerShell。将项目放在当前用户有修改权限的目录。研究流程中下载两条记录约4 MB，需连接PhysioNet；全48条信号约94 MB（另加头文件和标注）。
 
 ```powershell
 python -m venv .venv
@@ -246,7 +246,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-默认项目根目录由代码位置确定，与终端当前目录无关。命令应在项目根目录执行以找到 `src` 模块。已有 `.dat/.hea/.atr` 永不覆盖：文件哈希不符时直接失败；应另选输出目录获取干净副本，不要改写原文件。派生 CSV、图和报告会被同名新结果替换。切换记录后，以本轮 `results/figure_manifest.csv` 为准，旧轮图片不自动删除。`--records all` 逐条处理下载、绘图，内存中保留全库信号以汇总，建议至少 4 GB 可用内存。当前交付仅实测 100、200，未实际下载分析全库。
+默认项目根目录由代码位置确定。命令在项目根目录执行以找到 `src` 模块。已有 `.dat/.hea/.atr` 按哈希校验，校验不符时停止；获取新副本时另选输出目录。派生CSV、图和报告会被同名新结果替换。切换记录后，以本轮 `results/figure_manifest.csv` 为准，旧轮图片保留。`--records all` 逐条处理下载、绘图，内存中保留全库信号以汇总，建议至少4 GB可用内存。第一阶段实测记录为100、200。
 
 ## 目录
 
@@ -294,13 +294,13 @@ CSV 使用 UTF-8 BOM；若用 Excel 查看原始符号/aux_note，应按文本�
 
 ## 标签和观察约束
 
-严格使用指定映射：N←N,L,R,e,j；S←A,a,J,S；V←V,E；F←F；Q←/,f,Q。`symbol` 与 `aami_group` 分列，大小写敏感。非心拍单独保存；不依赖模型或形态改写专家标注。N 组并不等于全是正常心拍，Q 组并不等于全是伪迹。`!` 和 `x` 按官方定义为非心拍，扩展全库时不会误当作心拍。
+标签映射为：N←N,L,R,e,j；S←A,a,J,S；V←V,E；F←F；Q←/,f,Q。`symbol` 与 `aami_group` 分列，大小写敏感。分组使用原始专家标注；`!` 和 `x` 按官方定义作为非心拍单独保存。
 
-双导联原始幅值图与带标注图均用实际物理单位。类间对比优先 MLII，缺少时才使用首导联。片段以原始专家标注为中心，**没有重新定位 R 峰**。默认前 0.25 s、后 0.45 s，360 Hz 时 253 点（含中心和末点）；越界只跳过绘图窗口，不删计数。组内图左侧原始幅值，右侧仅减去窗口中位数方便观察；未更改原始数据。固定窗口可能含邻拍，峰峰值不能当作 QRS 宽度或单拍幅值。
+双导联原始幅值图与带标注图均用实际物理单位。类间对比优先MLII，缺少时使用首导联。片段以原始专家标注为中心，默认前0.25 s、后0.45 s，360 Hz时253点（含中心和末点）；越界窗口跳过绘图，保留计数。组内图左侧显示原始幅值，右侧显示减去窗口中位数后的幅值。峰峰值按整个固定窗口计算，窗口内可能包含邻拍。
 
-质量指标仅供探索：大幅值/高差分不必然是噪声，未触轨不代表无伪迹；没有自动删样本。报告将统计、实际视觉观察和可能解释分开。开发助手的视觉备注只在所绑定原始文件哈希及窗口参数完全匹配时加入报告，扩展全库不会误套用 100/200 的观察；未经过额外心电专家复核。
+质量指标包括幅值、差分和触轨情况，用于探索性分析，样本保留。报告分别呈现统计、视觉观察和可能解释。开发助手的视觉备注按原始文件哈希及窗口参数匹配，对应记录100/200的观察。
 
-未来模型划分应按患者独立，**201 和 202 同属一位受试者**。本项目没有随机心拍级划分，也不输出模型结果。
+模型按患者独立划分，**201和202同属一位受试者**。
 
 ## 来源
 
@@ -314,13 +314,13 @@ CSV 使用 UTF-8 BOM；若用 Excel 查看原始符号/aux_note，应按文本�
 
 ## 第二阶段：本地 ECG-AI 教学工作台
 
-第二阶段 Web/API 实现在 `web/`：真实 MIT-BIH 记录浏览、专家标注心拍选择、已保存 LR/RF/1D-CNN 模型推理、同拍比较和历史片段回放。不会在 Web 工作台中训练模型或更改数据文件。模型推理限定既有 44 条受试者分组记录及 MLII；其他本地完整记录只用于波形浏览。回放是历史数据展示，不是实时监护。
+第二阶段Web/API实现在 `web/`：MIT-BIH记录浏览、专家标注心拍选择、已保存LR/RF/1D-CNN模型推理、同拍比较和历史片段回放。模型推理使用既有44条受试者分组记录及MLII；其他本地完整记录提供波形浏览。
 
 安装/启动、API、模型验证和演示说明见 [`web/docs/phase2_testing.md`](web/docs/phase2_testing.md)、[`web/docs/phase2_api.md`](web/docs/phase2_api.md) 和 [`web/docs/phase2_demo_guide.md`](web/docs/phase2_demo_guide.md)。最终交付记录在 [`web/docs/phase2_final_report.md`](web/docs/phase2_final_report.md)。
 
 ## 第三阶段：科研平台与课程答辩
 
-新增 `/dashboard`、`/experiments`、`/generalization`、`/gallery` 和 `/presentation-demo`，统一蓝白医学科研界面，保留 `/ai-detection` 的真实 ECG、三模型推理和历史回放。研究页面只读已有核验指标与图像；模型、原始数据与正式实验结果没有重新训练或改写。
+新增 `/dashboard`、`/experiments`、`/generalization`、`/gallery` 和 `/presentation-demo`，统一蓝白医学科研界面，保留 `/ai-detection` 的ECG、三模型推理和历史回放。研究页面读取已核验的指标与图像。
 
 推荐课堂演示采用本地生产构建：
 
@@ -329,7 +329,7 @@ npm --prefix web/frontend run build
 .venv\Scripts\python.exe -m uvicorn web.backend.production:app --host 127.0.0.1 --port 8002
 ```
 
-打开 `http://127.0.0.1:8002/presentation-demo`。完整过程、截图、实测性能与依赖残留风险见 [第三阶段交付报告](web/docs/phase3_final_report.md) 和 [答辩指南](web/docs/phase3_demo_guide.md)。该服务只面向本机课程研究教学。
+打开 `http://127.0.0.1:8002/presentation-demo`。完整过程、截图、实测性能与依赖情况见 [第三阶段交付报告](web/docs/phase3_final_report.md) 和 [答辩指南](web/docs/phase3_demo_guide.md)。
 
 ## 第四阶段：浅色医学科技风与交互动画
 

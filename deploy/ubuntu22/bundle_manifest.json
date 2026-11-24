@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 30513,
-      "sha256": "469547f889160ff2a180efb8e6a7a0a2c4a5b032bafb88de61848c36f44ae1be"
+      "bytes": 28668,
+      "sha256": "93db745630f5e70a18c811ba1cc2a2526ac137b65422e75c4d66365301b14386"
     },
     {
       "path": "SERVER_UPDATE.md",
@@ -1077,8 +1077,8 @@
     },
     {
       "path": "deploy/ubuntu22/README_UBUNTU_22.04.md",
-      "bytes": 8707,
-      "sha256": "b5e0c960d3ff4b884c95e153b3c5a52a30d331ac4e47695ebe6e22d9235efe92"
+      "bytes": 7772,
+      "sha256": "ed006814ee6686217d7bc61796777a13c010d4397ee2111fe2ab93c492241e25"
     },
     {
       "path": "deploy/ubuntu22/build_release.py",
@@ -2282,8 +2282,8 @@
     },
     {
       "path": "research_extensions/README.md",
-      "bytes": 4417,
-      "sha256": "6439350426b355b3f019d151eec9d3a4572fc38d21760ccd34b1aa0df52ec146"
+      "bytes": 4129,
+      "sha256": "b38bc1ec4b52e293ca0ae2ac61995bf36223246037c6b6733888469a8ca1fa11"
     },
     {
       "path": "research_extensions/__init__.py",

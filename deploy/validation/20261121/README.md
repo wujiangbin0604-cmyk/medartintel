@@ -12,4 +12,4 @@
 - 合并远端V5独立复核资料后，TypeScript类型检查通过；Python回归74项及11个subtest通过。更新包测试在Windows的UTF-8模式下执行，避免默认GBK误解码中文目录的错误输出。
 - 待发布Git暂存区独立导出副本通过1313个运行文件、原六模型18条参考预测、60个研究checkpoint、真实研究接口与163张图库检查，见[独立导出运行记录](merged_git_runtime.json)。副本没有虚拟环境、node_modules或训练NPZ；运行时复用本机已验证的Python依赖。
 
-这些运行检查使用本机Windows及已验证的Python 3.12依赖。POSIX路径回归模拟Linux的路径语义，本机没有执行Docker镜像构建；服务器修复脚本的--rebuild选项会在实际服务器构建并执行API自检。文件数反映各次验证对应的目录，合并后的发布目录以新生成清单为准。
+运行检查使用Windows及Python 3.12依赖，POSIX路径回归模拟Linux的路径语义。服务器修复脚本通过--rebuild在目标服务器构建镜像并执行API自检。文件数对应各次验证目录，合并后的发布目录以新生成清单为准。
